@@ -15,7 +15,6 @@
 """
 import argparse
 from pathlib import Path
-from typing import Any
 
 import torch
 from ultralytics import YOLO
@@ -47,12 +46,41 @@ def parse_args() -> argparse.Namespace:
         help="覆盖默认训练轮数。",
     )
     parser.add_argument(
+        "--batch",
+        type=int,
+        default=None,
+        help="覆盖默认batch size。",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=None,
+        help="覆盖数据加载线程数。",
+    )
+    parser.add_argument(
         "--device",
         type=str,
         default=None,
-        help="指定设备，例如mps、cpu或0。",
+        help="指定设备，例如mps、cpu、0或0,1。",
     )
     return parser.parse_args()
+
+def print_gpu_info() -> None:
+    if torch.cuda.is_available():
+        print(f"CUDA GPU count: {torch.cuda.device_count()}")
+
+        for device_id in range(torch.cuda.device_count()):
+            print(f"GPU {device_id}: {torch.cuda.get_device_name(device_id)}")
+        return
+
+    if (
+        hasattr(torch.backends, "mps")
+        and torch.backends.mps.is_available()
+    ):
+        print("Device: Apple MPS")
+        return
+
+    print("Device: CPU")
 
 def resolve_device(
     requested_device: str | None,
@@ -88,8 +116,25 @@ def resolve_device(
 
     return "cpu"
 
+def get_default_batch(
+        device: str,
+) -> int:
+    if torch.cuda.is_available():
+        if torch.cuda.device_count() >= 2 and device == "0,1":
+            return 32
+
+        return 16
+
+    if device == "mps":
+        return 4
+
+    return 2
+
 def main():
     args = parse_args()
+
+    print("\n========== GPU Information ==========")
+    print_gpu_info()
 
     if not DATA_YAML.exists():
         raise FileNotFoundError(
@@ -106,9 +151,9 @@ def main():
             "data": str(DATA_YAML),
             "epochs": epochs,
             "imgsz": 640,
-            "batch": 4,
+            "batch": args.batch if args.batch is not None else 4,
             "device": device,
-            "workers": 4,
+            "workers": args.workers if args.workers is not None else 0,
             "fraction": 0.01,
             "val": False,
             "plots": False,
@@ -128,9 +173,13 @@ def main():
             "data": str(DATA_YAML),
             "epochs": epochs,
             "imgsz": 640,
-            "batch": 16,
+            "batch": (
+                args.batch
+                if args.batch is not None
+                else get_default_batch(device)
+            ),
             "device": device,
-            "workers": 8,
+            "workers": args.workers if args.workers is not None else 8,
             "fraction": 1.0,
             "val": True,
             "plots": True,
@@ -151,9 +200,10 @@ def main():
     print(f"Device：{device}")
     print(f"Data：{DATA_YAML}")
     print(f"Epochs：{epochs}")
+    print(f"Batch：{train_args['batch']}")
+    print(f"Workers：{train_args['workers']}")
 
     model.train(**train_args)
 
 if __name__ == "__main__":
     main()
-
