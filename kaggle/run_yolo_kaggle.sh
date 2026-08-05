@@ -4,41 +4,98 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$REPO_ROOT"
 
-RAW_DATA_ROOT="${BDD100K_DATA_ROOT:-/kaggle/input/bdd100k-supervisely/bdd100k:-images-100k}"
-EXTRACT_ROOT="${BDD100K_EXTRACT_ROOT:-$REPO_ROOT/datasets/downloads/bdd100k}"
+RAW_DATA_ROOT="${BDD100K_DATA_ROOT:-}"
+DOWNLOAD_ROOT="${BDD100K_DOWNLOAD_ROOT:-$REPO_ROOT/datasets/downloads/bdd100k}"
+EXTRACT_ROOT="${BDD100K_EXTRACT_ROOT:-$DOWNLOAD_ROOT}"
+AUTO_DOWNLOAD="${BDD100K_AUTO_DOWNLOAD:-1}"
+DATASET_DIR_NAME="bdd100k:-images-100k"
+ALT_DATASET_DIR_NAME="bdd100k-images-100k"
 PROFILE="${PROFILE:-smoke}"
 MODEL="${MODEL:-yolo11n.pt}"
 DEVICE="${DEVICE:-0}"
 WORKERS="${WORKERS:-2}"
 
+print_data_root() {
+  local root="$1"
+
+  if [ -d "$root/$DATASET_DIR_NAME/train/ann" ] && [ -d "$root/$DATASET_DIR_NAME/train/img" ]; then
+    echo "$root/$DATASET_DIR_NAME"
+    return 0
+  fi
+
+  if [ -d "$root/$ALT_DATASET_DIR_NAME/train/ann" ] && [ -d "$root/$ALT_DATASET_DIR_NAME/train/img" ]; then
+    echo "$root/$ALT_DATASET_DIR_NAME"
+    return 0
+  fi
+
+  return 1
+}
+
+extract_archive() {
+  local archive_path="$1"
+
+  mkdir -p "$EXTRACT_ROOT"
+
+  if [ -d "$EXTRACT_ROOT/$DATASET_DIR_NAME/train/ann" ] || [ -d "$EXTRACT_ROOT/$ALT_DATASET_DIR_NAME/train/ann" ]; then
+    return
+  fi
+
+  echo "Extracting $archive_path to $EXTRACT_ROOT" >&2
+
+  case "$archive_path" in
+    *.zip)
+      unzip -q "$archive_path" -d "$EXTRACT_ROOT"
+      ;;
+    *.tar|*.tar.gz|*.tgz)
+      tar -xf "$archive_path" -C "$EXTRACT_ROOT"
+      ;;
+    *)
+      echo "Unsupported archive type: $archive_path" >&2
+      exit 1
+      ;;
+  esac
+}
+
 resolve_data_root() {
-  if [ -d "$RAW_DATA_ROOT/train/ann" ] && [ -d "$RAW_DATA_ROOT/train/img" ]; then
+  if [ -n "$RAW_DATA_ROOT" ] && [ -d "$RAW_DATA_ROOT/train/ann" ] && [ -d "$RAW_DATA_ROOT/train/img" ]; then
     echo "$RAW_DATA_ROOT"
     return
   fi
 
-  local tar_path=""
+  local archive_path=""
 
-  if [ -f "$RAW_DATA_ROOT" ]; then
-    tar_path="$RAW_DATA_ROOT"
-  elif [ -f "$RAW_DATA_ROOT.tar" ]; then
-    tar_path="$RAW_DATA_ROOT.tar"
+  if [ -n "$RAW_DATA_ROOT" ] && [ -f "$RAW_DATA_ROOT" ]; then
+    archive_path="$RAW_DATA_ROOT"
+  elif [ -n "$RAW_DATA_ROOT" ] && [ -f "$RAW_DATA_ROOT.tar" ]; then
+    archive_path="$RAW_DATA_ROOT.tar"
+  elif [ -n "$RAW_DATA_ROOT" ] && [ -f "$RAW_DATA_ROOT.zip" ]; then
+    archive_path="$RAW_DATA_ROOT.zip"
   fi
 
-  if [ -n "$tar_path" ]; then
-    mkdir -p "$EXTRACT_ROOT"
-
-    if [ ! -d "$EXTRACT_ROOT/bdd100k:-images-100k/train/ann" ]; then
-      echo "Extracting $tar_path to $EXTRACT_ROOT" >&2
-      tar -xf "$tar_path" -C "$EXTRACT_ROOT"
+  if [ -n "$archive_path" ]; then
+    extract_archive "$archive_path"
+    if ! print_data_root "$EXTRACT_ROOT"; then
+      echo "Archive extraction finished, but BDD100K train/ann and train/img were not found under $EXTRACT_ROOT." >&2
+      exit 1
     fi
-
-    echo "$EXTRACT_ROOT/bdd100k:-images-100k"
     return
   fi
 
-  echo "BDD100K data root not found or invalid: $RAW_DATA_ROOT" >&2
-  echo "Set BDD100K_DATA_ROOT to a directory with train/ann and train/img, or to the uploaded .tar file." >&2
+  if print_data_root "$DOWNLOAD_ROOT"; then
+    return
+  fi
+
+  if [ "$AUTO_DOWNLOAD" = "1" ]; then
+    python tools/download_bdd100k.py --output-dir "$DOWNLOAD_ROOT"
+    if ! print_data_root "$DOWNLOAD_ROOT"; then
+      echo "Download finished, but BDD100K train/ann and train/img were not found under $DOWNLOAD_ROOT." >&2
+      exit 1
+    fi
+    return
+  fi
+
+  echo "BDD100K data root not found." >&2
+  echo "Set BDD100K_DATA_ROOT to a directory/archive, or set BDD100K_AUTO_DOWNLOAD=1." >&2
   exit 1
 }
 
