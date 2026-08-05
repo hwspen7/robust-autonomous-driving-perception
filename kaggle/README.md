@@ -34,7 +34,7 @@ Edit `dataset-metadata.json` so the id is:
 
 ```json
 {
-  "id": "hwspen7/bdd100k-supervisely",
+  "id": "captainspencerqin/bdd100k-supervisely",
   "title": "BDD100K Supervisely Raw"
 }
 ```
@@ -48,14 +48,10 @@ kaggle datasets create -p . --dir-mode tar
 Expected uploaded structure:
 
 ```text
-bdd100k:-images-100k/
-  train/ann
-  train/img
-  val/ann
-  val/img
-  test/ann
-  test/img
+bdd100k:-images-100k.tar
 ```
+
+The helper script automatically extracts this tar file into `/kaggle/working`.
 
 ## 2. Create A Kaggle Notebook
 
@@ -80,7 +76,7 @@ Run these cells:
 Smoke run:
 
 ```bash
-!BDD100K_DATA_ROOT="/kaggle/input/bdd100k-supervisely/bdd100k:-images-100k" \
+!BDD100K_DATA_ROOT="/kaggle/input/bdd100k-supervisely/bdd100k:-images-100k.tar" \
   PROFILE=smoke \
   EPOCHS=1 \
   BATCH=8 \
@@ -92,7 +88,7 @@ Smoke run:
 Full YOLO baseline:
 
 ```bash
-!BDD100K_DATA_ROOT="/kaggle/input/bdd100k-supervisely/bdd100k:-images-100k" \
+!BDD100K_DATA_ROOT="/kaggle/input/bdd100k-supervisely/bdd100k:-images-100k.tar" \
   PROFILE=full \
   EPOCHS=50 \
   BATCH=16 \
