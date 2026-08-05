@@ -1,0 +1,70 @@
+# macOS / editor
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+kaggle.json
+.kaggle/
+
+# Project datasets: keep data in Kaggle Datasets or local storage, not GitHub.
+datasets/
+
+# Generated experiment outputs
+results/
+reports/
+demo/results/
+runs/
+work_dirs/
+outputs/
+wandb/
+mlruns/
+lightning_logs/
+rtdetr-l_smoke/
+rtdetr*_smoke/
+yolo*_smoke/
+faster_rcnn*_smoke/
+
+# Model weights and exported artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.safetensors
+*.weights
+*.bin
+
+# Dataset/package archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
