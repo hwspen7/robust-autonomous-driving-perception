@@ -7,7 +7,7 @@ cd "$REPO_ROOT"
 RAW_DATA_ROOT="${BDD100K_DATA_ROOT:-}"
 DOWNLOAD_ROOT="${BDD100K_DOWNLOAD_ROOT:-$REPO_ROOT/datasets/downloads/bdd100k}"
 EXTRACT_ROOT="${BDD100K_EXTRACT_ROOT:-$DOWNLOAD_ROOT}"
-AUTO_DOWNLOAD="${BDD100K_AUTO_DOWNLOAD:-1}"
+AUTO_DOWNLOAD="${BDD100K_AUTO_DOWNLOAD:-0}"
 DATASET_DIR_NAME="bdd100k:-images-100k"
 ALT_DATASET_DIR_NAME="bdd100k-images-100k"
 PROFILE="${PROFILE:-smoke}"
@@ -95,7 +95,8 @@ resolve_data_root() {
   fi
 
   echo "BDD100K data root not found." >&2
-  echo "Set BDD100K_DATA_ROOT to a directory/archive, or set BDD100K_AUTO_DOWNLOAD=1." >&2
+  echo "Set BDD100K_DATA_ROOT to a directory/archive." >&2
+  echo "For Dataset Ninja runtime download, install requirements-dataset-ninja.txt and set BDD100K_AUTO_DOWNLOAD=1." >&2
   exit 1
 }
 
@@ -124,6 +125,7 @@ python tools/convert_bdd100k.py \
 
 TRAIN_ARGS=(
   --profile "$PROFILE"
+  --data "$REPO_ROOT/datasets/yolo/bdd100k/data.yaml"
   --model "$MODEL"
   --device "$DEVICE"
   --workers "$WORKERS"

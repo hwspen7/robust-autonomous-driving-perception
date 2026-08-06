@@ -1,16 +1,20 @@
 import os
 from dataclasses import dataclass
 from pathlib import Path
+import sys
 
-import torch
+try:
+    import torch
+except ModuleNotFoundError:
+    torch = None
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 
 @dataclass(frozen=True)
 class RuntimeConfig:
-    # 当前运行平台：
-    # local      本地Mac/Linux环境
-    # kaggle     Kaggle Notebook
-    # modelscope ModelScope DSW GPU环境
+    # 当前运行平台，仅用于日志和默认行为说明。
     platform: str
 
     # 通用计算设备：
@@ -31,29 +35,35 @@ class RuntimeConfig:
 
 def detect_platform() -> str:
     """
-    自动检测当前运行平台。
+    自动检测当前运行平台，仅用于标识运行环境。
 
-    支持：
-    1. Kaggle Notebook；
-    2. ModelScope DSW；
-    3. 本地环境。
+    路径选择不再依赖平台分支，避免普通Linux GPU服务器
+    被错误归类到某个Notebook环境。
     """
+    configured_platform = os.getenv(
+        "AUTODRIVE_PLATFORM"
+    )
 
-    # Kaggle Notebook通常存在固定输入和工作目录。
+    if configured_platform:
+        return configured_platform
+
     if (
-        Path("/kaggle/input").exists()
-        and Path("/kaggle/working").exists()
+        os.getenv("KAGGLE_KERNEL_RUN_TYPE")
+        or os.getenv("KAGGLE_URL_BASE")
+        or (
+            Path("/kaggle/input").exists()
+            and Path("/kaggle/working").exists()
+        )
     ):
         return "kaggle"
 
-    # ModelScope DSW通常运行在workspace目录。
-    if (
-        Path("/mnt/workspace").exists()
-        or Path("/home/jovyan").exists()
-    ):
-        return "modelscope"
+    if sys.platform == "darwin":
+        return "macos"
 
-    return "local"
+    if sys.platform.startswith("linux"):
+        return "linux"
+
+    return sys.platform or "unknown"
 
 
 def resolve_device() -> str:
@@ -66,11 +76,22 @@ def resolve_device() -> str:
     3. CPU。
     """
 
-    if torch.cuda.is_available():
+    configured_device = os.getenv(
+        "AUTODRIVE_DEVICE"
+    )
+
+    if configured_device:
+        return configured_device
+
+    if (
+        torch is not None
+        and torch.cuda.is_available()
+    ):
         return "cuda:0"
 
     if (
-        hasattr(torch.backends, "mps")
+        torch is not None
+        and hasattr(torch.backends, "mps")
         and torch.backends.mps.is_available()
     ):
         return "mps"
@@ -87,88 +108,86 @@ def resolve_mmdet_device() -> str:
     因此本地默认使用CPU。
     """
 
-    if torch.cuda.is_available():
+    configured_device = os.getenv(
+        "AUTODRIVE_MMDET_DEVICE"
+    )
+
+    if configured_device:
+        return configured_device
+
+    if (
+        torch is not None
+        and torch.cuda.is_available()
+    ):
         return "cuda:0"
 
     return "cpu"
+
+
+def resolve_project_path(
+    path: Path | str,
+) -> Path:
+    resolved_path = Path(path).expanduser()
+
+    if not resolved_path.is_absolute():
+        resolved_path = PROJECT_ROOT / resolved_path
+
+    return resolved_path.resolve(
+        strict=False,
+    )
 
 
 def resolve_data_root(
         platform: str
 ) -> Path:
     """
-    根据运行平台确定数据集路径。
+    确定数据集路径。
 
-    优先读取环境变量：
-    AUTODRIVE_DATA_ROOT
-
-    方便用户自定义数据位置。
+    优先读取环境变量，不在import阶段检查路径是否存在。
     """
+    for env_name in (
+        "AUTODRIVE_DATA_ROOT",
+        "BDD100K_DATA_ROOT",
+        "DATA_ROOT",
+    ):
+        configured_root = os.getenv(
+            env_name
+        )
 
-    custom_root = os.getenv(
-        "AUTODRIVE_DATA_ROOT"
+        if configured_root:
+            return resolve_project_path(
+                configured_root
+            )
+
+    return resolve_project_path(
+        "datasets"
     )
-
-    if custom_root:
-        data_root = Path(custom_root)
-
-    elif platform == "kaggle":
-        data_root = Path(
-            "/kaggle/input/autonomous-driving-data"
-        )
-
-    elif platform == "modelscope":
-        data_root = Path(
-            "/mnt/workspace/datasets"
-        )
-
-    else:
-        data_root = Path("datasets")
-
-    if not data_root.exists():
-        raise FileNotFoundError(
-            f"Dataset root does not exist: {data_root}"
-        )
-
-    return data_root.resolve()
 
 
 def resolve_output_root(
         platform: str
 ) -> Path:
     """
-    根据运行平台确定实验输出路径。
+    确定实验输出路径。
 
-    优先读取环境变量：
-    AUTODRIVE_OUTPUT_ROOT
+    优先读取环境变量，不在import阶段创建目录。
     """
-
-    custom_root = os.getenv(
-        "AUTODRIVE_OUTPUT_ROOT"
-    )
-
-    if custom_root:
-        output_root = Path(custom_root)
-
-    elif platform == "kaggle":
-        output_root = Path(
-            "/kaggle/working/robust-autonomous-driving"
+    for env_name in (
+        "AUTODRIVE_OUTPUT_ROOT",
+        "OUTPUT_ROOT",
+    ):
+        configured_root = os.getenv(
+            env_name
         )
 
-    elif platform == "modelscope":
-        output_root = Path(
-            "/mnt/workspace/results"
-        )
+        if configured_root:
+            return resolve_project_path(
+                configured_root
+            )
 
-    else:
-        output_root = Path("results")
-
-    output_root.mkdir(
-        exist_ok=True,
-        parents=True,
+    return resolve_project_path(
+        "results"
     )
-
-    return output_root.resolve()
 
 
 def build_runtime_config() -> RuntimeConfig:
@@ -200,6 +219,31 @@ def print_runtime_config() -> None:
     print(f"Data Root     : {RUNTIME.data_root}")
     print(f"Output Root   : {RUNTIME.output_root}")
     print("=" * 50)
+
+
+def validate_data_root(
+    data_root: Path | None = None,
+) -> Path:
+    root = data_root or RUNTIME.data_root
+
+    if not root.exists():
+        raise FileNotFoundError(
+            f"Dataset root does not exist: {root}"
+        )
+
+    return root
+
+
+def ensure_output_root(
+    output_root: Path | None = None,
+) -> Path:
+    root = output_root or RUNTIME.output_root
+    root.mkdir(
+        exist_ok=True,
+        parents=True,
+    )
+
+    return root
 
 
 RUNTIME = build_runtime_config()

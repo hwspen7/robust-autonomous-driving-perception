@@ -1,69 +1,126 @@
 """
-训练BDD100K YOLO11目标检测Baseline。
+Train the BDD100K YOLO11 detection baseline.
 
-运行模式：
-1. smoke：本地小规模冒烟测试；
-2. full：CUDA设备上的完整Baseline训练。
-
-冒烟测试只验证：
-- 数据能否加载；
-- 标签能否解析；
-- 模型能否完成前向与反向传播；
-- checkpoint能否正常保存。
-
-正式实验结果必须使用full模式获得。
+Modes:
+1. smoke: a small local training run that validates the pipeline.
+2. full: full BDD100K baseline training.
 """
+
 import argparse
+import os
 from pathlib import Path
 
 import torch
 from ultralytics import YOLO
 
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_YAML = PROJECT_ROOT / "datasets" / "yolo" / "bdd100k" / "data.yaml"
-OUTPUT_ROOT = PROJECT_ROOT / "results" / "training" / "yolo"
+DEFAULT_DATA_YAML = PROJECT_ROOT / "datasets" / "yolo" / "bdd100k" / "data.yaml"
+DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "results" / "training" / "yolo"
+
+
+def project_path(
+    path: Path,
+) -> Path:
+    expanded = path.expanduser()
+
+    if not expanded.is_absolute():
+        expanded = PROJECT_ROOT / expanded
+
+    return expanded.resolve(
+        strict=False,
+    )
+
+
+def default_data_yaml() -> Path:
+    for env_name in (
+        "AUTODRIVE_YOLO_DATA",
+        "BDD100K_YOLO_DATA",
+        "YOLO_DATA",
+    ):
+        configured_path = os.getenv(
+            env_name
+        )
+
+        if configured_path:
+            return project_path(
+                Path(configured_path)
+            )
+
+    return DEFAULT_DATA_YAML
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="训练BDD100K YOLO11 Baseline。"
+        description="Train the BDD100K YOLO11 baseline."
     )
     parser.add_argument(
         "--profile",
         choices=("smoke", "full"),
         default="smoke",
-        help="smoke为本地冒烟测试，full为完整训练。",
+        help="smoke validates the pipeline; full runs the baseline.",
+    )
+    parser.add_argument(
+        "--data",
+        type=Path,
+        default=default_data_yaml(),
+        help="Path to the YOLO data.yaml file.",
     )
     parser.add_argument(
         "--model",
         type=str,
         default="yolo11n.pt",
-        help="Ultralytics预训练模型。",
+        help="Ultralytics model name or weights path.",
+    )
+    parser.add_argument(
+        "--resume",
+        nargs="?",
+        const="true",
+        default=None,
+        metavar="CHECKPOINT",
+        help=(
+            "Resume training. Pass without a value for Ultralytics auto-resume, "
+            "or pass a checkpoint path such as runs/train/exp/weights/last.pt."
+        ),
     )
     parser.add_argument(
         "--epochs",
         type=int,
         default=None,
-        help="覆盖默认训练轮数。",
+        help="Override default epoch count.",
     )
     parser.add_argument(
         "--batch",
         type=int,
         default=None,
-        help="覆盖默认batch size。",
+        help="Override batch size.",
     )
     parser.add_argument(
         "--workers",
         type=int,
         default=None,
-        help="覆盖数据加载线程数。",
+        help="Override dataloader workers.",
     )
     parser.add_argument(
         "--device",
         type=str,
         default=None,
-        help="指定设备，例如mps、cpu、0或0,1。",
+        help="Device, for example cpu, mps, 0, or 0,1.",
+    )
+    parser.add_argument(
+        "--name",
+        type=str,
+        default=None,
+        help="Experiment name.",
+    )
+    parser.add_argument(
+        "--project",
+        type=Path,
+        default=DEFAULT_OUTPUT_ROOT,
+        help="Output project directory.",
     )
     return parser.parse_args()
+
 
 def print_gpu_info() -> None:
     if torch.cuda.is_available():
@@ -82,30 +139,14 @@ def print_gpu_info() -> None:
 
     print("Device: CPU")
 
+
 def resolve_device(
     requested_device: str | None,
 ) -> str:
-    """
-    自动选择训练设备。
-
-    优先级：
-    1. 用户手动指定；
-    2. 多GPU CUDA；
-    3. 单GPU CUDA；
-    4. Apple MPS；
-    5. CPU。
-    """
-
     if requested_device is not None:
         return requested_device
 
     if torch.cuda.is_available():
-
-        gpu_count = torch.cuda.device_count()
-
-        if gpu_count >= 2:
-            return "0,1"
-
         return "0"
 
     if (
@@ -116,13 +157,14 @@ def resolve_device(
 
     return "cpu"
 
-def get_default_batch(
-        device: str,
-) -> int:
-    if torch.cuda.is_available():
-        if torch.cuda.device_count() >= 2 and device == "0,1":
-            return 32
 
+def get_default_batch(
+    device: str,
+) -> int:
+    if device not in {
+        "cpu",
+        "mps",
+    }:
         return 16
 
     if device == "mps":
@@ -130,26 +172,74 @@ def get_default_batch(
 
     return 2
 
-def main():
-    args = parse_args()
 
-    print("\n========== GPU Information ==========")
-    print_gpu_info()
+def resolve_resume(
+    model: str,
+    resume: str | None,
+) -> tuple[str, bool]:
+    if resume is None:
+        return model, False
 
-    if not DATA_YAML.exists():
+    normalized_resume = resume.lower()
+
+    if normalized_resume in {
+        "0",
+        "false",
+        "no",
+        "off",
+    }:
+        return model, False
+
+    if normalized_resume in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }:
+        return model, True
+
+    checkpoint_path = project_path(
+        Path(resume)
+    )
+
+    if not checkpoint_path.exists():
         raise FileNotFoundError(
-            f"Unable to find the configuration file: {DATA_YAML}"
+            f"Resume checkpoint does not exist: {checkpoint_path}"
         )
 
-    device = resolve_device(args.device)
-    model = YOLO(args.model)
+    return str(checkpoint_path), True
+
+
+def validate_args(
+    args: argparse.Namespace,
+) -> Path:
+    data_yaml = project_path(
+        args.data
+    )
+
+    if not data_yaml.exists():
+        raise FileNotFoundError(
+            f"Unable to find YOLO data file: {data_yaml}"
+        )
+
+    return data_yaml
+
+
+def build_train_args(
+    args: argparse.Namespace,
+    data_yaml: Path,
+    device: str,
+    resume_training: bool,
+) -> dict:
+    model_name = Path(args.model).stem
+    project_dir = project_path(
+        args.project
+    )
 
     if args.profile == "smoke":
-        epochs = args.epochs or 1
-
         train_args = {
-            "data": str(DATA_YAML),
-            "epochs": epochs,
+            "data": str(data_yaml),
+            "epochs": args.epochs if args.epochs is not None else 1,
             "imgsz": 640,
             "batch": args.batch if args.batch is not None else 4,
             "device": device,
@@ -158,20 +248,17 @@ def main():
             "val": False,
             "plots": False,
             "save": True,
-            "project": str(OUTPUT_ROOT),
-            "name": "yolo11n_smoke",
+            "project": str(project_dir),
+            "name": args.name or f"{model_name}_smoke",
             "exist_ok": True,
             "seed": 42,
             "deterministic": True,
             "verbose": True,
         }
-
     else:
-        epochs = args.epochs or 50
-
         train_args = {
-            "data": str(DATA_YAML),
-            "epochs": epochs,
+            "data": str(data_yaml),
+            "epochs": args.epochs if args.epochs is not None else 50,
             "imgsz": 640,
             "batch": (
                 args.batch
@@ -185,8 +272,8 @@ def main():
             "plots": True,
             "save": True,
             "save_period": 5,
-            "project": str(OUTPUT_ROOT),
-            "name": "yolo11n_baseline",
+            "project": str(project_dir),
+            "name": args.name or f"{model_name}_baseline",
             "exist_ok": False,
             "seed": 42,
             "deterministic": True,
@@ -194,16 +281,53 @@ def main():
             "verbose": True,
         }
 
-    print("========== YOLO11 Baseline ==========")
-    print(f"Profile：{args.profile}")
-    print(f"Model：{args.model}")
-    print(f"Device：{device}")
-    print(f"Data：{DATA_YAML}")
-    print(f"Epochs：{epochs}")
-    print(f"Batch：{train_args['batch']}")
-    print(f"Workers：{train_args['workers']}")
+    if resume_training:
+        train_args["resume"] = True
 
-    model.train(**train_args)
+    return train_args
+
+
+def main() -> None:
+    args = parse_args()
+
+    print("\n========== GPU Information ==========")
+    print_gpu_info()
+
+    data_yaml = validate_args(
+        args
+    )
+    device = resolve_device(
+        args.device
+    )
+    model_path, resume_training = resolve_resume(
+        model=args.model,
+        resume=args.resume,
+    )
+    train_args = build_train_args(
+        args=args,
+        data_yaml=data_yaml,
+        device=device,
+        resume_training=resume_training,
+    )
+
+    print("========== YOLO11 Baseline ==========")
+    print(f"Profile: {args.profile}")
+    print(f"Model: {model_path}")
+    print(f"Resume: {resume_training}")
+    print(f"Device: {device}")
+    print(f"Data: {data_yaml}")
+    print(f"Epochs: {train_args['epochs']}")
+    print(f"Batch: {train_args['batch']}")
+    print(f"Workers: {train_args['workers']}")
+    print(f"Output: {Path(train_args['project']) / train_args['name']}")
+
+    model = YOLO(
+        model_path
+    )
+    model.train(
+        **train_args
+    )
+
 
 if __name__ == "__main__":
     main()

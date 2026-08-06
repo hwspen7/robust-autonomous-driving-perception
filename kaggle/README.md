@@ -3,10 +3,12 @@
 Recommended workflow:
 
 1. GitHub stores code only.
-2. Kaggle runtime downloads BDD100K with Dataset Ninja.
+2. Kaggle reads an attached or pre-extracted BDD100K dataset.
 3. The helper script converts the data to YOLO/COCO and starts training.
 
-This avoids uploading the full 8GB+ dataset from a local machine.
+Dataset Ninja runtime download is still available, but it is no longer part of
+the default Kaggle dependency stack because it pulls in extra Supervisely
+dependencies.
 
 ## 1. Create A Kaggle Notebook
 
@@ -30,12 +32,20 @@ Install dependencies:
 !pip install -q -r requirements-kaggle.txt
 ```
 
-## 2. Smoke Run
-
-This downloads BDD100K into `/kaggle/working`, converts train/val into YOLO and COCO, then runs a short YOLO smoke training.
+If you need conversion utilities outside the helper script:
 
 ```bash
-!PROFILE=smoke \
+!pip install -q -r requirements-data-conversion.txt
+```
+
+## 2. Smoke Run
+
+Attach or extract BDD100K first, then point `BDD100K_DATA_ROOT` at the
+Supervisely-format directory containing `train/ann` and `train/img`.
+
+```bash
+!BDD100K_DATA_ROOT="/kaggle/input/bdd100k-supervisely/bdd100k:-images-100k" \
+  PROFILE=smoke \
   EPOCHS=1 \
   BATCH=8 \
   WORKERS=2 \
@@ -64,7 +74,7 @@ DEVICE=0,1 BATCH=32
 
 ## 4. Optional Existing Dataset Input
 
-If you later attach a Kaggle Dataset or a zip/tar archive instead of downloading at runtime, set `BDD100K_DATA_ROOT`.
+If you attach a Kaggle Dataset or a zip/tar archive, set `BDD100K_DATA_ROOT`.
 
 Directory input:
 
@@ -82,10 +92,11 @@ Archive input:
   bash kaggle/run_yolo_kaggle.sh
 ```
 
-To disable automatic runtime download:
+Dataset Ninja runtime download is optional:
 
 ```bash
-BDD100K_AUTO_DOWNLOAD=0
+!pip install -q -r requirements-dataset-ninja.txt
+BDD100K_AUTO_DOWNLOAD=1
 ```
 
 ## 5. Optional Faster R-CNN
@@ -103,6 +114,7 @@ Smoke:
 ```bash
 !python scripts/train_faster_rcnn_baseline.py \
   --profile smoke \
+  --data datasets/coco/bdd100k \
   --num-smoke-images 200 \
   --batch 1 \
   --workers 2
@@ -113,6 +125,7 @@ Full:
 ```bash
 !python scripts/train_faster_rcnn_baseline.py \
   --profile full \
+  --data datasets/coco/bdd100k \
   --epochs 12 \
   --batch 2 \
   --workers 4

@@ -18,8 +18,6 @@ Supervisely
 import argparse
 from pathlib import Path
 
-import dataset_tools as dtools
-
 
 # 项目根目录
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -80,6 +78,15 @@ def main() -> None:
         return
 
     print("Downloading BDD100K...")
+
+    try:
+        import dataset_tools as dtools
+    except ModuleNotFoundError as exc:
+        raise SystemExit(
+            "Dataset Ninja dependencies are not installed. "
+            "Install them only when you need runtime downloading:\n"
+            "  pip install -r requirements-dataset-ninja.txt"
+        ) from exc
 
     dtools.download(
         dataset=args.dataset,

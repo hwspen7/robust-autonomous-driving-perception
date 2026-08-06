@@ -1,26 +1,11 @@
 """
-训练BDD100K RT-DETR Transformer Baseline。
+Train the BDD100K RT-DETR Transformer baseline.
 
-运行模式：
-1. smoke：小规模测试数据读取、模型初始化和训练流程。
-2. full：完整BDD100K训练和验证。
-
-RT-DETR使用与YOLO11相同的YOLO格式数据：
-datasets/yolo/bdd100k/data.yaml
-
-保证：
-- 图片一致；
-- 标签一致；
-- 类别顺序一致；
-- train/val划分一致。
-
-支持环境：
-- Apple Silicon MPS；
-- 单GPU CUDA；
-- Kaggle 2×T4 CUDA。
+RT-DETR uses the same YOLO-format data.yaml as the YOLO baseline.
 """
 
 import argparse
+import os
 from pathlib import Path
 
 import torch
@@ -28,108 +13,144 @@ from ultralytics import RTDETR
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_YAML = PROJECT_ROOT / "datasets" / "yolo" / "bdd100k" / "data.yaml"
-OUTPUT_ROOT = PROJECT_ROOT / "results" / "baselines" / "rtdetr"
+DEFAULT_DATA_YAML = PROJECT_ROOT / "datasets" / "yolo" / "bdd100k" / "data.yaml"
+DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "results" / "baselines" / "rtdetr"
+
+
+def project_path(
+    path: Path,
+) -> Path:
+    expanded = path.expanduser()
+
+    if not expanded.is_absolute():
+        expanded = PROJECT_ROOT / expanded
+
+    return expanded.resolve(
+        strict=False,
+    )
+
+
+def default_data_yaml() -> Path:
+    for env_name in (
+        "AUTODRIVE_YOLO_DATA",
+        "BDD100K_YOLO_DATA",
+        "YOLO_DATA",
+    ):
+        configured_path = os.getenv(
+            env_name
+        )
+
+        if configured_path:
+            return project_path(
+                Path(configured_path)
+            )
+
+    return DEFAULT_DATA_YAML
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="训练BDD100K RT-DETR Baseline。"
+        description="Train the BDD100K RT-DETR baseline."
     )
     parser.add_argument(
         "--profile",
         choices=("smoke", "full"),
         default="smoke",
-        help="smoke测试流程，full正式训练。",
+        help="smoke validates the pipeline; full runs the baseline.",
+    )
+    parser.add_argument(
+        "--data",
+        type=Path,
+        default=default_data_yaml(),
+        help="Path to the YOLO data.yaml file.",
     )
     parser.add_argument(
         "--model",
         type=str,
         default="rtdetr-l.pt",
-        help="RT-DETR预训练权重。",
+        help="RT-DETR model name or weights path.",
+    )
+    parser.add_argument(
+        "--resume",
+        nargs="?",
+        const="true",
+        default=None,
+        metavar="CHECKPOINT",
+        help=(
+            "Resume training. Pass without a value for Ultralytics auto-resume, "
+            "or pass a checkpoint path such as runs/train/exp/weights/last.pt."
+        ),
     )
     parser.add_argument(
         "--device",
         type=str,
         default=None,
-        help="训练设备，例如0、0,1、mps。",
+        help="Training device, for example cpu, mps, 0, or 0,1.",
     )
     parser.add_argument(
         "--epochs",
         type=int,
         default=None,
-        help="覆盖默认epoch数量。",
+        help="Override default epoch count.",
     )
     parser.add_argument(
         "--batch",
         type=int,
         default=None,
-        help="覆盖默认batch size。",
+        help="Override batch size.",
     )
     parser.add_argument(
         "--workers",
         type=int,
         default=None,
-        help="数据加载线程数。",
+        help="Override dataloader workers.",
     )
     parser.add_argument(
         "--fraction",
         type=float,
         default=None,
-        help="训练数据比例。",
+        help="Training data fraction.",
     )
     parser.add_argument(
         "--name",
         type=str,
         default=None,
-        help="实验名称。",
+        help="Experiment name.",
+    )
+    parser.add_argument(
+        "--project",
+        type=Path,
+        default=DEFAULT_OUTPUT_ROOT,
+        help="Output project directory.",
     )
     return parser.parse_args()
 
 
 def print_gpu_info() -> None:
-    """
-    输出当前GPU信息。
-    用于确认Kaggle是否成功分配双T4。
-    """
     if torch.cuda.is_available():
-        print(f"CUDA GPU数量: {torch.cuda.device_count()}")
-        for i in range(torch.cuda.device_count()):
-            print(
-                f"GPU {i}: "
-                f"{torch.cuda.get_device_name(i)}"
-            )
-    elif (
+        print(f"CUDA GPU count: {torch.cuda.device_count()}")
+
+        for device_id in range(torch.cuda.device_count()):
+            print(f"GPU {device_id}: {torch.cuda.get_device_name(device_id)}")
+        return
+
+    if (
         hasattr(torch.backends, "mps")
         and torch.backends.mps.is_available()
     ):
         print("Device: Apple MPS")
-    else:
-        print("Device: CPU")
+        return
+
+    print("Device: CPU")
 
 
 def resolve_device(
     requested_device: str | None,
 ) -> str:
-    """
-    自动选择训练设备。
-
-    优先级：
-    1. 用户指定；
-    2. 多GPU CUDA；
-    3. 单GPU CUDA；
-    4. Apple MPS；
-    5. CPU。
-
-    Kaggle双T4返回：
-    0,1
-    """
     if requested_device is not None:
         return requested_device
 
     if torch.cuda.is_available():
-        if torch.cuda.device_count() >= 2:
-            return "0,1"
         return "0"
 
     if (
@@ -144,31 +165,71 @@ def resolve_device(
 def get_default_batch(
     device: str,
 ) -> int:
-    """
-    根据硬件设置默认batch。
-
-    RT-DETR-L显存占用较高：
-    双T4使用batch=8；
-    单GPU使用batch=4；
-    MPS使用batch=1。
-    """
-    if torch.cuda.is_available():
-        if torch.cuda.device_count() >= 2:
-            return 8
+    if device not in {
+        "cpu",
+        "mps",
+    }:
         return 4
-
-    if device == "mps":
-        return 1
 
     return 1
 
 
-def validate_arguments(
-    args: argparse.Namespace,
-) -> None:
-    if not DATA_YAML.exists():
+def amp_enabled(
+    device: str,
+) -> bool:
+    return device not in {
+        "cpu",
+        "mps",
+    }
+
+
+def resolve_resume(
+    model: str,
+    resume: str | None,
+) -> tuple[str, bool]:
+    if resume is None:
+        return model, False
+
+    normalized_resume = resume.lower()
+
+    if normalized_resume in {
+        "0",
+        "false",
+        "no",
+        "off",
+    }:
+        return model, False
+
+    if normalized_resume in {
+        "1",
+        "true",
+        "yes",
+        "on",
+    }:
+        return model, True
+
+    checkpoint_path = project_path(
+        Path(resume)
+    )
+
+    if not checkpoint_path.exists():
         raise FileNotFoundError(
-            f"BDD100K data.yaml不存在: {DATA_YAML}"
+            f"Resume checkpoint does not exist: {checkpoint_path}"
+        )
+
+    return str(checkpoint_path), True
+
+
+def validate_args(
+    args: argparse.Namespace,
+) -> Path:
+    data_yaml = project_path(
+        args.data
+    )
+
+    if not data_yaml.exists():
+        raise FileNotFoundError(
+            f"BDD100K data.yaml does not exist: {data_yaml}"
         )
 
     if (
@@ -176,92 +237,76 @@ def validate_arguments(
         and not 0 < args.fraction <= 1
     ):
         raise ValueError(
-            "fraction必须位于0和1之间。"
+            "fraction must be in the range (0, 1]."
         )
+
+    return data_yaml
 
 
 def build_train_args(
     args: argparse.Namespace,
+    data_yaml: Path,
     device: str,
+    resume_training: bool,
 ) -> dict:
     model_name = Path(args.model).stem
+    project_dir = project_path(
+        args.project
+    )
 
     if args.profile == "smoke":
-        return {
-            "data": str(DATA_YAML),
-            "epochs": (
-                args.epochs
-                if args.epochs is not None
-                else 1
-            ),
+        train_args = {
+            "data": str(data_yaml),
+            "epochs": args.epochs if args.epochs is not None else 1,
             "imgsz": 640,
-            "batch": (
-                args.batch
-                if args.batch is not None
-                else 1
-            ),
+            "batch": args.batch if args.batch is not None else 1,
             "device": device,
-            "workers": (
-                args.workers
-                if args.workers is not None
-                else 0
-            ),
-            "fraction": (
-                args.fraction
-                if args.fraction is not None
-                else 0.005
-            ),
+            "workers": args.workers if args.workers is not None else 0,
+            "fraction": args.fraction if args.fraction is not None else 0.005,
             "val": False,
             "plots": False,
             "cache": False,
             "save": True,
-            "amp": device not in {"mps", "cpu"},
-            "project": str(OUTPUT_ROOT),
+            "amp": amp_enabled(device),
+            "project": str(project_dir),
             "name": args.name or f"{model_name}_smoke",
             "exist_ok": True,
             "seed": 42,
             "deterministic": True,
             "verbose": True,
         }
+    else:
+        train_args = {
+            "data": str(data_yaml),
+            "epochs": args.epochs if args.epochs is not None else 50,
+            "imgsz": 640,
+            "batch": (
+                args.batch
+                if args.batch is not None
+                else get_default_batch(device)
+            ),
+            "device": device,
+            "workers": args.workers if args.workers is not None else 4,
+            "fraction": args.fraction if args.fraction is not None else 1.0,
+            "val": True,
+            "plots": True,
+            "cache": False,
+            "save": True,
+            "save_period": 5,
+            "amp": amp_enabled(device),
+            "project": str(project_dir),
+            "name": args.name or f"{model_name}_baseline",
+            "exist_ok": False,
+            "seed": 42,
+            "deterministic": True,
+            "patience": 10,
+            "verbose": True,
+        }
 
-    return {
-        "data": str(DATA_YAML),
-        "epochs": (
-            args.epochs
-            if args.epochs is not None
-            else 50
-        ),
-        "imgsz": 640,
-        "batch": (
-            args.batch
-            if args.batch is not None
-            else get_default_batch(device)
-        ),
-        "device": device,
-        "workers": (
-            args.workers
-            if args.workers is not None
-            else 4
-        ),
-        "fraction": (
-            args.fraction
-            if args.fraction is not None
-            else 1.0
-        ),
-        "val": True,
-        "plots": True,
-        "cache": False,
-        "save": True,
-        "save_period": 5,
-        "amp": device not in {"mps", "cpu"},
-        "project": str(OUTPUT_ROOT),
-        "name": args.name or f"{model_name}_baseline",
-        "exist_ok": False,
-        "seed": 42,
-        "deterministic": True,
-        "patience": 10,
-        "verbose": True,
-    }
+    if resume_training:
+        train_args["resume"] = True
+
+    return train_args
 
 
 def main() -> None:
@@ -270,40 +315,39 @@ def main() -> None:
     print("\n========== GPU Information ==========")
     print_gpu_info()
 
-    validate_arguments(args)
-
+    data_yaml = validate_args(
+        args
+    )
     device = resolve_device(
         args.device
     )
-
-    train_args = build_train_args(
-        args,
-        device,
+    model_path, resume_training = resolve_resume(
+        model=args.model,
+        resume=args.resume,
     )
-
-    OUTPUT_ROOT.mkdir(
-        parents=True,
-        exist_ok=True,
+    train_args = build_train_args(
+        args=args,
+        data_yaml=data_yaml,
+        device=device,
+        resume_training=resume_training,
     )
 
     print("\n========== RT-DETR Baseline ==========")
     print(f"Profile: {args.profile}")
-    print(f"Model: {args.model}")
+    print(f"Model: {model_path}")
+    print(f"Resume: {resume_training}")
     print(f"Device: {device}")
-    print(f"Data: {DATA_YAML}")
+    print(f"Data: {data_yaml}")
     print(f"Epochs: {train_args['epochs']}")
     print(f"Batch: {train_args['batch']}")
+    print(f"Workers: {train_args['workers']}")
     print(f"Fraction: {train_args['fraction']}")
     print(f"Validation: {train_args['val']}")
-    print(
-        "Output:",
-        OUTPUT_ROOT / train_args["name"],
-    )
+    print(f"Output: {Path(train_args['project']) / train_args['name']}")
 
     model = RTDETR(
-        args.model
+        model_path
     )
-
     model.train(
         **train_args
     )
