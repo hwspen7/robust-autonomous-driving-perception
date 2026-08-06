@@ -1,0 +1,17 @@
+dataset-tools==0.2.4
+ultralytics>=8.3.0
+torch>=2.0.0
+torchvision>=0.15.0
+pycocotools>=2.0.7
+PyYAML>=6.0
+tqdm>=4.66.0
+matplotlib>=3.8.0
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Optional Faster R-CNN / MMDetection support.
+# Install mmcv with OpenMIM for your platform before running Faster R-CNN:
+#   pip install -U openmim
+#   mim install "mmcv>=2.0.0rc4,<2.2.0"
+mmdet==3.3.0
+mmengine>=0.7.1,<1.0.0
