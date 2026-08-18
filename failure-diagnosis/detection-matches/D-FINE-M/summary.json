@@ -1,0 +1,119 @@
+{
+  "elapsed_minutes": 0.4549797972043355,
+  "false_positive_type_counts": {
+    "background_candidate": 14860,
+    "classification_candidate": 3580,
+    "duplicate_candidate": 1188,
+    "localization_candidate": 14803,
+    "overlap_candidate": 1284
+  },
+  "localization_iou": 0.1,
+  "match_iou": 0.5,
+  "model": "D-FINE-M",
+  "num_false_positives": 35715,
+  "num_gt_objects": 185523,
+  "num_matched_predictions": 131717,
+  "num_operating_predictions": 167432,
+  "per_class_status": {
+    "1": {
+      "assignment_conflict_candidate": 84,
+      "classification_error_candidate": 17,
+      "detected": 7868,
+      "localization_error_candidate": 329,
+      "low_confidence_candidate": 3986,
+      "missed": 978
+    },
+    "10": {
+      "assignment_conflict_candidate": 19,
+      "classification_error_candidate": 17,
+      "detected": 23951,
+      "localization_error_candidate": 709,
+      "low_confidence_candidate": 8346,
+      "missed": 1864
+    },
+    "2": {
+      "assignment_conflict_candidate": 1,
+      "classification_error_candidate": 8,
+      "detected": 304,
+      "localization_error_candidate": 12,
+      "low_confidence_candidate": 222,
+      "missed": 102
+    },
+    "3": {
+      "assignment_conflict_candidate": 539,
+      "classification_error_candidate": 22,
+      "detected": 77086,
+      "localization_error_candidate": 3469,
+      "low_confidence_candidate": 18551,
+      "missed": 2839
+    },
+    "4": {
+      "assignment_conflict_candidate": 1,
+      "classification_error_candidate": 13,
+      "detected": 2741,
+      "localization_error_candidate": 17,
+      "low_confidence_candidate": 1330,
+      "missed": 143
+    },
+    "5": {
+      "assignment_conflict_candidate": 1,
+      "classification_error_candidate": 7,
+      "detected": 993,
+      "localization_error_candidate": 5,
+      "low_confidence_candidate": 531,
+      "missed": 60
+    },
+    "6": {
+      "classification_error_candidate": 2,
+      "detected": 1,
+      "low_confidence_candidate": 6,
+      "missed": 6
+    },
+    "7": {
+      "assignment_conflict_candidate": 1,
+      "classification_error_candidate": 4,
+      "detected": 221,
+      "localization_error_candidate": 14,
+      "low_confidence_candidate": 162,
+      "missed": 50
+    },
+    "8": {
+      "assignment_conflict_candidate": 33,
+      "classification_error_candidate": 12,
+      "detected": 506,
+      "localization_error_candidate": 23,
+      "low_confidence_candidate": 321,
+      "missed": 112
+    },
+    "9": {
+      "assignment_conflict_candidate": 12,
+      "classification_error_candidate": 7,
+      "detected": 18046,
+      "localization_error_candidate": 2036,
+      "low_confidence_candidate": 5151,
+      "missed": 1632
+    }
+  },
+  "prediction_audit": {
+    "maximum_predictions_per_image": 300,
+    "maximum_score": 0.9769054651260376,
+    "minimum_predictions_per_image": 300,
+    "minimum_score": 0.007823798805475235,
+    "negative_size_bbox": 2,
+    "num_images_with_predictions": 10000,
+    "out_of_bounds_bbox": 17249,
+    "prediction_count": 3000000,
+    "prediction_file": "/root/rivermind-data/autodrive/results/evaluation/unified_detection/canonical_predictions/D-FINE-M.json",
+    "prediction_sha256": "10b4159d0f52e412714ac9ae076ac574ebbb74321ddcebab03e2bdbad55e3ebd",
+    "zero_area_bbox": 0
+  },
+  "status_counts": {
+    "assignment_conflict_candidate": 691,
+    "classification_error_candidate": 109,
+    "detected": 131717,
+    "localization_error_candidate": 6614,
+    "low_confidence_candidate": 38606,
+    "missed": 7786
+  },
+  "threshold": 0.4963708519935608
+}

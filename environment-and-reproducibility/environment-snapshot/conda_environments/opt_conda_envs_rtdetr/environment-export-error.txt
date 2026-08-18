@@ -1,0 +1,95 @@
+
+# >>>>>>>>>>>>>>>>>>>>>> ERROR REPORT <<<<<<<<<<<<<<<<<<<<<<
+
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.10/site-packages/conda/exception_handler.py", line 17, in __call__
+        return func(*args, **kwargs)
+      File "/opt/conda/lib/python3.10/site-packages/conda_env/cli/main.py", line 56, in do_call
+        exit_code = getattr(module, func_name)(arguments, parser)
+      File "/opt/conda/lib/python3.10/site-packages/conda_env/cli/main_export.py", line 91, in execute
+        env = from_environment(
+      File "/opt/conda/lib/python3.10/site-packages/conda_env/env.py", line 113, in from_environment
+        precs = tuple(PrefixGraph(pd.iter_records()).graph)
+      File "/opt/conda/lib/python3.10/site-packages/conda/core/prefix_data.py", line 153, in iter_records
+        return iter(self._prefix_records.values())
+      File "/opt/conda/lib/python3.10/site-packages/conda/core/prefix_data.py", line 187, in _prefix_records
+        return self.__prefix_records or self.load() or self.__prefix_records
+      File "/opt/conda/lib/python3.10/site-packages/conda/common/io.py", line 85, in decorated
+        return f(*args, **kwds)
+      File "/opt/conda/lib/python3.10/site-packages/conda/core/prefix_data.py", line 82, in load
+        self._load_site_packages()
+      File "/opt/conda/lib/python3.10/site-packages/conda/core/prefix_data.py", line 323, in _load_site_packages
+        python_record = read_python_record(
+      File "/opt/conda/lib/python3.10/site-packages/conda/gateways/disk/read.py", line 277, in read_python_record
+        pydist = PythonDistribution.init(prefix_path, anchor_file, python_version)
+      File "/opt/conda/lib/python3.10/site-packages/conda/common/pkg_formats/python.py", line 81, in init
+        return PythonInstalledDistribution(prefix_path, anchor_file, python_version)
+      File "/opt/conda/lib/python3.10/site-packages/conda/common/pkg_formats/python.py", line 417, in __init__
+        super().__init__(anchor_full_path, python_version)
+      File "/opt/conda/lib/python3.10/site-packages/conda/common/pkg_formats/python.py", line 113, in __init__
+        raise RuntimeError("Path not found: %s" % anchor_full_path)
+    RuntimeError: Path not found: /opt/conda/envs/rtdetr/lib/python3.10/site-packages/numpy-2.2.6.dist-info
+
+`$ /opt/conda/bin/conda-env export -p /opt/conda/envs/rtdetr --no-builds`
+
+  environment variables:
+                 CIO_TEST=<not set>
+  CONDA_AUTO_UPDATE_CONDA=false
+        CONDA_DEFAULT_ENV=base
+                CONDA_EXE=/opt/conda/bin/conda
+         CONDA_NO_PLUGINS=true
+             CONDA_PREFIX=/opt/conda
+    CONDA_PROMPT_MODIFIER=(base)
+         CONDA_PYTHON_EXE=/opt/conda/bin/python
+               CONDA_ROOT=/opt/conda
+              CONDA_SHLVL=1
+           CURL_CA_BUNDLE=<not set>
+               LD_PRELOAD=<not set>
+                     PATH=/opt/conda/bin:/opt/conda/condabin:/usr/local/nvidia/bin:/usr/local/cu
+                          da/bin:/opt/conda/bin:/home/user/micromamba/bin:/usr/local/nvidia/bin:
+                          /venv/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin
+                          :/usr/bin:/sbin:/bin
+       REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+            SSL_CERT_FILE=<not set>
+
+     active environment : base
+    active env location : /opt/conda
+            shell level : 1
+       user config file : /root/.condarc
+ populated config files : 
+          conda version : 23.9.0
+    conda-build version : 24.3.0
+         python version : 3.10.14.final.0
+       virtual packages : __archspec=1=zen3
+                          __glibc=2.35=0
+                          __linux=5.15.0=0
+                          __unix=0=0
+       base environment : /opt/conda  (writable)
+      conda av data dir : /opt/conda/etc/conda
+  conda av metadata url : None
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /opt/conda/pkgs
+                          /root/.conda/pkgs
+       envs directories : /opt/conda/envs
+                          /root/.conda/envs
+               platform : linux-64
+             user-agent : conda/23.9.0 requests/2.31.0 CPython/3.10.14 Linux/5.15.0-60-generic ubuntu/22.04.3 glibc/2.35
+                UID:GID : 0:0
+             netrc file : None
+           offline mode : False
+
+
+An unexpected error has occurred. Conda has prepared the above report.
+If you suspect this error is being caused by a malfunctioning plugin,
+consider using the --no-plugins option to turn off plugins.
+
+Example: conda --no-plugins install <package>
+
+Alternatively, you can set the CONDA_NO_PLUGINS environment variable on
+the command line to run the command without plugins enabled.
+
+Example: CONDA_NO_PLUGINS=true conda install <package>
+

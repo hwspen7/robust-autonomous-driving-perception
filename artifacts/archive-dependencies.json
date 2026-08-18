@@ -1,0 +1,1484 @@
+{
+  "version": "project-manifest-dependency-index",
+  "status": "complete",
+  "created_utc": "2026-08-18T08:25:13.142736+00:00",
+  "scientific_manifests_modified": false,
+  "manifest_count": 45,
+  "manifest_entry_count": 581,
+  "direct_entry_count": 398,
+  "dependency_count": 183,
+  "resolution_counts": {
+    "active-shared": 21,
+    "local-archive": 162
+  },
+  "interpretation": {
+    "active-shared": "The frozen logical entry reuses an exact byte-identical active project artifact.",
+    "local-archive": "The exact frozen artifact remains in the complementary local archive."
+  },
+  "dependencies": [
+    {
+      "manifest": "architecture-intervention/inputs/effective-development-split/artifact_manifest.json",
+      "logical_path": "formal_gate_protocol_v3.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/formal_gate_protocol_v3.json",
+      "bytes": 7223,
+      "sha256": "1f19201fdd1d456b32a64135461fe61d6a7ce945ff5adbcbb4fa879bd7841b8f"
+    },
+    {
+      "manifest": "architecture-intervention/inputs/projected-p2-definition/artifact_manifest.json",
+      "logical_path": "yolo11m_p2_projected_coco_init.pt",
+      "resolution": "active-shared",
+      "physical_path": "architecture-intervention/checkpoints/projected-p2-initialization.pt",
+      "bytes": 41786963,
+      "sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd"
+    },
+    {
+      "manifest": "architecture-intervention/results/development-gate/evaluations/p2_projected_epoch10/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/architecture_gate/formal_gate_v4/evaluations/p2_projected_epoch10/predictions.json",
+      "bytes": 158673344,
+      "sha256": "cc4998a5341a9a80309d3d5878723975d09cef1229a383f9ef66a80653c25154"
+    },
+    {
+      "manifest": "architecture-intervention/results/development-gate/evaluations/p2_projected_epoch20/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/architecture_gate/formal_gate_v4/evaluations/p2_projected_epoch20/predictions.json",
+      "bytes": 151872996,
+      "sha256": "2b28fe786678212bae9418be379e2f448aa8cd01c8e16f1a3a781691964ec314"
+    },
+    {
+      "manifest": "architecture-intervention/results/development-gate/evaluations/standard_epoch10/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/architecture_gate/formal_gate_v4/evaluations/standard_epoch10/predictions.json",
+      "bytes": 117009354,
+      "sha256": "20255dc7087424f942dcd7a8457be03ac19684a8f42f085f2e714d7a7a51af73"
+    },
+    {
+      "manifest": "architecture-intervention/results/development-gate/evaluations/standard_epoch20/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/architecture_gate/formal_gate_v4/evaluations/standard_epoch20/predictions.json",
+      "bytes": 111579575,
+      "sha256": "e8ba8c8fb0495e5d6a55414ead73d55635823683c13fdd337eee9c76a532d674"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/common40/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/common40/image_summary.json",
+      "bytes": 1117778,
+      "sha256": "ca97d7a35eece9998ec2135f69a94f6d5c135cfdc9d42a66e1bad5ebdc67950e"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/common40/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/common40/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/common40/metadata.json",
+      "bytes": 2662,
+      "sha256": "6dfd1cb9a245857a54521a9165794e0a096e47beda86abca3dda2f2b2ec6714b"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/common40/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/common40/predictions.json",
+      "bytes": 297953943,
+      "sha256": "12c1e0f4ceffe06fc31def28b7d1c37206c241fafa0ee008d8e22d00eecefadb"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_scalar/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_scalar/image_summary.json",
+      "bytes": 1118291,
+      "sha256": "8a299e80de5e7bf6984eceb84ab35bbff691f8609e11852b56e892319d8cbb90"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_scalar/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_scalar/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_scalar/metadata.json",
+      "bytes": 2644,
+      "sha256": "8ff9b5df3794259150e0720c68193d2f1326a1f098c28ac4304bcc33a7cae632"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_scalar/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_scalar/predictions.json",
+      "bytes": 334754831,
+      "sha256": "6f340eec9e761148db65eb50ac5465123755b43f335964562b24caacad335bf2"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_typed/image_summary.json",
+      "bytes": 1118298,
+      "sha256": "3e7c3092d3aca167e1adb2f0c4e39dd6e7bf1bf323c9b9899075bbb559c6d01c"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_typed/metadata.json",
+      "bytes": 2643,
+      "sha256": "02286548c561cd4e9b6f0723cb0b514f73be98086dc3ce54fb3a5144fefc71f1"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_typed/predictions.json",
+      "bytes": 335202251,
+      "sha256": "5c83bad6627581980a3abcd8fb7599ca828fe9f3b0c9e444f96e9661d727ce82"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed_v2/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_typed_v2/image_summary.json",
+      "bytes": 1118284,
+      "sha256": "cda143467c542b6b6dc6b44e754f20c161639a57e84adf78293deadb51d135ec"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed_v2/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed_v2/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_typed_v2/metadata.json",
+      "bytes": 2652,
+      "sha256": "34400bee3f492f7c9b461da88e4d9706ce1d04016a865786f474645727622d6f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_typed_v2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_typed_v2/predictions.json",
+      "bytes": 334010918,
+      "sha256": "4a5bb647f94b586530079ce3c3a413aedb950144c72514174188fdf60a6a8c2b"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_uniform/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_uniform/image_summary.json",
+      "bytes": 1118208,
+      "sha256": "1484c6b5a92a14798b8cf6eb7018ed5cbbd8bf0fcd7e49cfcc1188c844af3e84"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_uniform/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_uniform/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_uniform/metadata.json",
+      "bytes": 2641,
+      "sha256": "48874b6f67b831618fc2e44906e1d9f221ffe05b1dfc6374038364df3760b396"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/gate_uniform/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/gate_uniform/predictions.json",
+      "bytes": 329073289,
+      "sha256": "3d69847769a1b7c344c369baa67a25cf9119808cbcb4a66cfbcec185c21f4ab8"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e100/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e100/image_summary.json",
+      "bytes": 1117594,
+      "sha256": "8e1d2d9306186865e086f2bab32cdcd328d16cbdbd42c282b6a8c7eac20dda2b"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e100/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e100/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e100/metadata.json",
+      "bytes": 2664,
+      "sha256": "20d81fa0d6f4cfb81dcf22c1e3a5b58b26a8bb7f631d730ae0ab75bb688d9c8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e100/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e100/predictions.json",
+      "bytes": 288483404,
+      "sha256": "12ed01e6839c6b1dd67df64d4a18b7f6df345ae7e9d54f99eda1cea6f3c198ff"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e56/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e56/image_summary.json",
+      "bytes": 1118007,
+      "sha256": "f0b96baf129ea6032f7ffc4d5a20f02459f5a09020bfc9f257d019e057237dce"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e56/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e56/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e56/metadata.json",
+      "bytes": 2655,
+      "sha256": "cd346afdd416e614090c5c4aa5c5a41a2b32abd4d80768dc1bf45602331f2be9"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/risk_e56/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e56/predictions.json",
+      "bytes": 313413424,
+      "sha256": "de6152f37d39cbde220b1d2230745e43c0fee32546c539e092a8b08a1f97e698"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e100/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e100/image_summary.json",
+      "bytes": 1117542,
+      "sha256": "91bd9b4bd5a9add87f45844423f2a61dd5d4d0fec7abf1031f86b06b067a9f97"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e100/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e100/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e100/metadata.json",
+      "bytes": 2663,
+      "sha256": "938a0c2a4d88921d6c03edfd9860d0b9b016fc04e28425496cf48cb9fd4e5ade"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e100/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e100/predictions.json",
+      "bytes": 287432776,
+      "sha256": "975043f38bdd37be04ce1a004bcd3154ed8ff7073c2bd75c20c38809e2850b89"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e56/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e56/image_summary.json",
+      "bytes": 1117976,
+      "sha256": "93e660dbeb3082bc76b34663b3560487d6534d47f475f4271f1d767406e935ea"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e56/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e56/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e56/metadata.json",
+      "bytes": 2656,
+      "sha256": "9e02ed148c07cbad6553fd9d4d9827114d21aef5e9fc9889d0e741240b123d48"
+    },
+    {
+      "manifest": "final-testing/canonical-clean/artifact_manifest.json",
+      "logical_path": "predictions/uniform_e56/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e56/predictions.json",
+      "bytes": 311631487,
+      "sha256": "38b8944c55f65ca1c67456489fd88a259fafc28887b8385e0dfa82bbe1417af9"
+    },
+    {
+      "manifest": "final-testing/frozen-protocol/artifact-manifest.json",
+      "logical_path": "final_testing_protocol_v1.json",
+      "resolution": "active-shared",
+      "physical_path": "final-testing/frozen-protocol/final-testing-protocol.json",
+      "bytes": 13677,
+      "sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe"
+    },
+    {
+      "manifest": "final-testing/frozen-protocol/artifact-manifest.json",
+      "logical_path": "input_inventory.json",
+      "resolution": "active-shared",
+      "physical_path": "final-testing/frozen-protocol/input-inventory.json",
+      "bytes": 25233,
+      "sha256": "47354efac7fa634a8e6c713de8adb188ee40be265c25202f35bbb657ba23d16d"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/D-FINE-M/false_positives.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_high/D-FINE-M/false_positives.csv",
+      "bytes": 1978302,
+      "sha256": "cbc686dfd0b85173d4efceca8997a7b873c84b1410b617711321f9c9814a2cb8"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/D-FINE-M/image_summary.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_high/D-FINE-M/image_summary.csv",
+      "bytes": 391313,
+      "sha256": "36c060cd799854bc70114227b23af00f2b70d29af12f980c5e16a14968e4f8b6"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/D-FINE-M/object_matches.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_high/D-FINE-M/object_matches.csv",
+      "bytes": 42432698,
+      "sha256": "f2d2e401f3b3db7a958647304d6065db943752930ec63d033e3b0a91dd50371a"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/D-FINE-M/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_high/D-FINE-M/summary.json",
+      "bytes": 3534,
+      "sha256": "290e00910bd718fcb157f51c0a666c1a074f230702727c569cad1c511d1cc95c"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/YOLO11m/false_positives.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/YOLO11m/false_positives.csv",
+      "bytes": 5893084,
+      "sha256": "5b05f537e42e1e0b76c30944f114f8c1f7287884da41f5fec4341905c0213838"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/YOLO11m/image_summary.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/YOLO11m/image_summary.csv",
+      "bytes": 379972,
+      "sha256": "f6b67ec4e43b9e18fd7fd2d98b6967773248b47f18ea7decabf46bd7755b3c31"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/YOLO11m/object_matches.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/YOLO11m/object_matches.csv",
+      "bytes": 42742785,
+      "sha256": "bdc3c4dad0d607a9d4111c47571a77679c5464d1e026c8f8429115f3f69107fc"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/YOLO11m/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_high/YOLO11m/summary.json",
+      "bytes": 3539,
+      "sha256": "82dbe268d9a5f667316e4317fd1df6559fbdd34b5f3c681b621980e1bedd715f"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_high/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_high/metadata.json",
+      "bytes": 9361,
+      "sha256": "667c99f2167fd15fd6b2a0d97b2feb09e47985bed0a462d46b59de194fbe3c77"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/D-FINE-M/false_positives.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_low/D-FINE-M/false_positives.csv",
+      "bytes": 9170172,
+      "sha256": "5f199e8015fc01e32ae267c5006a615840784af583db04786285fcff3aad4bb7"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/D-FINE-M/image_summary.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_low/D-FINE-M/image_summary.csv",
+      "bytes": 395730,
+      "sha256": "e0d5acf6bf1a1fc65ec340d059e1b0387edb83fde8933d1b978a10a8894b3944"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/D-FINE-M/object_matches.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_low/D-FINE-M/object_matches.csv",
+      "bytes": 43788536,
+      "sha256": "f6a22876f5dd14af3aa3b75bb5dfe93a0d1fc932bbaa246f0932fb2102dd5b17"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/D-FINE-M/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_low/D-FINE-M/summary.json",
+      "bytes": 3499,
+      "sha256": "39bc9503073249d471e97e16544037bb0336bd1cc0c29984473f97309534eac5"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/YOLO11m/false_positives.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/YOLO11m/false_positives.csv",
+      "bytes": 5893084,
+      "sha256": "5b05f537e42e1e0b76c30944f114f8c1f7287884da41f5fec4341905c0213838"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/YOLO11m/image_summary.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/YOLO11m/image_summary.csv",
+      "bytes": 379972,
+      "sha256": "f6b67ec4e43b9e18fd7fd2d98b6967773248b47f18ea7decabf46bd7755b3c31"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/YOLO11m/object_matches.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/YOLO11m/object_matches.csv",
+      "bytes": 42742785,
+      "sha256": "bdc3c4dad0d607a9d4111c47571a77679c5464d1e026c8f8429115f3f69107fc"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/YOLO11m/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_low/YOLO11m/summary.json",
+      "bytes": 3539,
+      "sha256": "efe88249caf87ee1e5f95d718a5f1b1383d26168e2bb254d0c862958c39c014c"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/dfine_low/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/dfine_low/metadata.json",
+      "bytes": 9323,
+      "sha256": "4197e8aaed271dd0313917cc2e1755877f82eeff1c89f13f65dd0f8cae8411b4"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/D-FINE-M/false_positives.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/D-FINE-M/false_positives.csv",
+      "bytes": 4804349,
+      "sha256": "fe4755d04e7fe111d3e97d117a14ab6262d1d4b082b9a1b727c246b3d990099b"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/D-FINE-M/image_summary.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/D-FINE-M/image_summary.csv",
+      "bytes": 392852,
+      "sha256": "1bfe641bf98d9ed79dc4d9b5ac8fce128ea24c0648744d5ea598f92c67fab67f"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/D-FINE-M/object_matches.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/D-FINE-M/object_matches.csv",
+      "bytes": 43306519,
+      "sha256": "8ea36ddf1acf71f26e53ff0292ff9072db2e70bdd3e28ab41531029b2a443a95"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/D-FINE-M/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_high/D-FINE-M/summary.json",
+      "bytes": 3553,
+      "sha256": "cbbca547000af9259e29a5a532a4cc8864c3180677d2ccb96b32f2abc5c17078"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/YOLO11m/false_positives.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_high/YOLO11m/false_positives.csv",
+      "bytes": 2355090,
+      "sha256": "c718f11c8c26fe6ee8b76590e80c14756cc9e35ea9ac2deb348b625cceb34dc3"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/YOLO11m/image_summary.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_high/YOLO11m/image_summary.csv",
+      "bytes": 377714,
+      "sha256": "dc459c004cd5df79fca8f0bdbce94221455e2edabe1f9772f149c1bc2f7b3948"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/YOLO11m/object_matches.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_high/YOLO11m/object_matches.csv",
+      "bytes": 41983078,
+      "sha256": "d76004173fb6851ebbcd1f1ea38c010fe7f88b80f280d94df00ddb664eb6b917"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/YOLO11m/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_high/YOLO11m/summary.json",
+      "bytes": 3518,
+      "sha256": "cc92665fb5fb3fbb038460c760be8bc46a78d9e87bad46f3dd17b81bcec444ba"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_high/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_high/metadata.json",
+      "bytes": 9359,
+      "sha256": "10049cd740d6d987d29ec3dea4f064ff2fd7325e295181df0271ffb71b60ef1b"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/D-FINE-M/false_positives.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/D-FINE-M/false_positives.csv",
+      "bytes": 4804349,
+      "sha256": "fe4755d04e7fe111d3e97d117a14ab6262d1d4b082b9a1b727c246b3d990099b"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/D-FINE-M/image_summary.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/D-FINE-M/image_summary.csv",
+      "bytes": 392852,
+      "sha256": "1bfe641bf98d9ed79dc4d9b5ac8fce128ea24c0648744d5ea598f92c67fab67f"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/D-FINE-M/object_matches.csv",
+      "resolution": "active-shared",
+      "physical_path": "failure-diagnosis/detection-matches/D-FINE-M/object_matches.csv",
+      "bytes": 43306519,
+      "sha256": "8ea36ddf1acf71f26e53ff0292ff9072db2e70bdd3e28ab41531029b2a443a95"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/D-FINE-M/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_low/D-FINE-M/summary.json",
+      "bytes": 3554,
+      "sha256": "e9b1d68d2bfe2f42e09c06654251a0079f982a96dfb5a3a5bcb1b75b14091368"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/YOLO11m/false_positives.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_low/YOLO11m/false_positives.csv",
+      "bytes": 11027274,
+      "sha256": "96f8cae3b3ac5f7501f185d991c4ea3ab8f835c2c321716af7039cfe11eee36c"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/YOLO11m/image_summary.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_low/YOLO11m/image_summary.csv",
+      "bytes": 383584,
+      "sha256": "c557cda6433fa180b82c65f355edd5fed2620c867df476fcc57a59bf9d45abd3"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/YOLO11m/object_matches.csv",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_low/YOLO11m/object_matches.csv",
+      "bytes": 43157236,
+      "sha256": "febd99b1c36ec47327bc7c9799bc5a0726188eba207dacea28ffd3086d1b6e71"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/YOLO11m/summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_low/YOLO11m/summary.json",
+      "bytes": 3525,
+      "sha256": "0bf62f3d17827fb173a12f9fa9bf84581edd85a293ed73c52f34e43acc921ad3"
+    },
+    {
+      "manifest": "final-testing/threshold-sensitivity/artifact_manifest.json",
+      "logical_path": "teacher_matches/yolo_low/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/threshold_sensitivity_v1/teacher_matches/yolo_low/metadata.json",
+      "bytes": 9367,
+      "sha256": "8500dd2516319fa085a23390df37e88a83a2fa89ef76357d79e9c610c5b7b394"
+    },
+    {
+      "manifest": "formal-training/common-training/training-records/artifact_manifest.json",
+      "logical_path": "weights/best.pt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/best.pt",
+      "bytes": 41802609,
+      "sha256": "1316af68abe0a1cae0cf63932cf6fc733a211b8f262c6eecc0896358291b31fe"
+    },
+    {
+      "manifest": "formal-training/common-training/training-records/artifact_manifest.json",
+      "logical_path": "weights/common40_ema.pt",
+      "resolution": "active-shared",
+      "physical_path": "formal-training/checkpoints/common-epoch-40.pt",
+      "bytes": 41802609,
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3"
+    },
+    {
+      "manifest": "formal-training/common-training/training-records/artifact_manifest.json",
+      "logical_path": "weights/last.pt",
+      "resolution": "active-shared",
+      "physical_path": "formal-training/checkpoints/common-epoch-40.pt",
+      "bytes": 41802609,
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3"
+    },
+    {
+      "manifest": "formal-training/risk-branch/training-records/artifact_manifest.json",
+      "logical_path": "weights/best.pt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/best.pt",
+      "bytes": 41805169,
+      "sha256": "4d806006863b17713d69fdc684473066ab78a372096616aa0f8bb7bd459ab4e6"
+    },
+    {
+      "manifest": "formal-training/risk-branch/training-records/artifact_manifest.json",
+      "logical_path": "weights/last.pt",
+      "resolution": "active-shared",
+      "physical_path": "formal-training/checkpoints/risk-epoch-100.pt",
+      "bytes": 41805169,
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a"
+    },
+    {
+      "manifest": "formal-training/risk-branch/training-records/artifact_manifest.json",
+      "logical_path": "weights/rebu_yolo100_ema.pt",
+      "resolution": "active-shared",
+      "physical_path": "formal-training/checkpoints/risk-epoch-100.pt",
+      "bytes": 41805169,
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/common_e40/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/common40/image_summary.json",
+      "bytes": 1117778,
+      "sha256": "ca97d7a35eece9998ec2135f69a94f6d5c135cfdc9d42a66e1bad5ebdc67950e"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/common_e40/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/common_e40/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/common_e40/metadata.json",
+      "bytes": 2653,
+      "sha256": "af4d38b7df1f9692acef36b25194465ebdf9f12bea0551fb5bd3bde9d70189ba"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e100/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e100/image_summary.json",
+      "bytes": 1117594,
+      "sha256": "8e1d2d9306186865e086f2bab32cdcd328d16cbdbd42c282b6a8c7eac20dda2b"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e100/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e100/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e100/metadata.json",
+      "bytes": 2659,
+      "sha256": "4b53b9a2f16dd78112422ebacfaeaaa4782e7fa817adda92a1394e28799d3729"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e41/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e41/image_summary.json",
+      "bytes": 1118153,
+      "sha256": "6c8648213ded7a666b0fe9827af464aea140122422d3b8ca83356550333657d5"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e41/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e41/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e41/metadata.json",
+      "bytes": 2646,
+      "sha256": "b56af06c2b8fbd5bca0c164e70770402dfbef309d89b82c257e9ee0826a19bd3"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e46/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e46/image_summary.json",
+      "bytes": 1118149,
+      "sha256": "cba5cf44f4bd9cce9e13399b38ec372e23eeb3ffb82cb0a2dc349528ccae31ee"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e46/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e46/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e46/metadata.json",
+      "bytes": 2648,
+      "sha256": "ba8c6854c1972759aa40b74dc5fefe1af25efa8b2e0f0bdefd74a625d323093c"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e51/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e51/image_summary.json",
+      "bytes": 1118085,
+      "sha256": "bbb5a945e3d06f38c5f26a06c3f31705a8b9868ea8db4ccd42e167ad2d845361"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e51/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e51/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e51/metadata.json",
+      "bytes": 2649,
+      "sha256": "8e4f3bb3e8711f19e15b723aa1aa14e403c5be0d89970e0309f8381676198a6d"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e56/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/risk_e56/image_summary.json",
+      "bytes": 1118007,
+      "sha256": "f0b96baf129ea6032f7ffc4d5a20f02459f5a09020bfc9f257d019e057237dce"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e56/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e56/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e56/metadata.json",
+      "bytes": 2650,
+      "sha256": "fe9f2857c0dfcdac195bd133e5a13ec1ed03747b1837eee169b04abed1e3ee39"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e61/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e61/image_summary.json",
+      "bytes": 1117954,
+      "sha256": "8037363fe8e448880349defa91e4aba37f2449db93a1a733b8e929e126d5c80c"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e61/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e61/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e61/metadata.json",
+      "bytes": 2649,
+      "sha256": "7e2a2573b818530497ff8fb042660c9d397f7c11b71bee3dca49ef71fc5611ff"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e66/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e66/image_summary.json",
+      "bytes": 1117913,
+      "sha256": "31a3474bfa3598f6100af1275f5b10ab65612d5a388cc3233915fffd38bed4e3"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e66/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e66/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e66/metadata.json",
+      "bytes": 2649,
+      "sha256": "5252125d108a2248948b6d709ca4a5ff73234e7c286cb236256e01ec0d10581f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e71/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e71/image_summary.json",
+      "bytes": 1117857,
+      "sha256": "e855ea2f9d834b9e7df9f4d294a55ba67268fd563d5e11528ecaf886cf4087dd"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e71/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e71/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e71/metadata.json",
+      "bytes": 2649,
+      "sha256": "b2729c93c5c5041b07b86e5e27a4997dd9ccd422817ac0854e3f39f5e533e04f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e76/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e76/image_summary.json",
+      "bytes": 1117790,
+      "sha256": "feadb3d87041ee48d76018ee3b7c4c69f09b8b287021ac704a71defa37fb1ddb"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e76/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e76/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e76/metadata.json",
+      "bytes": 2648,
+      "sha256": "c8ebddce13d1a877cd073489a0c27ac08a50394ee54c78250bc16580133c56c7"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e81/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e81/image_summary.json",
+      "bytes": 1117738,
+      "sha256": "0ceb15077297af6277854e77c74eb38c20a443d814777fad9a26e1ebb18b2812"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e81/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e81/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e81/metadata.json",
+      "bytes": 2649,
+      "sha256": "0aa2bfbadcd236b5831fc0c981d7a9d460961bdb68e051761bb9d0a2c11e7396"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e86/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e86/image_summary.json",
+      "bytes": 1117676,
+      "sha256": "3b055f2bcdd8bb085a3e5b0bba4ca6fe3b803dedf2e86bcc3547670c5bd081c8"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e86/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e86/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e86/metadata.json",
+      "bytes": 2649,
+      "sha256": "f5a000a42d8c829b6821e8bd9179e8dc7e928f4df0d7473658d2d5b6ee9fc66f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e91/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e91/image_summary.json",
+      "bytes": 1117639,
+      "sha256": "96893a5b8f05228f3a938ad11413efddc3a8f914b3167fe7df9210c3f29bba72"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e91/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e91/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e91/metadata.json",
+      "bytes": 2649,
+      "sha256": "8886fb576371982f6e4aca548fd8613f22c7d2dba52bca4820246dffe5fd8d7f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e96/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e96/image_summary.json",
+      "bytes": 1117613,
+      "sha256": "3247862a0354e7476c94b221a742be2a566a17885c71e15728d7d32d097e5e7b"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e96/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/rebu_risk_e96/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/rebu_risk_e96/metadata.json",
+      "bytes": 2649,
+      "sha256": "98ee99102021c69baaf5c8b7c525ad9caa840daea9c677c536da0511551b033f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e100/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e100/image_summary.json",
+      "bytes": 1117542,
+      "sha256": "91bd9b4bd5a9add87f45844423f2a61dd5d4d0fec7abf1031f86b06b067a9f97"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e100/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e100/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e100/metadata.json",
+      "bytes": 2652,
+      "sha256": "81491d42b09800dbf28e5ffa0bbcc7b7275f46286154c34168b94e3ac9d5dad8"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e41/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e41/image_summary.json",
+      "bytes": 1118048,
+      "sha256": "b3ce4445834a20a99824d66d70ea8fb80742c9f2ead77ed91a71e16bf4559073"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e41/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e41/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e41/metadata.json",
+      "bytes": 2644,
+      "sha256": "c5719ff92bd3696c8128c38d5ffbaf8bcd2569f813ef7a2e1f9ff45300d2e0bf"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e46/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e46/image_summary.json",
+      "bytes": 1118136,
+      "sha256": "2dd0e25982aaf76922c5cbe64373bd7e0b492304883ef9706eefd6165fe2e6e4"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e46/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e46/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e46/metadata.json",
+      "bytes": 2645,
+      "sha256": "6a729622a78040534622559e57c9412cdfb21ee17c013df35ab8e0fa9d34e1a7"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e51/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e51/image_summary.json",
+      "bytes": 1118018,
+      "sha256": "1266dedbd28b51689b918cdfb1559bbf162962f64aa5435baf56de718368cd0d"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e51/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e51/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e51/metadata.json",
+      "bytes": 2646,
+      "sha256": "2d78fd688d60f6b0a066e6abd5ff2d773406a68bfd28ddf49c1f1d75a738d2e5"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e56/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/canonical_clean_v1/predictions/uniform_e56/image_summary.json",
+      "bytes": 1117976,
+      "sha256": "93e660dbeb3082bc76b34663b3560487d6534d47f475f4271f1d767406e935ea"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e56/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e56/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e56/metadata.json",
+      "bytes": 2646,
+      "sha256": "cadefb76cc71b6d72bdf21b1dd9c3223472e7a8be940e5da2f0a04fcb6aa191d"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e61/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e61/image_summary.json",
+      "bytes": 1117948,
+      "sha256": "671688dd942042143c2f5045551b63c3502ce2e967da87112414465702f0c4ca"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e61/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e61/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e61/metadata.json",
+      "bytes": 2645,
+      "sha256": "68ee3c5f15cd7663e131b4d31b260b924120c10ec20ffa1520eb1ac62d3be4c1"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e66/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e66/image_summary.json",
+      "bytes": 1117892,
+      "sha256": "48dceb6a7c8d1814462155e67f351db9128e450c465aec201333f453f960a9c8"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e66/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e66/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e66/metadata.json",
+      "bytes": 2645,
+      "sha256": "08f49bcc95544c8ea926c6363347e954cd685db630f5422e21ecb27a8274a318"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e71/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e71/image_summary.json",
+      "bytes": 1117827,
+      "sha256": "9f26cb12ddf8dd6193a7357c8ce4a6faf2f8d44ff46eb1c001c507a21cd3f354"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e71/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e71/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e71/metadata.json",
+      "bytes": 2644,
+      "sha256": "ced67754f618ea8e8284cfe0ba91f8d05532c91531c4c66542de66f9393684ab"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e76/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e76/image_summary.json",
+      "bytes": 1117774,
+      "sha256": "aa4d172f314027aa6401232cd281c10db67dc09f1955c4c2aefc02cb885deea1"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e76/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e76/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e76/metadata.json",
+      "bytes": 2645,
+      "sha256": "0fa9488d375997520e014501cf612c53c2c768c1d01fcd7d491d8580d71b7967"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e81/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e81/image_summary.json",
+      "bytes": 1117711,
+      "sha256": "ce21a0cd8beda6a7c7fdb8ed8699f395f292be75f20d03d35b5411ef5872f78c"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e81/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e81/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e81/metadata.json",
+      "bytes": 2645,
+      "sha256": "4d20189d82e903d0f4316bd7a3267dd0e2c5333c58cb7495b38f0e9ebea095fe"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e86/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e86/image_summary.json",
+      "bytes": 1117639,
+      "sha256": "ef9c77674a8aa4930bd02569249f6c40a8f9257a879c535a2a2c3d063ddd59f8"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e86/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e86/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e86/metadata.json",
+      "bytes": 2645,
+      "sha256": "a6cb7ec1c9213b87cee758dc6b7ef167dd0d30f37a8476fa4862d00d694eb59b"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e91/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e91/image_summary.json",
+      "bytes": 1117598,
+      "sha256": "3b349c89c5a45dfb72f5e90beb476062398379c4337c13b77e5e40599eaa2349"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e91/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e91/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e91/metadata.json",
+      "bytes": 2645,
+      "sha256": "4ee8f705bd136b0b222ec9677bf1b3357716de29b02ff83721fd30c9f445a9ac"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e96/image_summary.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e96/image_summary.json",
+      "bytes": 1117570,
+      "sha256": "db1f3a609a7f15a6c0a39ace17b7ec79ee284f6e132d0b4a81bb5a527d0b5e8e"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e96/inference_paths.txt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/segmentation/yolo11m_seg_bdd100k_val/inference_paths.txt",
+      "bytes": 960000,
+      "sha256": "f10fb171a853bd4917b4f4893f396d3d35949333b2f1107be58c487b204bcd8f"
+    },
+    {
+      "manifest": "formal-training/training-trajectory/checkpoint-evaluation/artifact_manifest.json",
+      "logical_path": "temporary_predictions/uniform_e96/metadata.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/temporary_predictions/uniform_e96/metadata.json",
+      "bytes": 2645,
+      "sha256": "0d062399d7bafee229b4742b291a9b6511eb94fcbc758fb41145986839a95917"
+    },
+    {
+      "manifest": "formal-training/uniform-branch/training-records/artifact_manifest.json",
+      "logical_path": "weights/best.pt",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/best.pt",
+      "bytes": 41805169,
+      "sha256": "81be52c4e261c908e5c2d870257456de2bf4f87b885184768400dd8c7763527e"
+    },
+    {
+      "manifest": "formal-training/uniform-branch/training-records/artifact_manifest.json",
+      "logical_path": "weights/last.pt",
+      "resolution": "active-shared",
+      "physical_path": "formal-training/checkpoints/uniform-epoch-100.pt",
+      "bytes": 41805169,
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7"
+    },
+    {
+      "manifest": "formal-training/uniform-branch/training-records/artifact_manifest.json",
+      "logical_path": "weights/uniform100_ema.pt",
+      "resolution": "active-shared",
+      "physical_path": "formal-training/checkpoints/uniform-epoch-100.pt",
+      "bytes": 41805169,
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7"
+    },
+    {
+      "manifest": "risk-data-intervention/cafr-development/clean-gate-result/evaluations/typed_cafr_v2_epoch10/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v5_cafr_v2_clean/evaluations/typed_cafr_v2_epoch10/predictions.json",
+      "bytes": 150751773,
+      "sha256": "2c0f973b3865d05119e965247014f933eeaed1194a588c0f6e3df77d0946b844"
+    },
+    {
+      "manifest": "risk-data-intervention/results/clean-evaluation/evaluations/scalar_risk_epoch10/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v2_clean/evaluations/scalar_risk_epoch10/predictions.json",
+      "bytes": 151098630,
+      "sha256": "adec7ae1e03e17df5f9ede4e90ed83ce515e54bb304e08e40cd82fccd4305150"
+    },
+    {
+      "manifest": "risk-data-intervention/results/clean-evaluation/evaluations/typed_cafr_epoch10/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v2_clean/evaluations/typed_cafr_epoch10/predictions.json",
+      "bytes": 151308769,
+      "sha256": "416b2b23497584a7dd202e5beda455555fda0eb6497bbe0b2427f72013970302"
+    },
+    {
+      "manifest": "risk-data-intervention/results/clean-evaluation/evaluations/uniform_epoch10/artifact_manifest.json",
+      "logical_path": "predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v2_clean/evaluations/uniform_epoch10/predictions.json",
+      "bytes": 148532858,
+      "sha256": "d7407ac6152b771e5d1a67fcdb4e5ba8dc25e9d00b8b26b3379de9139086e156"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/scalar_risk/blur_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/scalar_risk/blur_s2/predictions.json",
+      "bytes": 147784973,
+      "sha256": "0dd1866a5747235009c529d1081d0ec8259d6b0522154fa35445d53bf206765d"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/scalar_risk/low_light_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/scalar_risk/low_light_s2/predictions.json",
+      "bytes": 170075764,
+      "sha256": "55c48e514fbf298e6886343682126d12636afc222324eff28de19f0bc4551d40"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/scalar_risk/noise_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/scalar_risk/noise_s2/predictions.json",
+      "bytes": 175615293,
+      "sha256": "399711ecafbb8da756b614bb34fc9d863aa537b3a80ca509fa296d12f091f749"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/typed_cafr/blur_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/typed_cafr/blur_s2/predictions.json",
+      "bytes": 148350267,
+      "sha256": "d9d2328df1f088484a00d6d3b6218a7716d6e817d8464b94b1a0f5a1f7e8e1e3"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/typed_cafr/low_light_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/typed_cafr/low_light_s2/predictions.json",
+      "bytes": 170063930,
+      "sha256": "c0bd85fbbe2248ee3fe0d375a2b0cc17df7def09d3bbd30df3936b5d9876b50d"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/typed_cafr/noise_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/typed_cafr/noise_s2/predictions.json",
+      "bytes": 173472341,
+      "sha256": "bf5ddfcd284479fe12163afb669942f43878220a108e9302ece76a30149550cd"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/uniform/blur_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/uniform/blur_s2/predictions.json",
+      "bytes": 140908120,
+      "sha256": "c1a2c4d2f61a38e32b5b4a42fcd2e9f65359f1330c70550295a092a081d55d7c"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/uniform/low_light_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/uniform/low_light_s2/predictions.json",
+      "bytes": 165986501,
+      "sha256": "b7754d31717aa583a3e1505538c043c9dc24eb95cff49da697d1c5597dff07bd"
+    },
+    {
+      "manifest": "risk-data-intervention/results/corruption-evaluation/artifact_manifest.json",
+      "logical_path": "runs/uniform/noise_s2/predictions.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/runs/uniform/noise_s2/predictions.json",
+      "bytes": 169822490,
+      "sha256": "bfc91e6fea97f274160f4380f0fdc3be8509132257549f6438dd990dfc2bb3b5"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "maximum_score": 0.9983788728713989,
+  "minimum_score": 0.0010000017937272787,
+  "negative_size_bbox": 0,
+  "out_of_bounds_bbox": 0,
+  "per_category_predictions": {
+    "1": 222743,
+    "10": 404801,
+    "2": 6828,
+    "3": 1194248,
+    "4": 33594,
+    "5": 10000,
+    "6": 540,
+    "7": 4942,
+    "8": 24726,
+    "9": 298784
+  },
+  "prediction_bytes": 311631487,
+  "prediction_sha256": "38b8944c55f65ca1c67456489fd88a259fafc28887b8385e0dfa82bbe1417af9",
+  "predictions": 2201206,
+  "unique_prediction_image_ids": 10000,
+  "zero_area_bbox": 0
+}

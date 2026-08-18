@@ -1,0 +1,13 @@
+arm,coordinate_space,scale,supervised_objects,fraction_of_arm_objects
+uniform,view_native,small,710802,0.5523572252286977
+uniform,view_native,medium,413183,0.3210804350461436
+uniform,view_native,large,162867,0.12656233972515876
+uniform,network_960_letterbox,small,860443,0.6686417707708423
+uniform,network_960_letterbox,medium,317235,0.24652019035600053
+uniform,network_960_letterbox,large,109174,0.08483803887315713
+rebu_risk,view_native,small,686743,0.5743900154231669
+rebu_risk,view_native,medium,374375,0.31312625250501
+rebu_risk,view_native,large,134486,0.1124837320718231
+rebu_risk,network_960_letterbox,small,714961,0.5979914754383558
+rebu_risk,network_960_letterbox,medium,363250,0.3038213321467643
+rebu_risk,network_960_letterbox,large,117393,0.09818719241487985

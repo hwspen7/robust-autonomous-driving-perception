@@ -1,0 +1,231 @@
+{
+  "elapsed_minutes": 8.334607589244843,
+  "latency_guardrail": {
+    "maximum_increase_fraction": 0.3,
+    "metric": "median_forward_latency_ms",
+    "observed_increase_fraction": 0.17597879237510816,
+    "passed": true
+  },
+  "models": {
+    "p2_e20": {
+      "GFLOPs": 211.9842432,
+      "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+      "checkpoint_sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+      "class_names": {
+        "0": "pedestrian",
+        "1": "rider",
+        "2": "car",
+        "3": "truck",
+        "4": "bus",
+        "5": "train",
+        "6": "motorcycle",
+        "7": "bicycle",
+        "8": "traffic light",
+        "9": "traffic sign"
+      },
+      "latency_measurements": 400,
+      "mean_forward_latency_ms": 16.95184325799346,
+      "median_forward_latency_ms": 16.98419824242592,
+      "model": "p2_e20",
+      "model_file_size_MiB": 40.06141662597656,
+      "model_file_size_definition": "In-memory torch serialization containing only the FP16 model; optimizer and resume state excluded.",
+      "p90_forward_latency_ms": 18.05654987692833,
+      "parameters": 20559224,
+      "peak_inference_memory_MiB": 388.70703125,
+      "peak_training_memory_MiB": 15536.91845703125,
+      "peak_training_reserved_memory_MiB": 16676.0,
+      "round_records": [
+        {
+          "batch": 1,
+          "image_size": 960,
+          "input": "synthetic_zero_tensor",
+          "maximum_forward_latency_ms": 21.93830907344818,
+          "mean_forward_latency_ms": 16.964104184880853,
+          "measurement_iterations": 200,
+          "median_forward_latency_ms": 17.001906409859657,
+          "minimum_forward_latency_ms": 14.038050547242165,
+          "model": "p2_e20",
+          "p90_forward_latency_ms": 17.966956086456776,
+          "peak_inference_memory_MiB": 388.70703125,
+          "position": 2,
+          "precision": "FP16",
+          "round": 1,
+          "std_forward_latency_ms": 0.9466988253353151,
+          "warmup_iterations": 50
+        },
+        {
+          "batch": 1,
+          "image_size": 960,
+          "input": "synthetic_zero_tensor",
+          "maximum_forward_latency_ms": 19.266076385974884,
+          "mean_forward_latency_ms": 16.939582331106067,
+          "measurement_iterations": 200,
+          "median_forward_latency_ms": 16.93830918520689,
+          "minimum_forward_latency_ms": 14.0437763184309,
+          "model": "p2_e20",
+          "p90_forward_latency_ms": 18.1445324793458,
+          "peak_inference_memory_MiB": 388.70703125,
+          "position": 1,
+          "precision": "FP16",
+          "round": 2,
+          "std_forward_latency_ms": 0.9417643259862014,
+          "warmup_iterations": 50
+        }
+      ],
+      "source_checkpoint_file_size_MiB": 79.23623180389404,
+      "std_forward_latency_ms": 0.944314400040523,
+      "strides": [
+        4.0,
+        8.0,
+        16.0,
+        32.0
+      ],
+      "trainable_parameters_at_load": 0,
+      "training_memory_evidence": {
+        "dataset_fraction": 0.002,
+        "image_size": 960,
+        "measurement_type": "existing_architecture_training smoke",
+        "note": "Training memory is existing batch-8 evidence. No new training was performed in Stage 9.",
+        "physical_batch": 8,
+        "source": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/training_smoke_v1/smoke_summary.json",
+        "source_sha256": "471ebe97a112b5eacf4b949b644c1717b9978996e52bcde186d2afe696e50b7d"
+      }
+    },
+    "standard_e20": {
+      "GFLOPs": 154.115136,
+      "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch20.pt",
+      "checkpoint_sha256": "dc1e3ef68e233a2fad4911955bbe178f0104cd9000dcbdc772dac8d0a58438b5",
+      "class_names": {
+        "0": "pedestrian",
+        "1": "rider",
+        "2": "car",
+        "3": "truck",
+        "4": "bus",
+        "5": "train",
+        "6": "motorcycle",
+        "7": "bicycle",
+        "8": "traffic light",
+        "9": "traffic sign"
+      },
+      "latency_measurements": 400,
+      "mean_forward_latency_ms": 14.35041718184948,
+      "median_forward_latency_ms": 14.442605897784233,
+      "model": "standard_e20",
+      "model_file_size_MiB": 38.732200622558594,
+      "model_file_size_definition": "In-memory torch serialization containing only the FP16 model; optimizer and resume state excluded.",
+      "p90_forward_latency_ms": 15.411633625626564,
+      "parameters": 20060718,
+      "peak_inference_memory_MiB": 289.1103515625,
+      "peak_training_memory_MiB": 8692.86279296875,
+      "peak_training_reserved_memory_MiB": 10378.0,
+      "round_records": [
+        {
+          "batch": 1,
+          "image_size": 960,
+          "input": "synthetic_zero_tensor",
+          "maximum_forward_latency_ms": 17.32293702661991,
+          "mean_forward_latency_ms": 14.394865715876222,
+          "measurement_iterations": 200,
+          "median_forward_latency_ms": 14.407063834369183,
+          "minimum_forward_latency_ms": 12.161258608102798,
+          "model": "standard_e20",
+          "p90_forward_latency_ms": 15.268925204873085,
+          "peak_inference_memory_MiB": 289.1103515625,
+          "position": 1,
+          "precision": "FP16",
+          "round": 1,
+          "std_forward_latency_ms": 0.8495602364421372,
+          "warmup_iterations": 50
+        },
+        {
+          "batch": 1,
+          "image_size": 960,
+          "input": "synthetic_zero_tensor",
+          "maximum_forward_latency_ms": 19.903451204299927,
+          "mean_forward_latency_ms": 14.305968647822738,
+          "measurement_iterations": 200,
+          "median_forward_latency_ms": 14.46551363915205,
+          "minimum_forward_latency_ms": 12.243453413248062,
+          "model": "standard_e20",
+          "p90_forward_latency_ms": 15.52248876541853,
+          "peak_inference_memory_MiB": 288.2353515625,
+          "position": 2,
+          "precision": "FP16",
+          "round": 2,
+          "std_forward_latency_ms": 1.1369718888016358,
+          "warmup_iterations": 50
+        }
+      ],
+      "source_checkpoint_file_size_MiB": 77.06488418579102,
+      "std_forward_latency_ms": 1.0045917119962298,
+      "strides": [
+        8.0,
+        16.0,
+        32.0
+      ],
+      "trainable_parameters_at_load": 0,
+      "training_memory_evidence": {
+        "dataset_fraction": 0.002,
+        "image_size": 960,
+        "measurement_type": "existing_architecture_training smoke",
+        "note": "Training memory is existing batch-8 evidence. No new training was performed in Stage 9.",
+        "physical_batch": 8,
+        "source": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/training_smoke_v1/smoke_summary.json",
+        "source_sha256": "471ebe97a112b5eacf4b949b644c1717b9978996e52bcde186d2afe696e50b7d"
+      }
+    }
+  },
+  "p2_minus_standard": {
+    "GFLOPs": {
+      "increase_fraction": 0.3754926913862633,
+      "p2": 211.9842432,
+      "p2_minus_standard": 57.8691072,
+      "standard": 154.115136
+    },
+    "mean_forward_latency_ms": {
+      "increase_fraction": 0.18127877699850314,
+      "p2": 16.95184325799346,
+      "p2_minus_standard": 2.60142607614398,
+      "standard": 14.35041718184948
+    },
+    "median_forward_latency_ms": {
+      "increase_fraction": 0.17597879237510816,
+      "p2": 16.98419824242592,
+      "p2_minus_standard": 2.5415923446416855,
+      "standard": 14.442605897784233
+    },
+    "model_file_size_MiB": {
+      "increase_fraction": 0.03431811211480196,
+      "p2": 40.06141662597656,
+      "p2_minus_standard": 1.3292160034179688,
+      "standard": 38.732200622558594
+    },
+    "p90_forward_latency_ms": {
+      "increase_fraction": 0.17161816297681654,
+      "p2": 18.05654987692833,
+      "p2_minus_standard": 2.6449162513017654,
+      "standard": 15.411633625626564
+    },
+    "parameters": {
+      "increase_fraction": 0.024849858315141082,
+      "p2": 20559224.0,
+      "p2_minus_standard": 498506.0,
+      "standard": 20060718.0
+    },
+    "peak_inference_memory_MiB": {
+      "increase_fraction": 0.34449364801097127,
+      "p2": 388.70703125,
+      "p2_minus_standard": 99.5966796875,
+      "standard": 289.1103515625
+    },
+    "peak_training_memory_MiB": {
+      "increase_fraction": 0.7873189566040701,
+      "p2": 15536.91845703125,
+      "p2_minus_standard": 6844.0556640625,
+      "standard": 8692.86279296875
+    }
+  },
+  "scope": "RTX4090 PyTorch FP16 forward-pass evidence; not edge-device end-to-end latency.",
+  "status": "complete",
+  "version": "final_efficiency_evaluation_v1"
+}

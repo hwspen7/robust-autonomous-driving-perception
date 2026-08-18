@@ -1,0 +1,144 @@
+{
+  "version": "cafr_sampling_protocol_v1",
+  "status": "frozen_before_method_gate_training",
+  "created_utc": "2026-08-11T13:20:35.966244+00:00",
+  "selected_protocol": "sampling_audit_v3",
+  "selected_protocol_manifest": "/root/rivermind-data/autodrive/results/evaluation/method_gate/sampling_audit_v3/artifact_manifest.json",
+  "selected_protocol_manifest_sha256": "7c96b15970798025e2482613c6fb0304d972e480a7166c5f2e8817b1e7ec93a9",
+  "selection_script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/prepare_cafr_sampling_audit_v3.py",
+  "selection_script_sha256": "69b7dd6bbf01ea8c2c23c97c61e89b05a65001d11d30c1e928accda9fda9b7d0",
+  "frozen_files": {
+    "typed_cafr_selection.csv": {
+      "bytes": 3386635,
+      "sha256": "46f0f57efb081eefe5a7ef8e0798076a7068828e93ad9b9d0a12619a360e6ec2"
+    },
+    "scalar_risk_selection.csv": {
+      "bytes": 3321847,
+      "sha256": "5511374920a45b3a2c4cad5ac5ab8fb6e323e42313113f8c4fc6f3463e063a32"
+    },
+    "common_base_image_ids.json": {
+      "bytes": 402246,
+      "sha256": "bcfb6dec076fc5182dfddc6081574c911184779432f90f101e84a6f591876e78"
+    },
+    "uniform_supplement_image_ids.json": {
+      "bytes": 172415,
+      "sha256": "e06b41948ed9c1c0765f9941746a27719ef3301cd14accc2d9a10f0a0f0abf29"
+    },
+    "sampling_summary.json": {
+      "bytes": 6970,
+      "sha256": "c212a8868934e685d62020bd544e0cdbee94ab8c9f78e788ee8fd7a2965a8622"
+    }
+  },
+  "design": {
+    "train_core_images": 65000,
+    "uniform_original_views": 65000,
+    "common_original_views": 45500,
+    "object_centric_views_per_arm": 19500,
+    "views_per_arm": 65000,
+    "one_crop_target_per_source_image": true,
+    "scalar_matches_typed_target_classes": true,
+    "minimum_target_class_support": 500,
+    "excluded_target_categories": [
+      6
+    ],
+    "excluded_duplicate_annotation_id": 1005741,
+    "maximum_target_class_fraction": 0.35,
+    "typed_quotas": {
+      "small_joint_not_detected": 7800,
+      "dfine_supported_yolo_failure": 3900,
+      "yolo_geometric_failure": 1950,
+      "yolo_low_confidence": 1950,
+      "yolo_classification_failure": 1365,
+      "other_joint_not_detected": 975,
+      "small_high_or_critical": 975,
+      "other_high_or_critical": 585
+    },
+    "typed_selection_order": [
+      "yolo_geometric_failure",
+      "yolo_classification_failure",
+      "other_joint_not_detected",
+      "other_high_or_critical",
+      "dfine_supported_yolo_failure",
+      "yolo_low_confidence",
+      "small_high_or_critical",
+      "small_joint_not_detected"
+    ],
+    "typed_risk_weight_formula": "0.05 + 0.95 * risk_score^2",
+    "typed_sampling_priority": "-log(deterministic_uniform)/risk_weight",
+    "scalar_matching_strata": "target_category_id x scale x fixed_0.05_risk_bin",
+    "scalar_sampling_priority": "deterministic uniform selection inside matched strata",
+    "risk_bin_count": 20,
+    "maximum_matched_mean_risk_gap": 0.03
+  },
+  "verified_results": {
+    "views_per_object_centric_arm": 19500,
+    "common_original_views": 45500,
+    "total_views_per_arm": 65000,
+    "target_class_counts": {
+      "1": 2102,
+      "2": 160,
+      "3": 6825,
+      "4": 1147,
+      "5": 481,
+      "7": 142,
+      "8": 209,
+      "9": 3666,
+      "10": 4768
+    },
+    "target_scale_counts": {
+      "large": 830,
+      "medium": 7036,
+      "small": 11634
+    },
+    "target_risk_bin_counts": {
+      "10": 16,
+      "11": 88,
+      "12": 269,
+      "13": 743,
+      "14": 1692,
+      "15": 3110,
+      "16": 2974,
+      "17": 3125,
+      "18": 3373,
+      "19": 4110
+    },
+    "typed_failure_quotas": {
+      "dfine_supported_yolo_failure": 3900,
+      "other_high_or_critical": 585,
+      "other_joint_not_detected": 975,
+      "small_high_or_critical": 975,
+      "small_joint_not_detected": 7800,
+      "yolo_classification_failure": 1365,
+      "yolo_geometric_failure": 1950,
+      "yolo_low_confidence": 1950
+    },
+    "typed_mean_risk": 0.8562834671952313,
+    "scalar_mean_risk": 0.8554164010930175,
+    "mean_risk_gap": 0.0008670661022137649,
+    "annotation_overlap": 1756,
+    "source_image_overlap": 8613
+  },
+  "discarded_protocol_audits": {
+    "sampling_audit_v1": {
+      "manifest_sha256": "77a84ab2b02198c687b3eaf449d0aae78902a1bad9df7a8ee38b6e495a533f10",
+      "reason": "Scalar control was materially easier: mean risk 0.711 versus Typed 0.856.",
+      "training_performed": false
+    },
+    "sampling_audit_v2": {
+      "manifest_sha256": "7d7e7b8e02d7104eb92c05a6bb10fdcc0639963ecb53626f9db7ba34c742e5a7",
+      "reason": "Hard top-risk truncation was pathological: mean risk 0.985 and excessive concentration on small jointly missed objects.",
+      "training_performed": false
+    }
+  },
+  "external_dependencies": {
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/sampling_audit_v1/artifact_manifest.json": "77a84ab2b02198c687b3eaf449d0aae78902a1bad9df7a8ee38b6e495a533f10",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/sampling_audit_v2/artifact_manifest.json": "7d7e7b8e02d7104eb92c05a6bb10fdcc0639963ecb53626f9db7ba34c742e5a7",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/object_view_smoke_v1/artifact_manifest.json": "937835f1665575fde45da0ad3f7f85ca1eb5b7b00f8451f4256262f89d82434a",
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/frozen_manifests/final_architecture_selection_v1.json": "b3a20fc148a508334268aa4d43bc251219244dffba134173dee3ac1648de29f0",
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd"
+  },
+  "images_materialized": false,
+  "training_started": false,
+  "method_training_hyperparameters_frozen": false
+}

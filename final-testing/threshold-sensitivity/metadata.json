@@ -1,0 +1,16 @@
+{
+  "central_membership_reproduced": true,
+  "created_utc": "2026-08-16T10:06:13Z",
+  "gt": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+  "gt_sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+  "localization_iou": 0.1,
+  "match_iou": 0.5,
+  "max_detections_per_image_category": 100,
+  "new_gpu_inference": false,
+  "new_training": false,
+  "prediction_confidence_floor": 0.001,
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_threshold_sensitivity_v1.py",
+  "script_sha256": "3963f68be0578265a7c098b3bafc5cf93969e9de102e49edf8863e08f5f40c32",
+  "status": "complete",
+  "version": "final_threshold_sensitivity_v1"
+}

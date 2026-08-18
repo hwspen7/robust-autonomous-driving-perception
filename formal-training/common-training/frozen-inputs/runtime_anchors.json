@@ -1,0 +1,10 @@
+{
+  "anchors_root": "/dev/shm/rebu_yolo/formal_training_v1/cache_anchors",
+  "cache_routes": {
+    "rebu_risk": "/dev/shm/rebu_yolo/formal_training_v1/cache_anchors/rebu_risk/labels.cache",
+    "uniform": "/dev/shm/rebu_yolo/formal_training_v1/cache_anchors/uniform/labels.cache"
+  },
+  "rebu_anchor_source": "/dev/shm/rebu_yolo/method_gate_v1/scalar_risk/images/00001_29926.jpg",
+  "uniform_anchor_source": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/images/train/4453639e-caaff704.jpg",
+  "version": "formal_training_runtime_anchors_v1"
+}

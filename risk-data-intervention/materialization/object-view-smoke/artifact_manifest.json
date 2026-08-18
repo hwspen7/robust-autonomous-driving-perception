@@ -1,0 +1,15 @@
+{
+  "version": "object_view_smoke_v1",
+  "status": "technical_smoke",
+  "files": {
+    "sample_manifest.json": {
+      "bytes": 167915,
+      "sha256": "3aad53325752d20d01a706fb89d14ab059e31de5aa33d2b4ac0068594194e829"
+    },
+    "summary.json": {
+      "bytes": 2939,
+      "sha256": "fefe5242482d6f3464739c41a75c63b8252c3d6e217dbdb797858ea292af3d93"
+    }
+  },
+  "ephemeral_set_sha256": "c620a82bc2889ec912a930b075222721e18e8b31e1a56fc60b0de92f8d4bfe16"
+}

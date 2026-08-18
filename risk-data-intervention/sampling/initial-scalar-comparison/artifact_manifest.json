@@ -1,0 +1,26 @@
+{
+  "version": "cafr_sampling_audit_v1",
+  "status": "audit",
+  "files": {
+    "typed_cafr_selection.csv": {
+      "bytes": 3386635,
+      "sha256": "46f0f57efb081eefe5a7ef8e0798076a7068828e93ad9b9d0a12619a360e6ec2"
+    },
+    "scalar_risk_selection.csv": {
+      "bytes": 3200326,
+      "sha256": "b086b8cdac3de8a24830114e233d0646ba397dbeb17423a0231871f3d2b5050a"
+    },
+    "common_base_image_ids.json": {
+      "bytes": 402246,
+      "sha256": "bcfb6dec076fc5182dfddc6081574c911184779432f90f101e84a6f591876e78"
+    },
+    "uniform_supplement_image_ids.json": {
+      "bytes": 172415,
+      "sha256": "e06b41948ed9c1c0765f9941746a27719ef3301cd14accc2d9a10f0a0f0abf29"
+    },
+    "sampling_summary.json": {
+      "bytes": 6539,
+      "sha256": "88b51193fd750a39a557f3223b74ac1b348f98b3f971b8b18e9df3d5c534682c"
+    }
+  }
+}

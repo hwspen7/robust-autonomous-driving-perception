@@ -1,0 +1,37 @@
+{
+  "files": {
+    "bdd100k_architecture_gate.yaml": {
+      "bytes": 464,
+      "sha256": "5c3979447afd15850fd6b98731edae57d92ce02f4a0dad170ba08bb36d2052d5"
+    },
+    "gate_rules.json": {
+      "bytes": 1779,
+      "sha256": "a1494ca9773813b5f912d6683e4ae03460869935f7f08127e2f63f7e6a9575e8"
+    },
+    "instances_train_dev.json": {
+      "bytes": 33994645,
+      "sha256": "1cddc4f25f987e7a6887c52b60ff2e5adbf73415d5b8b9f3f50f4fa6719b1be4"
+    },
+    "metadata.json": {
+      "bytes": 702,
+      "sha256": "a73d20e30e21fa9fe22a2078591f85f104040d0794cfe18d4b0e9b9cbcbdc7c0"
+    },
+    "train_core.txt": {
+      "bytes": 6370000,
+      "sha256": "7a13091a343ee4f5a3ae20e60e4ab88728d307b29becb8dd26481edda7ea6751"
+    },
+    "train_dev.txt": {
+      "bytes": 490000,
+      "sha256": "d4e1c82556eb6adb30fa2d29f6d86e838922d70ad701f7403058b49184c0fcf2"
+    },
+    "yolo11m_p2_gate.yaml": {
+      "bytes": 1476,
+      "sha256": "29a859e1e6f7b88aa9739e6dd9981206e9bca942c82bfc226294ef76afcdd243"
+    },
+    "yolo11m_standard_gate.yaml": {
+      "bytes": 1319,
+      "sha256": "774f9377818db6f2145b1c69967f366f6a00b81bfa7f84372997e9acd2c7e94c"
+    }
+  },
+  "version": "prepared_inputs_v1"
+}

@@ -1,0 +1,143 @@
+{
+  "architecture_intervention": {
+    "comparison": "p2_e20_minus_standard_e20",
+    "reason": "AP_small and AR_small are canonical COCO metrics and do not depend on the baseline failure operating thresholds.",
+    "threshold_dependency": false
+  },
+  "central_failure_manifest_sha256": "79029af794f214d45bdecb6cb00d9b64155aa8ace04df97ca6524e1f40f2c1dc",
+  "combinations": [
+    "yolo_central__dfine_central",
+    "yolo_central__dfine_high",
+    "yolo_central__dfine_low",
+    "yolo_high__dfine_central",
+    "yolo_high__dfine_high",
+    "yolo_high__dfine_low",
+    "yolo_low__dfine_central",
+    "yolo_low__dfine_high",
+    "yolo_low__dfine_low"
+  ],
+  "effect_direction_stability": {
+    "gate_scalar_minus_gate_uniform": {
+      "failure_macro_AR100": {
+        "all_directions_stable": true,
+        "central_delta": 0.007356659794974796,
+        "maximum_delta": 0.010691574832663087,
+        "minimum_delta": 0.006424359468829577,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      },
+      "small_jointly_missed_recall50": {
+        "all_directions_stable": true,
+        "central_delta": 0.03204795665456217,
+        "maximum_delta": 0.039352814425585025,
+        "minimum_delta": 0.02465398785223538,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      }
+    },
+    "gate_typed_minus_gate_scalar": {
+      "failure_macro_AR100": {
+        "all_directions_stable": true,
+        "central_delta": 0.004306343282089453,
+        "maximum_delta": 0.004497836336763428,
+        "minimum_delta": 0.0018788760561468942,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      },
+      "small_jointly_missed_recall50": {
+        "all_directions_stable": true,
+        "central_delta": -0.0003458412588621673,
+        "maximum_delta": -0.0003078659756785562,
+        "minimum_delta": -0.0009072694968434991,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      }
+    },
+    "gate_typed_minus_gate_uniform": {
+      "failure_macro_AR100": {
+        "all_directions_stable": true,
+        "central_delta": 0.011663003077064249,
+        "maximum_delta": 0.013820459569900967,
+        "minimum_delta": 0.009534713350939583,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      },
+      "small_jointly_missed_recall50": {
+        "all_directions_stable": true,
+        "central_delta": 0.031702115395700003,
+        "maximum_delta": 0.038445544928741526,
+        "minimum_delta": 0.024275614856118732,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      }
+    },
+    "gate_typed_v2_minus_gate_uniform": {
+      "failure_macro_AR100": {
+        "all_directions_stable": true,
+        "central_delta": 0.011736071769917311,
+        "maximum_delta": 0.014315941137487576,
+        "minimum_delta": 0.010053801032910648,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      },
+      "small_jointly_missed_recall50": {
+        "all_directions_stable": true,
+        "central_delta": 0.0302034699406305,
+        "maximum_delta": 0.03663100593505464,
+        "minimum_delta": 0.023419297022801988,
+        "stable_combinations": 9,
+        "total_combinations": 9
+      }
+    }
+  },
+  "elapsed_minutes": 73.40722701946895,
+  "interpretation": "Threshold stability supports robustness of the empirical failure analysis but does not convert association into causal proof.",
+  "plateau_rule": "macro_f1 >= 0.95 * maximum_macro_f1",
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "status": "complete",
+  "subset_names": [
+    "small_jointly_missed",
+    "dfine_supported_yolo_failure",
+    "yolo_low_confidence",
+    "yolo_localization_failure",
+    "yolo_classification_failure",
+    "small_high_risk"
+  ],
+  "targeted_recovery_comparisons": [
+    "gate_scalar_minus_gate_uniform",
+    "gate_typed_minus_gate_uniform",
+    "gate_typed_minus_gate_scalar",
+    "gate_typed_v2_minus_gate_uniform"
+  ],
+  "threshold_points": {
+    "D-FINE-M": {
+      "central": {
+        "macro_f1": 0.7012245282327485,
+        "threshold": 0.4963708519935608
+      },
+      "high": {
+        "macro_f1": 0.6692085087025528,
+        "threshold": 0.6
+      },
+      "low": {
+        "macro_f1": 0.6663601539581165,
+        "threshold": 0.41
+      }
+    },
+    "YOLO11m": {
+      "central": {
+        "macro_f1": 0.6945657943717607,
+        "threshold": 0.22527144849300385
+      },
+      "high": {
+        "macro_f1": 0.6627273284392137,
+        "threshold": 0.37
+      },
+      "low": {
+        "macro_f1": 0.6651731948118289,
+        "threshold": 0.13
+      }
+    }
+  },
+  "version": "final_threshold_sensitivity_v1"
+}

@@ -1,0 +1,541 @@
+combination,subset,category_id,class_name,objects,fraction
+yolo_low__dfine_low,small_jointly_missed,1,pedestrian,2652,0.10025327940120213
+yolo_low__dfine_low,small_jointly_missed,2,rider,186,0.0070313386005368015
+yolo_low__dfine_low,small_jointly_missed,3,car,11455,0.43303217026424223
+yolo_low__dfine_low,small_jointly_missed,4,truck,421,0.01591501909046233
+yolo_low__dfine_low,small_jointly_missed,5,bus,175,0.006615506747816882
+yolo_low__dfine_low,small_jointly_missed,6,train,1,3.780289570181076e-05
+yolo_low__dfine_low,small_jointly_missed,7,motorcycle,102,0.0038558953615846973
+yolo_low__dfine_low,small_jointly_missed,8,bicycle,176,0.006653309643518694
+yolo_low__dfine_low,small_jointly_missed,9,traffic light,5216,0.19717990398064492
+yolo_low__dfine_low,small_jointly_missed,10,traffic sign,6069,0.22942577401428949
+yolo_low__dfine_low,dfine_supported_yolo_failure,1,pedestrian,838,0.08589585895858959
+yolo_low__dfine_low,dfine_supported_yolo_failure,2,rider,41,0.0042025420254202545
+yolo_low__dfine_low,dfine_supported_yolo_failure,3,car,4309,0.4416769167691677
+yolo_low__dfine_low,dfine_supported_yolo_failure,4,truck,448,0.04592045920459205
+yolo_low__dfine_low,dfine_supported_yolo_failure,5,bus,170,0.017425174251742517
+yolo_low__dfine_low,dfine_supported_yolo_failure,6,train,1,0.0001025010250102501
+yolo_low__dfine_low,dfine_supported_yolo_failure,7,motorcycle,54,0.005535055350553505
+yolo_low__dfine_low,dfine_supported_yolo_failure,8,bicycle,78,0.007995079950799507
+yolo_low__dfine_low,dfine_supported_yolo_failure,9,traffic light,1623,0.1663591635916359
+yolo_low__dfine_low,dfine_supported_yolo_failure,10,traffic sign,2194,0.22488724887248873
+yolo_low__dfine_low,yolo_low_confidence,1,pedestrian,1982,0.11414420640405437
+yolo_low__dfine_low,yolo_low_confidence,2,rider,38,0.0021884358442755126
+yolo_low__dfine_low,yolo_low_confidence,3,car,7632,0.4395300621976503
+yolo_low__dfine_low,yolo_low_confidence,4,truck,423,0.024360746371803733
+yolo_low__dfine_low,yolo_low_confidence,5,bus,122,0.007026030868463488
+yolo_low__dfine_low,yolo_low_confidence,6,train,1,5.759041695461875e-05
+yolo_low__dfine_low,yolo_low_confidence,7,motorcycle,59,0.0033978346003225063
+yolo_low__dfine_low,yolo_low_confidence,8,bicycle,154,0.008868924211011289
+yolo_low__dfine_low,yolo_low_confidence,9,traffic light,2373,0.1366620594333103
+yolo_low__dfine_low,yolo_low_confidence,10,traffic sign,4580,0.26376410965215386
+yolo_low__dfine_low,yolo_localization_failure,1,pedestrian,871,0.0646238314289954
+yolo_low__dfine_low,yolo_localization_failure,2,rider,24,0.0017806796260572786
+yolo_low__dfine_low,yolo_localization_failure,3,car,7863,0.5833951624870158
+yolo_low__dfine_low,yolo_localization_failure,4,truck,38,0.002819409407924024
+yolo_low__dfine_low,yolo_localization_failure,5,bus,5,0.00037097492209526634
+yolo_low__dfine_low,yolo_localization_failure,6,train,0,0.0
+yolo_low__dfine_low,yolo_localization_failure,7,motorcycle,10,0.0007419498441905327
+yolo_low__dfine_low,yolo_localization_failure,8,bicycle,51,0.003783944205371717
+yolo_low__dfine_low,yolo_localization_failure,9,traffic light,2960,0.21961715388039768
+yolo_low__dfine_low,yolo_localization_failure,10,traffic sign,1656,0.12286689419795221
+yolo_low__dfine_low,yolo_classification_failure,1,pedestrian,119,0.05573770491803279
+yolo_low__dfine_low,yolo_classification_failure,2,rider,105,0.04918032786885246
+yolo_low__dfine_low,yolo_classification_failure,3,car,376,0.17611241217798596
+yolo_low__dfine_low,yolo_classification_failure,4,truck,654,0.3063231850117096
+yolo_low__dfine_low,yolo_classification_failure,5,bus,304,0.14238875878220142
+yolo_low__dfine_low,yolo_classification_failure,6,train,2,0.000936768149882904
+yolo_low__dfine_low,yolo_classification_failure,7,motorcycle,58,0.027166276346604217
+yolo_low__dfine_low,yolo_classification_failure,8,bicycle,31,0.014519906323185013
+yolo_low__dfine_low,yolo_classification_failure,9,traffic light,186,0.08711943793911008
+yolo_low__dfine_low,yolo_classification_failure,10,traffic sign,300,0.1405152224824356
+yolo_low__dfine_low,small_high_risk,1,pedestrian,2481,0.06623064602242391
+yolo_low__dfine_low,small_high_risk,2,rider,167,0.004458088627869727
+yolo_low__dfine_low,small_high_risk,3,car,19826,0.5292578750667378
+yolo_low__dfine_low,small_high_risk,4,truck,415,0.011078483715963695
+yolo_low__dfine_low,small_high_risk,5,bus,193,0.0051521623064602244
+yolo_low__dfine_low,small_high_risk,6,train,1,2.6695141484249868e-05
+yolo_low__dfine_low,small_high_risk,7,motorcycle,96,0.0025627335824879873
+yolo_low__dfine_low,small_high_risk,8,bicycle,166,0.0044313934863854775
+yolo_low__dfine_low,small_high_risk,9,traffic light,6394,0.17068873465029363
+yolo_low__dfine_low,small_high_risk,10,traffic sign,7721,0.20611318739989323
+yolo_low__dfine_central,small_jointly_missed,1,pedestrian,2919,0.09823321554770319
+yolo_low__dfine_central,small_jointly_missed,2,rider,191,0.006427730102641764
+yolo_low__dfine_central,small_jointly_missed,3,car,12928,0.43506646474844357
+yolo_low__dfine_central,small_jointly_missed,4,truck,472,0.015884233552078075
+yolo_low__dfine_central,small_jointly_missed,5,bus,199,0.006696954400134612
+yolo_low__dfine_central,small_jointly_missed,6,train,1,3.3653037186606094e-05
+yolo_low__dfine_central,small_jointly_missed,7,motorcycle,104,0.0034999158674070335
+yolo_low__dfine_central,small_jointly_missed,8,bicycle,184,0.0061921588423355205
+yolo_low__dfine_central,small_jointly_missed,9,traffic light,5762,0.1939088002692243
+yolo_low__dfine_central,small_jointly_missed,10,traffic sign,6955,0.23405687363284536
+yolo_low__dfine_central,dfine_supported_yolo_failure,1,pedestrian,447,0.08064225148836371
+yolo_low__dfine_central,dfine_supported_yolo_failure,2,rider,23,0.004149377593360996
+yolo_low__dfine_central,dfine_supported_yolo_failure,3,car,2384,0.4300920079379397
+yolo_low__dfine_central,dfine_supported_yolo_failure,4,truck,276,0.04979253112033195
+yolo_low__dfine_central,dfine_supported_yolo_failure,5,bus,109,0.01966444163810211
+yolo_low__dfine_central,dfine_supported_yolo_failure,6,train,1,0.00018040772145047808
+yolo_low__dfine_central,dfine_supported_yolo_failure,7,motorcycle,36,0.006494677972217211
+yolo_low__dfine_central,dfine_supported_yolo_failure,8,bicycle,43,0.007757532022370558
+yolo_low__dfine_central,dfine_supported_yolo_failure,9,traffic light,1057,0.19069096157315532
+yolo_low__dfine_central,dfine_supported_yolo_failure,10,traffic sign,1167,0.21053581093270793
+yolo_low__dfine_central,yolo_low_confidence,1,pedestrian,1982,0.11414420640405437
+yolo_low__dfine_central,yolo_low_confidence,2,rider,38,0.0021884358442755126
+yolo_low__dfine_central,yolo_low_confidence,3,car,7632,0.4395300621976503
+yolo_low__dfine_central,yolo_low_confidence,4,truck,423,0.024360746371803733
+yolo_low__dfine_central,yolo_low_confidence,5,bus,122,0.007026030868463488
+yolo_low__dfine_central,yolo_low_confidence,6,train,1,5.759041695461875e-05
+yolo_low__dfine_central,yolo_low_confidence,7,motorcycle,59,0.0033978346003225063
+yolo_low__dfine_central,yolo_low_confidence,8,bicycle,154,0.008868924211011289
+yolo_low__dfine_central,yolo_low_confidence,9,traffic light,2373,0.1366620594333103
+yolo_low__dfine_central,yolo_low_confidence,10,traffic sign,4580,0.26376410965215386
+yolo_low__dfine_central,yolo_localization_failure,1,pedestrian,871,0.0646238314289954
+yolo_low__dfine_central,yolo_localization_failure,2,rider,24,0.0017806796260572786
+yolo_low__dfine_central,yolo_localization_failure,3,car,7863,0.5833951624870158
+yolo_low__dfine_central,yolo_localization_failure,4,truck,38,0.002819409407924024
+yolo_low__dfine_central,yolo_localization_failure,5,bus,5,0.00037097492209526634
+yolo_low__dfine_central,yolo_localization_failure,6,train,0,0.0
+yolo_low__dfine_central,yolo_localization_failure,7,motorcycle,10,0.0007419498441905327
+yolo_low__dfine_central,yolo_localization_failure,8,bicycle,51,0.003783944205371717
+yolo_low__dfine_central,yolo_localization_failure,9,traffic light,2960,0.21961715388039768
+yolo_low__dfine_central,yolo_localization_failure,10,traffic sign,1656,0.12286689419795221
+yolo_low__dfine_central,yolo_classification_failure,1,pedestrian,119,0.05573770491803279
+yolo_low__dfine_central,yolo_classification_failure,2,rider,105,0.04918032786885246
+yolo_low__dfine_central,yolo_classification_failure,3,car,376,0.17611241217798596
+yolo_low__dfine_central,yolo_classification_failure,4,truck,654,0.3063231850117096
+yolo_low__dfine_central,yolo_classification_failure,5,bus,304,0.14238875878220142
+yolo_low__dfine_central,yolo_classification_failure,6,train,2,0.000936768149882904
+yolo_low__dfine_central,yolo_classification_failure,7,motorcycle,58,0.027166276346604217
+yolo_low__dfine_central,yolo_classification_failure,8,bicycle,31,0.014519906323185013
+yolo_low__dfine_central,yolo_classification_failure,9,traffic light,186,0.08711943793911008
+yolo_low__dfine_central,yolo_classification_failure,10,traffic sign,300,0.1405152224824356
+yolo_low__dfine_central,small_high_risk,1,pedestrian,2491,0.06606901307588256
+yolo_low__dfine_central,small_high_risk,2,rider,168,0.004455878842532425
+yolo_low__dfine_central,small_high_risk,3,car,20025,0.5311248441768559
+yolo_low__dfine_central,small_high_risk,4,truck,413,0.01095403548789221
+yolo_low__dfine_central,small_high_risk,5,bus,195,0.005172002227939421
+yolo_low__dfine_central,small_high_risk,6,train,1,2.6523088348407288e-05
+yolo_low__dfine_central,small_high_risk,7,motorcycle,96,0.0025462164814470997
+yolo_low__dfine_central,small_high_risk,8,bicycle,164,0.004349786489138795
+yolo_low__dfine_central,small_high_risk,9,traffic light,6395,0.16961514998806462
+yolo_low__dfine_central,small_high_risk,10,traffic sign,7755,0.20568655014189852
+yolo_low__dfine_high,small_jointly_missed,1,pedestrian,3064,0.0951139256224002
+yolo_low__dfine_high,small_jointly_missed,2,rider,196,0.006084311169056932
+yolo_low__dfine_high,small_jointly_missed,3,car,14032,0.4355870118581983
+yolo_low__dfine_high,small_jointly_missed,4,truck,512,0.015893710808965046
+yolo_low__dfine_high,small_jointly_missed,5,bus,222,0.006891413671074688
+yolo_low__dfine_high,small_jointly_missed,6,train,1,3.1042403923759856e-05
+yolo_low__dfine_high,small_jointly_missed,7,motorcycle,109,0.003383622027689824
+yolo_low__dfine_high,small_jointly_missed,8,bicycle,190,0.005898056745514373
+yolo_low__dfine_high,small_jointly_missed,9,traffic light,6322,0.19625007760600982
+yolo_low__dfine_high,small_jointly_missed,10,traffic sign,7566,0.23486682808716708
+yolo_low__dfine_high,dfine_supported_yolo_failure,1,pedestrian,182,0.08139534883720931
+yolo_low__dfine_high,dfine_supported_yolo_failure,2,rider,9,0.004025044722719142
+yolo_low__dfine_high,dfine_supported_yolo_failure,3,car,939,0.4199463327370304
+yolo_low__dfine_high,dfine_supported_yolo_failure,4,truck,123,0.055008944543828264
+yolo_low__dfine_high,dfine_supported_yolo_failure,5,bus,39,0.01744186046511628
+yolo_low__dfine_high,dfine_supported_yolo_failure,6,train,1,0.0004472271914132379
+yolo_low__dfine_high,dfine_supported_yolo_failure,7,motorcycle,13,0.005813953488372093
+yolo_low__dfine_high,dfine_supported_yolo_failure,8,bicycle,23,0.010286225402504472
+yolo_low__dfine_high,dfine_supported_yolo_failure,9,traffic light,476,0.21288014311270126
+yolo_low__dfine_high,dfine_supported_yolo_failure,10,traffic sign,431,0.19275491949910556
+yolo_low__dfine_high,yolo_low_confidence,1,pedestrian,1982,0.11414420640405437
+yolo_low__dfine_high,yolo_low_confidence,2,rider,38,0.0021884358442755126
+yolo_low__dfine_high,yolo_low_confidence,3,car,7632,0.4395300621976503
+yolo_low__dfine_high,yolo_low_confidence,4,truck,423,0.024360746371803733
+yolo_low__dfine_high,yolo_low_confidence,5,bus,122,0.007026030868463488
+yolo_low__dfine_high,yolo_low_confidence,6,train,1,5.759041695461875e-05
+yolo_low__dfine_high,yolo_low_confidence,7,motorcycle,59,0.0033978346003225063
+yolo_low__dfine_high,yolo_low_confidence,8,bicycle,154,0.008868924211011289
+yolo_low__dfine_high,yolo_low_confidence,9,traffic light,2373,0.1366620594333103
+yolo_low__dfine_high,yolo_low_confidence,10,traffic sign,4580,0.26376410965215386
+yolo_low__dfine_high,yolo_localization_failure,1,pedestrian,871,0.0646238314289954
+yolo_low__dfine_high,yolo_localization_failure,2,rider,24,0.0017806796260572786
+yolo_low__dfine_high,yolo_localization_failure,3,car,7863,0.5833951624870158
+yolo_low__dfine_high,yolo_localization_failure,4,truck,38,0.002819409407924024
+yolo_low__dfine_high,yolo_localization_failure,5,bus,5,0.00037097492209526634
+yolo_low__dfine_high,yolo_localization_failure,6,train,0,0.0
+yolo_low__dfine_high,yolo_localization_failure,7,motorcycle,10,0.0007419498441905327
+yolo_low__dfine_high,yolo_localization_failure,8,bicycle,51,0.003783944205371717
+yolo_low__dfine_high,yolo_localization_failure,9,traffic light,2960,0.21961715388039768
+yolo_low__dfine_high,yolo_localization_failure,10,traffic sign,1656,0.12286689419795221
+yolo_low__dfine_high,yolo_classification_failure,1,pedestrian,119,0.05573770491803279
+yolo_low__dfine_high,yolo_classification_failure,2,rider,105,0.04918032786885246
+yolo_low__dfine_high,yolo_classification_failure,3,car,376,0.17611241217798596
+yolo_low__dfine_high,yolo_classification_failure,4,truck,654,0.3063231850117096
+yolo_low__dfine_high,yolo_classification_failure,5,bus,304,0.14238875878220142
+yolo_low__dfine_high,yolo_classification_failure,6,train,2,0.000936768149882904
+yolo_low__dfine_high,yolo_classification_failure,7,motorcycle,58,0.027166276346604217
+yolo_low__dfine_high,yolo_classification_failure,8,bicycle,31,0.014519906323185013
+yolo_low__dfine_high,yolo_classification_failure,9,traffic light,186,0.08711943793911008
+yolo_low__dfine_high,yolo_classification_failure,10,traffic sign,300,0.1405152224824356
+yolo_low__dfine_high,small_high_risk,1,pedestrian,2493,0.0660065132780852
+yolo_low__dfine_high,small_high_risk,2,rider,166,0.004395138870502264
+yolo_low__dfine_high,small_high_risk,3,car,20035,0.5304614895814027
+yolo_low__dfine_high,small_high_risk,4,truck,411,0.010881940215520665
+yolo_low__dfine_high,small_high_risk,5,bus,198,0.005242394556382218
+yolo_low__dfine_high,small_high_risk,6,train,1,2.6476740183748578e-05
+yolo_low__dfine_high,small_high_risk,7,motorcycle,97,0.002568243797823612
+yolo_low__dfine_high,small_high_risk,8,bicycle,164,0.004342185390134767
+yolo_low__dfine_high,small_high_risk,9,traffic light,6406,0.1696099976170934
+yolo_low__dfine_high,small_high_risk,10,traffic sign,7798,0.2064656199528714
+yolo_central__dfine_low,small_jointly_missed,1,pedestrian,2992,0.10148221008716887
+yolo_central__dfine_low,small_jointly_missed,2,rider,189,0.006410473832377981
+yolo_central__dfine_low,small_jointly_missed,3,car,12956,0.43943967710205883
+yolo_central__dfine_low,small_jointly_missed,4,truck,436,0.014788183020723806
+yolo_central__dfine_low,small_jointly_missed,5,bus,178,0.006037377471763389
+yolo_central__dfine_low,small_jointly_missed,6,train,1,3.391785096496286e-05
+yolo_central__dfine_low,small_jointly_missed,7,motorcycle,104,0.0035274565003561376
+yolo_central__dfine_low,small_jointly_missed,8,bicycle,183,0.006206966726588203
+yolo_central__dfine_low,small_jointly_missed,9,traffic light,5750,0.19502764304853645
+yolo_central__dfine_low,small_jointly_missed,10,traffic sign,6694,0.22704609435946138
+yolo_central__dfine_low,dfine_supported_yolo_failure,1,pedestrian,1384,0.08899749212269308
+yolo_central__dfine_low,dfine_supported_yolo_failure,2,rider,52,0.003343836409234133
+yolo_central__dfine_low,dfine_supported_yolo_failure,3,car,6942,0.44640216063275673
+yolo_central__dfine_low,dfine_supported_yolo_failure,4,truck,559,0.03594624139926693
+yolo_central__dfine_low,dfine_supported_yolo_failure,5,bus,202,0.012989518358947977
+yolo_central__dfine_low,dfine_supported_yolo_failure,6,train,1,6.430454633142563e-05
+yolo_central__dfine_low,dfine_supported_yolo_failure,7,motorcycle,77,0.004951450067519773
+yolo_central__dfine_low,dfine_supported_yolo_failure,8,bicycle,125,0.008038068291428203
+yolo_central__dfine_low,dfine_supported_yolo_failure,9,traffic light,2573,0.16545559771075816
+yolo_central__dfine_low,dfine_supported_yolo_failure,10,traffic sign,3636,0.2338113304610636
+yolo_central__dfine_low,yolo_low_confidence,1,pedestrian,2963,0.11054320250708849
+yolo_central__dfine_low,yolo_low_confidence,2,rider,58,0.0021638561408744966
+yolo_central__dfine_low,yolo_low_confidence,3,car,12103,0.45153708401731085
+yolo_central__dfine_low,yolo_low_confidence,4,truck,600,0.022384718698701685
+yolo_central__dfine_low,yolo_low_confidence,5,bus,169,0.006305029100134308
+yolo_central__dfine_low,yolo_low_confidence,6,train,1,3.7307864497836144e-05
+yolo_central__dfine_low,yolo_low_confidence,7,motorcycle,88,0.0032830920758095804
+yolo_central__dfine_low,yolo_low_confidence,8,bicycle,227,0.008468885241008804
+yolo_central__dfine_low,yolo_low_confidence,9,traffic light,3888,0.14505297716758692
+yolo_central__dfine_low,yolo_low_confidence,10,traffic sign,6707,0.25022384718698704
+yolo_central__dfine_low,yolo_localization_failure,1,pedestrian,663,0.05890715237672146
+yolo_central__dfine_low,yolo_localization_failure,2,rider,20,0.001776988005330964
+yolo_central__dfine_low,yolo_localization_failure,3,car,6680,0.5935139937805419
+yolo_central__dfine_low,yolo_localization_failure,4,truck,28,0.00248778320746335
+yolo_central__dfine_low,yolo_localization_failure,5,bus,4,0.00035539760106619283
+yolo_central__dfine_low,yolo_localization_failure,6,train,0,0.0
+yolo_central__dfine_low,yolo_localization_failure,7,motorcycle,10,0.000888494002665482
+yolo_central__dfine_low,yolo_localization_failure,8,bicycle,43,0.0038205242114615727
+yolo_central__dfine_low,yolo_localization_failure,9,traffic light,2496,0.2217681030653043
+yolo_central__dfine_low,yolo_localization_failure,10,traffic sign,1311,0.1164815637494447
+yolo_central__dfine_low,yolo_classification_failure,1,pedestrian,96,0.05342237061769616
+yolo_central__dfine_low,yolo_classification_failure,2,rider,85,0.04730105731775181
+yolo_central__dfine_low,yolo_classification_failure,3,car,330,0.18363939899833054
+yolo_central__dfine_low,yolo_classification_failure,4,truck,597,0.332220367278798
+yolo_central__dfine_low,yolo_classification_failure,5,bus,260,0.14468558708959378
+yolo_central__dfine_low,yolo_classification_failure,6,train,2,0.0011129660545353367
+yolo_central__dfine_low,yolo_classification_failure,7,motorcycle,41,0.022815804117974403
+yolo_central__dfine_low,yolo_classification_failure,8,bicycle,25,0.013912075681691708
+yolo_central__dfine_low,yolo_classification_failure,9,traffic light,134,0.07456872565386756
+yolo_central__dfine_low,yolo_classification_failure,10,traffic sign,227,0.12632164718976072
+yolo_central__dfine_low,small_high_risk,1,pedestrian,2425,0.06515314347125202
+yolo_central__dfine_low,small_high_risk,2,rider,167,0.004486835034927458
+yolo_central__dfine_low,small_high_risk,3,car,19715,0.5296883396023643
+yolo_central__dfine_low,small_high_risk,4,truck,415,0.011149919398173025
+yolo_central__dfine_low,small_high_risk,5,bus,192,0.005158516926383664
+yolo_central__dfine_low,small_high_risk,6,train,1,2.6867275658248254e-05
+yolo_central__dfine_low,small_high_risk,7,motorcycle,95,0.002552391187533584
+yolo_central__dfine_low,small_high_risk,8,bicycle,162,0.004352498656636217
+yolo_central__dfine_low,small_high_risk,9,traffic light,6358,0.1708221386351424
+yolo_central__dfine_low,small_high_risk,10,traffic sign,7690,0.20660934981192908
+yolo_central__dfine_central,small_jointly_missed,1,pedestrian,3413,0.09836301804138567
+yolo_central__dfine_central,small_jointly_missed,2,rider,197,0.005677560666320826
+yolo_central__dfine_central,small_jointly_missed,3,car,15303,0.4410340653639979
+yolo_central__dfine_central,small_jointly_missed,4,truck,505,0.014554152977116836
+yolo_central__dfine_central,small_jointly_missed,5,bus,205,0.00590812150556228
+yolo_central__dfine_central,small_jointly_missed,6,train,1,2.8820104905181854e-05
+yolo_central__dfine_central,small_jointly_missed,7,motorcycle,107,0.0030837512248544584
+yolo_central__dfine_central,small_jointly_missed,8,bicycle,193,0.005562280246700098
+yolo_central__dfine_central,small_jointly_missed,9,traffic light,6683,0.19260476108133034
+yolo_central__dfine_central,small_jointly_missed,10,traffic sign,8091,0.2331834687878264
+yolo_central__dfine_central,dfine_supported_yolo_failure,1,pedestrian,787,0.08744444444444445
+yolo_central__dfine_central,dfine_supported_yolo_failure,2,rider,30,0.0033333333333333335
+yolo_central__dfine_central,dfine_supported_yolo_failure,3,car,3920,0.43555555555555553
+yolo_central__dfine_central,dfine_supported_yolo_failure,4,truck,338,0.03755555555555556
+yolo_central__dfine_central,dfine_supported_yolo_failure,5,bus,131,0.014555555555555556
+yolo_central__dfine_central,dfine_supported_yolo_failure,6,train,1,0.00011111111111111112
+yolo_central__dfine_central,dfine_supported_yolo_failure,7,motorcycle,54,0.006
+yolo_central__dfine_central,dfine_supported_yolo_failure,8,bicycle,78,0.008666666666666666
+yolo_central__dfine_central,dfine_supported_yolo_failure,9,traffic light,1609,0.17877777777777779
+yolo_central__dfine_central,dfine_supported_yolo_failure,10,traffic sign,2052,0.228
+yolo_central__dfine_central,yolo_low_confidence,1,pedestrian,2963,0.11054320250708849
+yolo_central__dfine_central,yolo_low_confidence,2,rider,58,0.0021638561408744966
+yolo_central__dfine_central,yolo_low_confidence,3,car,12103,0.45153708401731085
+yolo_central__dfine_central,yolo_low_confidence,4,truck,600,0.022384718698701685
+yolo_central__dfine_central,yolo_low_confidence,5,bus,169,0.006305029100134308
+yolo_central__dfine_central,yolo_low_confidence,6,train,1,3.7307864497836144e-05
+yolo_central__dfine_central,yolo_low_confidence,7,motorcycle,88,0.0032830920758095804
+yolo_central__dfine_central,yolo_low_confidence,8,bicycle,227,0.008468885241008804
+yolo_central__dfine_central,yolo_low_confidence,9,traffic light,3888,0.14505297716758692
+yolo_central__dfine_central,yolo_low_confidence,10,traffic sign,6707,0.25022384718698704
+yolo_central__dfine_central,yolo_localization_failure,1,pedestrian,663,0.05890715237672146
+yolo_central__dfine_central,yolo_localization_failure,2,rider,20,0.001776988005330964
+yolo_central__dfine_central,yolo_localization_failure,3,car,6680,0.5935139937805419
+yolo_central__dfine_central,yolo_localization_failure,4,truck,28,0.00248778320746335
+yolo_central__dfine_central,yolo_localization_failure,5,bus,4,0.00035539760106619283
+yolo_central__dfine_central,yolo_localization_failure,6,train,0,0.0
+yolo_central__dfine_central,yolo_localization_failure,7,motorcycle,10,0.000888494002665482
+yolo_central__dfine_central,yolo_localization_failure,8,bicycle,43,0.0038205242114615727
+yolo_central__dfine_central,yolo_localization_failure,9,traffic light,2496,0.2217681030653043
+yolo_central__dfine_central,yolo_localization_failure,10,traffic sign,1311,0.1164815637494447
+yolo_central__dfine_central,yolo_classification_failure,1,pedestrian,96,0.05342237061769616
+yolo_central__dfine_central,yolo_classification_failure,2,rider,85,0.04730105731775181
+yolo_central__dfine_central,yolo_classification_failure,3,car,330,0.18363939899833054
+yolo_central__dfine_central,yolo_classification_failure,4,truck,597,0.332220367278798
+yolo_central__dfine_central,yolo_classification_failure,5,bus,260,0.14468558708959378
+yolo_central__dfine_central,yolo_classification_failure,6,train,2,0.0011129660545353367
+yolo_central__dfine_central,yolo_classification_failure,7,motorcycle,41,0.022815804117974403
+yolo_central__dfine_central,yolo_classification_failure,8,bicycle,25,0.013912075681691708
+yolo_central__dfine_central,yolo_classification_failure,9,traffic light,134,0.07456872565386756
+yolo_central__dfine_central,yolo_classification_failure,10,traffic sign,227,0.12632164718976072
+yolo_central__dfine_central,small_high_risk,1,pedestrian,2452,0.06568267659585866
+yolo_central__dfine_central,small_high_risk,2,rider,167,0.004473493879081729
+yolo_central__dfine_central,small_high_risk,3,car,19752,0.5291044976025288
+yolo_central__dfine_central,small_high_risk,4,truck,413,0.011063191449465591
+yolo_central__dfine_central,small_high_risk,5,bus,192,0.005143178591519113
+yolo_central__dfine_central,small_high_risk,6,train,1,2.678738849749538e-05
+yolo_central__dfine_central,small_high_risk,7,motorcycle,95,0.0025448019072620612
+yolo_central__dfine_central,small_high_risk,8,bicycle,163,0.004366344325091747
+yolo_central__dfine_central,small_high_risk,9,traffic light,6363,0.1704481530095631
+yolo_central__dfine_central,small_high_risk,10,traffic sign,7733,0.20714687525113176
+yolo_central__dfine_high,small_jointly_missed,1,pedestrian,3673,0.09423264405562112
+yolo_central__dfine_high,small_jointly_missed,2,rider,204,0.0052337215865359945
+yolo_central__dfine_high,small_jointly_missed,3,car,17173,0.44058186669403254
+yolo_central__dfine_high,small_jointly_missed,4,truck,563,0.014444045358920417
+yolo_central__dfine_high,small_jointly_missed,5,bus,229,0.005875109035866386
+yolo_central__dfine_high,small_jointly_missed,6,train,1,2.565549797321566e-05
+yolo_central__dfine_high,small_jointly_missed,7,motorcycle,114,0.002924726768946585
+yolo_central__dfine_high,small_jointly_missed,8,bicycle,206,0.005285032582482426
+yolo_central__dfine_high,small_jointly_missed,9,traffic light,7622,0.19554620555184976
+yolo_central__dfine_high,small_jointly_missed,10,traffic sign,9193,0.23585099286777156
+yolo_central__dfine_high,dfine_supported_yolo_failure,1,pedestrian,331,0.09669880222027462
+yolo_central__dfine_high,dfine_supported_yolo_failure,2,rider,13,0.0037978381536663743
+yolo_central__dfine_high,dfine_supported_yolo_failure,3,car,1436,0.41951504528191647
+yolo_central__dfine_high,dfine_supported_yolo_failure,4,truck,143,0.04177621969033012
+yolo_central__dfine_high,dfine_supported_yolo_failure,5,bus,55,0.016067776803973123
+yolo_central__dfine_high,dfine_supported_yolo_failure,6,train,1,0.00029214139643587495
+yolo_central__dfine_high,dfine_supported_yolo_failure,7,motorcycle,25,0.007303534910896874
+yolo_central__dfine_high,dfine_supported_yolo_failure,8,bicycle,33,0.009640666082383873
+yolo_central__dfine_high,dfine_supported_yolo_failure,9,traffic light,631,0.1843412211510371
+yolo_central__dfine_high,dfine_supported_yolo_failure,10,traffic sign,755,0.2205667543090856
+yolo_central__dfine_high,yolo_low_confidence,1,pedestrian,2963,0.11054320250708849
+yolo_central__dfine_high,yolo_low_confidence,2,rider,58,0.0021638561408744966
+yolo_central__dfine_high,yolo_low_confidence,3,car,12103,0.45153708401731085
+yolo_central__dfine_high,yolo_low_confidence,4,truck,600,0.022384718698701685
+yolo_central__dfine_high,yolo_low_confidence,5,bus,169,0.006305029100134308
+yolo_central__dfine_high,yolo_low_confidence,6,train,1,3.7307864497836144e-05
+yolo_central__dfine_high,yolo_low_confidence,7,motorcycle,88,0.0032830920758095804
+yolo_central__dfine_high,yolo_low_confidence,8,bicycle,227,0.008468885241008804
+yolo_central__dfine_high,yolo_low_confidence,9,traffic light,3888,0.14505297716758692
+yolo_central__dfine_high,yolo_low_confidence,10,traffic sign,6707,0.25022384718698704
+yolo_central__dfine_high,yolo_localization_failure,1,pedestrian,663,0.05890715237672146
+yolo_central__dfine_high,yolo_localization_failure,2,rider,20,0.001776988005330964
+yolo_central__dfine_high,yolo_localization_failure,3,car,6680,0.5935139937805419
+yolo_central__dfine_high,yolo_localization_failure,4,truck,28,0.00248778320746335
+yolo_central__dfine_high,yolo_localization_failure,5,bus,4,0.00035539760106619283
+yolo_central__dfine_high,yolo_localization_failure,6,train,0,0.0
+yolo_central__dfine_high,yolo_localization_failure,7,motorcycle,10,0.000888494002665482
+yolo_central__dfine_high,yolo_localization_failure,8,bicycle,43,0.0038205242114615727
+yolo_central__dfine_high,yolo_localization_failure,9,traffic light,2496,0.2217681030653043
+yolo_central__dfine_high,yolo_localization_failure,10,traffic sign,1311,0.1164815637494447
+yolo_central__dfine_high,yolo_classification_failure,1,pedestrian,96,0.05342237061769616
+yolo_central__dfine_high,yolo_classification_failure,2,rider,85,0.04730105731775181
+yolo_central__dfine_high,yolo_classification_failure,3,car,330,0.18363939899833054
+yolo_central__dfine_high,yolo_classification_failure,4,truck,597,0.332220367278798
+yolo_central__dfine_high,yolo_classification_failure,5,bus,260,0.14468558708959378
+yolo_central__dfine_high,yolo_classification_failure,6,train,2,0.0011129660545353367
+yolo_central__dfine_high,yolo_classification_failure,7,motorcycle,41,0.022815804117974403
+yolo_central__dfine_high,yolo_classification_failure,8,bicycle,25,0.013912075681691708
+yolo_central__dfine_high,yolo_classification_failure,9,traffic light,134,0.07456872565386756
+yolo_central__dfine_high,yolo_classification_failure,10,traffic sign,227,0.12632164718976072
+yolo_central__dfine_high,small_high_risk,1,pedestrian,2457,0.06555671175858481
+yolo_central__dfine_high,small_high_risk,2,rider,168,0.0044825102057152
+yolo_central__dfine_high,small_high_risk,3,car,19807,0.5284826169321487
+yolo_central__dfine_high,small_high_risk,4,truck,412,0.010992822647349182
+yolo_central__dfine_high,small_high_risk,5,bus,198,0.005282958456735772
+yolo_central__dfine_high,small_high_risk,6,train,1,2.6681608367352383e-05
+yolo_central__dfine_high,small_high_risk,7,motorcycle,96,0.0025614344032658287
+yolo_central__dfine_high,small_high_risk,8,bicycle,163,0.004349102163878438
+yolo_central__dfine_high,small_high_risk,9,traffic light,6381,0.17025534299207556
+yolo_central__dfine_high,small_high_risk,10,traffic sign,7796,0.2080098188318792
+yolo_high__dfine_low,small_jointly_missed,1,pedestrian,3258,0.10093874895436379
+yolo_high__dfine_low,small_jointly_missed,2,rider,193,0.005979490039346903
+yolo_high__dfine_low,small_jointly_missed,3,car,14475,0.44846175295101776
+yolo_high__dfine_low,small_jointly_missed,4,truck,442,0.01369396164451467
+yolo_high__dfine_low,small_jointly_missed,5,bus,179,0.005545744647891687
+yolo_high__dfine_low,small_jointly_missed,6,train,1,3.0981813675372557e-05
+yolo_high__dfine_low,small_jointly_missed,7,motorcycle,104,0.0032221086222387458
+yolo_high__dfine_low,small_jointly_missed,8,bicycle,192,0.005948508225671531
+yolo_high__dfine_low,small_jointly_missed,9,traffic light,6260,0.1939461536078322
+yolo_high__dfine_low,small_jointly_missed,10,traffic sign,7173,0.22223254949344734
+yolo_high__dfine_low,dfine_supported_yolo_failure,1,pedestrian,2558,0.08457037061526763
+yolo_high__dfine_low,dfine_supported_yolo_failure,2,rider,81,0.002677951532383377
+yolo_high__dfine_low,dfine_supported_yolo_failure,3,car,14039,0.4641452044830892
+yolo_high__dfine_low,dfine_supported_yolo_failure,4,truck,768,0.025390947862597945
+yolo_high__dfine_low,dfine_supported_yolo_failure,5,bus,277,0.009157933018150561
+yolo_high__dfine_low,dfine_supported_yolo_failure,6,train,1,3.30611300294244e-05
+yolo_high__dfine_low,dfine_supported_yolo_failure,7,motorcycle,115,0.0038020299533838065
+yolo_high__dfine_low,dfine_supported_yolo_failure,8,bicycle,243,0.008033854597150131
+yolo_high__dfine_low,dfine_supported_yolo_failure,9,traffic light,5562,0.18388600522365856
+yolo_high__dfine_low,dfine_supported_yolo_failure,10,traffic sign,6603,0.21830264158428936
+yolo_high__dfine_low,yolo_low_confidence,1,pedestrian,4467,0.09969646922287194
+yolo_high__dfine_low,yolo_low_confidence,2,rider,97,0.0021648886309869214
+yolo_high__dfine_low,yolo_low_confidence,3,car,20996,0.4685979556309423
+yolo_high__dfine_low,yolo_low_confidence,4,truck,845,0.018859081373030398
+yolo_high__dfine_low,yolo_low_confidence,5,bus,263,0.005869749587108869
+yolo_high__dfine_low,yolo_low_confidence,6,train,1,2.231843949471053e-05
+yolo_high__dfine_low,yolo_low_confidence,7,motorcycle,132,0.00294603401330179
+yolo_high__dfine_low,yolo_low_confidence,8,bicycle,395,0.00881578360041066
+yolo_high__dfine_low,yolo_low_confidence,9,traffic light,7414,0.16546891041378387
+yolo_high__dfine_low,yolo_low_confidence,10,traffic sign,10196,0.22755880908806855
+yolo_high__dfine_low,yolo_localization_failure,1,pedestrian,437,0.058243369318939094
+yolo_high__dfine_low,yolo_localization_failure,2,rider,12,0.001599360255897641
+yolo_high__dfine_low,yolo_localization_failure,3,car,4545,0.6057576969212315
+yolo_high__dfine_low,yolo_localization_failure,4,truck,15,0.001999200319872051
+yolo_high__dfine_low,yolo_localization_failure,5,bus,2,0.0002665600426496068
+yolo_high__dfine_low,yolo_localization_failure,6,train,0,0.0
+yolo_high__dfine_low,yolo_localization_failure,7,motorcycle,3,0.00039984006397441024
+yolo_high__dfine_low,yolo_localization_failure,8,bicycle,17,0.002265760362521658
+yolo_high__dfine_low,yolo_localization_failure,9,traffic light,1611,0.2147141143542583
+yolo_high__dfine_low,yolo_localization_failure,10,traffic sign,861,0.11475409836065574
+yolo_high__dfine_low,yolo_classification_failure,1,pedestrian,64,0.04695524578136464
+yolo_high__dfine_low,yolo_classification_failure,2,rider,49,0.0359501100513573
+yolo_high__dfine_low,yolo_classification_failure,3,car,277,0.20322817314746883
+yolo_high__dfine_low,yolo_classification_failure,4,truck,507,0.371973587674248
+yolo_high__dfine_low,yolo_classification_failure,5,bus,195,0.14306676449009537
+yolo_high__dfine_low,yolo_classification_failure,6,train,2,0.001467351430667645
+yolo_high__dfine_low,yolo_classification_failure,7,motorcycle,24,0.01760821716801174
+yolo_high__dfine_low,yolo_classification_failure,8,bicycle,21,0.015407190022010272
+yolo_high__dfine_low,yolo_classification_failure,9,traffic light,86,0.06309611151870873
+yolo_high__dfine_low,yolo_classification_failure,10,traffic sign,138,0.1012472487160675
+yolo_high__dfine_low,small_high_risk,1,pedestrian,2401,0.06540630363126208
+yolo_high__dfine_low,small_high_risk,2,rider,166,0.004522051812906916
+yolo_high__dfine_low,small_high_risk,3,car,19302,0.5258111089923452
+yolo_high__dfine_low,small_high_risk,4,truck,414,0.011277888256285925
+yolo_high__dfine_low,small_high_risk,5,bus,187,0.005094118608515623
+yolo_high__dfine_low,small_high_risk,6,train,1,2.7241275981366966e-05
+yolo_high__dfine_low,small_high_risk,7,motorcycle,95,0.0025879212182298617
+yolo_high__dfine_low,small_high_risk,8,bicycle,158,0.004304121605055981
+yolo_high__dfine_low,small_high_risk,9,traffic light,6309,0.1718652101664442
+yolo_high__dfine_low,small_high_risk,10,traffic sign,7676,0.20910403443297285
+yolo_high__dfine_central,small_jointly_missed,1,pedestrian,3870,0.09592980020821971
+yolo_high__dfine_central,small_jointly_missed,2,rider,202,0.005007188538000099
+yolo_high__dfine_central,small_jointly_missed,3,car,18319,0.45409250904764265
+yolo_high__dfine_central,small_jointly_missed,4,truck,529,0.013112884834663626
+yolo_high__dfine_central,small_jointly_missed,5,bus,211,0.005230281096623866
+yolo_high__dfine_central,small_jointly_missed,6,train,1,2.478806206930742e-05
+yolo_high__dfine_central,small_jointly_missed,7,motorcycle,107,0.0026523226414158943
+yolo_high__dfine_central,small_jointly_missed,8,bicycle,204,0.005056764662138714
+yolo_high__dfine_central,small_jointly_missed,9,traffic light,7714,0.19121511080263745
+yolo_high__dfine_central,small_jointly_missed,10,traffic sign,9185,0.22767835010658866
+yolo_high__dfine_central,dfine_supported_yolo_failure,1,pedestrian,1701,0.08341097435394498
+yolo_high__dfine_central,dfine_supported_yolo_failure,2,rider,57,0.00279507674201932
+yolo_high__dfine_central,dfine_supported_yolo_failure,3,car,9251,0.45363605158632864
+yolo_high__dfine_central,dfine_supported_yolo_failure,4,truck,507,0.024861472073750796
+yolo_high__dfine_central,dfine_supported_yolo_failure,5,bus,190,0.009316922473397734
+yolo_high__dfine_central,dfine_supported_yolo_failure,6,train,1,4.903643407051439e-05
+yolo_high__dfine_central,dfine_supported_yolo_failure,7,motorcycle,87,0.004266169764134752
+yolo_high__dfine_central,dfine_supported_yolo_failure,8,bicycle,174,0.008532339528269504
+yolo_high__dfine_central,dfine_supported_yolo_failure,9,traffic light,4060,0.19908792232628844
+yolo_high__dfine_central,dfine_supported_yolo_failure,10,traffic sign,4365,0.21404403471779532
+yolo_high__dfine_central,yolo_low_confidence,1,pedestrian,4467,0.09969646922287194
+yolo_high__dfine_central,yolo_low_confidence,2,rider,97,0.0021648886309869214
+yolo_high__dfine_central,yolo_low_confidence,3,car,20996,0.4685979556309423
+yolo_high__dfine_central,yolo_low_confidence,4,truck,845,0.018859081373030398
+yolo_high__dfine_central,yolo_low_confidence,5,bus,263,0.005869749587108869
+yolo_high__dfine_central,yolo_low_confidence,6,train,1,2.231843949471053e-05
+yolo_high__dfine_central,yolo_low_confidence,7,motorcycle,132,0.00294603401330179
+yolo_high__dfine_central,yolo_low_confidence,8,bicycle,395,0.00881578360041066
+yolo_high__dfine_central,yolo_low_confidence,9,traffic light,7414,0.16546891041378387
+yolo_high__dfine_central,yolo_low_confidence,10,traffic sign,10196,0.22755880908806855
+yolo_high__dfine_central,yolo_localization_failure,1,pedestrian,437,0.058243369318939094
+yolo_high__dfine_central,yolo_localization_failure,2,rider,12,0.001599360255897641
+yolo_high__dfine_central,yolo_localization_failure,3,car,4545,0.6057576969212315
+yolo_high__dfine_central,yolo_localization_failure,4,truck,15,0.001999200319872051
+yolo_high__dfine_central,yolo_localization_failure,5,bus,2,0.0002665600426496068
+yolo_high__dfine_central,yolo_localization_failure,6,train,0,0.0
+yolo_high__dfine_central,yolo_localization_failure,7,motorcycle,3,0.00039984006397441024
+yolo_high__dfine_central,yolo_localization_failure,8,bicycle,17,0.002265760362521658
+yolo_high__dfine_central,yolo_localization_failure,9,traffic light,1611,0.2147141143542583
+yolo_high__dfine_central,yolo_localization_failure,10,traffic sign,861,0.11475409836065574
+yolo_high__dfine_central,yolo_classification_failure,1,pedestrian,64,0.04695524578136464
+yolo_high__dfine_central,yolo_classification_failure,2,rider,49,0.0359501100513573
+yolo_high__dfine_central,yolo_classification_failure,3,car,277,0.20322817314746883
+yolo_high__dfine_central,yolo_classification_failure,4,truck,507,0.371973587674248
+yolo_high__dfine_central,yolo_classification_failure,5,bus,195,0.14306676449009537
+yolo_high__dfine_central,yolo_classification_failure,6,train,2,0.001467351430667645
+yolo_high__dfine_central,yolo_classification_failure,7,motorcycle,24,0.01760821716801174
+yolo_high__dfine_central,yolo_classification_failure,8,bicycle,21,0.015407190022010272
+yolo_high__dfine_central,yolo_classification_failure,9,traffic light,86,0.06309611151870873
+yolo_high__dfine_central,yolo_classification_failure,10,traffic sign,138,0.1012472487160675
+yolo_high__dfine_central,small_high_risk,1,pedestrian,2429,0.06575883913584926
+yolo_high__dfine_central,small_high_risk,2,rider,167,0.004521089393036981
+yolo_high__dfine_central,small_high_risk,3,car,19416,0.5256375548215929
+yolo_high__dfine_central,small_high_risk,4,truck,409,0.011072608154204343
+yolo_high__dfine_central,small_high_risk,5,bus,189,0.005116682007688559
+yolo_high__dfine_central,small_high_risk,6,train,1,2.7072391575071743e-05
+yolo_high__dfine_central,small_high_risk,7,motorcycle,97,0.0026260219827819588
+yolo_high__dfine_central,small_high_risk,8,bicycle,161,0.0043586550435865505
+yolo_high__dfine_central,small_high_risk,9,traffic light,6321,0.1711245871460285
+yolo_high__dfine_central,small_high_risk,10,traffic sign,7748,0.20975688992365585
+yolo_high__dfine_high,small_jointly_missed,1,pedestrian,4434,0.08830030867270736
+yolo_high__dfine_high,small_jointly_missed,2,rider,212,0.004221846061933685
+yolo_high__dfine_high,small_jointly_missed,3,car,22706,0.452175644727671
+yolo_high__dfine_high,small_jointly_missed,4,truck,613,0.012207507716817684
+yolo_high__dfine_high,small_jointly_missed,5,bus,240,0.004779448372000398
+yolo_high__dfine_high,small_jointly_missed,6,train,1,1.9914368216668327e-05
+yolo_high__dfine_high,small_jointly_missed,7,motorcycle,115,0.0022901523449168574
+yolo_high__dfine_high,small_jointly_missed,8,bicycle,222,0.004420989744100368
+yolo_high__dfine_high,small_jointly_missed,9,traffic light,10200,0.20312655581001693
+yolo_high__dfine_high,small_jointly_missed,10,traffic sign,11472,0.22845763218161905
+yolo_high__dfine_high,dfine_supported_yolo_failure,1,pedestrian,785,0.09554527750730282
+yolo_high__dfine_high,dfine_supported_yolo_failure,2,rider,30,0.0036514118792599806
+yolo_high__dfine_high,dfine_supported_yolo_failure,3,car,3656,0.44498539435248297
+yolo_high__dfine_high,dfine_supported_yolo_failure,4,truck,230,0.027994157740993186
+yolo_high__dfine_high,dfine_supported_yolo_failure,5,bus,86,0.010467380720545278
+yolo_high__dfine_high,dfine_supported_yolo_failure,6,train,1,0.00012171372930866602
+yolo_high__dfine_high,dfine_supported_yolo_failure,7,motorcycle,53,0.006450827653359299
+yolo_high__dfine_high,dfine_supported_yolo_failure,8,bicycle,89,0.010832521908471275
+yolo_high__dfine_high,dfine_supported_yolo_failure,9,traffic light,1494,0.18184031158714703
+yolo_high__dfine_high,dfine_supported_yolo_failure,10,traffic sign,1792,0.2181110029211295
+yolo_high__dfine_high,yolo_low_confidence,1,pedestrian,4467,0.09969646922287194
+yolo_high__dfine_high,yolo_low_confidence,2,rider,97,0.0021648886309869214
+yolo_high__dfine_high,yolo_low_confidence,3,car,20996,0.4685979556309423
+yolo_high__dfine_high,yolo_low_confidence,4,truck,845,0.018859081373030398
+yolo_high__dfine_high,yolo_low_confidence,5,bus,263,0.005869749587108869
+yolo_high__dfine_high,yolo_low_confidence,6,train,1,2.231843949471053e-05
+yolo_high__dfine_high,yolo_low_confidence,7,motorcycle,132,0.00294603401330179
+yolo_high__dfine_high,yolo_low_confidence,8,bicycle,395,0.00881578360041066
+yolo_high__dfine_high,yolo_low_confidence,9,traffic light,7414,0.16546891041378387
+yolo_high__dfine_high,yolo_low_confidence,10,traffic sign,10196,0.22755880908806855
+yolo_high__dfine_high,yolo_localization_failure,1,pedestrian,437,0.058243369318939094
+yolo_high__dfine_high,yolo_localization_failure,2,rider,12,0.001599360255897641
+yolo_high__dfine_high,yolo_localization_failure,3,car,4545,0.6057576969212315
+yolo_high__dfine_high,yolo_localization_failure,4,truck,15,0.001999200319872051
+yolo_high__dfine_high,yolo_localization_failure,5,bus,2,0.0002665600426496068
+yolo_high__dfine_high,yolo_localization_failure,6,train,0,0.0
+yolo_high__dfine_high,yolo_localization_failure,7,motorcycle,3,0.00039984006397441024
+yolo_high__dfine_high,yolo_localization_failure,8,bicycle,17,0.002265760362521658
+yolo_high__dfine_high,yolo_localization_failure,9,traffic light,1611,0.2147141143542583
+yolo_high__dfine_high,yolo_localization_failure,10,traffic sign,861,0.11475409836065574
+yolo_high__dfine_high,yolo_classification_failure,1,pedestrian,64,0.04695524578136464
+yolo_high__dfine_high,yolo_classification_failure,2,rider,49,0.0359501100513573
+yolo_high__dfine_high,yolo_classification_failure,3,car,277,0.20322817314746883
+yolo_high__dfine_high,yolo_classification_failure,4,truck,507,0.371973587674248
+yolo_high__dfine_high,yolo_classification_failure,5,bus,195,0.14306676449009537
+yolo_high__dfine_high,yolo_classification_failure,6,train,2,0.001467351430667645
+yolo_high__dfine_high,yolo_classification_failure,7,motorcycle,24,0.01760821716801174
+yolo_high__dfine_high,yolo_classification_failure,8,bicycle,21,0.015407190022010272
+yolo_high__dfine_high,yolo_classification_failure,9,traffic light,86,0.06309611151870873
+yolo_high__dfine_high,yolo_classification_failure,10,traffic sign,138,0.1012472487160675
+yolo_high__dfine_high,small_high_risk,1,pedestrian,2429,0.06544347451233969
+yolo_high__dfine_high,small_high_risk,2,rider,167,0.004499407263713762
+yolo_high__dfine_high,small_high_risk,3,car,19502,0.5254337751912922
+yolo_high__dfine_high,small_high_risk,4,truck,416,0.011208104321586377
+yolo_high__dfine_high,small_high_risk,5,bus,197,0.005307684017674319
+yolo_high__dfine_high,small_high_risk,6,train,1,2.6942558465351868e-05
+yolo_high__dfine_high,small_high_risk,7,motorcycle,95,0.0025595430542084277
+yolo_high__dfine_high,small_high_risk,8,bicycle,163,0.004391637029852354
+yolo_high__dfine_high,small_high_risk,9,traffic light,6344,0.17092359090419226
+yolo_high__dfine_high,small_high_risk,10,traffic sign,7802,0.2102058411466753

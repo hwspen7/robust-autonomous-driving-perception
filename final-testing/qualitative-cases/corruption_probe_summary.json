@@ -1,0 +1,13 @@
+{
+  "corruptions": [
+    "blur",
+    "noise"
+  ],
+  "failure_candidates": 958,
+  "new_training": false,
+  "probe_images": 512,
+  "probe_views": 1024,
+  "severity": 2,
+  "success_candidates": 18,
+  "temporary_prediction_files": 0
+}

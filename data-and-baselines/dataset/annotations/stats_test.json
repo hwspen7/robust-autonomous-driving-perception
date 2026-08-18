@@ -1,0 +1,24 @@
+{
+  "split": "test",
+  "formats": [
+    "coco",
+    "yolo"
+  ],
+  "images": 20000,
+  "detection_objects": 0,
+  "empty_images": 20000,
+  "invalid_boxes": 0,
+  "skipped_non_detection_objects": 0,
+  "class_counts": {
+    "pedestrian": 0,
+    "rider": 0,
+    "car": 0,
+    "truck": 0,
+    "bus": 0,
+    "train": 0,
+    "motorcycle": 0,
+    "bicycle": 0,
+    "traffic light": 0,
+    "traffic sign": 0
+  }
+}

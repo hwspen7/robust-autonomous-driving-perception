@@ -1,0 +1,165 @@
+{
+  "version": "final_architecture_selection_v1",
+  "status": "frozen",
+  "created_at_utc": "2026-08-11T12:36:05.571826+00:00",
+  "research_priority": "failure-first object detection with primary emphasis on small-object and typed-failure recovery",
+  "selected_architecture": "p2_projected",
+  "selected_architecture_name": "YOLO11m-P2-Projected-960",
+  "selection_history": {
+    "v4_dev_gate": {
+      "selection": "standard",
+      "reason": "P2 narrowly exceeded the AP_large non-regression margin on the frozen 5k dev split."
+    },
+    "v5_1_independent_official_val_adjudication": {
+      "selection": "p2_projected",
+      "all_original_rules_passed": true,
+      "no_additional_training": true,
+      "thresholds_changed": false
+    }
+  },
+  "official_val_metrics": {
+    "standard": {
+      "model": "standard_epoch20",
+      "images": 10000,
+      "predictions": 1745354,
+      "minimum_predictions_per_image": 15,
+      "maximum_predictions_per_image": 300,
+      "AP": 0.3264401598994993,
+      "AP50": 0.5674681203243928,
+      "AP75": 0.3154856657526812,
+      "AP_small": 0.14494499788777054,
+      "AP_medium": 0.38547989133341715,
+      "AP_large": 0.5605761151848175,
+      "AR1": 0.22187821418115847,
+      "AR10": 0.41034532214781405,
+      "AR100": 0.44638227013830795,
+      "AR_small": 0.24337903793209453,
+      "AR_medium": 0.5164863057526593,
+      "AR_large": 0.6651545253724115,
+      "prediction_path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/predictions/standard_epoch20/predictions.json",
+      "prediction_sha256": "422bf84b636d422c46a186c2ef8a6f7e585b94cd82c8ef97bc799f345067352b",
+      "elapsed_minutes": 3.2224661707878113
+    },
+    "p2_projected": {
+      "model": "p2_epoch20",
+      "images": 10000,
+      "predictions": 2377151,
+      "minimum_predictions_per_image": 13,
+      "maximum_predictions_per_image": 300,
+      "AP": 0.3354733073115955,
+      "AP50": 0.5783108651429493,
+      "AP75": 0.32608853940824,
+      "AP_small": 0.15675220023724876,
+      "AP_medium": 0.38979978126408293,
+      "AP_large": 0.5635789674713957,
+      "AR1": 0.2257351836114105,
+      "AR10": 0.4262387814435783,
+      "AR100": 0.47498897117219163,
+      "AR_small": 0.30196949912367477,
+      "AR_medium": 0.5288968423051231,
+      "AR_large": 0.6680053951406479,
+      "prediction_path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/predictions/p2_epoch20/predictions.json",
+      "prediction_sha256": "17167dad4b6158e68d78262ca43f60b3771372db5ae228a156ac8022a30e2b81",
+      "elapsed_minutes": 3.6315208872159324
+    },
+    "deltas_p2_minus_standard": {
+      "delta_AP": 0.00903314741209621,
+      "delta_AP50": 0.010842744818556516,
+      "delta_AP75": 0.010602873655558787,
+      "delta_AP_small": 0.011807202349478213,
+      "delta_AP_medium": 0.004319889930665788,
+      "delta_AP_large": 0.0030028522865781504,
+      "delta_AR1": 0.003856969430252044,
+      "delta_AR10": 0.015893459295764245,
+      "delta_AR100": 0.028606701033883686,
+      "delta_AR_small": 0.058590461191580234,
+      "delta_AR_medium": 0.012410536552463824,
+      "delta_AR_large": 0.0028508697682364526
+    },
+    "rule_checks": {
+      "delta_AP": true,
+      "delta_AP75": true,
+      "delta_AP_small": true,
+      "delta_AP_medium": true,
+      "delta_AP_large": true,
+      "latency": true
+    }
+  },
+  "method_gate_start": {
+    "checkpoint": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+      "bytes": 83085211,
+      "sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29"
+    },
+    "human_epoch": 20,
+    "training_split": "frozen_train_core_65000",
+    "validation_split": "frozen_train_dev_5000",
+    "purpose": "Short Uniform / Scalar-Risk / Typed-CAFR method gate only."
+  },
+  "formal_training_start": {
+    "checkpoint": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt",
+      "bytes": 41786963,
+      "sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd"
+    },
+    "model_config": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_bdd10.yaml",
+      "bytes": 1524,
+      "sha256": "bd6bd6cde7f73f54d2e80fd4ad58b44a85d14cb14cb7fb450548b52f5d6ee0ef"
+    },
+    "purpose": "Formal 70k common E1-E40 training. The E20 method-gate checkpoint must not be used as the formal-training initialization."
+  },
+  "architecture_policy": {
+    "no_more_architecture_variants": true,
+    "no_epoch30_architecture_extension": true,
+    "p2_is_supporting_backbone_not_main_contribution": true,
+    "main_contribution": "typed failure diagnosis and failure-conditioned repair"
+  },
+  "verified_inputs": {
+    "v4_manifest": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/final_artifact_manifest.json",
+      "bytes": 11408,
+      "sha256": "5cac2261fae86e7f3918fc87c99fc752b59d7fc89bbffa694440cdfc0c143381"
+    },
+    "v5_1_protocol": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v5_1/borderline_adjudication_protocol_v5_1.json",
+      "bytes": 4580,
+      "sha256": "d2e5d3eee91e82f70a91cc511f0a8d011fd6f65e4cb05cfa0ff7349bca1768e6"
+    },
+    "v5_1_prepared_manifest": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v5_1/artifact_manifest.json",
+      "bytes": 242,
+      "sha256": "ae84584e4205bdd9b51bff1218f5f52de4ba8186014ea06e7aba4871badb8e81"
+    },
+    "v5_1_final_manifest": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/final_artifact_manifest.json",
+      "bytes": 2246,
+      "sha256": "1a6e03bd02d7db0fc877f0080213b927726000c0d5c5bdb4bcf51c52153b3e43"
+    },
+    "v5_1_decision": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/formal_evaluation/final_decision.json",
+      "bytes": 3680,
+      "sha256": "e22114f58da2514ed81c9c150013cd7f6a410aead701540b6c7870f9a188e357"
+    },
+    "method_gate_checkpoint": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+      "bytes": 83085211,
+      "sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29"
+    },
+    "formal_coco_initialization": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt",
+      "bytes": 41786963,
+      "sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd"
+    },
+    "formal_model_config": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_bdd10.yaml",
+      "bytes": 1524,
+      "sha256": "bd6bd6cde7f73f54d2e80fd4ad58b44a85d14cb14cb7fb450548b52f5d6ee0ef"
+    },
+    "official_val_gt": {
+      "path": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+      "bytes": 38465357,
+      "sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6"
+    }
+  }
+}

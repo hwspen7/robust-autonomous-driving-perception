@@ -1,0 +1,17 @@
+{
+  "coordinate_definition": {
+    "network_960_letterbox": "BBox area after aspect-ratio-preserving resize to fit inside 960x960; padding does not change bbox dimensions.",
+    "view_native": "BBox area in the decoded original image or crop coordinate system."
+  },
+  "ephemeral_crop_payload_fully_rehashed": true,
+  "scale_thresholds": {
+    "large": "[9216, infinity)",
+    "medium": "[1024, 9216)",
+    "small": "[0, 1024)"
+  },
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_exposure_audit_v1.py",
+  "script_sha256": "3fa693d02dfc293a4d3f49f8c34903c023be0f9d51c849c4ad12587b0c94b6dd",
+  "status": "complete",
+  "target_object_definition": "Exposure count of the 19,500 scheduled target annotations: once for each target crop plus any retained original source-view exposure in the corresponding arm.",
+  "version": "final_exposure_audit_v1"
+}

@@ -1,0 +1,11 @@
+{
+  "causal_interpretation_forbidden": true,
+  "materializer_reconstruction_verified": true,
+  "neighbor_definition": "Every valid non-target, non-crowd BDD100K GT object in the target source image, excluding the frozen duplicate annotation.",
+  "neighbor_retained_rule": "At least 50% of the original neighbor bbox area remains inside the crop before resize.",
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_crop_scale_context_audit_v1.py",
+  "script_sha256": "2b38c8e44e2a410175fa037490dd57143f4e52a1044ecc9b4a880b7bfba6a9de",
+  "status": "complete",
+  "target_boxes_fully_retained": true,
+  "version": "final_crop_scale_context_audit_v1"
+}

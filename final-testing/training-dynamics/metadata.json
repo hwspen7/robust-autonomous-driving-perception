@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-08-16T10:17:19Z",
+  "grid_limitation": "Unsaved epochs between the frozen checkpoint nodes cannot be reconstructed.",
+  "new_inference": false,
+  "new_model_selection": false,
+  "new_training": false,
+  "saved_checkpoint_grid": [
+    41,
+    46,
+    51,
+    56,
+    61,
+    66,
+    71,
+    76,
+    81,
+    86,
+    91,
+    96,
+    100
+  ],
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_training_dynamics_attribution_v1.py",
+  "script_sha256": "e25da492c869a695600fddb0f5cd90a02c91c7da6638cf09b8fef3aa2f6cc69f",
+  "status": "complete",
+  "version": "training_dynamics_attribution_v1"
+}

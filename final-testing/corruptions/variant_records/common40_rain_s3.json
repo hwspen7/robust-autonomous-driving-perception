@@ -1,0 +1,182 @@
+{
+  "display_name": "P2-960-Common40",
+  "executor_version": "parallel_corruption_v2",
+  "exporter_metadata": {
+    "annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+    "annotation_sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+    "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt",
+    "checkpoint_sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3",
+    "class_mapping": {
+      "0": {
+        "bdd_category_id": 1,
+        "bdd_name": "pedestrian",
+        "yolo_name": "pedestrian"
+      },
+      "1": {
+        "bdd_category_id": 2,
+        "bdd_name": "rider",
+        "yolo_name": "rider"
+      },
+      "2": {
+        "bdd_category_id": 3,
+        "bdd_name": "car",
+        "yolo_name": "car"
+      },
+      "3": {
+        "bdd_category_id": 4,
+        "bdd_name": "truck",
+        "yolo_name": "truck"
+      },
+      "4": {
+        "bdd_category_id": 5,
+        "bdd_name": "bus",
+        "yolo_name": "bus"
+      },
+      "5": {
+        "bdd_category_id": 6,
+        "bdd_name": "train",
+        "yolo_name": "train"
+      },
+      "6": {
+        "bdd_category_id": 7,
+        "bdd_name": "motorcycle",
+        "yolo_name": "motorcycle"
+      },
+      "7": {
+        "bdd_category_id": 8,
+        "bdd_name": "bicycle",
+        "yolo_name": "bicycle"
+      },
+      "8": {
+        "bdd_category_id": 9,
+        "bdd_name": "traffic light",
+        "yolo_name": "traffic light"
+      },
+      "9": {
+        "bdd_category_id": 10,
+        "bdd_name": "traffic sign",
+        "yolo_name": "traffic sign"
+      }
+    },
+    "controlled_corruption": {
+      "applied_before_model_preprocessing": true,
+      "corruption": "rain",
+      "full_corrupted_images_saved": false,
+      "geometry_changed": false,
+      "global_seed": 20260809,
+      "gt_modified": false,
+      "module": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/_executor_v2/controlled_corruptions.py",
+      "module_sha256": "cb451b3ab1c5ba134bd5251298293f38f645d279d30614c7dbba7ecac550273a",
+      "parameters": {
+        "alpha": 110,
+        "blur_radius": 1.0,
+        "brightness": 0.92,
+        "density": 0.00055,
+        "length": 24,
+        "width": 2
+      },
+      "same_function_intended_for_all_models": true,
+      "seed_rule": "SHA256(GLOBAL_SEED|image_key|corruption|severity) first 8 bytes little-endian unsigned",
+      "severity": 3,
+      "variant": "rain_s3"
+    },
+    "dataset": "BDD100K",
+    "elapsed_seconds": 277.68,
+    "evaluation_branch": "controlled_corruption",
+    "image_summary_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/common40_rain_s3/image_summary.json",
+    "images_per_second": 36.013,
+    "inference": {
+      "agnostic_nms": false,
+      "batch": 8,
+      "conf": 0.001,
+      "corruption_workers": 8,
+      "device": "0",
+      "imgsz": 960,
+      "max_det": 300,
+      "nms_iou": 0.7,
+      "parallel_corruption_preserves_submission_order": true,
+      "prediction_json_write_mode": "one_compact_payload_per_batch",
+      "prefetch_batches": 1,
+      "rect": true,
+      "source_type": "in_memory_PIL_RGB_batches",
+      "test_time_augmentation": false
+    },
+    "model": "YOLO11m",
+    "num_gt_annotations": 185523,
+    "num_gt_images": 10000,
+    "num_images_exported": 10000,
+    "num_images_with_predictions": 10000,
+    "num_predictions": 2223278,
+    "prediction_counts_by_category": {
+      "1": 217184,
+      "10": 355270,
+      "2": 5643,
+      "3": 1265820,
+      "4": 32480,
+      "5": 9235,
+      "6": 299,
+      "7": 3814,
+      "8": 29495,
+      "9": 304038
+    },
+    "prediction_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/common40_rain_s3/predictions.json",
+    "prediction_sha256": "c472ff8fa9a238b5bb5f342d48455c12f00b09ddca10f7927584c0f148b2f91a",
+    "software": {
+      "cuda_available": true,
+      "python_torch": "2.2.2",
+      "ultralytics": "8.4.115"
+    },
+    "split": "official_validation",
+    "task": "bbox_detection",
+    "zero_area_bbox_count": 0
+  },
+  "metric": {
+    "AP": 0.3395740914064838,
+    "AP50": 0.5820095406287903,
+    "AP50_absolute_drop": 0.01499372328302162,
+    "AP50_relative_drop": 0.02511497706859516,
+    "AP50_retention": 0.9748850229314049,
+    "AP75": 0.330081983020779,
+    "AP75_absolute_drop": 0.010659483852708984,
+    "AP75_relative_drop": 0.03128320116279444,
+    "AP75_retention": 0.9687167988372055,
+    "AP_absolute_drop": 0.010955089405388474,
+    "AP_large": 0.5600913761154971,
+    "AP_large_absolute_drop": 0.017454908370714284,
+    "AP_large_relative_drop": 0.03022252733604247,
+    "AP_large_retention": 0.9697774726639575,
+    "AP_medium": 0.38766418977443606,
+    "AP_medium_absolute_drop": 0.013257825650003774,
+    "AP_medium_relative_drop": 0.033068340325407806,
+    "AP_medium_retention": 0.9669316596745922,
+    "AP_relative_drop": 0.03125300261739986,
+    "AP_retention": 0.9687469973826002,
+    "AP_small": 0.16271741792097416,
+    "AP_small_absolute_drop": 0.006233784623961458,
+    "AP_small_relative_drop": 0.03689695326260534,
+    "AP_small_retention": 0.9631030467373947,
+    "AR_1": 0.2268522639147432,
+    "AR_10": 0.4287837969185964,
+    "AR_100": 0.47856588724578797,
+    "AR_large": 0.6624604019215122,
+    "AR_medium": 0.5260296028011529,
+    "AR_small": 0.3138152245047435,
+    "completed_at_utc": "2026-08-16T16:43:42.585876+00:00",
+    "corruption": "rain",
+    "evaluation_seconds": 212.996,
+    "inference_seconds": 283.0956814289093,
+    "model": "common40",
+    "num_gt": 185523,
+    "num_images": 10000,
+    "num_predictions": 2223278,
+    "prediction_sha256": "c472ff8fa9a238b5bb5f342d48455c12f00b09ddca10f7927584c0f148b2f91a",
+    "severity": 3,
+    "variant": "rain_s3"
+  },
+  "model": "common40",
+  "saved_utc": "2026-08-16T16:43:44.298160+00:00",
+  "status": "complete",
+  "temporary_prediction_deleted": true,
+  "variant": "rain_s3",
+  "version": "representative_corruption_condition_record_v2"
+}

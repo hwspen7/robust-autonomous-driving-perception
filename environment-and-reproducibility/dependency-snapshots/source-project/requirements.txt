@@ -1,0 +1,6 @@
+# Default local training stack.
+# Install a narrower stack when possible:
+#   pip install -r requirements-data-conversion.txt
+#   pip install -r requirements-ultralytics.txt
+#   pip install -r requirements-mmdet.txt
+-r requirements-ultralytics.txt

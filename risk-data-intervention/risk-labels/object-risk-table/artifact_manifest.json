@@ -1,0 +1,25 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6840067,
+      "path": "image_risk_summary.csv",
+      "sha256": "4eaaf4552203fa6471ba5f9c3c3a6d39cb94047366ddffbd0055129468711b3a"
+    },
+    {
+      "bytes": 16924,
+      "path": "metadata.json",
+      "sha256": "95589945570a9eca8ce23503aed11c3f840429e4cd9faea74bddbe4cfd220416"
+    },
+    {
+      "bytes": 323955303,
+      "path": "object_risk_table.csv",
+      "sha256": "83e03b29ff5b796257fed1a3fb284fc22597e6e748315169e25fa481f9b1ba38"
+    },
+    {
+      "bytes": 14103,
+      "path": "risk_summary.json",
+      "sha256": "47a6533bbabc0c83f6f817bea88fb2386fccdd9a642f465bce14ccd5fbdb59a4"
+    }
+  ],
+  "created_utc": "2026-08-10T10:16:56.936884+00:00"
+}

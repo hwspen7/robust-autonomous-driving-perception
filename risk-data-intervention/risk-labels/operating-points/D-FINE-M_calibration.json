@@ -1,0 +1,150 @@
+{
+  "dev_predictions": 1500000,
+  "elapsed_minutes": 1.567651383082072,
+  "eligible_category_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "excluded_category_ids": [
+    6
+  ],
+  "match_iou": 0.5,
+  "metrics": {
+    "macro_f1": 0.7012245282327485,
+    "macro_precision": 0.7528622969633313,
+    "macro_recall": 0.6593964172583255,
+    "micro_f1": 0.7574605447860012,
+    "micro_precision": 0.7974654763899194,
+    "micro_recall": 0.7212775859643047,
+    "per_class": {
+      "1": {
+        "class_name": "pedestrian",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6692040377296045,
+        "fn": 2794,
+        "fp": 1204,
+        "gt": 6838,
+        "precision": 0.770579268292683,
+        "recall": 0.5914009944428196,
+        "tp": 4044
+      },
+      "10": {
+        "class_name": "traffic sign",
+        "eligible_for_macro_f1": true,
+        "f1": 0.7177510230709921,
+        "fn": 5314,
+        "fp": 4204,
+        "gt": 17416,
+        "precision": 0.7421807923463756,
+        "recall": 0.6948782728525493,
+        "tp": 12102
+      },
+      "2": {
+        "class_name": "rider",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6945898778359512,
+        "fn": 124,
+        "fp": 51,
+        "gt": 323,
+        "precision": 0.796,
+        "recall": 0.6160990712074303,
+        "tp": 199
+      },
+      "3": {
+        "class_name": "car",
+        "eligible_for_macro_f1": true,
+        "f1": 0.7984311296898384,
+        "fn": 12236,
+        "fp": 7293,
+        "gt": 50914,
+        "precision": 0.8413565073633378,
+        "recall": 0.7596731743724712,
+        "tp": 38678
+      },
+      "4": {
+        "class_name": "truck",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6942148760330579,
+        "fn": 637,
+        "fp": 695,
+        "gt": 2149,
+        "precision": 0.6850928862709561,
+        "recall": 0.7035830618892508,
+        "tp": 1512
+      },
+      "5": {
+        "class_name": "bus",
+        "eligible_for_macro_f1": true,
+        "f1": 0.7163431433938635,
+        "fn": 237,
+        "fp": 216,
+        "gt": 809,
+        "precision": 0.7258883248730964,
+        "recall": 0.7070457354758962,
+        "tp": 572
+      },
+      "6": {
+        "class_name": "train",
+        "eligible_for_macro_f1": false,
+        "f1": 0.19047619047619047,
+        "fn": 15,
+        "fp": 2,
+        "gt": 17,
+        "precision": 0.5,
+        "recall": 0.11764705882352941,
+        "tp": 2
+      },
+      "7": {
+        "class_name": "motorcycle",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6420454545454546,
+        "fn": 83,
+        "fp": 43,
+        "gt": 196,
+        "precision": 0.7243589743589743,
+        "recall": 0.576530612244898,
+        "tp": 113
+      },
+      "8": {
+        "class_name": "bicycle",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6619433198380568,
+        "fn": 222,
+        "fp": 112,
+        "gt": 549,
+        "precision": 0.744874715261959,
+        "recall": 0.5956284153005464,
+        "tp": 327
+      },
+      "9": {
+        "class_name": "traffic light",
+        "eligible_for_macro_f1": true,
+        "f1": 0.7164978919579179,
+        "fn": 4090,
+        "fp": 3105,
+        "gt": 13182,
+        "precision": 0.745429203902599,
+        "recall": 0.6897284175390684,
+        "tp": 9092
+      }
+    },
+    "total_fn": 25752,
+    "total_fp": 16925,
+    "total_tp": 66641
+  },
+  "min_class_gt_for_macro": 100,
+  "model": "D-FINE-M",
+  "operating_threshold": 0.4963708519935608,
+  "prediction_path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/full_predictions/D-FINE-M/predictions.json",
+  "prediction_sha256": "4f29e925bd9e3277311cf538843b5e37cd15aca381588cd2c51ac15da9d024a0",
+  "selection_objective": "exact-score maximum macro-F1; tie-break by higher macro recall",
+  "threshold_sensitivity_csv": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/D-FINE-M_threshold_sensitivity.csv",
+  "total_predictions": 21000000
+}

@@ -1,0 +1,162 @@
+{
+  "comparisons": {
+    "p2_minus_standard": {
+      "conditions": 15,
+      "mean_delta_AP": 0.008258676676126307,
+      "mean_delta_AP50": 0.008749609142125584,
+      "mean_delta_AP75": 0.010273896680337112,
+      "mean_delta_AP_large": 0.0025264855441738767,
+      "mean_delta_AP_medium": 0.0034669229745594534,
+      "mean_delta_AP_small": 0.011181872991662388,
+      "mean_delta_AR_100": 0.028440142245778437,
+      "mean_delta_AR_large": -6.055768870836993e-05,
+      "mean_delta_AR_medium": 0.013592993330928681,
+      "mean_delta_AR_small": 0.054054765813284396,
+      "positive_AP_condition_fraction": 1.0,
+      "positive_AP_small_condition_fraction": 1.0
+    },
+    "rebu_risk_minus_uniform": {
+      "conditions": 15,
+      "mean_delta_AP": -0.0002504965983783044,
+      "mean_delta_AP50": 6.44077424553117e-05,
+      "mean_delta_AP75": -0.0012525479870896083,
+      "mean_delta_AP_large": 0.006502603180148506,
+      "mean_delta_AP_medium": -0.0018125651977383805,
+      "mean_delta_AP_small": -0.002074220425131173,
+      "mean_delta_AR_100": -0.0009350804019038428,
+      "mean_delta_AR_large": 0.002618190971476068,
+      "mean_delta_AR_medium": -0.00233462871315245,
+      "mean_delta_AR_small": 0.00018177809775994462,
+      "positive_AP_condition_fraction": 0.4,
+      "positive_AP_small_condition_fraction": 0.13333333333333333
+    }
+  },
+  "created_utc": "2026-08-16T18:45:59.959067+00:00",
+  "interpretation_limits": {
+    "causal_claim_from_corruption_results": false,
+    "corruptions_are_controlled_synthetic": true,
+    "new_training": false,
+    "official_val_is_untouched_test_set": false,
+    "single_training_seed": true
+  },
+  "models": {
+    "common40": {
+      "clean_metrics": {
+        "AP": 0.3505291808118723,
+        "AP50": 0.5970032639118119,
+        "AP75": 0.340741466873488,
+        "AP_large": 0.5775462844862114,
+        "AP_medium": 0.40092201542443984,
+        "AP_small": 0.16895120254493562
+      },
+      "conditions": 15,
+      "mean_AP_retention": 0.9138133373337279,
+      "mean_AP_small_retention": 0.86924397293144,
+      "mean_corruption_AP": 0.32031824055055474,
+      "mean_corruption_AP50": 0.5484176624440312,
+      "mean_corruption_AP75": 0.31254637910772837,
+      "mean_corruption_AP_large": 0.549084887476531,
+      "mean_corruption_AP_medium": 0.37063818833636375,
+      "mean_corruption_AP_small": 0.14685981453170424,
+      "mean_corruption_AR_100": 0.4505121195801759,
+      "mean_corruption_AR_large": 0.6419691147697685,
+      "mean_corruption_AR_medium": 0.5053163077710048,
+      "mean_corruption_AR_small": 0.2844494501966993
+    },
+    "p2_e20": {
+      "clean_metrics": {
+        "AP": 0.3354733073115955,
+        "AP50": 0.5783108651429493,
+        "AP75": 0.32608853940824,
+        "AP_large": 0.5635789674713957,
+        "AP_medium": 0.38979978126408293,
+        "AP_small": 0.15675220023724876
+      },
+      "conditions": 15,
+      "mean_AP_retention": 0.9237998662885432,
+      "mean_AP_small_retention": 0.8816765256315825,
+      "mean_corruption_AP": 0.30991019643782725,
+      "mean_corruption_AP50": 0.5352886306149204,
+      "mean_corruption_AP75": 0.3010115904948998,
+      "mean_corruption_AP_large": 0.5388344257881825,
+      "mean_corruption_AP_medium": 0.3609987059791777,
+      "mean_corruption_AP_small": 0.1382047352902836,
+      "mean_corruption_AR_100": 0.4435970569532706,
+      "mean_corruption_AR_large": 0.6359494802003121,
+      "mean_corruption_AR_medium": 0.5017797165098888,
+      "mean_corruption_AR_small": 0.27002217811100415
+    },
+    "rebu_risk_e56": {
+      "clean_metrics": {
+        "AP": 0.3460503502978522,
+        "AP50": 0.5949152919974525,
+        "AP75": 0.3343201907000172,
+        "AP_large": 0.5725553622137074,
+        "AP_medium": 0.3962480432083267,
+        "AP_small": 0.16699122563637803
+      },
+      "conditions": 15,
+      "mean_AP_retention": 0.9058858549035311,
+      "mean_AP_small_retention": 0.8754607444252775,
+      "mean_corruption_AP": 0.3134821174192363,
+      "mean_corruption_AP50": 0.542846123810637,
+      "mean_corruption_AP75": 0.302111644720216,
+      "mean_corruption_AP_large": 0.53721010958281,
+      "mean_corruption_AP_medium": 0.3621812862493474,
+      "mean_corruption_AP_small": 0.14619426270811298,
+      "mean_corruption_AR_100": 0.44923228200887594,
+      "mean_corruption_AR_large": 0.632875413725054,
+      "mean_corruption_AR_medium": 0.5003798607821811,
+      "mean_corruption_AR_small": 0.2936402641484735
+    },
+    "standard_e20": {
+      "clean_metrics": {
+        "AP": 0.3264401598994993,
+        "AP50": 0.5674681203243928,
+        "AP75": 0.3154856657526812,
+        "AP_large": 0.5605761151848175,
+        "AP_medium": 0.38547989133341715,
+        "AP_small": 0.14494499788777054
+      },
+      "conditions": 15,
+      "mean_AP_retention": 0.9240637544552422,
+      "mean_AP_small_retention": 0.8763521621972339,
+      "mean_corruption_AP": 0.3016515197617009,
+      "mean_corruption_AP50": 0.5265390214727949,
+      "mean_corruption_AP75": 0.29073769381456266,
+      "mean_corruption_AP_large": 0.5363079402440085,
+      "mean_corruption_AP_medium": 0.35753178300461824,
+      "mean_corruption_AP_small": 0.1270228622986212,
+      "mean_corruption_AR_100": 0.4151569147074921,
+      "mean_corruption_AR_large": 0.6360100378890206,
+      "mean_corruption_AR_medium": 0.4881867231789601,
+      "mean_corruption_AR_small": 0.2159674122977198
+    },
+    "uniform_e56": {
+      "clean_metrics": {
+        "AP": 0.3453658184874503,
+        "AP50": 0.5941925602607561,
+        "AP75": 0.33483997865269466,
+        "AP_large": 0.5635491625922991,
+        "AP_medium": 0.3969167208395507,
+        "AP_small": 0.16922050174541758
+      },
+      "conditions": 15,
+      "mean_AP_retention": 0.9084066726453268,
+      "mean_AP_small_retention": 0.8761851052557774,
+      "mean_corruption_AP": 0.31373261401761454,
+      "mean_corruption_AP50": 0.5427817160681818,
+      "mean_corruption_AP75": 0.30336419270730564,
+      "mean_corruption_AP_large": 0.5307075064026615,
+      "mean_corruption_AP_medium": 0.3639938514470858,
+      "mean_corruption_AP_small": 0.14826848313324417,
+      "mean_corruption_AR_100": 0.45016736241077987,
+      "mean_corruption_AR_large": 0.6302572227535779,
+      "mean_corruption_AR_medium": 0.5027144894953336,
+      "mean_corruption_AR_small": 0.29345848605071356
+    }
+  },
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "status": "complete",
+  "version": "final_representative_corruptions_v1"
+}

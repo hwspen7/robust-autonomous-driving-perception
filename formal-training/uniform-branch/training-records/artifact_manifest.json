@@ -1,0 +1,31 @@
+{
+  "version": "formal_branch_artifacts_v2",
+  "created_utc": "2026-08-14T20:00:51.272687+00:00",
+  "branch": "uniform",
+  "files": {
+    "weights/last.pt": {
+      "bytes": 41805169,
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7"
+    },
+    "weights/uniform100_ema.pt": {
+      "bytes": 41805169,
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7"
+    },
+    "results.csv": {
+      "bytes": 5234,
+      "sha256": "88d3e9347989f9b494bc162eba0cc63043101141c93300d3434939fdd80dc981"
+    },
+    "args.yaml": {
+      "bytes": 2019,
+      "sha256": "79312252de6e8823efd73df039d06a65bd4a59b78b25427abeea32616c8ebbc3"
+    },
+    "branch_completion.json": {
+      "bytes": 2057,
+      "sha256": "87c0268aa4486c1e1c8bed8ba475853e432d45497c979cfabc1de66445d392dd"
+    },
+    "weights/best.pt": {
+      "bytes": 41805169,
+      "sha256": "81be52c4e261c908e5c2d870257456de2bf4f87b885184768400dd8c7763527e"
+    }
+  }
+}

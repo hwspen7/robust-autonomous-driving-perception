@@ -1,0 +1,47 @@
+{
+  "artifacts": [
+    {
+      "bytes": 589,
+      "path": "arm_exposure_summary.csv",
+      "sha256": "6b280a07de06aa825b2c6f89824195462ece6c07f25889117412a3d3c2e940be"
+    },
+    {
+      "bytes": 1003,
+      "path": "class_exposure.csv",
+      "sha256": "e99f72525a6406d8077d2b5cdce3f59f5dd2f7848344ed1c2f4570d7a91dec96"
+    },
+    {
+      "bytes": 904,
+      "path": "metadata.json",
+      "sha256": "5e94cb467db134d65986f1aa2c2cf89cf60e7a645e7beaddc9f398dda7b3d53f"
+    },
+    {
+      "bytes": 2689,
+      "path": "objects_per_view_histogram.csv",
+      "sha256": "cc3321474ab080ca9a66318241b3926770c7137cbfd2c79056b234ee2f700997"
+    },
+    {
+      "bytes": 785,
+      "path": "scale_exposure.csv",
+      "sha256": "64188e6cb9089cfeb380edf54bcbd808c1bd23955d1681ec59ba9f27b8d2f64c"
+    },
+    {
+      "bytes": 101,
+      "path": "source_image_exposure_histogram.csv",
+      "sha256": "59bae0948a2d9becda19556a3c7847c68dedbbb630ce489d6066cabf0b4f9713"
+    },
+    {
+      "bytes": 4468,
+      "path": "summary.json",
+      "sha256": "def588f808a979b01d6b5d3149d7acd94b57edc6d188823498b6cd463c8a7d3f"
+    },
+    {
+      "bytes": 545,
+      "path": "target_exposure_by_class.csv",
+      "sha256": "9cf8474b4eae005dd33b0af2d10d73de77e0263869498062a6ad23e5097991bf"
+    }
+  ],
+  "created_utc": "2026-08-16T13:20:23Z",
+  "status": "complete",
+  "version": "final_exposure_audit_v1"
+}

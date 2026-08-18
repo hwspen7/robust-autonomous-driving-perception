@@ -1,0 +1,31 @@
+{
+  "version": "formal_branch_artifacts_v2",
+  "created_utc": "2026-08-16T01:47:45.302271+00:00",
+  "branch": "rebu_risk",
+  "files": {
+    "weights/last.pt": {
+      "bytes": 41805169,
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a"
+    },
+    "weights/rebu_yolo100_ema.pt": {
+      "bytes": 41805169,
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a"
+    },
+    "results.csv": {
+      "bytes": 5244,
+      "sha256": "12530bf948ecc97a8e1bf19107e9caa03603a26fe1c78e86b22585965de5feb9"
+    },
+    "args.yaml": {
+      "bytes": 2025,
+      "sha256": "591b7269287ce9af0e4c331bc4b756014ed8172637024731a1d421dddcc87297"
+    },
+    "branch_completion.json": {
+      "bytes": 2071,
+      "sha256": "0f4c8c3acde0d9a9c382f18da86e9a83a1f8c0068e5b45918e68df2d0871a0fe"
+    },
+    "weights/best.pt": {
+      "bytes": 41805169,
+      "sha256": "4d806006863b17713d69fdc684473066ab78a372096616aa0f8bb7bd459ab4e6"
+    }
+  }
+}

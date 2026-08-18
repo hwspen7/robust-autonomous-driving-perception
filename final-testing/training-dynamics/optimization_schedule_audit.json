@@ -1,0 +1,196 @@
+{
+  "canonical_metrics_source": "/root/rivermind-data/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/trajectory_metrics.csv",
+  "learning_rate_restart_ratios": {
+    "lr/pg0": {
+      "risk_branch_restart_ratio": 8.675122983888459,
+      "uniform_branch_restart_ratio": 8.675122983888459
+    },
+    "lr/pg1": {
+      "risk_branch_restart_ratio": 8.675122983888459,
+      "uniform_branch_restart_ratio": 8.675122983888459
+    },
+    "lr/pg2": {
+      "risk_branch_restart_ratio": 8.774238888069478,
+      "uniform_branch_restart_ratio": 8.774238888069478
+    }
+  },
+  "loss_audit": {
+    "common": {
+      "epochs": 40,
+      "final_validation_losses": {
+        "val/box_loss": 1.40307,
+        "val/cls_loss": 0.81461,
+        "val/dfl_loss": 1.13063
+      },
+      "first_epoch": 1,
+      "last_epoch": 40,
+      "learning_rate": {
+        "lr/pg0": {
+          "first": 0.00333295,
+          "last": 0.000115259
+        },
+        "lr/pg1": {
+          "first": 0.00333295,
+          "last": 0.000115259
+        },
+        "lr/pg2": {
+          "first": 0.0700034,
+          "last": 0.000115259
+        }
+      },
+      "losses": {
+        "train/box_loss": {
+          "first": 1.34512,
+          "first5_mean": 1.4506439999999998,
+          "last": 1.38392,
+          "last10_slope": -0.002780545454545384,
+          "last5_mean": 1.386644
+        },
+        "train/cls_loss": {
+          "first": 0.88367,
+          "first5_mean": 0.9811460000000001,
+          "last": 0.78398,
+          "last10_slope": -0.0046523636363635995,
+          "last5_mean": 0.78908
+        },
+        "train/dfl_loss": {
+          "first": 1.03658,
+          "first5_mean": 1.1026699999999998,
+          "last": 1.12936,
+          "last10_slope": -0.0010590909090908917,
+          "last5_mean": 1.130726
+        }
+      },
+      "nonzero_validation_rows": 1,
+      "total_train_loss": {
+        "first": 3.26537,
+        "first5_mean": 3.53446,
+        "last": 3.2972599999999996,
+        "last10_slope": -0.008491999999999951,
+        "last5_mean": 3.3064500000000003
+      }
+    },
+    "rebu_risk": {
+      "epochs": 60,
+      "final_validation_losses": {
+        "val/box_loss": 1.45073,
+        "val/cls_loss": 0.82525,
+        "val/dfl_loss": 1.15809
+      },
+      "first_epoch": 1,
+      "last_epoch": 60,
+      "learning_rate": {
+        "lr/pg0": {
+          "first": 0.000999886,
+          "last": 5.0651e-05
+        },
+        "lr/pg1": {
+          "first": 0.000999886,
+          "last": 5.0651e-05
+        },
+        "lr/pg2": {
+          "first": 0.00101131,
+          "last": 5.0651e-05
+        }
+      },
+      "losses": {
+        "train/box_loss": {
+          "first": 1.45891,
+          "first5_mean": 1.453984,
+          "last": 1.38273,
+          "last10_slope": -0.0005542424242423668,
+          "last5_mean": 1.3831440000000002
+        },
+        "train/cls_loss": {
+          "first": 0.89016,
+          "first5_mean": 0.889166,
+          "last": 0.77327,
+          "last10_slope": -0.000799151515151492,
+          "last5_mean": 0.774208
+        },
+        "train/dfl_loss": {
+          "first": 1.20771,
+          "first5_mean": 1.204484,
+          "last": 1.16989,
+          "last10_slope": -0.00024006060606061972,
+          "last5_mean": 1.17017
+        }
+      },
+      "nonzero_validation_rows": 1,
+      "total_train_loss": {
+        "first": 3.55678,
+        "first5_mean": 3.5476339999999995,
+        "last": 3.3258900000000002,
+        "last10_slope": -0.0015934545454544253,
+        "last5_mean": 3.3275220000000005
+      }
+    },
+    "uniform": {
+      "epochs": 60,
+      "final_validation_losses": {
+        "val/box_loss": 1.44587,
+        "val/cls_loss": 0.8206,
+        "val/dfl_loss": 1.15442
+      },
+      "first_epoch": 1,
+      "last_epoch": 60,
+      "learning_rate": {
+        "lr/pg0": {
+          "first": 0.000999886,
+          "last": 5.0651e-05
+        },
+        "lr/pg1": {
+          "first": 0.000999886,
+          "last": 5.0651e-05
+        },
+        "lr/pg2": {
+          "first": 0.00101131,
+          "last": 5.0651e-05
+        }
+      },
+      "losses": {
+        "train/box_loss": {
+          "first": 1.39221,
+          "first5_mean": 1.3962679999999998,
+          "last": 1.34437,
+          "last10_slope": -0.00038927272727267646,
+          "last5_mean": 1.345348
+        },
+        "train/cls_loss": {
+          "first": 0.79658,
+          "first5_mean": 0.80429,
+          "last": 0.72616,
+          "last10_slope": -0.0005853939393939317,
+          "last5_mean": 0.7269440000000001
+        },
+        "train/dfl_loss": {
+          "first": 1.13011,
+          "first5_mean": 1.1327679999999998,
+          "last": 1.11275,
+          "last10_slope": -0.0001230303030303282,
+          "last5_mean": 1.113004
+        }
+      },
+      "nonzero_validation_rows": 1,
+      "total_train_loss": {
+        "first": 3.3189,
+        "first5_mean": 3.3333259999999996,
+        "last": 3.18328,
+        "last10_slope": -0.0010976969696969911,
+        "last5_mean": 3.185296
+      }
+    }
+  },
+  "metric_separation_rule": "Canonical COCO trajectory metrics are used for AP/AR conclusions. Raw Ultralytics metrics are used only for optimization, learning-rate and loss diagnostics.",
+  "raw_results_sha256": {
+    "common": "08146eede95380b4c47a9592622cf04286905ee27b7a278596ac8991a6c1dd64",
+    "rebu_risk": "12530bf948ecc97a8e1bf19107e9caa03603a26fe1c78e86b22585965de5feb9",
+    "uniform": "88d3e9347989f9b494bc162eba0cc63043101141c93300d3434939fdd80dc981"
+  },
+  "raw_training_metrics_source": {
+    "common": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/results.csv",
+    "rebu_risk": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/results.csv",
+    "uniform": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/results.csv"
+  },
+  "version": "optimization_schedule_audit_v1"
+}

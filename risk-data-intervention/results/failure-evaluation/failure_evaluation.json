@@ -1,0 +1,903 @@
+{
+  "bootstrap_diagnostic": {
+    "resamples": 1000,
+    "role": "reported diagnostic; not a gate threshold",
+    "seed": 20260809,
+    "summary": {
+      "typed_minus_scalar_failure_macro_micro_AR100": {
+        "ci95_high": 0.005204905044033414,
+        "ci95_low": -0.004974172313212369,
+        "estimate_mean": 0.00013815299100771833
+      },
+      "typed_minus_uniform_failure_macro_micro_AR100": {
+        "ci95_high": 0.00979083882331703,
+        "ci95_low": -0.0013699106342542052,
+        "estimate_mean": 0.004106630882982085
+      }
+    }
+  },
+  "comparisons": {
+    "scalar_risk_minus_uniform": {
+      "delta_dfine_supported_yolo_failure_AR100": 0.018650716670953693,
+      "delta_dfine_supported_yolo_failure_recall50": 0.014577893820713617,
+      "delta_failure_macro_AR100": 0.005681632004106485,
+      "delta_small_joint_not_detected_AR100": 0.015299015759216078,
+      "delta_small_joint_not_detected_recall50": 0.033343134372243455,
+      "delta_yolo_classification_failure_AR100": 0.0034521806929631166,
+      "delta_yolo_classification_failure_recall50": 0.00692041522491349,
+      "delta_yolo_geometric_failure_AR100": -0.006032324484342377,
+      "delta_yolo_geometric_failure_recall50": -0.02564102564102566,
+      "delta_yolo_low_confidence_AR100": -0.0029614286182578775,
+      "delta_yolo_low_confidence_recall50": -0.0021450021450021284
+    },
+    "typed_cafr_minus_scalar_risk": {
+      "delta_dfine_supported_yolo_failure_AR100": 0.0003793897610065433,
+      "delta_dfine_supported_yolo_failure_recall50": -0.0017406440382942145,
+      "delta_failure_macro_AR100": 0.002822146604544107,
+      "delta_small_joint_not_detected_AR100": -0.002142273664182126,
+      "delta_small_joint_not_detected_recall50": -0.003645986474566265,
+      "delta_yolo_classification_failure_AR100": 0.0038752701916973803,
+      "delta_yolo_classification_failure_recall50": 0.003460207612456745,
+      "delta_yolo_geometric_failure_AR100": 0.020035499502461585,
+      "delta_yolo_geometric_failure_recall50": 0.011655011655011704,
+      "delta_yolo_low_confidence_AR100": -0.008037152768262723,
+      "delta_yolo_low_confidence_recall50": -0.007293007293007303
+    },
+    "typed_cafr_minus_uniform": {
+      "delta_dfine_supported_yolo_failure_AR100": 0.019030106431960236,
+      "delta_dfine_supported_yolo_failure_recall50": 0.012837249782419402,
+      "delta_failure_macro_AR100": 0.008503778608650592,
+      "delta_small_joint_not_detected_AR100": 0.013156742095033952,
+      "delta_small_joint_not_detected_recall50": 0.02969714789767719,
+      "delta_yolo_classification_failure_AR100": 0.007327450884660497,
+      "delta_yolo_classification_failure_recall50": 0.010380622837370235,
+      "delta_yolo_geometric_failure_AR100": 0.014003175018119207,
+      "delta_yolo_geometric_failure_recall50": -0.013986013986013957,
+      "delta_yolo_low_confidence_AR100": -0.0109985813865206,
+      "delta_yolo_low_confidence_recall50": -0.009438009438009431
+    }
+  },
+  "corruption_evaluation_pending": true,
+  "excluded_annotation_id": 1005741,
+  "excluded_target_category_id": 6,
+  "frozen_gate_already_blocked_by_AP_small": true,
+  "full_gate_decision_allowed": false,
+  "group_definition": "primary_failure_group from frozen sampling audit v3",
+  "max_detections_per_image_category": 100,
+  "metrics": {
+    "scalar_risk": {
+      "dfine_supported_yolo_failure": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.8508110791516506,
+        "objects": 4596,
+        "per_class": {
+          "1": {
+            "AR100": 0.5161953727506426,
+            "objects": 389,
+            "recall_IoU50_maxDet100": 0.9640102827763496
+          },
+          "10": {
+            "AR100": 0.5203356367226062,
+            "objects": 1013,
+            "recall_IoU50_maxDet100": 0.9703849950641659
+          },
+          "2": {
+            "AR100": 0.4166666666666667,
+            "objects": 24,
+            "recall_IoU50_maxDet100": 0.875
+          },
+          "3": {
+            "AR100": 0.4785375118708452,
+            "objects": 2106,
+            "recall_IoU50_maxDet100": 0.9548907882241215
+          },
+          "4": {
+            "AR100": 0.47727272727272735,
+            "objects": 154,
+            "recall_IoU50_maxDet100": 0.7142857142857143
+          },
+          "5": {
+            "AR100": 0.423076923076923,
+            "objects": 39,
+            "recall_IoU50_maxDet100": 0.6666666666666666
+          },
+          "7": {
+            "AR100": 0.33809523809523806,
+            "objects": 21,
+            "recall_IoU50_maxDet100": 0.6666666666666666
+          },
+          "8": {
+            "AR100": 0.44482758620689655,
+            "objects": 29,
+            "recall_IoU50_maxDet100": 0.896551724137931
+          },
+          "9": {
+            "AR100": 0.41230207064555424,
+            "objects": 821,
+            "recall_IoU50_maxDet100": 0.9488428745432399
+          }
+        },
+        "subset_AR100": 0.44747885925645553,
+        "subset_recall_IoU50_maxDet100": 0.9453872932985204
+      },
+      "failure_macro_AR100": 0.3108332200090546,
+      "small_joint_not_detected": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.5818914904421731,
+        "objects": 17005,
+        "per_class": {
+          "1": {
+            "AR100": 0.3011500547645126,
+            "objects": 1826,
+            "recall_IoU50_maxDet100": 0.6905805038335159
+          },
+          "10": {
+            "AR100": 0.352363184079602,
+            "objects": 4020,
+            "recall_IoU50_maxDet100": 0.7711442786069652
+          },
+          "2": {
+            "AR100": 0.1426470588235294,
+            "objects": 68,
+            "recall_IoU50_maxDet100": 0.4117647058823529
+          },
+          "3": {
+            "AR100": 0.31725511016724184,
+            "objects": 7534,
+            "recall_IoU50_maxDet100": 0.7767454207592248
+          },
+          "4": {
+            "AR100": 0.27154811715481175,
+            "objects": 239,
+            "recall_IoU50_maxDet100": 0.5313807531380753
+          },
+          "5": {
+            "AR100": 0.1780487804878049,
+            "objects": 82,
+            "recall_IoU50_maxDet100": 0.34146341463414637
+          },
+          "7": {
+            "AR100": 0.195,
+            "objects": 40,
+            "recall_IoU50_maxDet100": 0.4
+          },
+          "8": {
+            "AR100": 0.24888888888888885,
+            "objects": 90,
+            "recall_IoU50_maxDet100": 0.6111111111111112
+          },
+          "9": {
+            "AR100": 0.27511268512556347,
+            "objects": 3106,
+            "recall_IoU50_maxDet100": 0.7028332260141661
+          }
+        },
+        "subset_AR100": 0.2535570977213283,
+        "subset_recall_IoU50_maxDet100": 0.7438988532784475
+      },
+      "yolo_classification_failure": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.16289194748602742,
+        "objects": 289,
+        "per_class": {
+          "1": {
+            "AR100": 0.013333333333333332,
+            "objects": 30,
+            "recall_IoU50_maxDet100": 0.06666666666666667
+          },
+          "10": {
+            "AR100": 0.0,
+            "objects": 25,
+            "recall_IoU50_maxDet100": 0.0
+          },
+          "2": {
+            "AR100": 0.28461538461538466,
+            "objects": 13,
+            "recall_IoU50_maxDet100": 0.46153846153846156
+          },
+          "3": {
+            "AR100": 0.09056603773584906,
+            "objects": 53,
+            "recall_IoU50_maxDet100": 0.20754716981132076
+          },
+          "4": {
+            "AR100": 0.20733944954128444,
+            "objects": 109,
+            "recall_IoU50_maxDet100": 0.3302752293577982
+          },
+          "5": {
+            "AR100": 0.12999999999999998,
+            "objects": 40,
+            "recall_IoU50_maxDet100": 0.2
+          },
+          "7": {
+            "AR100": 0.02,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.2
+          },
+          "8": {
+            "AR100": 0.0,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.0
+          },
+          "9": {
+            "AR100": 0.0,
+            "objects": 9,
+            "recall_IoU50_maxDet100": 0.0
+          }
+        },
+        "subset_AR100": 0.08287268946953906,
+        "subset_recall_IoU50_maxDet100": 0.22145328719723184
+      },
+      "yolo_geometric_failure": {
+        "categories_with_gt": 8,
+        "macro_recall_IoU50_maxDet100": 0.7984030361302183,
+        "objects": 429,
+        "per_class": {
+          "1": {
+            "AR100": 0.34285714285714286,
+            "objects": 49,
+            "recall_IoU50_maxDet100": 0.7551020408163265
+          },
+          "10": {
+            "AR100": 0.40555555555555556,
+            "objects": 36,
+            "recall_IoU50_maxDet100": 0.7777777777777778
+          },
+          "3": {
+            "AR100": 0.3,
+            "objects": 302,
+            "recall_IoU50_maxDet100": 0.7317880794701986
+          },
+          "4": {
+            "AR100": 0.36,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.6
+          },
+          "5": {
+            "AR100": 0.1,
+            "objects": 1,
+            "recall_IoU50_maxDet100": 1.0
+          },
+          "7": {
+            "AR100": 0.36666666666666664,
+            "objects": 3,
+            "recall_IoU50_maxDet100": 1.0
+          },
+          "8": {
+            "AR100": 0.3526315789473684,
+            "objects": 19,
+            "recall_IoU50_maxDet100": 0.7368421052631579
+          },
+          "9": {
+            "AR100": 0.35,
+            "objects": 14,
+            "recall_IoU50_maxDet100": 0.7857142857142857
+          }
+        },
+        "subset_AR100": 0.3222138680033417,
+        "subset_recall_IoU50_maxDet100": 0.7412587412587412
+      },
+      "yolo_low_confidence": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.8303835274405734,
+        "objects": 2331,
+        "per_class": {
+          "1": {
+            "AR100": 0.44299065420560746,
+            "objects": 321,
+            "recall_IoU50_maxDet100": 0.8535825545171339
+          },
+          "10": {
+            "AR100": 0.5042704626334519,
+            "objects": 281,
+            "recall_IoU50_maxDet100": 0.8256227758007118
+          },
+          "2": {
+            "AR100": 0.5,
+            "objects": 14,
+            "recall_IoU50_maxDet100": 0.9285714285714286
+          },
+          "3": {
+            "AR100": 0.4328389830508475,
+            "objects": 1416,
+            "recall_IoU50_maxDet100": 0.8481638418079096
+          },
+          "4": {
+            "AR100": 0.4811475409836065,
+            "objects": 122,
+            "recall_IoU50_maxDet100": 0.8278688524590164
+          },
+          "5": {
+            "AR100": 0.3216216216216216,
+            "objects": 37,
+            "recall_IoU50_maxDet100": 0.5945945945945946
+          },
+          "7": {
+            "AR100": 0.509090909090909,
+            "objects": 11,
+            "recall_IoU50_maxDet100": 0.9090909090909091
+          },
+          "8": {
+            "AR100": 0.4416666666666667,
+            "objects": 48,
+            "recall_IoU50_maxDet100": 0.8958333333333334
+          },
+          "9": {
+            "AR100": 0.3987654320987654,
+            "objects": 81,
+            "recall_IoU50_maxDet100": 0.7901234567901234
+          }
+        },
+        "subset_AR100": 0.44804358559460844,
+        "subset_recall_IoU50_maxDet100": 0.8408408408408409
+      }
+    },
+    "typed_cafr": {
+      "dfine_supported_yolo_failure": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.8332071244363285,
+        "objects": 4596,
+        "per_class": {
+          "1": {
+            "AR100": 0.5161953727506426,
+            "objects": 389,
+            "recall_IoU50_maxDet100": 0.9640102827763496
+          },
+          "10": {
+            "AR100": 0.515004935834156,
+            "objects": 1013,
+            "recall_IoU50_maxDet100": 0.9684106614017769
+          },
+          "2": {
+            "AR100": 0.45,
+            "objects": 24,
+            "recall_IoU50_maxDet100": 0.875
+          },
+          "3": {
+            "AR100": 0.47792022792022787,
+            "objects": 2106,
+            "recall_IoU50_maxDet100": 0.956315289648623
+          },
+          "4": {
+            "AR100": 0.46948051948051955,
+            "objects": 154,
+            "recall_IoU50_maxDet100": 0.7077922077922078
+          },
+          "5": {
+            "AR100": 0.4410256410256411,
+            "objects": 39,
+            "recall_IoU50_maxDet100": 0.6153846153846154
+          },
+          "7": {
+            "AR100": 0.2857142857142857,
+            "objects": 21,
+            "recall_IoU50_maxDet100": 0.5714285714285714
+          },
+          "8": {
+            "AR100": 0.4655172413793104,
+            "objects": 29,
+            "recall_IoU50_maxDet100": 0.896551724137931
+          },
+          "9": {
+            "AR100": 0.40986601705237524,
+            "objects": 821,
+            "recall_IoU50_maxDet100": 0.9439707673568819
+          }
+        },
+        "subset_AR100": 0.4478582490174621,
+        "subset_recall_IoU50_maxDet100": 0.9436466492602262
+      },
+      "failure_macro_AR100": 0.3136553666135987,
+      "small_joint_not_detected": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.5798720444711378,
+        "objects": 17005,
+        "per_class": {
+          "1": {
+            "AR100": 0.3033406352683461,
+            "objects": 1826,
+            "recall_IoU50_maxDet100": 0.6949616648411829
+          },
+          "10": {
+            "AR100": 0.35407960199004973,
+            "objects": 4020,
+            "recall_IoU50_maxDet100": 0.7731343283582089
+          },
+          "2": {
+            "AR100": 0.14705882352941177,
+            "objects": 68,
+            "recall_IoU50_maxDet100": 0.4117647058823529
+          },
+          "3": {
+            "AR100": 0.3160207061322008,
+            "objects": 7534,
+            "recall_IoU50_maxDet100": 0.7686487921422883
+          },
+          "4": {
+            "AR100": 0.2669456066945607,
+            "objects": 239,
+            "recall_IoU50_maxDet100": 0.5230125523012552
+          },
+          "5": {
+            "AR100": 0.1597560975609756,
+            "objects": 82,
+            "recall_IoU50_maxDet100": 0.3048780487804878
+          },
+          "7": {
+            "AR100": 0.18,
+            "objects": 40,
+            "recall_IoU50_maxDet100": 0.4
+          },
+          "8": {
+            "AR100": 0.26222222222222225,
+            "objects": 90,
+            "recall_IoU50_maxDet100": 0.6444444444444445
+          },
+          "9": {
+            "AR100": 0.27330972311654855,
+            "objects": 3106,
+            "recall_IoU50_maxDet100": 0.6980038634900193
+          }
+        },
+        "subset_AR100": 0.25141482405714616,
+        "subset_recall_IoU50_maxDet100": 0.7402528668038812
+      },
+      "yolo_classification_failure": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.18779850542010834,
+        "objects": 289,
+        "per_class": {
+          "1": {
+            "AR100": 0.023333333333333334,
+            "objects": 30,
+            "recall_IoU50_maxDet100": 0.1
+          },
+          "10": {
+            "AR100": 0.0,
+            "objects": 25,
+            "recall_IoU50_maxDet100": 0.0
+          },
+          "2": {
+            "AR100": 0.30000000000000004,
+            "objects": 13,
+            "recall_IoU50_maxDet100": 0.46153846153846156
+          },
+          "3": {
+            "AR100": 0.07547169811320756,
+            "objects": 53,
+            "recall_IoU50_maxDet100": 0.20754716981132076
+          },
+          "4": {
+            "AR100": 0.2119266055045872,
+            "objects": 109,
+            "recall_IoU50_maxDet100": 0.3211009174311927
+          },
+          "5": {
+            "AR100": 0.12999999999999998,
+            "objects": 40,
+            "recall_IoU50_maxDet100": 0.2
+          },
+          "7": {
+            "AR100": 0.02,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.2
+          },
+          "8": {
+            "AR100": 0.02,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.2
+          },
+          "9": {
+            "AR100": 0.0,
+            "objects": 9,
+            "recall_IoU50_maxDet100": 0.0
+          }
+        },
+        "subset_AR100": 0.08674795966123644,
+        "subset_recall_IoU50_maxDet100": 0.22491349480968859
+      },
+      "yolo_geometric_failure": {
+        "categories_with_gt": 8,
+        "macro_recall_IoU50_maxDet100": 0.8035792977002583,
+        "objects": 429,
+        "per_class": {
+          "1": {
+            "AR100": 0.33061224489795915,
+            "objects": 49,
+            "recall_IoU50_maxDet100": 0.7551020408163265
+          },
+          "10": {
+            "AR100": 0.4,
+            "objects": 36,
+            "recall_IoU50_maxDet100": 0.75
+          },
+          "3": {
+            "AR100": 0.31026490066225165,
+            "objects": 302,
+            "recall_IoU50_maxDet100": 0.7483443708609272
+          },
+          "4": {
+            "AR100": 0.4,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.6
+          },
+          "5": {
+            "AR100": 0.2,
+            "objects": 1,
+            "recall_IoU50_maxDet100": 1.0
+          },
+          "7": {
+            "AR100": 0.36666666666666664,
+            "objects": 3,
+            "recall_IoU50_maxDet100": 1.0
+          },
+          "8": {
+            "AR100": 0.39473684210526316,
+            "objects": 19,
+            "recall_IoU50_maxDet100": 0.7894736842105263
+          },
+          "9": {
+            "AR100": 0.33571428571428574,
+            "objects": 14,
+            "recall_IoU50_maxDet100": 0.7857142857142857
+          }
+        },
+        "subset_AR100": 0.34224936750580326,
+        "subset_recall_IoU50_maxDet100": 0.752913752913753
+      },
+      "yolo_low_confidence": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.8218936012707118,
+        "objects": 2331,
+        "per_class": {
+          "1": {
+            "AR100": 0.43582554517133953,
+            "objects": 321,
+            "recall_IoU50_maxDet100": 0.838006230529595
+          },
+          "10": {
+            "AR100": 0.49857651245551604,
+            "objects": 281,
+            "recall_IoU50_maxDet100": 0.8113879003558719
+          },
+          "2": {
+            "AR100": 0.3571428571428571,
+            "objects": 14,
+            "recall_IoU50_maxDet100": 0.7857142857142857
+          },
+          "3": {
+            "AR100": 0.42563559322033895,
+            "objects": 1416,
+            "recall_IoU50_maxDet100": 0.8389830508474576
+          },
+          "4": {
+            "AR100": 0.4942622950819673,
+            "objects": 122,
+            "recall_IoU50_maxDet100": 0.8360655737704918
+          },
+          "5": {
+            "AR100": 0.3324324324324325,
+            "objects": 37,
+            "recall_IoU50_maxDet100": 0.6216216216216216
+          },
+          "7": {
+            "AR100": 0.5636363636363636,
+            "objects": 11,
+            "recall_IoU50_maxDet100": 0.9090909090909091
+          },
+          "8": {
+            "AR100": 0.45625,
+            "objects": 48,
+            "recall_IoU50_maxDet100": 0.9166666666666666
+          },
+          "9": {
+            "AR100": 0.3962962962962963,
+            "objects": 81,
+            "recall_IoU50_maxDet100": 0.8395061728395061
+          }
+        },
+        "subset_AR100": 0.4400064328263457,
+        "subset_recall_IoU50_maxDet100": 0.8335478335478336
+      }
+    },
+    "uniform": {
+      "dfine_supported_yolo_failure": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.816541818947953,
+        "objects": 4596,
+        "per_class": {
+          "1": {
+            "AR100": 0.5195372750642673,
+            "objects": 389,
+            "recall_IoU50_maxDet100": 0.9588688946015425
+          },
+          "10": {
+            "AR100": 0.506219151036525,
+            "objects": 1013,
+            "recall_IoU50_maxDet100": 0.9496544916090819
+          },
+          "2": {
+            "AR100": 0.4083333333333333,
+            "objects": 24,
+            "recall_IoU50_maxDet100": 0.8333333333333334
+          },
+          "3": {
+            "AR100": 0.4697530864197531,
+            "objects": 2106,
+            "recall_IoU50_maxDet100": 0.9534662867996201
+          },
+          "4": {
+            "AR100": 0.4623376623376624,
+            "objects": 154,
+            "recall_IoU50_maxDet100": 0.6948051948051948
+          },
+          "5": {
+            "AR100": 0.4179487179487179,
+            "objects": 39,
+            "recall_IoU50_maxDet100": 0.6153846153846154
+          },
+          "7": {
+            "AR100": 0.26190476190476186,
+            "objects": 21,
+            "recall_IoU50_maxDet100": 0.5714285714285714
+          },
+          "8": {
+            "AR100": 0.4241379310344827,
+            "objects": 29,
+            "recall_IoU50_maxDet100": 0.8620689655172413
+          },
+          "9": {
+            "AR100": 0.38928136419001214,
+            "objects": 821,
+            "recall_IoU50_maxDet100": 0.9098660170523751
+          }
+        },
+        "subset_AR100": 0.42882814258550184,
+        "subset_recall_IoU50_maxDet100": 0.9308093994778068
+      },
+      "failure_macro_AR100": 0.3051515880049481,
+      "small_joint_not_detected": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.5495979395341513,
+        "objects": 17005,
+        "per_class": {
+          "1": {
+            "AR100": 0.2919496166484118,
+            "objects": 1826,
+            "recall_IoU50_maxDet100": 0.6768893756845564
+          },
+          "10": {
+            "AR100": 0.334726368159204,
+            "objects": 4020,
+            "recall_IoU50_maxDet100": 0.7398009950248756
+          },
+          "2": {
+            "AR100": 0.13970588235294118,
+            "objects": 68,
+            "recall_IoU50_maxDet100": 0.39705882352941174
+          },
+          "3": {
+            "AR100": 0.30204406689673474,
+            "objects": 7534,
+            "recall_IoU50_maxDet100": 0.7472790018582426
+          },
+          "4": {
+            "AR100": 0.24769874476987447,
+            "objects": 239,
+            "recall_IoU50_maxDet100": 0.49372384937238495
+          },
+          "5": {
+            "AR100": 0.14268292682926828,
+            "objects": 82,
+            "recall_IoU50_maxDet100": 0.2926829268292683
+          },
+          "7": {
+            "AR100": 0.175,
+            "objects": 40,
+            "recall_IoU50_maxDet100": 0.375
+          },
+          "8": {
+            "AR100": 0.26,
+            "objects": 90,
+            "recall_IoU50_maxDet100": 0.5777777777777777
+          },
+          "9": {
+            "AR100": 0.25051513200257564,
+            "objects": 3106,
+            "recall_IoU50_maxDet100": 0.6461687057308435
+          }
+        },
+        "subset_AR100": 0.2382580819621122,
+        "subset_recall_IoU50_maxDet100": 0.7105557189062041
+      },
+      "yolo_classification_failure": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.2154787232206308,
+        "objects": 289,
+        "per_class": {
+          "1": {
+            "AR100": 0.013333333333333332,
+            "objects": 30,
+            "recall_IoU50_maxDet100": 0.06666666666666667
+          },
+          "10": {
+            "AR100": 0.0,
+            "objects": 25,
+            "recall_IoU50_maxDet100": 0.0
+          },
+          "2": {
+            "AR100": 0.23076923076923075,
+            "objects": 13,
+            "recall_IoU50_maxDet100": 0.6153846153846154
+          },
+          "3": {
+            "AR100": 0.09811320754716982,
+            "objects": 53,
+            "recall_IoU50_maxDet100": 0.18867924528301888
+          },
+          "4": {
+            "AR100": 0.18256880733944955,
+            "objects": 109,
+            "recall_IoU50_maxDet100": 0.29357798165137616
+          },
+          "5": {
+            "AR100": 0.10999999999999999,
+            "objects": 40,
+            "recall_IoU50_maxDet100": 0.175
+          },
+          "7": {
+            "AR100": 0.02,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.2
+          },
+          "8": {
+            "AR100": 0.06000000000000001,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.4
+          },
+          "9": {
+            "AR100": 0.0,
+            "objects": 9,
+            "recall_IoU50_maxDet100": 0.0
+          }
+        },
+        "subset_AR100": 0.07942050877657594,
+        "subset_recall_IoU50_maxDet100": 0.21453287197231835
+      },
+      "yolo_geometric_failure": {
+        "categories_with_gt": 8,
+        "macro_recall_IoU50_maxDet100": 0.7687410885697372,
+        "objects": 429,
+        "per_class": {
+          "1": {
+            "AR100": 0.3448979591836735,
+            "objects": 49,
+            "recall_IoU50_maxDet100": 0.7346938775510204
+          },
+          "10": {
+            "AR100": 0.44722222222222224,
+            "objects": 36,
+            "recall_IoU50_maxDet100": 0.8611111111111112
+          },
+          "3": {
+            "AR100": 0.32748344370860927,
+            "objects": 302,
+            "recall_IoU50_maxDet100": 0.7649006622516556
+          },
+          "4": {
+            "AR100": 0.36,
+            "objects": 5,
+            "recall_IoU50_maxDet100": 0.6
+          },
+          "5": {
+            "AR100": 0.2,
+            "objects": 1,
+            "recall_IoU50_maxDet100": 1.0
+          },
+          "7": {
+            "AR100": 0.26666666666666666,
+            "objects": 3,
+            "recall_IoU50_maxDet100": 0.6666666666666666
+          },
+          "8": {
+            "AR100": 0.3368421052631579,
+            "objects": 19,
+            "recall_IoU50_maxDet100": 0.7368421052631579
+          },
+          "9": {
+            "AR100": 0.34285714285714286,
+            "objects": 14,
+            "recall_IoU50_maxDet100": 0.7857142857142857
+          }
+        },
+        "subset_AR100": 0.32824619248768405,
+        "subset_recall_IoU50_maxDet100": 0.7668997668997669
+      },
+      "yolo_low_confidence": {
+        "categories_with_gt": 9,
+        "macro_recall_IoU50_maxDet100": 0.8366844321712279,
+        "objects": 2331,
+        "per_class": {
+          "1": {
+            "AR100": 0.41619937694704057,
+            "objects": 321,
+            "recall_IoU50_maxDet100": 0.8286604361370716
+          },
+          "10": {
+            "AR100": 0.5074733096085409,
+            "objects": 281,
+            "recall_IoU50_maxDet100": 0.8327402135231317
+          },
+          "2": {
+            "AR100": 0.47857142857142854,
+            "objects": 14,
+            "recall_IoU50_maxDet100": 0.9285714285714286
+          },
+          "3": {
+            "AR100": 0.4363700564971751,
+            "objects": 1416,
+            "recall_IoU50_maxDet100": 0.8524011299435028
+          },
+          "4": {
+            "AR100": 0.4614754098360656,
+            "objects": 122,
+            "recall_IoU50_maxDet100": 0.8032786885245902
+          },
+          "5": {
+            "AR100": 0.2972972972972973,
+            "objects": 37,
+            "recall_IoU50_maxDet100": 0.5405405405405406
+          },
+          "7": {
+            "AR100": 0.5454545454545454,
+            "objects": 11,
+            "recall_IoU50_maxDet100": 0.9090909090909091
+          },
+          "8": {
+            "AR100": 0.4791666666666667,
+            "objects": 48,
+            "recall_IoU50_maxDet100": 0.9583333333333334
+          },
+          "9": {
+            "AR100": 0.437037037037037,
+            "objects": 81,
+            "recall_IoU50_maxDet100": 0.8765432098765432
+          }
+        },
+        "subset_AR100": 0.4510050142128663,
+        "subset_recall_IoU50_maxDet100": 0.842985842985843
+      }
+    }
+  },
+  "rule_checks": {
+    "clean_guardrails": {
+      "delta_AP": true,
+      "delta_AP75": true,
+      "delta_AP_large": true
+    },
+    "failure_progress": {
+      "delta_AP_small": false,
+      "delta_failure_macro_AR100": true,
+      "delta_small_joint_recall50": true
+    },
+    "typed_advantage_over_scalar": {
+      "clean_delta_AP": true,
+      "failure_rule": true
+    }
+  },
+  "status": "failure_evaluation_complete",
+  "thresholds": [
+    0.5,
+    0.55,
+    0.6000000000000001,
+    0.6500000000000001,
+    0.7000000000000002,
+    0.7500000000000002,
+    0.8000000000000003,
+    0.8500000000000003,
+    0.9000000000000004,
+    0.9500000000000004
+  ],
+  "version": "method_gate_failure_evaluation_v1"
+}

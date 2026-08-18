@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the associated work."
+title: "Diagnose Before Repair: Object-Level Failure Diagnosis and Intervention Matching for Autonomous-Driving Detection"
+type: software
+authors:
+  - family-names: Qin
+    given-names: Spencer
+year: 2026
+license: MIT

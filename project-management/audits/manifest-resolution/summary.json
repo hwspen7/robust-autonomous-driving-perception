@@ -1,0 +1,13 @@
+{
+  "version": "manifest-resolution-audit",
+  "status": "complete",
+  "created_utc": "2026-08-18T08:25:13.142736+00:00",
+  "manifest_count": 45,
+  "manifest_entry_count": 581,
+  "direct_entry_count": 398,
+  "dependency_entry_count": 183,
+  "active_shared_dependency_count": 21,
+  "local_archive_dependency_count": 162,
+  "unresolved_entry_count": 0,
+  "scientific_manifests_modified": false
+}

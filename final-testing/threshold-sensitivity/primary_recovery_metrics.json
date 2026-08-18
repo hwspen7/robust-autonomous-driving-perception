@@ -1,0 +1,1306 @@
+{
+  "gate_scalar": {
+    "yolo_central__dfine_central": {
+      "failure_macro_AR100": 0.34433489609414925,
+      "small_jointly_missed_recall50": 0.7498703095279267,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5478500904613726,
+          "images": 5416,
+          "objects": 9000,
+          "recall50": 0.9522222222222222
+        },
+        "small_jointly_missed": {
+          "AR100": 0.22455321285764449,
+          "images": 8184,
+          "objects": 34698,
+          "recall50": 0.7498703095279267
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15323765976463136,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.3105175292153589
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28023964836985243,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7146157263438472
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5157938690172453,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.938292792120579
+        }
+      }
+    },
+    "yolo_central__dfine_high": {
+      "failure_macro_AR100": 0.3519279951118,
+      "small_jointly_missed_recall50": 0.7742829288316486,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5676900273329771,
+          "images": 2743,
+          "objects": 3423,
+          "recall50": 0.9442009932807479
+        },
+        "small_jointly_missed": {
+          "AR100": 0.24267877107429386,
+          "images": 8467,
+          "objects": 38978,
+          "recall50": 0.7742829288316486
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15323765976463136,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.3105175292153589
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28023964836985243,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7146157263438472
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5157938690172453,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.938292792120579
+        }
+      }
+    },
+    "yolo_central__dfine_low": {
+      "failure_macro_AR100": 0.3378283757402587,
+      "small_jointly_missed_recall50": 0.7112573347352712,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5353713475579502,
+          "images": 7029,
+          "objects": 15551,
+          "recall50": 0.9540865539193621
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2044993539916141,
+          "images": 7779,
+          "objects": 29483,
+          "recall50": 0.7112573347352712
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15323765976463136,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.3105175292153589
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28023964836985243,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7146157263438472
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5157938690172453,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.938292792120579
+        }
+      }
+    },
+    "yolo_high__dfine_central": {
+      "failure_macro_AR100": 0.3546593168245854,
+      "small_jointly_missed_recall50": 0.7826582717763125,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5771101515776528,
+          "images": 7874,
+          "objects": 20393,
+          "recall50": 0.976070220173589
+        },
+        "small_jointly_missed": {
+          "AR100": 0.23777305656406938,
+          "images": 8517,
+          "objects": 40342,
+          "recall50": 0.7826582717763125
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14019793733917435,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.26999266324284665
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28035514825563923,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7277089164334266
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5378602903863914,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9594697138776057
+        }
+      }
+    },
+    "yolo_high__dfine_high": {
+      "failure_macro_AR100": 0.3649536528518159,
+      "small_jointly_missed_recall50": 0.8226028079259186,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.6018456741973255,
+          "images": 5128,
+          "objects": 8216,
+          "recall50": 0.9743184031158715
+        },
+        "small_jointly_missed": {
+          "AR100": 0.26450921408054895,
+          "images": 8966,
+          "objects": 50215,
+          "recall50": 0.8226028079259186
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14019793733917435,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.26999266324284665
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28035514825563923,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7277089164334266
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5378602903863914,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9594697138776057
+        }
+      }
+    },
+    "yolo_high__dfine_low": {
+      "failure_macro_AR100": 0.3469399414834562,
+      "small_jointly_missed_recall50": 0.7340211295969266,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5641181477003577,
+          "images": 8715,
+          "objects": 30247,
+          "recall50": 0.9738817072767547
+        },
+        "small_jointly_missed": {
+          "AR100": 0.21216818373571816,
+          "images": 8021,
+          "objects": 32277,
+          "recall50": 0.7340211295969266
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14019793733917435,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.26999266324284665
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28035514825563923,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7277089164334266
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5378602903863914,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9594697138776057
+        }
+      }
+    },
+    "yolo_low__dfine_central": {
+      "failure_macro_AR100": 0.3361593316234011,
+      "small_jointly_missed_recall50": 0.7115261652364125,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5248586494047947,
+          "images": 3904,
+          "objects": 5543,
+          "recall50": 0.9280173191412593
+        },
+        "small_jointly_missed": {
+          "AR100": 0.20682349292368904,
+          "images": 7830,
+          "objects": 29715,
+          "recall50": 0.7115261652364125
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16859024217648155,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.33864168618266977
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2851685842468219,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7097492209526636
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.49535568936521834,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9140750979037088
+        }
+      }
+    },
+    "yolo_low__dfine_high": {
+      "failure_macro_AR100": 0.3423829324654044,
+      "small_jointly_missed_recall50": 0.7305829763456883,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5422966328150787,
+          "images": 1927,
+          "objects": 2236,
+          "recall50": 0.9212880143112702
+        },
+        "small_jointly_missed": {
+          "AR100": 0.22050351372342175,
+          "images": 8062,
+          "objects": 32214,
+          "recall50": 0.7305829763456883
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16859024217648155,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.33864168618266977
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2851685842468219,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7097492209526636
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.49535568936521834,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9140750979037088
+        }
+      }
+    },
+    "yolo_low__dfine_low": {
+      "failure_macro_AR100": 0.33098104827269553,
+      "small_jointly_missed_recall50": 0.6816618152950517,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5139503780781324,
+          "images": 5546,
+          "objects": 9756,
+          "recall50": 0.9320418204182042
+        },
+        "small_jointly_missed": {
+          "AR100": 0.19184034749682344,
+          "images": 7503,
+          "objects": 26453,
+          "recall50": 0.6816618152950517
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16859024217648155,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.33864168618266977
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2851685842468219,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7097492209526636
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.49535568936521834,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9140750979037088
+        }
+      }
+    }
+  },
+  "gate_typed": {
+    "yolo_central__dfine_central": {
+      "failure_macro_AR100": 0.3486412393762387,
+      "small_jointly_missed_recall50": 0.7495244682690645,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5647762719150157,
+          "images": 5416,
+          "objects": 9000,
+          "recall50": 0.9523333333333334
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2239425067999714,
+          "images": 8184,
+          "objects": 34698,
+          "recall50": 0.7495244682690645
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15912778926299892,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.3160823594880356
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2740338770048708,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7144380275433141
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5213257518983366,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9391508730040292
+        }
+      }
+    },
+    "yolo_central__dfine_high": {
+      "failure_macro_AR100": 0.35642583144856343,
+      "small_jointly_missed_recall50": 0.7739750628559701,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5855963824594796,
+          "images": 2743,
+          "objects": 3423,
+          "recall50": 0.9447852760736196
+        },
+        "small_jointly_missed": {
+          "AR100": 0.24204535661713086,
+          "images": 8467,
+          "objects": 38978,
+          "recall50": 0.7739750628559701
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15912778926299892,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.3160823594880356
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2740338770048708,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7144380275433141
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5213257518983366,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9391508730040292
+        }
+      }
+    },
+    "yolo_central__dfine_low": {
+      "failure_macro_AR100": 0.34139773477935875,
+      "small_jointly_missed_recall50": 0.7106128955669369,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5495307604589391,
+          "images": 7029,
+          "objects": 15551,
+          "recall50": 0.9542151630120249
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2029704952716484,
+          "images": 7779,
+          "objects": 29483,
+          "recall50": 0.7106128955669369
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15912778926299892,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.3160823594880356
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2740338770048708,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7144380275433141
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5213257518983366,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9391508730040292
+        }
+      }
+    },
+    "yolo_high__dfine_central": {
+      "failure_macro_AR100": 0.3577696707066954,
+      "small_jointly_missed_recall50": 0.7822368747211343,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5887955449811951,
+          "images": 7874,
+          "objects": 20393,
+          "recall50": 0.9762173294758005
+        },
+        "small_jointly_missed": {
+          "AR100": 0.23656657859556018,
+          "images": 8517,
+          "objects": 40342,
+          "recall50": 0.7822368747211343
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14173761796963763,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2736610418195158
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.282346624747488,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7265093962415033
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5394019872395959,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9597375351515423
+        }
+      }
+    },
+    "yolo_high__dfine_high": {
+      "failure_macro_AR100": 0.36780258701183277,
+      "small_jointly_missed_recall50": 0.8222244349298019,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.6124553452616921,
+          "images": 5128,
+          "objects": 8216,
+          "recall50": 0.9748052580331061
+        },
+        "small_jointly_missed": {
+          "AR100": 0.26307135984075025,
+          "images": 8966,
+          "objects": 50215,
+          "recall50": 0.8222244349298019
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14173761796963763,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2736610418195158
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.282346624747488,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7265093962415033
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5394019872395959,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9597375351515423
+        }
+      }
+    },
+    "yolo_high__dfine_low": {
+      "failure_macro_AR100": 0.34954786134426585,
+      "small_jointly_missed_recall50": 0.733215602441367,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5737860184601438,
+          "images": 8715,
+          "objects": 30247,
+          "recall50": 0.973980890666843
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2104670583044642,
+          "images": 8021,
+          "objects": 32277,
+          "recall50": 0.733215602441367
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14173761796963763,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2736610418195158
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.282346624747488,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7265093962415033
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5394019872395959,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9597375351515423
+        }
+      }
+    },
+    "yolo_low__dfine_central": {
+      "failure_macro_AR100": 0.33894781458395284,
+      "small_jointly_missed_recall50": 0.7109877166414269,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5435601182100621,
+          "images": 3904,
+          "objects": 5543,
+          "recall50": 0.9289193577485116
+        },
+        "small_jointly_missed": {
+          "AR100": 0.20629815220189784,
+          "images": 7830,
+          "objects": 29715,
+          "recall50": 0.7109877166414269
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16902219251842712,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.34238875878220143
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2709584371458951,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7078943463421873
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5049001728434821,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9156876295784382
+        }
+      }
+    },
+    "yolo_low__dfine_high": {
+      "failure_macro_AR100": 0.34633536972800527,
+      "small_jointly_missed_recall50": 0.7301173402868318,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5668136306885773,
+          "images": 1927,
+          "objects": 2236,
+          "recall50": 0.9235241502683363
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2199824154436448,
+          "images": 8062,
+          "objects": 32214,
+          "recall50": 0.7301173402868318
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16902219251842712,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.34238875878220143
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2709584371458951,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7078943463421873
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5049001728434821,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9156876295784382
+        }
+      }
+    },
+    "yolo_low__dfine_low": {
+      "failure_macro_AR100": 0.3328599243288424,
+      "small_jointly_missed_recall50": 0.6807545457982082,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5289673327382747,
+          "images": 5546,
+          "objects": 9756,
+          "recall50": 0.9328618286182861
+        },
+        "small_jointly_missed": {
+          "AR100": 0.19045148639813309,
+          "images": 7503,
+          "objects": 26453,
+          "recall50": 0.6807545457982082
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16902219251842712,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.34238875878220143
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2709584371458951,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7078943463421873
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5049001728434821,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9156876295784382
+        }
+      }
+    }
+  },
+  "gate_typed_v2": {
+    "yolo_central__dfine_central": {
+      "failure_macro_AR100": 0.34871430806909176,
+      "small_jointly_missed_recall50": 0.748025822813995,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5587593787172669,
+          "images": 5416,
+          "objects": 9000,
+          "recall50": 0.9538888888888889
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2242139447557502,
+          "images": 8184,
+          "objects": 34698,
+          "recall50": 0.748025822813995
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15391207715641583,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.31552587646076796
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2849893274540734,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7116836961350511
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5216968122619525,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9403074168034622
+        }
+      }
+    },
+    "yolo_central__dfine_high": {
+      "failure_macro_AR100": 0.3562652017358505,
+      "small_jointly_missed_recall50": 0.7727692544512289,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5780353303651916,
+          "images": 2743,
+          "objects": 3423,
+          "recall50": 0.9474145486415425
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2426924614416194,
+          "images": 8467,
+          "objects": 38978,
+          "recall50": 0.7727692544512289
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15391207715641583,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.31552587646076796
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2849893274540734,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7116836961350511
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5216968122619525,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9403074168034622
+        }
+      }
+    },
+    "yolo_central__dfine_low": {
+      "failure_macro_AR100": 0.34201085615801136,
+      "small_jointly_missed_recall50": 0.7088830851677238,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5465050634173381,
+          "images": 7029,
+          "objects": 15551,
+          "recall50": 0.9547295993826763
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2029510005002771,
+          "images": 7779,
+          "objects": 29483,
+          "recall50": 0.7088830851677238
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15391207715641583,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.31552587646076796
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2849893274540734,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.7116836961350511
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5216968122619525,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9403074168034622
+        }
+      }
+    },
+    "yolo_high__dfine_central": {
+      "failure_macro_AR100": 0.3582887583886665,
+      "small_jointly_missed_recall50": 0.7810222596797383,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5870323618126161,
+          "images": 7874,
+          "objects": 20393,
+          "recall50": 0.9770019124209287
+        },
+        "small_jointly_missed": {
+          "AR100": 0.23694168340419677,
+          "images": 8517,
+          "objects": 40342,
+          "recall50": 0.7810222596797383
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.13953634239993756,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2743947175348496
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2878446346770673,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7253098760495802
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5400887696495145,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9606079542918359
+        }
+      }
+    },
+    "yolo_high__dfine_high": {
+      "failure_macro_AR100": 0.3685382114418691,
+      "small_jointly_missed_recall50": 0.8213681170964852,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.6112510689650625,
+          "images": 5128,
+          "objects": 8216,
+          "recall50": 0.9761441090555014
+        },
+        "small_jointly_missed": {
+          "AR100": 0.26397024151776366,
+          "images": 8966,
+          "objects": 50215,
+          "recall50": 0.8213681170964852
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.13953634239993756,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2743947175348496
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2878446346770673,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7253098760495802
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5400887696495145,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9606079542918359
+        }
+      }
+    },
+    "yolo_high__dfine_low": {
+      "failure_macro_AR100": 0.3501367650248739,
+      "small_jointly_missed_recall50": 0.7318214208259751,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5727561598019167,
+          "images": 8715,
+          "objects": 30247,
+          "recall50": 0.9742453797070784
+        },
+        "small_jointly_missed": {
+          "AR100": 0.21045791859593327,
+          "images": 8021,
+          "objects": 32277,
+          "recall50": 0.7318214208259751
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.13953634239993756,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2743947175348496
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2878446346770673,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.7253098760495802
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5400887696495145,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9606079542918359
+        }
+      }
+    },
+    "yolo_low__dfine_central": {
+      "failure_macro_AR100": 0.34013633529153947,
+      "small_jointly_missed_recall50": 0.7093387178192831,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5387961760678178,
+          "images": 3904,
+          "objects": 5543,
+          "recall50": 0.9309038426844669
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2062133822076279,
+          "images": 7830,
+          "objects": 29715,
+          "recall50": 0.7093387178192831
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16618089344185014,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.3433255269320843
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28461659420643437,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7065588366226443
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5048746305339673,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9172425708362129
+        }
+      }
+    },
+    "yolo_low__dfine_high": {
+      "failure_macro_AR100": 0.34680084375777803,
+      "small_jointly_missed_recall50": 0.7287204321102626,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.55795565761132,
+          "images": 1927,
+          "objects": 2236,
+          "recall50": 0.9266547406082289
+        },
+        "small_jointly_missed": {
+          "AR100": 0.22037644299531842,
+          "images": 8062,
+          "objects": 32214,
+          "recall50": 0.7287204321102626
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16618089344185014,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.3433255269320843
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28461659420643437,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7065588366226443
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5048746305339673,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9172425708362129
+        }
+      }
+    },
+    "yolo_low__dfine_low": {
+      "failure_macro_AR100": 0.33460541457752,
+      "small_jointly_missed_recall50": 0.6789400068045213,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5271688623396231,
+          "images": 5546,
+          "objects": 9756,
+          "recall50": 0.933579335793358
+        },
+        "small_jointly_missed": {
+          "AR100": 0.1901860923657255,
+          "images": 7503,
+          "objects": 26453,
+          "recall50": 0.6789400068045213
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.16618089344185014,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.3433255269320843
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.28461659420643437,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.7065588366226443
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5048746305339673,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.9172425708362129
+        }
+      }
+    }
+  },
+  "gate_uniform": {
+    "yolo_central__dfine_central": {
+      "failure_macro_AR100": 0.33697823629917445,
+      "small_jointly_missed_recall50": 0.7178223528733645,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5527271214222831,
+          "images": 5416,
+          "objects": 9000,
+          "recall50": 0.9438888888888889
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2131001992096342,
+          "images": 8184,
+          "objects": 34698,
+          "recall50": 0.7178223528733645
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14335606741584522,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.29604897050639956
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.26013820745535493,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.6653931585961794
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5155695859927548,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9368377854051634
+        }
+      }
+    },
+    "yolo_central__dfine_high": {
+      "failure_macro_AR100": 0.3437254977287648,
+      "small_jointly_missed_recall50": 0.7442916517009596,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5683581444484926,
+          "images": 2743,
+          "objects": 3423,
+          "recall50": 0.9386503067484663
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2312054833313765,
+          "images": 8467,
+          "objects": 38978,
+          "recall50": 0.7442916517009596
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14335606741584522,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.29604897050639956
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.26013820745535493,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.6653931585961794
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5155695859927548,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9368377854051634
+        }
+      }
+    },
+    "yolo_central__dfine_low": {
+      "failure_macro_AR100": 0.3299481489335046,
+      "small_jointly_missed_recall50": 0.6747278092460062,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5387630191100233,
+          "images": 7029,
+          "objects": 15551,
+          "recall50": 0.9458555719889397
+        },
+        "small_jointly_missed": {
+          "AR100": 0.19191386469354493,
+          "images": 7779,
+          "objects": 29483,
+          "recall50": 0.6747278092460062
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.14335606741584522,
+          "images": 1441,
+          "objects": 1797,
+          "recall50": 0.29604897050639956
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.26013820745535493,
+          "images": 5294,
+          "objects": 11255,
+          "recall50": 0.6653931585961794
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.5155695859927548,
+          "images": 8262,
+          "objects": 26804,
+          "recall50": 0.9368377854051634
+        }
+      }
+    },
+    "yolo_high__dfine_central": {
+      "failure_macro_AR100": 0.3482349573557558,
+      "small_jointly_missed_recall50": 0.7540280600862624,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5808293805746825,
+          "images": 7874,
+          "objects": 20393,
+          "recall50": 0.9706271759917618
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2264893041914096,
+          "images": 8517,
+          "objects": 40342,
+          "recall50": 0.7540280600862624
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.12752578023349934,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2575201760821717
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2708865135334386,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.6906570705051313
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.535443808245749,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9567245458197563
+        }
+      }
+    },
+    "yolo_high__dfine_high": {
+      "failure_macro_AR100": 0.35735238019669974,
+      "small_jointly_missed_recall50": 0.7979488200736832,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5997507383408023,
+          "images": 5128,
+          "objects": 8216,
+          "recall50": 0.9703018500486855
+        },
+        "small_jointly_missed": {
+          "AR100": 0.2531550606300094,
+          "images": 8966,
+          "objects": 50215,
+          "recall50": 0.7979488200736832
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.12752578023349934,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2575201760821717
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2708865135334386,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.6906570705051313
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.535443808245749,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9567245458197563
+        }
+      }
+    },
+    "yolo_high__dfine_low": {
+      "failure_macro_AR100": 0.33996690185861633,
+      "small_jointly_missed_recall50": 0.6995693527899123,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5661713562535997,
+          "images": 8715,
+          "objects": 30247,
+          "recall50": 0.9680298872615466
+        },
+        "small_jointly_missed": {
+          "AR100": 0.1998070510267948,
+          "images": 8021,
+          "objects": 32277,
+          "recall50": 0.6995693527899123
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.12752578023349934,
+          "images": 1123,
+          "objects": 1363,
+          "recall50": 0.2575201760821717
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.2708865135334386,
+          "images": 4219,
+          "objects": 7503,
+          "recall50": 0.6906570705051313
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.535443808245749,
+          "images": 9261,
+          "objects": 44806,
+          "recall50": 0.9567245458197563
+        }
+      }
+    },
+    "yolo_low__dfine_central": {
+      "failure_macro_AR100": 0.3261053187419703,
+      "small_jointly_missed_recall50": 0.6754501093723708,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5289830536017768,
+          "images": 3904,
+          "objects": 5543,
+          "recall50": 0.9155691863611762
+        },
+        "small_jointly_missed": {
+          "AR100": 0.19463924170264363,
+          "images": 7830,
+          "objects": 29715,
+          "recall50": 0.6754501093723708
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15799459132203664,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.32459016393442625
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.24975610416561464,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.6581095117970025
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.49915360291777977,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.914190278737618
+        }
+      }
+    },
+    "yolo_low__dfine_high": {
+      "failure_macro_AR100": 0.3325149101581043,
+      "small_jointly_missed_recall50": 0.6957533991432296,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5475364479329874,
+          "images": 1927,
+          "objects": 2236,
+          "recall50": 0.9123434704830053
+        },
+        "small_jointly_missed": {
+          "AR100": 0.20813380445210306,
+          "images": 8062,
+          "objects": 32214,
+          "recall50": 0.6957533991432296
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15799459132203664,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.32459016393442625
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.24975610416561464,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.6581095117970025
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.49915360291777977,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.914190278737618
+        }
+      }
+    },
+    "yolo_low__dfine_low": {
+      "failure_macro_AR100": 0.32028947344003245,
+      "small_jointly_missed_recall50": 0.6423090008694666,
+      "subset_metrics": {
+        "dfine_supported_yolo_failure": {
+          "AR100": 0.5155959373708295,
+          "images": 5546,
+          "objects": 9756,
+          "recall50": 0.9200492004920049
+        },
+        "small_jointly_missed": {
+          "AR100": 0.17894713142390156,
+          "images": 7503,
+          "objects": 26453,
+          "recall50": 0.6423090008694666
+        },
+        "yolo_classification_failure": {
+          "AR100": 0.15799459132203664,
+          "images": 1676,
+          "objects": 2135,
+          "recall50": 0.32459016393442625
+        },
+        "yolo_localization_failure": {
+          "AR100": 0.24975610416561464,
+          "images": 5778,
+          "objects": 13478,
+          "recall50": 0.6581095117970025
+        },
+        "yolo_low_confidence": {
+          "AR100": 0.49915360291777977,
+          "images": 7098,
+          "objects": 17364,
+          "recall50": 0.914190278737618
+        }
+      }
+    }
+  }
+}

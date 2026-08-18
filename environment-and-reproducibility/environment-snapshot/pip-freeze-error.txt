@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/conda/lib/python3.10/site-packages/pip/__main__.py", line 22, in <module>
+    from pip._internal.cli.main import main as _main
+  File "/opt/conda/lib/python3.10/site-packages/pip/_internal/cli/main.py", line 10, in <module>
+    from pip._internal.cli.autocompletion import autocomplete
+  File "/opt/conda/lib/python3.10/site-packages/pip/_internal/cli/autocompletion.py", line 10, in <module>
+    from pip._internal.cli.main_parser import create_main_parser
+  File "/opt/conda/lib/python3.10/site-packages/pip/_internal/cli/main_parser.py", line 9, in <module>
+    from pip._internal.build_env import get_runnable_pip
+  File "/opt/conda/lib/python3.10/site-packages/pip/_internal/build_env.py", line 14, in <module>
+    from pip._vendor.certifi import where
+ModuleNotFoundError: No module named 'pip._vendor.certifi'

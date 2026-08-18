@@ -1,0 +1,32 @@
+{
+  "version": "method_gate_materialization_v1",
+  "status": "complete",
+  "created_utc": "2026-08-11T15:05:46.134073+00:00",
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/method_gate/frozen_manifests/method_gate_protocol_v1.json",
+  "protocol_sha256": "6be7ae25550360e38195bb785a064bd19cb9c4a65b4625b30b5698861cc1b00a",
+  "train_coco": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+  "train_coco_sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2",
+  "views": {
+    "uniform": 65000,
+    "scalar_risk": 65000,
+    "typed_cafr": 65000,
+    "common_original": 45500,
+    "scalar_crops": 19500,
+    "typed_crops": 19500
+  },
+  "crop_payload": {
+    "files": 78000,
+    "bytes": 1599662091,
+    "GiB": 1.4898014171048999,
+    "rolling_sha256": "d3b852347e08315e66b0d822c8bc9807edd9fad9857f8c4e5efb6fedcebcf2dd"
+  },
+  "geometry": {
+    "target_short_side_min": 1.331484049930652,
+    "target_short_side_median": 36.598240469208214,
+    "target_short_side_max": 552.289156626506,
+    "objects_per_view_mean": 13.649179487179488
+  },
+  "shm_output": "/dev/shm/rebu_yolo/method_gate_v1",
+  "persistent_output": "/root/rivermind-data/autodrive/results/evaluation/method_gate/materialization_v1",
+  "training_started": false
+}

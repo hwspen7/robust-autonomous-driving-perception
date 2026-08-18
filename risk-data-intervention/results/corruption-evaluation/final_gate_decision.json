@@ -1,0 +1,30 @@
+{
+  "advance_typed_cafr_v1": false,
+  "all_rule_families_required": true,
+  "corruption_guardrail": {
+    "delta_mean_corruption_AP_small": 0.001346466611561098,
+    "minimum": -0.002,
+    "passed": true
+  },
+  "gate_result": "FAIL",
+  "if_failed": "Stop before formal training; diagnose and design CAFR V2 without changing frozen V1 thresholds.",
+  "method": "typed_cafr_v1",
+  "previous_rule_checks": {
+    "clean_guardrails": {
+      "delta_AP": true,
+      "delta_AP75": true,
+      "delta_AP_large": true
+    },
+    "failure_progress": {
+      "delta_AP_small": false,
+      "delta_failure_macro_AR100": true,
+      "delta_small_joint_recall50": true
+    },
+    "typed_advantage_over_scalar": {
+      "clean_delta_AP": true,
+      "failure_rule": true
+    }
+  },
+  "status": "complete",
+  "version": "method_gate_final_decision_v1"
+}

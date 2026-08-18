@@ -1,0 +1,26 @@
+{
+  "version": "cafr_v2_cache_isolation_v1",
+  "status": "frozen_technical_amendment_before_training",
+  "created_utc": "2026-08-12T09:33:59.858324+00:00",
+  "source_materialization": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_materialization_v1",
+  "source_materialization_manifest_sha256": "b39399b074c870a677d5f494ba16635522384709f0fc25826da019458738d0bd",
+  "method_gate_protocol": "/root/rivermind-data/autodrive/results/evaluation/method_gate/frozen_manifests/cafr_v2_gate_v1/cafr_v2_gate_protocol.json",
+  "method_gate_protocol_sha256": "a1bcf36cba543c82cec65067343f231b9593b799279a73f604fcf320ac781d6d",
+  "reason": "Ultralytics derives label-cache location from the first label directory; all V1 lists resolved to the same original labels/train.cache.",
+  "changes": {
+    "uniform": "First image/label replaced by symlink aliases to the identical source files.",
+    "scalar_risk": "Same 65k path set reordered with a Scalar crop first.",
+    "typed_cafr": "Same 65k path set reordered with a Typed crop first.",
+    "dev": "First image/label replaced by symlink aliases to the identical source files."
+  },
+  "sample_sets_changed": false,
+  "labels_changed": false,
+  "images_changed": false,
+  "training_started": false,
+  "cache_routes": {
+    "uniform": "/dev/shm/rebu_yolo/cafr_v2_gate_v1/cache_anchors/uniform/labels.cache",
+    "scalar_risk": "/dev/shm/rebu_yolo/cafr_v2_gate_v1/scalar_risk/labels.cache",
+    "typed_cafr": "/dev/shm/rebu_yolo/cafr_v2_gate_v1/typed_cafr/labels.cache",
+    "dev": "/dev/shm/rebu_yolo/cafr_v2_gate_v1/cache_anchors/dev/labels.cache"
+  }
+}

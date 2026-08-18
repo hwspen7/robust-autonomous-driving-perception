@@ -1,0 +1,8 @@
+{
+  "elapsed_seconds": 65.6831738948822,
+  "maximum_allowed_projected_hours": 6.0,
+  "passed": true,
+  "projected_full_gpu_hours": 0.36490652163823445,
+  "replicates": 100,
+  "seconds_per_replicate_all_models": 0.6568317389488221
+}

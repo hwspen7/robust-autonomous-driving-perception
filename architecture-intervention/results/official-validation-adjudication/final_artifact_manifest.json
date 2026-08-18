@@ -1,0 +1,39 @@
+{
+  "version": "borderline_adjudication_final_v5_1",
+  "status": "complete",
+  "protocol_sha256": "d2e5d3eee91e82f70a91cc511f0a8d011fd6f65e4cb05cfa0ff7349bca1768e6",
+  "files": {
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/formal_evaluation/standard_epoch20_metrics.json": {
+      "bytes": 847,
+      "sha256": "1aaaa8b63871511e3c23ea278ff0399600ac07c846bd590502b7d1ff73d5f4c6"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/formal_evaluation/p2_epoch20_metrics.json": {
+      "bytes": 831,
+      "sha256": "516d44a26c619180a00629f03f61b64a82a3d2f68a63246bed907eef37d307c2"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/formal_evaluation/final_decision.json": {
+      "bytes": 3680,
+      "sha256": "e22114f58da2514ed81c9c150013cd7f6a410aead701540b6c7870f9a188e357"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/predictions/standard_epoch20/predictions.json": {
+      "bytes": 247319830,
+      "sha256": "422bf84b636d422c46a186c2ef8a6f7e585b94cd82c8ef97bc799f345067352b"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/predictions/p2_epoch20/predictions.json": {
+      "bytes": 336697799,
+      "sha256": "17167dad4b6158e68d78262ca43f60b3771372db5ae228a156ac8022a30e2b81"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/predictions/standard_epoch20/metadata.json": {
+      "bytes": 2649,
+      "sha256": "dc5d345ab61c555567ec623dfb45efec84d31a8a07809cdf38017e6d5cd21e83"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/predictions/p2_epoch20/metadata.json": {
+      "bytes": 2649,
+      "sha256": "f508ac7d26c818c42f7a2059f90084275f5f5ed3edf77f2929555f8ddb13b6da"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/official_val_export.log": {
+      "bytes": 6018,
+      "sha256": "95af5eeb8fca3ec7c3bb3803bc667f3120710da4b378e7ab41a88a668836a13e"
+    }
+  }
+}

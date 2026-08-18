@@ -1,0 +1,18 @@
+{
+  "files": {
+    "bdd100k_architecture_gate_v3.yaml": {
+      "bytes": 425,
+      "sha256": "208a57dacf467c4efab4d6d7d687fce63938d24bc4fc2012d551bb49100e808c"
+    },
+    "formal_gate_protocol_v3.json": {
+      "bytes": 7223,
+      "sha256": "1f19201fdd1d456b32a64135461fe61d6a7ce945ff5adbcbb4fa879bd7841b8f"
+    },
+    "instances_train_dev_effective.json": {
+      "bytes": 33994293,
+      "sha256": "5e13ec651d0582032e5eacc1a46d885279fabe278463bd7c2be58b2429796faf"
+    }
+  },
+  "status": "frozen",
+  "version": "prepared_inputs_v3"
+}

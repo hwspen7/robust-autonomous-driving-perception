@@ -1,0 +1,10 @@
+{
+  "version": "prepared_inputs_v5_1",
+  "status": "frozen",
+  "files": {
+    "borderline_adjudication_protocol_v5_1.json": {
+      "bytes": 4580,
+      "sha256": "d2e5d3eee91e82f70a91cc511f0a8d011fd6f65e4cb05cfa0ff7349bca1768e6"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "bytes": 83085211,
+  "checkpoint_epoch_zero_based": 19,
+  "ema_present": true,
+  "human_epoch": 20,
+  "optimizer_present": true,
+  "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+  "planned_epochs": 20,
+  "scaler_present": true,
+  "sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29"
+}

@@ -1,0 +1,118 @@
+{
+  "elapsed_minutes": 0.2774045745531718,
+  "false_positive_type_counts": {
+    "background_candidate": 15944,
+    "classification_candidate": 2832,
+    "duplicate_candidate": 4854,
+    "localization_candidate": 19519,
+    "overlap_candidate": 1228
+  },
+  "localization_iou": 0.1,
+  "match_iou": 0.5,
+  "model": "YOLO11m",
+  "num_false_positives": 44377,
+  "num_gt_objects": 185523,
+  "num_matched_predictions": 133737,
+  "num_operating_predictions": 178114,
+  "per_class_status": {
+    "1": {
+      "assignment_conflict_candidate": 79,
+      "classification_error_candidate": 96,
+      "detected": 8040,
+      "localization_error_candidate": 663,
+      "low_confidence_candidate": 2963,
+      "missed": 1421
+    },
+    "10": {
+      "assignment_conflict_candidate": 18,
+      "classification_error_candidate": 227,
+      "detected": 23842,
+      "localization_error_candidate": 1311,
+      "low_confidence_candidate": 6707,
+      "missed": 2801
+    },
+    "2": {
+      "assignment_conflict_candidate": 1,
+      "classification_error_candidate": 85,
+      "detected": 305,
+      "localization_error_candidate": 20,
+      "low_confidence_candidate": 58,
+      "missed": 180
+    },
+    "3": {
+      "assignment_conflict_candidate": 479,
+      "classification_error_candidate": 330,
+      "detected": 79073,
+      "localization_error_candidate": 6680,
+      "low_confidence_candidate": 12103,
+      "missed": 3841
+    },
+    "4": {
+      "assignment_conflict_candidate": 2,
+      "classification_error_candidate": 597,
+      "detected": 2577,
+      "localization_error_candidate": 28,
+      "low_confidence_candidate": 600,
+      "missed": 441
+    },
+    "5": {
+      "assignment_conflict_candidate": 2,
+      "classification_error_candidate": 260,
+      "detected": 926,
+      "localization_error_candidate": 4,
+      "low_confidence_candidate": 169,
+      "missed": 236
+    },
+    "6": {
+      "classification_error_candidate": 2,
+      "low_confidence_candidate": 1,
+      "missed": 12
+    },
+    "7": {
+      "assignment_conflict_candidate": 1,
+      "classification_error_candidate": 41,
+      "detected": 188,
+      "localization_error_candidate": 10,
+      "low_confidence_candidate": 88,
+      "missed": 124
+    },
+    "8": {
+      "assignment_conflict_candidate": 25,
+      "classification_error_candidate": 25,
+      "detected": 517,
+      "localization_error_candidate": 43,
+      "low_confidence_candidate": 227,
+      "missed": 170
+    },
+    "9": {
+      "assignment_conflict_candidate": 12,
+      "classification_error_candidate": 134,
+      "detected": 18269,
+      "localization_error_candidate": 2496,
+      "low_confidence_candidate": 3888,
+      "missed": 2085
+    }
+  },
+  "prediction_audit": {
+    "maximum_predictions_per_image": 300,
+    "maximum_score": 0.9464820623397827,
+    "minimum_predictions_per_image": 6,
+    "minimum_score": 0.001000000280328095,
+    "negative_size_bbox": 0,
+    "num_images_with_predictions": 10000,
+    "out_of_bounds_bbox": 0,
+    "prediction_count": 1347919,
+    "prediction_file": "/root/rivermind-data/autodrive/results/evaluation/unified_detection/canonical_predictions/YOLO11m.json",
+    "prediction_sha256": "14ff8491f7849077cb7ead3ce7d9e618d2f92ee04bef0a8c68efdb1b836a54b0",
+    "zero_area_bbox": 7
+  },
+  "status_counts": {
+    "assignment_conflict_candidate": 619,
+    "classification_error_candidate": 1797,
+    "detected": 133737,
+    "localization_error_candidate": 11255,
+    "low_confidence_candidate": 26804,
+    "missed": 11311
+  },
+  "threshold": 0.22527144849300385
+}

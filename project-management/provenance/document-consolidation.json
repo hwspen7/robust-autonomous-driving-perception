@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-08-18T08:05:38.385546+00:00",
+  "destination": "docs/PROJECT_GUIDE.md",
+  "destination_sha256": "4cc5bb8fd763131181e9f189f4ad299cff0852f772e8ae9743bc3bf53b6b2f75",
+  "merged_documents": [
+    {
+      "bytes": 494,
+      "path": "ARTIFACTS.md",
+      "sha256": "77e4927b56900638944ff46c21c1d5019d0f74c4cea97de11897b39f110178b4"
+    },
+    {
+      "bytes": 492,
+      "path": "CONTRIBUTING.md",
+      "sha256": "ef42cb2bd1583b455fa7561a6ac14521b4faa9cce90dd6e28bb529f3b9616323"
+    },
+    {
+      "bytes": 562,
+      "path": "DATA.md",
+      "sha256": "c0ac617a9ccd89bf1563f5030b0c916e6f3f1a544ffb9e86e02a044f566b4f8d"
+    },
+    {
+      "bytes": 987,
+      "path": "PROJECT_NAVIGATION.md",
+      "sha256": "983bd6c1e8e0214274fb6bdf04f844f3f662434349ec2a81bf2a2b42fd8c1484"
+    },
+    {
+      "bytes": 1572,
+      "path": "REPRODUCIBILITY.md",
+      "sha256": "e31d889780cccbdc739e0be8f43be18d2c782df9659cca783817fd868a2fcb0d"
+    },
+    {
+      "bytes": 732,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "dc5e7a070746f168cdccae46dd978c17a069bbaf1d8fe9970c9cd680cc200a69"
+    }
+  ],
+  "policy": "The root README remains concise. Detailed repository, data, artifact, reproduction, contribution, and third-party guidance is consolidated in one document.",
+  "status": "complete"
+}

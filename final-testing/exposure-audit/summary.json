@@ -1,0 +1,147 @@
+{
+  "arms": {
+    "rebu_risk": {
+      "arm": "rebu_risk",
+      "class_exposure": {
+        "0": 89164,
+        "1": 4478,
+        "2": 653130,
+        "3": 28192,
+        "4": 10991,
+        "5": 118,
+        "6": 3018,
+        "7": 7063,
+        "8": 178211,
+        "9": 221239
+      },
+      "maximum_source_exposures": 2,
+      "mean_source_exposures": 1.243140528157133,
+      "native_scale_exposure": {
+        "large": 134486,
+        "medium": 374375,
+        "small": 686743
+      },
+      "network_960_scale_exposure": {
+        "large": 117393,
+        "medium": 363250,
+        "small": 714961
+      },
+      "network_input_pixels": 64512000000,
+      "non_target_objects": 1162413,
+      "object_centric_views": 19500,
+      "objects_per_million_network_pixels": 18.533048115079364,
+      "objects_per_million_raw_pixels": 23.451669056969155,
+      "objects_per_view": 17.080057142857143,
+      "objects_per_view_distribution": {
+        "count": 70000,
+        "maximum": 91.0,
+        "mean": 17.080057142857143,
+        "median": 16.0,
+        "minimum": 0.0,
+        "p10": 6.0,
+        "p90": 30.0
+      },
+      "original_views": 50500,
+      "raw_input_pixels": 50981616579,
+      "source_image_exposure_distribution": {
+        "count": 56309,
+        "maximum": 2.0,
+        "mean": 1.243140528157133,
+        "median": 1.0,
+        "minimum": 1.0,
+        "p10": 1.0,
+        "p90": 2.0
+      },
+      "target_objects": 33191,
+      "total_supervised_objects": 1195604,
+      "training_views": 70000,
+      "unique_source_images": 56309
+    },
+    "uniform": {
+      "arm": "uniform",
+      "class_exposure": {
+        "0": 91347,
+        "1": 4516,
+        "2": 713201,
+        "3": 29971,
+        "4": 11672,
+        "5": 136,
+        "6": 3002,
+        "7": 7210,
+        "8": 186114,
+        "9": 239683
+      },
+      "maximum_source_exposures": 1,
+      "mean_source_exposures": 1.0,
+      "native_scale_exposure": {
+        "large": 162867,
+        "medium": 413183,
+        "small": 710802
+      },
+      "network_960_scale_exposure": {
+        "large": 109174,
+        "medium": 317235,
+        "small": 860443
+      },
+      "network_input_pixels": 64512000000,
+      "non_target_objects": 1267352,
+      "object_centric_views": 0,
+      "objects_per_million_network_pixels": 19.947482638888886,
+      "objects_per_million_raw_pixels": 19.947482638888886,
+      "objects_per_view": 18.3836,
+      "objects_per_view_distribution": {
+        "count": 70000,
+        "maximum": 91.0,
+        "mean": 18.3836,
+        "median": 17.0,
+        "minimum": 0.0,
+        "p10": 7.0,
+        "p90": 31.0
+      },
+      "original_views": 70000,
+      "raw_input_pixels": 64512000000,
+      "source_image_exposure_distribution": {
+        "count": 70000,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "median": 1.0,
+        "minimum": 1.0,
+        "p10": 1.0,
+        "p90": 1.0
+      },
+      "target_objects": 19500,
+      "total_supervised_objects": 1286852,
+      "training_views": 70000,
+      "unique_source_images": 70000
+    }
+  },
+  "bootstrap_manifest_sha256": "35b07a65bffb2e1e72a31dcee9cc568c1dea36d181f7bdf68e51401c594c0115",
+  "created_utc": "2026-08-16T13:20:23Z",
+  "elapsed_minutes": 0.405547825495402,
+  "interpretation": "This audit measures realized exposure and supervision composition. It does not by itself establish a causal explanation for downstream model differences.",
+  "new_inference": false,
+  "new_training": false,
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/frozen_protocol/final_testing_protocol_v1.json",
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "rebu_minus_uniform": {
+    "network_input_pixels": 0,
+    "non_target_objects": -104939,
+    "object_centric_views": 19500,
+    "original_views": -19500,
+    "raw_input_pixels": -13530383421,
+    "target_objects": 13691,
+    "total_supervised_objects": -91248,
+    "training_views": 0,
+    "unique_source_images": -13691
+  },
+  "selected_object_centric_views": 19500,
+  "status": "complete",
+  "training_budget": {
+    "equal_network_input_pixels": true,
+    "equal_optimization_steps": true,
+    "equal_training_views": true,
+    "identical_supervision_content": false,
+    "required_wording": "Equal in training views and optimization steps; not necessarily equal in objects, pixels, context, or supervision content."
+  },
+  "version": "final_exposure_audit_v1"
+}

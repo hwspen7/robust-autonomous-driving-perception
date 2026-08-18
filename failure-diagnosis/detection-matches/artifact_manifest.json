@@ -1,0 +1,50 @@
+{
+  "artifacts": [
+    {
+      "bytes": 4804349,
+      "path": "D-FINE-M/false_positives.csv",
+      "sha256": "fe4755d04e7fe111d3e97d117a14ab6262d1d4b082b9a1b727c246b3d990099b"
+    },
+    {
+      "bytes": 392852,
+      "path": "D-FINE-M/image_summary.csv",
+      "sha256": "1bfe641bf98d9ed79dc4d9b5ac8fce128ea24c0648744d5ea598f92c67fab67f"
+    },
+    {
+      "bytes": 43306519,
+      "path": "D-FINE-M/object_matches.csv",
+      "sha256": "8ea36ddf1acf71f26e53ff0292ff9072db2e70bdd3e28ab41531029b2a443a95"
+    },
+    {
+      "bytes": 3553,
+      "path": "D-FINE-M/summary.json",
+      "sha256": "9d6fb79ded4015d6aa4eeabd7b859a9a8402662886b97218b158dab345d78c41"
+    },
+    {
+      "bytes": 5893084,
+      "path": "YOLO11m/false_positives.csv",
+      "sha256": "5b05f537e42e1e0b76c30944f114f8c1f7287884da41f5fec4341905c0213838"
+    },
+    {
+      "bytes": 379972,
+      "path": "YOLO11m/image_summary.csv",
+      "sha256": "f6b67ec4e43b9e18fd7fd2d98b6967773248b47f18ea7decabf46bd7755b3c31"
+    },
+    {
+      "bytes": 42742785,
+      "path": "YOLO11m/object_matches.csv",
+      "sha256": "bdc3c4dad0d607a9d4111c47571a77679c5464d1e026c8f8429115f3f69107fc"
+    },
+    {
+      "bytes": 3539,
+      "path": "YOLO11m/summary.json",
+      "sha256": "7bb3de206c737d6c299719e001e1f6c5585c8d851bd639f886869a90adefa01f"
+    },
+    {
+      "bytes": 9395,
+      "path": "metadata.json",
+      "sha256": "c2bfea46dc71d9b6a3aa234408d5232bfc42391f593226e82fbfabb7d9f07a29"
+    }
+  ],
+  "created_utc": "2026-08-16T08:25:30.876993+00:00"
+}
