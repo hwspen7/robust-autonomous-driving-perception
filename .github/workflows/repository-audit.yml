@@ -43,7 +43,7 @@ jobs:
           print("PASS: separate pinned Main and D-FINE profiles are present")
           PY
 
-      - name: Verify frozen source and runtime layout
+      - name: Verify release source provenance and runtime layout
         run: |
           python source-code/utilities/runtime-layout/prepare_runtime_layout.py \
             --preflight-only \

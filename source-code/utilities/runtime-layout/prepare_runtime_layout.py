@@ -60,19 +60,22 @@ def load_script_mapping (project_root :Path ):
                 raise FileNotFoundError (active )
 
             actual =sha256 (active )
-            expected =row ["sha256"]
+            original_sha256 =row ["sha256"]
+            release_sha256 =row ["release_sha256"]
 
-            if actual !=expected :
+            if actual !=release_sha256 :
                 raise RuntimeError ({
                 "file":str (active ),
-                "expected_sha256":expected ,
-                "actual_sha256":actual ,
+                "expected_release_sha256":release_sha256 ,
+                "actual_release_sha256":actual ,
+                "original_sha256":original_sha256 ,
                 })
 
             mappings .append ({
             "original":original ,
             "active":active ,
-            "sha256":actual ,
+            "original_sha256":original_sha256 ,
+            "release_sha256":release_sha256 ,
             })
 
     if len (mappings )!=68 :
@@ -128,7 +131,7 @@ def preflight (project_root :Path ):
             raise FileNotFoundError (path )
 
     print ("project_root:",project_root )
-    print ("verified_frozen_scripts:",len (mappings ))
+    print ("verified_release_scripts:",len (mappings ))
     print (
     "compatibility_root:",
     EXACT_COMPATIBILITY_ROOT ,
@@ -149,7 +152,7 @@ def preflight (project_root :Path ):
     EXACT_COMPATIBILITY_ROOT 
     /"autodrive/results",
     )
-    print ("PASS: frozen source hashes are valid")
+    print ("PASS: release source hashes are valid; original provenance hashes are preserved")
 
     return mappings 
 
@@ -233,7 +236,8 @@ results_root :Path ,
         links .append ({
         "link":str (link ),
         "target":str (record ["active"]),
-        "sha256":record ["sha256"],
+        "original_sha256":record ["original_sha256"],
+        "release_sha256":record ["release_sha256"],
         "state":state ,
         })
 

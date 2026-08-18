@@ -19,7 +19,9 @@ experiment results do not belong in this directory.
 ## Naming and frozen provenance
 
 Active project-owned executors use descriptive, version-free file names.
-Historical executor names and original SHA256 values remain recorded in
-`project-management/inventories/source-code-classification.tsv`. The Linux
-runtime compatibility layer recreates those historical names as external
-symbolic links without duplicating or modifying the active source files.
+Historical executor names and source provenance remain recorded in
+`project-management/inventories/source-code-classification.tsv`. In that
+inventory, `sha256` records the original server/frozen source bytes, while
+`release_sha256` records the corresponding public release bytes. The Linux
+runtime compatibility layer recreates historical executor names as external
+symbolic links to the verified public release files without duplicating them.

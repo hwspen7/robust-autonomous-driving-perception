@@ -1,3 +1,35 @@
+# TRAIN-SPLIT EXPORT COPY
+# Source: export_yolo11m_predictions.py
+# Original validation exporter remains unchanged.
+
+""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from __future__ import annotations
 
 import argparse
@@ -144,6 +176,17 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 def normalize_class_name(name: str) -> str:
+    ""
+
+
+
+
+
+
+
+
+
+
     name = str(name).strip().lower()
     name = re.sub(r"[_-]+", " ", name)
     name = re.sub(r"\s+", " ", name)
@@ -156,6 +199,11 @@ def load_and_validate_gt(
     list[dict[str, Any]],
     dict[str, Any],
 ]:
+    ""
+
+
+
+
     with annotation_path.open(
             "r",
             encoding="utf-8",
@@ -228,6 +276,14 @@ def load_and_validate_gt(
 def build_model_class_mapping(
         model_names: dict[int, str] | list[str],
 ) -> dict[int, int]:
+    ""
+
+
+
+
+
+
+
     if isinstance(model_names, dict):
         normalized_model_names = {
             int(class_id): normalize_class_name(name)
@@ -348,9 +404,14 @@ def main() -> None:
             "Use --overwrite only if you intentionally want to replace it."
         )
 
+    # --------------------------------------------------------
+
+    # --------------------------------------------------------
+
     images, gt_data = load_and_validate_gt(
         annotation_path
     )
+
 
     images = sorted(
         images,
@@ -359,6 +420,14 @@ def main() -> None:
 
     if args.limit > 0:
         images = images[: args.limit]
+
+    # --------------------------------------------------------
+
+    #
+
+
+    # --------------------------------------------------------
+
     filename_to_info: dict[
         str,
         dict[str, Any],
@@ -396,6 +465,13 @@ def main() -> None:
             image_path
         )
 
+    # --------------------------------------------------------
+
+    #
+
+
+    # --------------------------------------------------------
+
     source_txt = (
             output_dir
             / "inference_paths.txt"
@@ -409,6 +485,10 @@ def main() -> None:
             f.write(
                 f"{image_path}\n"
             )
+
+    # --------------------------------------------------------
+
+    # --------------------------------------------------------
 
     model = YOLO(
         str(model_path)
@@ -452,6 +532,23 @@ def main() -> None:
 
     print("=" * 78)
 
+    # --------------------------------------------------------
+
+    #
+    # conf=0.001：
+
+
+    #
+    # iou=0.7：
+
+    #
+    # max_det=300：
+
+    #
+    # augment=False：
+
+    # --------------------------------------------------------
+
     results = model.predict(
         source=str(source_txt),
         imgsz=args.imgsz,
@@ -481,6 +578,16 @@ def main() -> None:
     ] = []
 
     seen_image_ids: set[int] = set()
+
+    # --------------------------------------------------------
+
+    #
+
+
+    #
+
+
+    # --------------------------------------------------------
 
     first_prediction = True
 
@@ -535,6 +642,11 @@ def main() -> None:
                 seen_image_ids.add(
                     image_id
                 )
+
+                # ------------------------------------------------
+
+                # result.orig_shape = (height, width)
+                # ------------------------------------------------
 
                 result_height, result_width = (
                     map(
@@ -653,6 +765,13 @@ def main() -> None:
                                 "Non-finite YOLO bbox detected."
                             )
 
+
+
+
+
+                        #
+
+
                         if width < 0 or height < 0:
                             raise RuntimeError(
                                 "YOLO produced negative-size bbox.\n"
@@ -662,6 +781,15 @@ def main() -> None:
 
                         if width == 0 or height == 0:
                             zero_area_bbox_count += 1
+
+                        # ----------------------------------------
+                        # COCO detection bbox：
+                        #
+                        # [x_min, y_min, width, height]
+                        #
+
+
+                        # ----------------------------------------
 
                         prediction = {
                             "image_id": image_id,
@@ -710,6 +838,10 @@ def main() -> None:
                         ),
                     }
                 )
+
+                # ------------------------------------------------
+
+                # ------------------------------------------------
 
                 if (
                         visualized_images
@@ -766,6 +898,10 @@ def main() -> None:
 
         raise
 
+    # --------------------------------------------------------
+
+    # --------------------------------------------------------
+
     if processed_images != len(images):
         temp_prediction_path.unlink(
             missing_ok=True
@@ -786,6 +922,10 @@ def main() -> None:
             "Unique image_id count mismatch."
         )
 
+    # --------------------------------------------------------
+
+    # --------------------------------------------------------
+
     os.replace(
         temp_prediction_path,
         prediction_path,
@@ -795,6 +935,10 @@ def main() -> None:
             time.time()
             - start_time
     )
+
+    # --------------------------------------------------------
+
+    # --------------------------------------------------------
 
     image_summary_path = (
             output_dir
@@ -811,6 +955,10 @@ def main() -> None:
             indent=2,
             ensure_ascii=False,
         )
+
+    # --------------------------------------------------------
+
+    # --------------------------------------------------------
 
     metadata = {
         "model": "YOLO11m",
