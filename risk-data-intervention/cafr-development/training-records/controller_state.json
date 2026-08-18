@@ -1,0 +1,49 @@
+{
+  "version": "cafr_v2_gate_training_v1",
+  "status": "training_complete_pending_evaluation",
+  "created_utc": "2026-08-12T09:38:45.687031+00:00",
+  "protocol_sha256": "a1bcf36cba543c82cec65067343f231b9593b799279a73f604fcf320ac781d6d",
+  "start_checkpoint_sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+  "execution_order": [
+    "typed_cafr"
+  ],
+  "current_arm": null,
+  "completed_arms": [
+    "typed_cafr"
+  ],
+  "arm_states": {
+    "typed_cafr": {
+      "arm": "typed_cafr",
+      "status": "complete",
+      "epochs": 10,
+      "elapsed_minutes": 298.1552081267039,
+      "save_dir": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_training_v1/typed_cafr",
+      "last_checkpoint": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_training_v1/typed_cafr/weights/last.pt",
+      "last_checkpoint_sha256": "eaa3dd7eee88f7d0c74cfbe45f6237c82ecb4eedacb9615a260ce351bc2da7dd",
+      "results_csv": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_training_v1/typed_cafr/results.csv",
+      "results_csv_sha256": "9883ecee6336a7e73fbad8ff17f3e58460c2ddb99b4a2349cd7090a6b6411583",
+      "last_results_row": {
+        "epoch": "10",
+        "time": "16806.5",
+        "train/box_loss": "1.45462",
+        "train/cls_loss": "0.90126",
+        "train/dfl_loss": "1.18493",
+        "metrics/precision(B)": "0.65157",
+        "metrics/recall(B)": "0.55992",
+        "metrics/mAP50(B)": "0.61162",
+        "metrics/mAP50-95(B)": "0.35668",
+        "val/box_loss": "1.41229",
+        "val/cls_loss": "0.84564",
+        "val/dfl_loss": "1.11843",
+        "lr/pg0": "0.000112236",
+        "lr/pg1": "0.000112236",
+        "lr/pg2": "0.000112236"
+      },
+      "peak_allocated_GiB": 15.174919605255127,
+      "optimizer": "SGD",
+      "resume": false,
+      "completed_utc": "2026-08-12T14:37:43.175589+00:00"
+    }
+  },
+  "completed_utc": "2026-08-12T14:37:43.667601+00:00"
+}

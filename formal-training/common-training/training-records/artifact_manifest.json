@@ -1,0 +1,30 @@
+{
+  "version": "rebu_yolo_common40_artifacts_v1",
+  "created_utc": "2026-08-13T12:03:16.676066+00:00",
+  "files": {
+    "weights/last.pt": {
+      "bytes": 41802609,
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3"
+    },
+    "weights/common40_ema.pt": {
+      "bytes": 41802609,
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3"
+    },
+    "common40_completion.json": {
+      "bytes": 1596,
+      "sha256": "be2fcf83497fc816309247074c56e30939616f0aeca8335b61c11293714aaa92"
+    },
+    "args.yaml": {
+      "bytes": 2027,
+      "sha256": "f05423460ef0af466db876663e5d1528f5c82c45340984621a46add3bcab2e93"
+    },
+    "results.csv": {
+      "bytes": 3485,
+      "sha256": "08146eede95380b4c47a9592622cf04286905ee27b7a278596ac8991a6c1dd64"
+    },
+    "weights/best.pt": {
+      "bytes": 41802609,
+      "sha256": "1316af68abe0a1cae0cf63932cf6fc733a211b8f262c6eecc0896358291b31fe"
+    }
+  }
+}

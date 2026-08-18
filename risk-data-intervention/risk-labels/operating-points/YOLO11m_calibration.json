@@ -1,0 +1,150 @@
+{
+  "dev_predictions": 667682,
+  "elapsed_minutes": 0.7209646940231323,
+  "eligible_category_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10
+  ],
+  "excluded_category_ids": [
+    6
+  ],
+  "match_iou": 0.5,
+  "metrics": {
+    "macro_f1": 0.6945657943717607,
+    "macro_precision": 0.7530899175115922,
+    "macro_recall": 0.6486357537673866,
+    "micro_f1": 0.743476027680973,
+    "micro_precision": 0.7590842449531973,
+    "micro_recall": 0.7284967475891031,
+    "per_class": {
+      "1": {
+        "class_name": "pedestrian",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6707662432235617,
+        "fn": 2693,
+        "fp": 1376,
+        "gt": 6838,
+        "precision": 0.7507697880818692,
+        "recall": 0.6061713951447791,
+        "tp": 4145
+      },
+      "10": {
+        "class_name": "traffic sign",
+        "eligible_for_macro_f1": true,
+        "f1": 0.7104368142430426,
+        "fn": 5405,
+        "fp": 4386,
+        "gt": 17416,
+        "precision": 0.7325120448862597,
+        "recall": 0.6896531924666973,
+        "tp": 12011
+      },
+      "2": {
+        "class_name": "rider",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6362038664323375,
+        "fn": 142,
+        "fp": 65,
+        "gt": 323,
+        "precision": 0.7357723577235772,
+        "recall": 0.5603715170278638,
+        "tp": 181
+      },
+      "3": {
+        "class_name": "car",
+        "eligible_for_macro_f1": true,
+        "f1": 0.7786886056422984,
+        "fn": 11540,
+        "fp": 10841,
+        "gt": 50914,
+        "precision": 0.7841083341630987,
+        "recall": 0.7733432847546844,
+        "tp": 39374
+      },
+      "4": {
+        "class_name": "truck",
+        "eligible_for_macro_f1": true,
+        "f1": 0.72224987555998,
+        "fn": 698,
+        "fp": 418,
+        "gt": 2149,
+        "precision": 0.7763509898341359,
+        "recall": 0.6751977664029781,
+        "tp": 1451
+      },
+      "5": {
+        "class_name": "bus",
+        "eligible_for_macro_f1": true,
+        "f1": 0.7566844919786097,
+        "fn": 243,
+        "fp": 121,
+        "gt": 809,
+        "precision": 0.8238719068413392,
+        "recall": 0.6996291718170581,
+        "tp": 566
+      },
+      "6": {
+        "class_name": "train",
+        "eligible_for_macro_f1": false,
+        "f1": 0.0,
+        "fn": 17,
+        "fp": 0,
+        "gt": 17,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0
+      },
+      "7": {
+        "class_name": "motorcycle",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6116207951070337,
+        "fn": 96,
+        "fp": 31,
+        "gt": 196,
+        "precision": 0.7633587786259542,
+        "recall": 0.5102040816326531,
+        "tp": 100
+      },
+      "8": {
+        "class_name": "bicycle",
+        "eligible_for_macro_f1": true,
+        "f1": 0.669893514036786,
+        "fn": 203,
+        "fp": 138,
+        "gt": 549,
+        "precision": 0.7148760330578512,
+        "recall": 0.6302367941712204,
+        "tp": 346
+      },
+      "9": {
+        "class_name": "traffic light",
+        "eligible_for_macro_f1": true,
+        "f1": 0.6945479431221961,
+        "fn": 4048,
+        "fp": 3986,
+        "gt": 13182,
+        "precision": 0.6961890243902439,
+        "recall": 0.692914580488545,
+        "tp": 9134
+      }
+    },
+    "total_fn": 25085,
+    "total_fp": 21362,
+    "total_tp": 67308
+  },
+  "min_class_gt_for_macro": 100,
+  "model": "YOLO11m",
+  "operating_threshold": 0.22527144849300385,
+  "prediction_path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/full_predictions/YOLO11m/predictions.json",
+  "prediction_sha256": "9842130c992f7bdb5c5b79fa3db7ef4d4f68a28d650f17f6f9db5040fb326e1b",
+  "selection_objective": "exact-score maximum macro-F1; tie-break by higher macro recall",
+  "threshold_sensitivity_csv": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/YOLO11m_threshold_sensitivity.csv",
+  "total_predictions": 9340367
+}

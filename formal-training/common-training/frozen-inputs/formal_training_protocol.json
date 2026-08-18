@@ -1,0 +1,103 @@
+{
+  "architecture": "YOLO11m-P2-Projected-960",
+  "branch_training": {
+    "batch": 8,
+    "close_mosaic": 0,
+    "cos_lr": true,
+    "epochs": 60,
+    "imgsz": 960,
+    "lr0": 0.001,
+    "lrf": 0.05,
+    "momentum": 0.937,
+    "mosaic": 0.0,
+    "nbs": 64,
+    "optimizer": "SGD",
+    "warmup_epochs": 1.0,
+    "weight_decay": 0.0005
+  },
+  "common_training": {
+    "batch": 8,
+    "close_mosaic": 10,
+    "cos_lr": true,
+    "epochs": 40,
+    "imgsz": 960,
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "mosaic": 1.0,
+    "nbs": 64,
+    "optimizer": "SGD",
+    "warmup_epochs": 3.0,
+    "weight_decay": 0.0005
+  },
+  "created_utc": "2026-08-12T15:11:46.849917+00:00",
+  "data": {
+    "cache_routes": {
+      "rebu_risk": "/dev/shm/rebu_yolo/formal_training_v1/cache_anchors/rebu_risk/labels.cache",
+      "uniform": "/dev/shm/rebu_yolo/formal_training_v1/cache_anchors/uniform/labels.cache"
+    },
+    "former_train_dev_rejoined_as_originals": true,
+    "official_train_images": 70000,
+    "official_val_used_for_training": false,
+    "rebu_list_sha256": "7a4c8f01a1ecc1ca2c4d6b4c6cd5a0afd341c2a091e8102e08995bd0351dfb92",
+    "rebu_object_centric_views": 19500,
+    "rebu_original_views": 50500,
+    "rebu_views_per_epoch": 70000,
+    "rebu_yaml": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/rebu_risk_full70k.yaml",
+    "uniform_list_sha256": "d86707c944b4802105c11438621847e50b0af8512ee8ff9dce19a290adc4542c",
+    "uniform_views_per_epoch": 70000,
+    "uniform_yaml": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/uniform_full70k.yaml"
+  },
+  "evaluation": {
+    "clean_and_failure_metrics": true,
+    "controlled_corruptions": true,
+    "full_multi_seed_training": false,
+    "official_val_evaluated_only_after_training": true,
+    "paired_bootstrap_resamples": 1000
+  },
+  "initialization": {
+    "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt",
+    "sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd",
+    "source": "frozen projected-P2 COCO initialization"
+  },
+  "method": "Rebu-YOLO-Risk",
+  "schedule": {
+    "branch_epochs": 60,
+    "branch_initialization": "exact common-epoch40 EMA weights",
+    "branch_optimizer": "fresh identical SGD for both branches",
+    "branch_optimizer_resumed": false,
+    "common_checkpoint_is_final_model": false,
+    "common_uniform_epochs": 40,
+    "effective_epochs_per_final_arm": 100,
+    "formal_endpoints": [
+      "Uniform-Control-E100",
+      "Rebu-YOLO-Risk-E100"
+    ]
+  },
+  "shared": {
+    "amp": true,
+    "copy_paste": 0.0,
+    "cutmix": 0.0,
+    "deterministic": true,
+    "device": 0,
+    "fliplr": 0.5,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "mixup": 0.0,
+    "patience": 0,
+    "save_period": 5,
+    "scale": 0.5,
+    "seed": 20260809,
+    "translate": 0.1,
+    "validation_during_training": false,
+    "workers": 8
+  },
+  "status": "frozen_before_formal_training",
+  "stopping": {
+    "extension_beyond_100_allowed": false,
+    "fixed_schedule": true,
+    "manual_early_stopping_allowed": false
+  },
+  "version": "rebu_yolo_formal_training_protocol_v1"
+}

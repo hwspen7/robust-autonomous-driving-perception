@@ -1,0 +1,13 @@
+{
+  "files": {
+    "metrics.json": {
+      "bytes": 1082,
+      "sha256": "680d461b204bf4bd445375c80a7c56087f94ede974b18572c3d527b7b07d917c"
+    },
+    "predictions.json": {
+      "bytes": 151098630,
+      "sha256": "adec7ae1e03e17df5f9ede4e90ed83ce515e54bb304e08e40cd82fccd4305150"
+    }
+  },
+  "version": "formal_gate_evaluation_v4"
+}

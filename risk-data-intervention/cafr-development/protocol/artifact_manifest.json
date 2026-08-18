@@ -1,0 +1,10 @@
+{
+  "files": {
+    "cafr_v2_gate_protocol.json": {
+      "bytes": 10924,
+      "sha256": "a1bcf36cba543c82cec65067343f231b9593b799279a73f604fcf320ac781d6d"
+    }
+  },
+  "status": "frozen",
+  "version": "cafr_v2_gate_freeze_v1"
+}

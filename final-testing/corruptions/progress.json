@@ -1,0 +1,539 @@
+{
+  "version": "representative_corruption_progress_v1",
+  "status": "complete",
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "batch": 8,
+  "completed": {
+    "standard_e20::blur_s1": {
+      "status": "done",
+      "AP": 0.3170732741097745,
+      "AP_small": 0.1329171660197293,
+      "prediction_sha256": "e3022a41628fd668d3a580241b5a45ab50f0f93186b6e630b8f0ff0ce30140c3",
+      "updated_utc": "2026-08-16T14:15:21.865564+00:00"
+    },
+    "standard_e20::blur_s2": {
+      "status": "done",
+      "AP": 0.26414311562645126,
+      "AP_small": 0.0829299130998382,
+      "prediction_sha256": "c04f247a9cc53b73ed48aa6e084888ee8d32fc4c963dbd167a5829a2c5bceb1e",
+      "updated_utc": "2026-08-16T14:18:00.667649+00:00"
+    },
+    "standard_e20::blur_s3": {
+      "status": "done",
+      "AP": 0.2079045440441125,
+      "AP_small": 0.048254927889681394,
+      "prediction_sha256": "611b108cf1f9004f5c6c7c3ac62c75e937a0b464a43f360a3e00370e11fdbb07",
+      "updated_utc": "2026-08-16T14:21:04.934684+00:00"
+    },
+    "standard_e20::noise_s1": {
+      "status": "done",
+      "AP": 0.32358329088650617,
+      "AP_small": 0.14338730893458737,
+      "prediction_sha256": "e237dcbb7df2cde2e3e8436518d4531347cb1c4eb6818361885b8c2121458f35",
+      "updated_utc": "2026-08-16T14:24:16.167539+00:00"
+    },
+    "standard_e20::noise_s2": {
+      "status": "done",
+      "AP": 0.30713363313031833,
+      "AP_small": 0.13656235516768975,
+      "prediction_sha256": "08a06c985c36abd17869c2adb99d8ab6688a3b56005af5e3894e2166952fd267",
+      "updated_utc": "2026-08-16T14:27:25.745569+00:00"
+    },
+    "standard_e20::noise_s3": {
+      "status": "done",
+      "AP": 0.26725990302354136,
+      "AP_small": 0.11686418549428537,
+      "prediction_sha256": "b21f694d5c5ee99f2f91562636765bc9d8f397eb439db8c83c506cccdf9587f4",
+      "updated_utc": "2026-08-16T14:30:44.960914+00:00"
+    },
+    "standard_e20::fog_s1": {
+      "status": "done",
+      "AP": 0.32478294824167214,
+      "AP_small": 0.1426452178005846,
+      "prediction_sha256": "d584231844b402b86c2c3516cf0e3432cff02b5bf58f85a0fba64fb0dafca80f",
+      "updated_utc": "2026-08-16T14:34:14.844389+00:00"
+    },
+    "standard_e20::fog_s2": {
+      "status": "done",
+      "AP": 0.31941456691974746,
+      "AP_small": 0.13988568518473124,
+      "prediction_sha256": "54a37545ae3add90fc376de02ab709d268d9e5c7c47b44f8aa292a1b79f789de",
+      "updated_utc": "2026-08-16T14:37:31.193008+00:00"
+    },
+    "standard_e20::fog_s3": {
+      "status": "done",
+      "AP": 0.3098719818579842,
+      "AP_small": 0.13319332680917398,
+      "prediction_sha256": "13105da2544e52e9777b2f73eaf283b7c09d1de838b590576bed44c87027dba1",
+      "updated_utc": "2026-08-16T14:41:18.922485+00:00"
+    },
+    "standard_e20::rain_s1": {
+      "status": "done",
+      "AP": 0.32393551822950933,
+      "AP_small": 0.14432576125728008,
+      "prediction_sha256": "aae369cdcd2cf7a27737718ea650292fa925770844f3784b0e1c9de13623a486",
+      "updated_utc": "2026-08-16T14:45:12.999483+00:00"
+    },
+    "standard_e20::rain_s2": {
+      "status": "done",
+      "AP": 0.32293041249850835,
+      "AP_small": 0.14376321023252137,
+      "prediction_sha256": "b77e5183e64b807614c394620de9f430f646a930c75eba5161a9b3efad4f427f",
+      "updated_utc": "2026-08-16T14:49:32.509261+00:00"
+    },
+    "standard_e20::rain_s3": {
+      "status": "done",
+      "AP": 0.31282067532091085,
+      "AP_small": 0.13904822801665795,
+      "prediction_sha256": "00f9035e9533df7f90f8319626857789cccc32ca604bb9e7d8f62066b0b771e2",
+      "updated_utc": "2026-08-16T14:52:52.757793+00:00"
+    },
+    "standard_e20::low_light_s1": {
+      "status": "done",
+      "AP": 0.3241149934183235,
+      "AP_small": 0.142212770872568,
+      "prediction_sha256": "181c21e4f63527d0a7481f8c1a1e09f9858694b87153229245038b2dd4d829d4",
+      "updated_utc": "2026-08-16T14:55:48.772820+00:00"
+    },
+    "standard_e20::low_light_s2": {
+      "status": "done",
+      "AP": 0.31246370842075066,
+      "AP_small": 0.13550153297808706,
+      "prediction_sha256": "21c579248f94f6e3a3e345a906302428c872522381591d7b201cabc42b7f20b1",
+      "updated_utc": "2026-08-16T14:59:02.644806+00:00"
+    },
+    "standard_e20::low_light_s3": {
+      "status": "done",
+      "AP": 0.28734023069740366,
+      "AP_small": 0.1238513447219024,
+      "prediction_sha256": "040fa1e029a27c2d5654da6107952c0a1506242c3d5a2ac815a30dcaeaade6db",
+      "updated_utc": "2026-08-16T15:02:06.648100+00:00"
+    },
+    "p2_e20::blur_s1": {
+      "status": "done",
+      "AP": 0.32735425007545416,
+      "AP_small": 0.1454806524674252,
+      "prediction_sha256": "4ee26b33cbaa2ef3a222b2ea8f0583259641b00e774f4e1cf5854bad74309346",
+      "updated_utc": "2026-08-16T15:05:38.914036+00:00"
+    },
+    "p2_e20::blur_s2": {
+      "status": "done",
+      "AP": 0.27022496210743235,
+      "AP_small": 0.09146185466569147,
+      "prediction_sha256": "7298e163cc32115d1b843f7e371301be4e0f412c26597dd42dae9adac54f56d9",
+      "updated_utc": "2026-08-16T15:08:53.565802+00:00"
+    },
+    "p2_e20::blur_s3": {
+      "status": "done",
+      "AP": 0.21156772874639235,
+      "AP_small": 0.05396884816390326,
+      "prediction_sha256": "f9e9636ec9be32a3cb8dffc1e343ac87d61bbb3493a168435e10865a16d4651c",
+      "updated_utc": "2026-08-16T15:12:27.616533+00:00"
+    },
+    "p2_e20::noise_s1": {
+      "status": "done",
+      "AP": 0.33358232183612563,
+      "AP_small": 0.15555896717708748,
+      "prediction_sha256": "83b2b9370348c1c88d9993b8905ca19c962da2cfd3231c3179f95b2a3a1beb01",
+      "updated_utc": "2026-08-16T15:16:00.196523+00:00"
+    },
+    "p2_e20::noise_s2": {
+      "status": "done",
+      "AP": 0.31340946171030915,
+      "AP_small": 0.14613461840694456,
+      "prediction_sha256": "e262dbdcbc478894d00cec174fd3a31a57387d8dc7e71bcc044350ee81879c15",
+      "updated_utc": "2026-08-16T15:19:40.920197+00:00"
+    },
+    "p2_e20::noise_s3": {
+      "status": "done",
+      "AP": 0.267326473988457,
+      "AP_small": 0.12406955693345535,
+      "prediction_sha256": "bfb0418da5c5d7803dc454de745cde925086c33886436d57fa1e458532e5ce8e",
+      "updated_utc": "2026-08-16T15:23:23.434178+00:00"
+    },
+    "p2_e20::fog_s1": {
+      "status": "done",
+      "AP": 0.33397485835838575,
+      "AP_small": 0.15490773840197725,
+      "prediction_sha256": "1fe024076e68fba817a5c0e2e40900b98940b6481e70fadda476282722e53649",
+      "updated_utc": "2026-08-16T15:27:07.438517+00:00"
+    },
+    "p2_e20::fog_s2": {
+      "status": "done",
+      "AP": 0.3311953573202617,
+      "AP_small": 0.15232730702439828,
+      "prediction_sha256": "615ba0a9f89cb3e771c202368278a185a43833d83997297dd82bab091b3f4ff7",
+      "updated_utc": "2026-08-16T15:30:49.387221+00:00"
+    },
+    "p2_e20::fog_s3": {
+      "status": "done",
+      "AP": 0.31855085738771116,
+      "AP_small": 0.14467240311710466,
+      "prediction_sha256": "1da5f4fd8e6d5302d2350f5d5e1c6e7f8fd0b8aaa6fe5255b1e51205c34a6906",
+      "updated_utc": "2026-08-16T15:35:05.442917+00:00"
+    },
+    "p2_e20::rain_s1": {
+      "status": "done",
+      "AP": 0.33344509801791533,
+      "AP_small": 0.15571240251408408,
+      "prediction_sha256": "9a30400df847ebd25470091ce376c4c8b6a28176006c48f775fe57f88719db47",
+      "updated_utc": "2026-08-16T15:39:34.083379+00:00"
+    },
+    "p2_e20::rain_s2": {
+      "status": "done",
+      "AP": 0.33232673518116135,
+      "AP_small": 0.15564784592352607,
+      "prediction_sha256": "92ba23a20f04ad8cf660b17178d6c88da447327931d19db467457dbded61c7c1",
+      "updated_utc": "2026-08-16T15:44:29.603718+00:00"
+    },
+    "p2_e20::rain_s3": {
+      "status": "done",
+      "AP": 0.3199787649331419,
+      "AP_small": 0.15089437200300548,
+      "prediction_sha256": "1ffbbb0531cc0fc856e15026d9e929575bd3d1a5808184f917bf5349f0235648",
+      "updated_utc": "2026-08-16T15:48:18.171510+00:00"
+    },
+    "p2_e20::low_light_s1": {
+      "status": "done",
+      "AP": 0.3346694037372099,
+      "AP_small": 0.15617459417566537,
+      "prediction_sha256": "99498edab07547bc4f5656eb173a857a494d8fd541b632e9ba7eb09954155ba1",
+      "updated_utc": "2026-08-16T15:51:48.790476+00:00"
+    },
+    "p2_e20::low_light_s2": {
+      "status": "done",
+      "AP": 0.3240545905318575,
+      "AP_small": 0.14970634332607316,
+      "prediction_sha256": "da7e928875916f9ae88ae8d2babb6abee763c6c698933751f98f1468998646c3",
+      "updated_utc": "2026-08-16T15:55:36.257285+00:00"
+    },
+    "p2_e20::low_light_s3": {
+      "status": "done",
+      "AP": 0.2969920826355937,
+      "AP_small": 0.1363535250539122,
+      "prediction_sha256": "1b4b5a8c696c6e28b9f7991f9a2971bbf0047857a96a2976ce3311093aa42955",
+      "updated_utc": "2026-08-16T15:58:55.666308+00:00"
+    },
+    "common40::blur_s1": {
+      "status": "done",
+      "AP": 0.3405090485980077,
+      "AP_small": 0.15373173322388986,
+      "prediction_sha256": "93f946c62c6ad5d500abd395d6a02d8a73499ebc582ff7c6266f492830e9364d",
+      "updated_utc": "2026-08-16T16:02:05.760204+00:00"
+    },
+    "common40::blur_s2": {
+      "status": "done",
+      "AP": 0.27698344662156427,
+      "AP_small": 0.09507278105890125,
+      "prediction_sha256": "6ddba2ca750e5b1678240f8eb9c2a0f4fb85a4ad71d30db2024c2977d3834513",
+      "updated_utc": "2026-08-16T16:05:13.019099+00:00"
+    },
+    "common40::blur_s3": {
+      "status": "done",
+      "AP": 0.2153827284653643,
+      "AP_small": 0.0552276195630181,
+      "prediction_sha256": "d57e485122e1dddccf0627b22553fc6f1353bfab028202082c99244b5a4b67e9",
+      "updated_utc": "2026-08-16T16:08:39.045563+00:00"
+    },
+    "common40::noise_s1": {
+      "status": "done",
+      "AP": 0.3435489783887241,
+      "AP_small": 0.16614770946243843,
+      "prediction_sha256": "fe5d74ad1dffda773bf06f1289899a15674f6a0b7694bf4d483502c35b1df4de",
+      "updated_utc": "2026-08-16T16:12:11.010827+00:00"
+    },
+    "common40::noise_s2": {
+      "status": "done",
+      "AP": 0.31972465955993107,
+      "AP_small": 0.15403614215957348,
+      "prediction_sha256": "53aa6f60158af0b0b3c269550196896efc874da30459ed6c0d038852d3415651",
+      "updated_utc": "2026-08-16T16:15:46.858619+00:00"
+    },
+    "common40::noise_s3": {
+      "status": "done",
+      "AP": 0.25984889128982624,
+      "AP_small": 0.12616141616114873,
+      "prediction_sha256": "ba71b6bf81626074e0a7bb7cd9798121f0ed706da4b9faf59b7702311de2a0a8",
+      "updated_utc": "2026-08-16T16:19:22.394737+00:00"
+    },
+    "common40::fog_s1": {
+      "status": "done",
+      "AP": 0.34491905219769436,
+      "AP_small": 0.16527868984368238,
+      "prediction_sha256": "12a36bd783373f8a7aed47f8b3f6feac1dd64e4768daa895d11c9052f9983325",
+      "updated_utc": "2026-08-16T16:23:03.926797+00:00"
+    },
+    "common40::fog_s2": {
+      "status": "done",
+      "AP": 0.3391191799518778,
+      "AP_small": 0.16118045719330756,
+      "prediction_sha256": "1e73506e5a8e82adc7c05b62ca049c8f8dd5902376eb68464d4904f6d5c6263c",
+      "updated_utc": "2026-08-16T16:26:43.207210+00:00"
+    },
+    "common40::fog_s3": {
+      "status": "done",
+      "AP": 0.3278513539028819,
+      "AP_small": 0.15426632741174376,
+      "prediction_sha256": "a4cc05d74a0d707387ee8af3654cd53e9883e0601e9da60657816dccff867cea",
+      "updated_utc": "2026-08-16T16:30:59.875917+00:00"
+    },
+    "common40::rain_s1": {
+      "status": "done",
+      "AP": 0.34821042356432597,
+      "AP_small": 0.1678677541392139,
+      "prediction_sha256": "a8baa5207e5e99eb7b7c4659bac2eb438d72c03e15d9762b5f6c106ac7f2ce55",
+      "updated_utc": "2026-08-16T16:35:26.426727+00:00"
+    },
+    "common40::rain_s2": {
+      "status": "done",
+      "AP": 0.3478990361644316,
+      "AP_small": 0.16786188155196022,
+      "prediction_sha256": "7eb18c52da743d1129aff3a5700124a899e6e1e50ea5a8525740a44051df99ae",
+      "updated_utc": "2026-08-16T16:40:09.589252+00:00"
+    },
+    "common40::rain_s3": {
+      "status": "done",
+      "AP": 0.3395740914064838,
+      "AP_small": 0.16271741792097416,
+      "prediction_sha256": "c472ff8fa9a238b5bb5f342d48455c12f00b09ddca10f7927584c0f148b2f91a",
+      "updated_utc": "2026-08-16T16:43:44.299156+00:00"
+    },
+    "common40::low_light_s1": {
+      "status": "done",
+      "AP": 0.3495729307218798,
+      "AP_small": 0.16755445691816287,
+      "prediction_sha256": "a7209008c3655c21e42a08c1df55581dfdcbcd70665a26a46929adc0c04bbe86",
+      "updated_utc": "2026-08-16T16:47:18.547554+00:00"
+    },
+    "common40::low_light_s2": {
+      "status": "done",
+      "AP": 0.3387287322412972,
+      "AP_small": 0.15973709619896065,
+      "prediction_sha256": "6011a067238fc51be10c7ee198a4b6a4b365e138c4cf97b1468649615f575d28",
+      "updated_utc": "2026-08-16T16:50:49.797804+00:00"
+    },
+    "common40::low_light_s3": {
+      "status": "done",
+      "AP": 0.3129010551840312,
+      "AP_small": 0.14605573516858839,
+      "prediction_sha256": "1a37dfe5898a416d9e829d252ffea6caf49b54a8cc586315a3009a2d5a8a4d6f",
+      "updated_utc": "2026-08-16T16:54:23.916464+00:00"
+    },
+    "uniform_e56::blur_s1": {
+      "status": "done",
+      "AP": 0.33923527914687984,
+      "AP_small": 0.15935244880098476,
+      "prediction_sha256": "7960ce64157b1af629bb9e90c1e82e1096b83440d0772e14fe7a08475249902a",
+      "updated_utc": "2026-08-16T16:57:32.057263+00:00"
+    },
+    "uniform_e56::blur_s2": {
+      "status": "done",
+      "AP": 0.27510816610645855,
+      "AP_small": 0.10035997579216893,
+      "prediction_sha256": "fa195983d98238f53aeb493993aa70554bdc08e871275a310bf8a5351cd6367f",
+      "updated_utc": "2026-08-16T17:00:47.191194+00:00"
+    },
+    "uniform_e56::blur_s3": {
+      "status": "done",
+      "AP": 0.20856314861621686,
+      "AP_small": 0.05587177415900678,
+      "prediction_sha256": "69c0f19ead4e4f323f9ca568742a2703cee3630f55c83c0c66e3cfd5fb864f67",
+      "updated_utc": "2026-08-16T17:04:23.480360+00:00"
+    },
+    "uniform_e56::noise_s1": {
+      "status": "done",
+      "AP": 0.3379318165037246,
+      "AP_small": 0.16774904908382382,
+      "prediction_sha256": "c39273cf711c882079e7cb1cedeaaa5014eb5ee1dddbfb964ab8e8eb36728520",
+      "updated_utc": "2026-08-16T17:08:02.557806+00:00"
+    },
+    "uniform_e56::noise_s2": {
+      "status": "done",
+      "AP": 0.3057985596754411,
+      "AP_small": 0.15396223776205234,
+      "prediction_sha256": "1d17a373bed14a9fc5d186dfdc68a3bd0e40d952b87b16a5687079fe9acae8fa",
+      "updated_utc": "2026-08-16T17:11:38.171263+00:00"
+    },
+    "uniform_e56::noise_s3": {
+      "status": "done",
+      "AP": 0.23363665364029315,
+      "AP_small": 0.12134631410209819,
+      "prediction_sha256": "a0579cc9c501fe4dca697dfbef2ddc8a2cd9f7bab1bf05d3d77f88d51dd57cba",
+      "updated_utc": "2026-08-16T17:15:23.572643+00:00"
+    },
+    "uniform_e56::fog_s1": {
+      "status": "done",
+      "AP": 0.34116756654968433,
+      "AP_small": 0.16645927637034258,
+      "prediction_sha256": "e1b7af518281dfeb46faedc2eb61285524bef34fbdd9b1535b69dafc1b9c5075",
+      "updated_utc": "2026-08-16T17:19:02.625873+00:00"
+    },
+    "uniform_e56::fog_s2": {
+      "status": "done",
+      "AP": 0.33646257426102855,
+      "AP_small": 0.16306315194447954,
+      "prediction_sha256": "91bf7b234230be3a20ff4a5b6c9d087af2837ce5fe48b4453c051f4449635b85",
+      "updated_utc": "2026-08-16T17:22:47.056730+00:00"
+    },
+    "uniform_e56::fog_s3": {
+      "status": "done",
+      "AP": 0.32547131381703065,
+      "AP_small": 0.15664426829719658,
+      "prediction_sha256": "fef3160cda0ebec05b48184ff13a43baf8b99b5aa47af252bfa6d44a67e574af",
+      "updated_utc": "2026-08-16T17:27:00.596247+00:00"
+    },
+    "uniform_e56::rain_s1": {
+      "status": "done",
+      "AP": 0.3437794761528076,
+      "AP_small": 0.16869750434482722,
+      "prediction_sha256": "5e445696e7216139eee1a176d7f28457438cb381654c93b4d321a121275b6b72",
+      "updated_utc": "2026-08-16T17:31:25.624373+00:00"
+    },
+    "uniform_e56::rain_s2": {
+      "status": "done",
+      "AP": 0.34232138088239844,
+      "AP_small": 0.16892350765511926,
+      "prediction_sha256": "4361c0a32b3cb2a81b4d2c1611a1c3f3a7c54c39f8505521ce998163e019ab55",
+      "updated_utc": "2026-08-16T17:36:08.794834+00:00"
+    },
+    "uniform_e56::rain_s3": {
+      "status": "done",
+      "AP": 0.3304195527722161,
+      "AP_small": 0.1643005361955697,
+      "prediction_sha256": "df8c4d79b37f7e4091fec7cae1859653066364c82721489da95d18546accae4a",
+      "updated_utc": "2026-08-16T17:39:53.978364+00:00"
+    },
+    "uniform_e56::low_light_s1": {
+      "status": "done",
+      "AP": 0.3443038015407243,
+      "AP_small": 0.16834569134853739,
+      "prediction_sha256": "dc9b754654d02ce2d6ccb43326c7e4412c409a0dfe8faef9317830ee37fa9f55",
+      "updated_utc": "2026-08-16T17:43:22.707218+00:00"
+    },
+    "uniform_e56::low_light_s2": {
+      "status": "done",
+      "AP": 0.3336399476848923,
+      "AP_small": 0.16152797135529118,
+      "prediction_sha256": "c6bca10f30c0fc8c8713713d33df385341d4df4fe360a88eabf1638b6ed72a8a",
+      "updated_utc": "2026-08-16T17:47:04.102451+00:00"
+    },
+    "uniform_e56::low_light_s3": {
+      "status": "done",
+      "AP": 0.3081499729144222,
+      "AP_small": 0.14742353978716424,
+      "prediction_sha256": "7a2551aad19cfdaf1ebf723b5625350dfb2d5b2fe0f7dc66da548d0638d4418a",
+      "updated_utc": "2026-08-16T17:50:21.364856+00:00"
+    },
+    "rebu_risk_e56::blur_s1": {
+      "status": "done",
+      "AP": 0.3394263005732704,
+      "AP_small": 0.15824987924337655,
+      "prediction_sha256": "92a7166d2f2b7d79c6746092c502b50f59f33cfd59ef17cb9bfcbc238b84deff",
+      "updated_utc": "2026-08-16T17:53:40.081254+00:00"
+    },
+    "rebu_risk_e56::blur_s2": {
+      "status": "done",
+      "AP": 0.273328493679314,
+      "AP_small": 0.09373740784558277,
+      "prediction_sha256": "29764dada09216fc825e82ace3582de9f887006ea16347e9d7c04908a9e80a6e",
+      "updated_utc": "2026-08-16T17:56:42.608534+00:00"
+    },
+    "rebu_risk_e56::blur_s3": {
+      "status": "done",
+      "AP": 0.20562344168877478,
+      "AP_small": 0.04933218409116092,
+      "prediction_sha256": "b2557b3ee27c0524e804f16f6c104693179b86e3ecd903d482fd893053bc15c9",
+      "updated_utc": "2026-08-16T18:00:11.550104+00:00"
+    },
+    "rebu_risk_e56::noise_s1": {
+      "status": "done",
+      "AP": 0.3379053587345272,
+      "AP_small": 0.1653415054444624,
+      "prediction_sha256": "6397c58afdec5154b7291b45b67efd712f15d9d47344bc95a4dd7441693927c8",
+      "updated_utc": "2026-08-16T18:03:48.939277+00:00"
+    },
+    "rebu_risk_e56::noise_s2": {
+      "status": "done",
+      "AP": 0.30603326740389436,
+      "AP_small": 0.15317843375034307,
+      "prediction_sha256": "334f7e314f0cc3898b5057fc69418cd1b67b816c46cedbb000071ca78ff1e295",
+      "updated_utc": "2026-08-16T18:07:24.249444+00:00"
+    },
+    "rebu_risk_e56::noise_s3": {
+      "status": "done",
+      "AP": 0.23754997367587014,
+      "AP_small": 0.12167864715443363,
+      "prediction_sha256": "f26e37a41694e5d3d68c001a75625b09b5bd0bdc6623daee3cb6ac83a544083e",
+      "updated_utc": "2026-08-16T18:11:01.039304+00:00"
+    },
+    "rebu_risk_e56::fog_s1": {
+      "status": "done",
+      "AP": 0.34105478487201774,
+      "AP_small": 0.16466768757838854,
+      "prediction_sha256": "6c85fd8b6a6d30e1b07ab8702875c7f97abce773b58c64c267ead93450007f66",
+      "updated_utc": "2026-08-16T18:14:45.644453+00:00"
+    },
+    "rebu_risk_e56::fog_s2": {
+      "status": "done",
+      "AP": 0.33429374905950227,
+      "AP_small": 0.16163102535234555,
+      "prediction_sha256": "a467a9e3988cbded47414b79678da0dd580b2091b745576a30fcdbc0a98ea1df",
+      "updated_utc": "2026-08-16T18:18:22.644569+00:00"
+    },
+    "rebu_risk_e56::fog_s3": {
+      "status": "done",
+      "AP": 0.32484240344490756,
+      "AP_small": 0.1569296377647503,
+      "prediction_sha256": "87f0bff5437b83f2f820e09dd0c59b24364e48a676d2c6b2e6f4a2deefca7395",
+      "updated_utc": "2026-08-16T18:22:34.417821+00:00"
+    },
+    "rebu_risk_e56::rain_s1": {
+      "status": "done",
+      "AP": 0.3432881742679978,
+      "AP_small": 0.1660550900266873,
+      "prediction_sha256": "70ea278507f0a7a554d592a05a7e21e23b9f4a7a90ba222baf081bf6ca7445c3",
+      "updated_utc": "2026-08-16T18:26:58.354615+00:00"
+    },
+    "rebu_risk_e56::rain_s2": {
+      "status": "done",
+      "AP": 0.3410276589016561,
+      "AP_small": 0.16699402885225215,
+      "prediction_sha256": "5d6c99a0e93162d47fc5652848f08ad0d6bc7c6236a89065ec556868fd0a9842",
+      "updated_utc": "2026-08-16T18:31:44.663077+00:00"
+    },
+    "rebu_risk_e56::rain_s3": {
+      "status": "done",
+      "AP": 0.32917616219990314,
+      "AP_small": 0.16078927760368458,
+      "prediction_sha256": "075a6ca3453664e62e46cb41b4cd311c5f792ca6fba3be34f7c21d58fd9569dc",
+      "updated_utc": "2026-08-16T18:35:29.186528+00:00"
+    },
+    "rebu_risk_e56::low_light_s1": {
+      "status": "done",
+      "AP": 0.34484638548935126,
+      "AP_small": 0.16632242486842866,
+      "prediction_sha256": "bb357227358cc85032faafd3bf43a5191756f06055052a721830e73645048fc8",
+      "updated_utc": "2026-08-16T18:38:56.834651+00:00"
+    },
+    "rebu_risk_e56::low_light_s2": {
+      "status": "done",
+      "AP": 0.3344878536157266,
+      "AP_small": 0.1607509169622719,
+      "prediction_sha256": "af36e8108109175fb867df8ba7e88ed39fb5995f3e8318c92ee0a1b0bcac347d",
+      "updated_utc": "2026-08-16T18:42:32.937290+00:00"
+    },
+    "rebu_risk_e56::low_light_s3": {
+      "status": "done",
+      "AP": 0.3093477536818307,
+      "AP_small": 0.14725579408352657,
+      "prediction_sha256": "d5fb3283bde21cf888b27bdac2760794403ab652e89b7214bff2e3c3e94651e8",
+      "updated_utc": "2026-08-16T18:45:59.842519+00:00"
+    }
+  },
+  "created_utc": "2026-08-16T13:46:45.278605+00:00",
+  "updated_utc": "2026-08-16T18:45:59.961294+00:00",
+  "executor_version": "parallel_corruption_pipelined_eval_v2",
+  "corruption_workers": 8,
+  "evaluation_workers": 2,
+  "completed_conditions": 75
+}

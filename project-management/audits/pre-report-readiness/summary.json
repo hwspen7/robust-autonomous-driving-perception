@@ -1,0 +1,72 @@
+{
+  "version": "project-readiness-audit-requirements-first",
+  "status": "READY_FOR_GITHUB_WITH_DECLARED_EXTERNAL_ASSETS",
+  "created_utc": "2026-08-18T10:25:10.125059+00:00",
+  "checks": {
+    "root_markdown_consolidated": true,
+    "project_guide_exists": true,
+    "frozen_script_count_is_68": true,
+    "all_frozen_scripts_hash_valid": true,
+    "all_project_owned_python_compiles": true,
+    "exactly_100_yolo11seg_visualizations": true,
+    "all_45_scientific_manifests_resolved": true,
+    "all_581_manifest_entries_hash_valid": true,
+    "active_direct_entry_count_is_398": true,
+    "active_shared_dependency_count_is_21": true,
+    "local_archive_dependency_count_is_162": true,
+    "unresolved_dependency_count_is_zero": true,
+    "active_artifact_manifest_count_is_114": true,
+    "root_requirements_profiles_are_public": true,
+    "requirements_profiles_are_pinned_and_separate": true,
+    "docker_is_not_required_by_project_reproduction": true,
+    "source_preflight_is_available": true,
+    "github_static_audit_exists": true,
+    "manuscripts_preserved_locally": true,
+    "manuscripts_are_excluded_from_git": true,
+    "local_archive_is_excluded_from_git": true,
+    "obsolete_assets_are_excluded_from_git": true,
+    "no_public_file_over_100_mib": true,
+    "no_public_symlinks": true,
+    "no_private_paths_in_public_scope": true,
+    "no_private_mac_or_server_login_text_in_public_scope": true,
+    "nothing_is_staged": true
+  },
+  "failed_checks": [],
+  "deferred_nonblocking_runtime_checks": {
+    "clean_linux_dependency_installation_tested": false,
+    "external_bdd100k_reconstruction_tested": false,
+    "end_to_end_gpu_reproduction_tested": false
+  },
+  "scientific_state": {
+    "final_testing_complete": true,
+    "research_evidence_bundle_complete": true,
+    "new_training_required": false,
+    "new_inference_required": false,
+    "scientific_manifests_modified": false
+  },
+  "reproducibility_scope": {
+    "repository_source_and_evidence_audited": true,
+    "dependency_profiles_pinned": true,
+    "external_dataset_required": true,
+    "large_artifacts_require_manifest_guided_restoration": true,
+    "docker_required": false,
+    "formal_gpu_runtime": "Linux with a compatible NVIDIA GPU",
+    "claim_limit": "Repository-level reproducibility is ready. A clean external Linux/NVIDIA end-to-end rerun remains unverified and must not be claimed as completed."
+  },
+  "manifest_resolution": {
+    "manifest_count": 45,
+    "entry_count": 581,
+    "direct_entries": 398,
+    "active_shared_dependencies": 21,
+    "local_archive_dependencies": 162,
+    "unresolved_entries": 0
+  },
+  "github_state": {
+    "public_files": 956,
+    "public_bytes": 305486750,
+    "git_branch": "main",
+    "git_remote_count": 0,
+    "initial_commit_created": false,
+    "uploaded_to_github": false
+  }
+}

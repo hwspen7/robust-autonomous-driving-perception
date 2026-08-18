@@ -1,0 +1,265 @@
+{
+  "artifacts": [
+    {
+      "bytes": 44445,
+      "path": "class_composition.csv",
+      "sha256": "b78c58728eaf26218506ea43867fe8e968061987e19a26cddb63b967be22c0ea"
+    },
+    {
+      "bytes": 756,
+      "path": "metadata.json",
+      "sha256": "f82a10f3ca8de4773ec85af39222160ed9665340adaf640bb040575bc38b672b"
+    },
+    {
+      "bytes": 14147,
+      "path": "primary_effect_direction_stability.csv",
+      "sha256": "8df93c11bfb328e6372e8a22cf2b757e8b654ac0d92846273bbc004977e5cd54"
+    },
+    {
+      "bytes": 39507,
+      "path": "primary_recovery_metrics.json",
+      "sha256": "d75426ee5054149e10af4b49e4dabd9f15a482f915225046dfb908d93709a142"
+    },
+    {
+      "bytes": 11753,
+      "path": "scale_composition.csv",
+      "sha256": "9d4891deb1281ef7d6e3835d6272863f56274ed9de4713e1a3c616fa5a6fb079"
+    },
+    {
+      "bytes": 1378662,
+      "path": "subset_annotation_ids/yolo_central__dfine_central.json",
+      "sha256": "3eab950673529b92a02fc21f61d6fe7d427ed412162f112d0b874fc16283f0d3"
+    },
+    {
+      "bytes": 1365549,
+      "path": "subset_annotation_ids/yolo_central__dfine_high.json",
+      "sha256": "fc8cc342d1067e088800a7e726e1c2aa58e92ce0c3765c95b7ca6401ee2941cf"
+    },
+    {
+      "bytes": 1392689,
+      "path": "subset_annotation_ids/yolo_central__dfine_low.json",
+      "sha256": "9bd9de574fbefce9f23ead6c0ac06af5b5e2014710e5c563b2af1b53ab350cce"
+    },
+    {
+      "bytes": 1725864,
+      "path": "subset_annotation_ids/yolo_high__dfine_central.json",
+      "sha256": "502775352ae011692f7c4f5a59ec1970118f2848f236e1e36dfc04e44919b21f"
+    },
+    {
+      "bytes": 1701654,
+      "path": "subset_annotation_ids/yolo_high__dfine_high.json",
+      "sha256": "a31d4b5e63f297164cacc27d4756894b3027c21799ffe3acb34b9b481a23a8fe"
+    },
+    {
+      "bytes": 1743697,
+      "path": "subset_annotation_ids/yolo_high__dfine_low.json",
+      "sha256": "85d0278044eb26d876de2813bb45d30abab75abc3e3a0e50c7a026fc6a51f7cb"
+    },
+    {
+      "bytes": 1208348,
+      "path": "subset_annotation_ids/yolo_low__dfine_central.json",
+      "sha256": "1372eb1ba9bfc10f7164ce1c0aea88ac4d521c57d7a763f374dfe647712a5dd6"
+    },
+    {
+      "bytes": 1199916,
+      "path": "subset_annotation_ids/yolo_low__dfine_high.json",
+      "sha256": "a8aa91ca3de3a91ccfd02d392b179dfa6379f7105149ed82c8d0328692c5b636"
+    },
+    {
+      "bytes": 1216483,
+      "path": "subset_annotation_ids/yolo_low__dfine_low.json",
+      "sha256": "ca7d2772b2417e5759a059975ecd7fe7c344436c82f21e4e2b3e6220048b4069"
+    },
+    {
+      "bytes": 6745,
+      "path": "subset_stability.csv",
+      "sha256": "8a56cb05298c895417a67f1bcce7d12f7d3b8e37b383c734cdb519b6936dd47e"
+    },
+    {
+      "bytes": 4662,
+      "path": "summary.json",
+      "sha256": "148b15816786ccebbae391859cb4678c851d7a9f25b402ef5fd5b4b44cc3f09d"
+    },
+    {
+      "bytes": 1978302,
+      "path": "teacher_matches/dfine_high/D-FINE-M/false_positives.csv",
+      "sha256": "cbc686dfd0b85173d4efceca8997a7b873c84b1410b617711321f9c9814a2cb8"
+    },
+    {
+      "bytes": 391313,
+      "path": "teacher_matches/dfine_high/D-FINE-M/image_summary.csv",
+      "sha256": "36c060cd799854bc70114227b23af00f2b70d29af12f980c5e16a14968e4f8b6"
+    },
+    {
+      "bytes": 42432698,
+      "path": "teacher_matches/dfine_high/D-FINE-M/object_matches.csv",
+      "sha256": "f2d2e401f3b3db7a958647304d6065db943752930ec63d033e3b0a91dd50371a"
+    },
+    {
+      "bytes": 3534,
+      "path": "teacher_matches/dfine_high/D-FINE-M/summary.json",
+      "sha256": "290e00910bd718fcb157f51c0a666c1a074f230702727c569cad1c511d1cc95c"
+    },
+    {
+      "bytes": 5893084,
+      "path": "teacher_matches/dfine_high/YOLO11m/false_positives.csv",
+      "sha256": "5b05f537e42e1e0b76c30944f114f8c1f7287884da41f5fec4341905c0213838"
+    },
+    {
+      "bytes": 379972,
+      "path": "teacher_matches/dfine_high/YOLO11m/image_summary.csv",
+      "sha256": "f6b67ec4e43b9e18fd7fd2d98b6967773248b47f18ea7decabf46bd7755b3c31"
+    },
+    {
+      "bytes": 42742785,
+      "path": "teacher_matches/dfine_high/YOLO11m/object_matches.csv",
+      "sha256": "bdc3c4dad0d607a9d4111c47571a77679c5464d1e026c8f8429115f3f69107fc"
+    },
+    {
+      "bytes": 3539,
+      "path": "teacher_matches/dfine_high/YOLO11m/summary.json",
+      "sha256": "82dbe268d9a5f667316e4317fd1df6559fbdd34b5f3c681b621980e1bedd715f"
+    },
+    {
+      "bytes": 9361,
+      "path": "teacher_matches/dfine_high/metadata.json",
+      "sha256": "667c99f2167fd15fd6b2a0d97b2feb09e47985bed0a462d46b59de194fbe3c77"
+    },
+    {
+      "bytes": 9170172,
+      "path": "teacher_matches/dfine_low/D-FINE-M/false_positives.csv",
+      "sha256": "5f199e8015fc01e32ae267c5006a615840784af583db04786285fcff3aad4bb7"
+    },
+    {
+      "bytes": 395730,
+      "path": "teacher_matches/dfine_low/D-FINE-M/image_summary.csv",
+      "sha256": "e0d5acf6bf1a1fc65ec340d059e1b0387edb83fde8933d1b978a10a8894b3944"
+    },
+    {
+      "bytes": 43788536,
+      "path": "teacher_matches/dfine_low/D-FINE-M/object_matches.csv",
+      "sha256": "f6a22876f5dd14af3aa3b75bb5dfe93a0d1fc932bbaa246f0932fb2102dd5b17"
+    },
+    {
+      "bytes": 3499,
+      "path": "teacher_matches/dfine_low/D-FINE-M/summary.json",
+      "sha256": "39bc9503073249d471e97e16544037bb0336bd1cc0c29984473f97309534eac5"
+    },
+    {
+      "bytes": 5893084,
+      "path": "teacher_matches/dfine_low/YOLO11m/false_positives.csv",
+      "sha256": "5b05f537e42e1e0b76c30944f114f8c1f7287884da41f5fec4341905c0213838"
+    },
+    {
+      "bytes": 379972,
+      "path": "teacher_matches/dfine_low/YOLO11m/image_summary.csv",
+      "sha256": "f6b67ec4e43b9e18fd7fd2d98b6967773248b47f18ea7decabf46bd7755b3c31"
+    },
+    {
+      "bytes": 42742785,
+      "path": "teacher_matches/dfine_low/YOLO11m/object_matches.csv",
+      "sha256": "bdc3c4dad0d607a9d4111c47571a77679c5464d1e026c8f8429115f3f69107fc"
+    },
+    {
+      "bytes": 3539,
+      "path": "teacher_matches/dfine_low/YOLO11m/summary.json",
+      "sha256": "efe88249caf87ee1e5f95d718a5f1b1383d26168e2bb254d0c862958c39c014c"
+    },
+    {
+      "bytes": 9323,
+      "path": "teacher_matches/dfine_low/metadata.json",
+      "sha256": "4197e8aaed271dd0313917cc2e1755877f82eeff1c89f13f65dd0f8cae8411b4"
+    },
+    {
+      "bytes": 4804349,
+      "path": "teacher_matches/yolo_high/D-FINE-M/false_positives.csv",
+      "sha256": "fe4755d04e7fe111d3e97d117a14ab6262d1d4b082b9a1b727c246b3d990099b"
+    },
+    {
+      "bytes": 392852,
+      "path": "teacher_matches/yolo_high/D-FINE-M/image_summary.csv",
+      "sha256": "1bfe641bf98d9ed79dc4d9b5ac8fce128ea24c0648744d5ea598f92c67fab67f"
+    },
+    {
+      "bytes": 43306519,
+      "path": "teacher_matches/yolo_high/D-FINE-M/object_matches.csv",
+      "sha256": "8ea36ddf1acf71f26e53ff0292ff9072db2e70bdd3e28ab41531029b2a443a95"
+    },
+    {
+      "bytes": 3553,
+      "path": "teacher_matches/yolo_high/D-FINE-M/summary.json",
+      "sha256": "cbbca547000af9259e29a5a532a4cc8864c3180677d2ccb96b32f2abc5c17078"
+    },
+    {
+      "bytes": 2355090,
+      "path": "teacher_matches/yolo_high/YOLO11m/false_positives.csv",
+      "sha256": "c718f11c8c26fe6ee8b76590e80c14756cc9e35ea9ac2deb348b625cceb34dc3"
+    },
+    {
+      "bytes": 377714,
+      "path": "teacher_matches/yolo_high/YOLO11m/image_summary.csv",
+      "sha256": "dc459c004cd5df79fca8f0bdbce94221455e2edabe1f9772f149c1bc2f7b3948"
+    },
+    {
+      "bytes": 41983078,
+      "path": "teacher_matches/yolo_high/YOLO11m/object_matches.csv",
+      "sha256": "d76004173fb6851ebbcd1f1ea38c010fe7f88b80f280d94df00ddb664eb6b917"
+    },
+    {
+      "bytes": 3518,
+      "path": "teacher_matches/yolo_high/YOLO11m/summary.json",
+      "sha256": "cc92665fb5fb3fbb038460c760be8bc46a78d9e87bad46f3dd17b81bcec444ba"
+    },
+    {
+      "bytes": 9359,
+      "path": "teacher_matches/yolo_high/metadata.json",
+      "sha256": "10049cd740d6d987d29ec3dea4f064ff2fd7325e295181df0271ffb71b60ef1b"
+    },
+    {
+      "bytes": 4804349,
+      "path": "teacher_matches/yolo_low/D-FINE-M/false_positives.csv",
+      "sha256": "fe4755d04e7fe111d3e97d117a14ab6262d1d4b082b9a1b727c246b3d990099b"
+    },
+    {
+      "bytes": 392852,
+      "path": "teacher_matches/yolo_low/D-FINE-M/image_summary.csv",
+      "sha256": "1bfe641bf98d9ed79dc4d9b5ac8fce128ea24c0648744d5ea598f92c67fab67f"
+    },
+    {
+      "bytes": 43306519,
+      "path": "teacher_matches/yolo_low/D-FINE-M/object_matches.csv",
+      "sha256": "8ea36ddf1acf71f26e53ff0292ff9072db2e70bdd3e28ab41531029b2a443a95"
+    },
+    {
+      "bytes": 3554,
+      "path": "teacher_matches/yolo_low/D-FINE-M/summary.json",
+      "sha256": "e9b1d68d2bfe2f42e09c06654251a0079f982a96dfb5a3a5bcb1b75b14091368"
+    },
+    {
+      "bytes": 11027274,
+      "path": "teacher_matches/yolo_low/YOLO11m/false_positives.csv",
+      "sha256": "96f8cae3b3ac5f7501f185d991c4ea3ab8f835c2c321716af7039cfe11eee36c"
+    },
+    {
+      "bytes": 383584,
+      "path": "teacher_matches/yolo_low/YOLO11m/image_summary.csv",
+      "sha256": "c557cda6433fa180b82c65f355edd5fed2620c867df476fcc57a59bf9d45abd3"
+    },
+    {
+      "bytes": 43157236,
+      "path": "teacher_matches/yolo_low/YOLO11m/object_matches.csv",
+      "sha256": "febd99b1c36ec47327bc7c9799bc5a0726188eba207dacea28ffd3086d1b6e71"
+    },
+    {
+      "bytes": 3525,
+      "path": "teacher_matches/yolo_low/YOLO11m/summary.json",
+      "sha256": "0bf62f3d17827fb173a12f9fa9bf84581edd85a293ed73c52f34e43acc921ad3"
+    },
+    {
+      "bytes": 9367,
+      "path": "teacher_matches/yolo_low/metadata.json",
+      "sha256": "8500dd2516319fa085a23390df37e88a83a2fa89ef76357d79e9c610c5b7b394"
+    }
+  ],
+  "created_utc": "2026-08-16T10:06:14Z"
+}

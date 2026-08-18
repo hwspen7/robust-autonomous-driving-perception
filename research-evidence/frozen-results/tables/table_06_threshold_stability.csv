@@ -1,0 +1,9 @@
+comparison,metric,all_directions_stable,central_delta,maximum_delta,minimum_delta,stable_combinations,total_combinations
+gate_scalar_minus_gate_uniform,failure_macro_AR100,True,0.007356659794974796,0.010691574832663087,0.006424359468829577,9,9
+gate_scalar_minus_gate_uniform,small_jointly_missed_recall50,True,0.03204795665456217,0.039352814425585025,0.02465398785223538,9,9
+gate_typed_minus_gate_scalar,failure_macro_AR100,True,0.004306343282089453,0.004497836336763428,0.0018788760561468942,9,9
+gate_typed_minus_gate_scalar,small_jointly_missed_recall50,True,-0.0003458412588621673,-0.0003078659756785562,-0.0009072694968434991,9,9
+gate_typed_minus_gate_uniform,failure_macro_AR100,True,0.011663003077064249,0.013820459569900967,0.009534713350939583,9,9
+gate_typed_minus_gate_uniform,small_jointly_missed_recall50,True,0.031702115395700003,0.038445544928741526,0.024275614856118732,9,9
+gate_typed_v2_minus_gate_uniform,failure_macro_AR100,True,0.011736071769917311,0.014315941137487576,0.010053801032910648,9,9
+gate_typed_v2_minus_gate_uniform,small_jointly_missed_recall50,True,0.0302034699406305,0.03663100593505464,0.023419297022801988,9,9

@@ -1,0 +1,134 @@
+{
+  "auxiliary_full_scene_network_comparison": {
+    "ceased_to_be_small_after_crop": 11108,
+    "fraction": 0.7451532836922251,
+    "full_scene_network_small_targets": 14907
+  },
+  "causal_language_allowed": false,
+  "context_shift": {
+    "boundary_clipped_objects": 38473,
+    "context_margin_around_target": {
+      "count": 19500,
+      "maximum": 180.0,
+      "mean": 6.605630336033549,
+      "median": 5.888888888888889,
+      "minimum": 0.0,
+      "p10": 1.5411585365853664,
+      "p90": 11.9
+    },
+    "crop_area_over_source_area": {
+      "count": 19500,
+      "maximum": 0.7717013888888888,
+      "mean": 0.24710740401308767,
+      "median": 0.13981228298611112,
+      "minimum": 0.07104166666666667,
+      "p10": 0.07104166666666667,
+      "p90": 0.6052083333333333
+    },
+    "crop_supervised_objects": 266337,
+    "fully_removed_objects": 159728,
+    "neighbor_retention_fraction": {
+      "count": 19500,
+      "maximum": 1.0,
+      "mean": 0.6047143435066061,
+      "median": 0.625,
+      "minimum": 0.0,
+      "p10": 0.25,
+      "p90": 0.9333333333333333
+    },
+    "objects_per_view_change": {
+      "count": 19500,
+      "maximum": 0.0,
+      "mean": -9.214410256410256,
+      "median": -7.0,
+      "minimum": -67.0,
+      "p10": -20.0,
+      "p90": -1.0
+    },
+    "retained_neighbors": 246872,
+    "source_neighbors": 426518,
+    "target_area_over_crop_area": {
+      "count": 19500,
+      "maximum": 0.85,
+      "mean": 0.00716714062337118,
+      "median": 0.003771941369078928,
+      "minimum": 4.5821114369501466e-05,
+      "p10": 0.0014594376002719088,
+      "p90": 0.01119399232107311
+    },
+    "weighted_neighbor_retention_fraction": 0.5788079283875476
+  },
+  "coordinate_spaces": {
+    "crop_before_resize": "Target bbox clipped to the materialized crop before any network resize.",
+    "full_scene_network_input_after_960_letterbox": "Auxiliary counterfactual coordinate: the same target after resizing the uncropped full scene into the 960x960 network canvas.",
+    "network_input_after_960_letterbox": "Target bbox after aspect-ratio-preserving resize into the 960x960 network canvas.",
+    "original_image": "Target bbox in the original BDD100K image."
+  },
+  "created_utc": "2026-08-16T13:34:26Z",
+  "elapsed_minutes": 0.15642859935760497,
+  "exposure_manifest_sha256": "94b87f98f4c320da3bc0bf1d87b9c5820682d9dbd1a3443eb4f2f42cdb78d33f",
+  "interpretation": "This audit quantifies crop-induced scale and context shifts and their association with downstream non-transfer. It does not establish strict causality.",
+  "new_inference": false,
+  "new_training": false,
+  "primary_scale_question": {
+    "fraction": 0.6779267663744198,
+    "original_small_ceased_to_be_small": 7887,
+    "original_small_targets": 11634
+  },
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "scale_shift": {
+    "area_amplification": {
+      "count": 19500,
+      "maximum": 14.090006105898645,
+      "mean": 7.985948273414311,
+      "median": 7.140833591206453,
+      "minimum": 1.0158100316200631,
+      "p10": 1.6515862647376656,
+      "p90": 14.090006105898645
+    },
+    "bbox_area": {
+      "count": 19500,
+      "maximum": 357723.6754245899,
+      "mean": 3719.690539158265,
+      "median": 1955.5833669511826,
+      "minimum": 23.776885303703963,
+      "p10": 755.8920657875772,
+      "p90": 5807.397504882506
+    },
+    "bbox_short_side": {
+      "count": 19500,
+      "maximum": 552.289156626506,
+      "mean": 40.50880563559335,
+      "median": 36.187400196674574,
+      "minimum": 1.331484049930652,
+      "p10": 19.041940176519873,
+      "p90": 61.98021978021983
+    },
+    "normalized_bbox_area": {
+      "count": 19500,
+      "maximum": 0.38815502975758454,
+      "mean": 0.004036122546829714,
+      "median": 0.002121943757542516,
+      "minimum": 2.5799571727109335e-05,
+      "p10": 0.0008201953838840898,
+      "p90": 0.006301429584290914
+    },
+    "short_side_amplification": {
+      "count": 19500,
+      "maximum": 3.753665689149561,
+      "mean": 2.6363409289093402,
+      "median": 2.67223382045929,
+      "minimum": 1.0078740157480315,
+      "p10": 1.285140562248996,
+      "p90": 3.7536656891495603
+    }
+  },
+  "scale_thresholds": {
+    "large": "[9216, infinity)",
+    "medium": "[1024, 9216)",
+    "small": "[0, 1024)"
+  },
+  "status": "complete",
+  "targets": 19500,
+  "version": "final_crop_scale_context_audit_v1"
+}

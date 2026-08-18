@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-08-16T06:48:34.898914+00:00",
+  "files": {
+    "final_testing_protocol_v1.json": {
+      "bytes": 13677,
+      "sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe"
+    },
+    "input_inventory.json": {
+      "bytes": 25233,
+      "sha256": "47354efac7fa634a8e6c713de8adb188ee40be265c25202f35bbb657ba23d16d"
+    }
+  },
+  "status": "frozen",
+  "version": "final_testing_protocol_artifact_manifest_v1"
+}

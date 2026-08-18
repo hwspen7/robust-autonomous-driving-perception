@@ -1,0 +1,3 @@
+arm,training_views,original_views,object_centric_views,unique_source_images,total_supervised_objects,target_objects,non_target_objects,objects_per_view,raw_input_pixels,network_input_pixels,objects_per_million_raw_pixels,objects_per_million_network_pixels,mean_source_exposures,maximum_source_exposures
+uniform,70000,70000,0,70000,1286852,19500,1267352,18.3836,64512000000,64512000000,19.947482638888886,19.947482638888886,1.0,1
+rebu_risk,70000,50500,19500,56309,1195604,33191,1162413,17.080057142857143,50981616579,64512000000,23.451669056969155,18.533048115079364,1.243140528157133,2

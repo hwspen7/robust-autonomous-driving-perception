@@ -1,0 +1,46 @@
+{
+  "files": {
+    "clean_comparison.json": {
+      "bytes": 6099,
+      "sha256": "b508cecf6be25fe2c3ca3c5061c25abbea85a04330129d37c05deed9d02f334e"
+    },
+    "evaluations/scalar_risk_epoch10/artifact_manifest.json": {
+      "bytes": 337,
+      "sha256": "03c8c5b109cddc5b85a777c6fbc587e02874fcb49180cdae1b01142ed4a3b68d"
+    },
+    "evaluations/scalar_risk_epoch10/metrics.json": {
+      "bytes": 1082,
+      "sha256": "680d461b204bf4bd445375c80a7c56087f94ede974b18572c3d527b7b07d917c"
+    },
+    "evaluations/scalar_risk_epoch10/predictions.json": {
+      "bytes": 151098630,
+      "sha256": "adec7ae1e03e17df5f9ede4e90ed83ce515e54bb304e08e40cd82fccd4305150"
+    },
+    "evaluations/typed_cafr_epoch10/artifact_manifest.json": {
+      "bytes": 337,
+      "sha256": "a2f4210a33dca7c01874c2758af1752fef26a264b682a838113c1843dea3d6b9"
+    },
+    "evaluations/typed_cafr_epoch10/metrics.json": {
+      "bytes": 1082,
+      "sha256": "d78cba3fd434575bc393b28e7dba502318597f1306c4c03276e322b09e128dd1"
+    },
+    "evaluations/typed_cafr_epoch10/predictions.json": {
+      "bytes": 151308769,
+      "sha256": "416b2b23497584a7dd202e5beda455555fda0eb6497bbe0b2427f72013970302"
+    },
+    "evaluations/uniform_epoch10/artifact_manifest.json": {
+      "bytes": 337,
+      "sha256": "2f9dee5fe54f54026a3a686c41d4990d98fabcf28f3bb4a2d2c2f47bb34b5c8f"
+    },
+    "evaluations/uniform_epoch10/metrics.json": {
+      "bytes": 1069,
+      "sha256": "b306605093c476e0ebcb3cd005603f054dfd35f3fd2c459bf447c5eade5c469d"
+    },
+    "evaluations/uniform_epoch10/predictions.json": {
+      "bytes": 148532858,
+      "sha256": "d7407ac6152b771e5d1a67fcdb4e5ba8dc25e9d00b8b26b3379de9139086e156"
+    }
+  },
+  "status": "clean_evaluation_complete",
+  "version": "method_gate_clean_artifacts_v1"
+}

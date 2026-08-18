@@ -1,0 +1,579 @@
+{
+  "created_utc": "2026-08-16T06:48:34.898914+00:00",
+  "dataset_summary": {
+    "official_validation": {
+      "annotations": 185523,
+      "categories": {
+        "1": "pedestrian",
+        "2": "rider",
+        "3": "car",
+        "4": "truck",
+        "5": "bus",
+        "6": "train",
+        "7": "motorcycle",
+        "8": "bicycle",
+        "9": "traffic light",
+        "10": "traffic sign"
+      },
+      "images": 10000
+    },
+    "training": {
+      "annotations": 1286852,
+      "categories": {
+        "1": "pedestrian",
+        "2": "rider",
+        "3": "car",
+        "4": "truck",
+        "5": "bus",
+        "6": "train",
+        "7": "motorcycle",
+        "8": "bicycle",
+        "9": "traffic light",
+        "10": "traffic sign"
+      },
+      "images": 70000
+    }
+  },
+  "fixed_inputs": [
+    {
+      "bytes": 38465357,
+      "label": "official_val_gt",
+      "path": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+      "sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6"
+    },
+    {
+      "bytes": 269279870,
+      "label": "train_gt",
+      "path": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+      "sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2"
+    },
+    {
+      "bytes": 203847755,
+      "label": "baseline_yolo_predictions",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/unified_detection/canonical_predictions/YOLO11m.json",
+      "sha256": "14ff8491f7849077cb7ead3ce7d9e618d2f92ee04bef0a8c68efdb1b836a54b0"
+    },
+    {
+      "bytes": 459250300,
+      "label": "baseline_dfine_predictions",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/unified_detection/canonical_predictions/D-FINE-M.json",
+      "sha256": "10b4159d0f52e412714ac9ae076ac574ebbb74321ddcebab03e2bdbad55e3ebd"
+    },
+    {
+      "bytes": 3680,
+      "label": "architecture_decision",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/formal_evaluation/final_decision.json",
+      "sha256": "e22114f58da2514ed81c9c150013cd7f6a410aead701540b6c7870f9a188e357"
+    },
+    {
+      "bytes": 7427,
+      "label": "architecture_selection_freeze",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/frozen_manifests/final_architecture_selection_v1.json",
+      "sha256": "b3a20fc148a508334268aa4d43bc251219244dffba134173dee3ac1648de29f0"
+    },
+    {
+      "bytes": 2718,
+      "label": "object_risk_freeze",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/frozen_manifests/object_risk_v1_freeze.json",
+      "sha256": "b5e1934ee9108e29548288e6f98cc611bb424c2f6d5b0ab99329b490699ed9d6"
+    },
+    {
+      "bytes": 700,
+      "label": "object_risk_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/object_risk_v1/artifact_manifest.json",
+      "sha256": "f70d77c963f114f1cf05feebf72a0cbe93de43bb1c23df3b5a524329f23031c1"
+    },
+    {
+      "bytes": 16924,
+      "label": "object_risk_metadata",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/object_risk_v1/metadata.json",
+      "sha256": "95589945570a9eca8ce23503aed11c3f840429e4cd9faea74bddbe4cfd220416"
+    },
+    {
+      "bytes": 1490,
+      "label": "operating_points",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/operating_points.json",
+      "sha256": "f13868c935ea16091fd0bae592bb9817d77bd58d2f45597dc7d2add8e2fa44ae"
+    },
+    {
+      "bytes": 3984,
+      "label": "yolo_calibration",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/YOLO11m_calibration.json",
+      "sha256": "cb77222651c4de92996d57a28bfaee89065c9d1e7023dc30ed430780540d9c97"
+    },
+    {
+      "bytes": 4006,
+      "label": "dfine_calibration",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/D-FINE-M_calibration.json",
+      "sha256": "e933d2ed534a0d0f1f6418edd1fe0b5f8c3cfafcae318215fc76a4a315a440c0"
+    },
+    {
+      "bytes": 13560,
+      "label": "yolo_threshold_sensitivity",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/YOLO11m_threshold_sensitivity.csv",
+      "sha256": "e8a77870d1f27d889bb6c465c5259256452273a4f7824c0a74e319c56fd5df22"
+    },
+    {
+      "bytes": 13902,
+      "label": "dfine_threshold_sensitivity",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/D-FINE-M_threshold_sensitivity.csv",
+      "sha256": "d47c36fd350b4c6b5318787403f39da07a056712db86fe75d08e8638211c997d"
+    },
+    {
+      "bytes": 5984,
+      "label": "cafr_sampling_protocol",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/frozen_manifests/cafr_sampling_protocol_v1.json",
+      "sha256": "3812c5692d63629602ebb0393d6369c49f5d84cb5b467bde47a457741a65967d"
+    },
+    {
+      "bytes": 9161,
+      "label": "method_gate_protocol",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/frozen_manifests/method_gate_protocol_v1.json",
+      "sha256": "6be7ae25550360e38195bb785a064bd19cb9c4a65b4625b30b5698861cc1b00a"
+    },
+    {
+      "bytes": 1274,
+      "label": "method_training_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/training_v1/training_artifact_manifest.json",
+      "sha256": "c40007992f0aa49e8062734201fcd2933d5ffb7c4ca6dca3e8866757c8e74e57"
+    },
+    {
+      "bytes": 549,
+      "label": "cafr_v2_training_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_training_v1/training_artifact_manifest.json",
+      "sha256": "888c6429f6108dfa8e78577922607b50c3c904a76412a6b3a312a57c36dbcd6d"
+    },
+    {
+      "bytes": 1774,
+      "label": "method_clean_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v2_clean/clean_artifact_manifest.json",
+      "sha256": "29dc8882d383c37c6e9eb5a8cf826b9d562a3c48e9d0ef8d5a23be5b78350f97"
+    },
+    {
+      "bytes": 551,
+      "label": "method_failure_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v3_failures/artifact_manifest.json",
+      "sha256": "2e57f0e7cb31731362511ca8d29fa9fa52328336241aea696a322eee9f5c2457"
+    },
+    {
+      "bytes": 6237,
+      "label": "method_corruption_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/artifact_manifest.json",
+      "sha256": "4acd7c2bebb826dfcfe7f59ee2cc753644e63419c147dfc8ea1c84d278381ce8"
+    },
+    {
+      "bytes": 765,
+      "label": "cafr_v2_clean_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v5_cafr_v2_clean/clean_artifact_manifest.json",
+      "sha256": "c55efe0d1faa28a2dbd7e8d1bfd2fe8c3e9bf9e3cc38c5b63e4501982a571432"
+    },
+    {
+      "bytes": 956,
+      "label": "common40_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/artifact_manifest.json",
+      "sha256": "5fff0d57aa336cf36074cf8da3aff1b3c0d58a169f5bc924d5ebaf978a6f77b7"
+    },
+    {
+      "bytes": 2179,
+      "label": "formal_branches_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/formal_branches_manifest.json",
+      "sha256": "64dd9fdfc15db3fae8881a63f86254899187f6f6570b6bfa89129799bb589cd0"
+    },
+    {
+      "bytes": 10132,
+      "label": "trajectory_protocol",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/trajectory_protocol.json",
+      "sha256": "7dc023019c6c6945f837a1608847ec67f80efa4e6b505b0d11a48d2963e68afb"
+    },
+    {
+      "bytes": 20491,
+      "label": "trajectory_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/artifact_manifest.json",
+      "sha256": "922f27c7b573e500f449809591af7e7886449b62e9f662ba50609ac1db695485"
+    },
+    {
+      "bytes": 1106,
+      "label": "formal_input_manifest",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/artifact_manifest.json",
+      "sha256": "ccf01cc4092237665dc4d73a587bd2a4f9a454cf7fceb0b4f17712ab8c6854aa"
+    },
+    {
+      "bytes": 1244,
+      "label": "formal_method_selection",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/formal_method_selection.json",
+      "sha256": "ab2607964e4000453d699a23c7a4868bd71802ff1d132455b34a6df001b8dfbe"
+    },
+    {
+      "bytes": 3245,
+      "label": "formal_training_protocol",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/formal_training_protocol.json",
+      "sha256": "c40ad7567ebddd44d96390aa5e3c0340a19cbe6f84f83c944d0442ae69205a14"
+    },
+    {
+      "bytes": 344,
+      "label": "uniform_yaml",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/uniform_full70k.yaml",
+      "sha256": "9cf4e0be79b3b78e48c2bb149dad1e0daf1f7f443e1ccf197b91ee9f1f04dcee"
+    },
+    {
+      "bytes": 6859986,
+      "label": "uniform_train_list",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/uniform_full70k_train.txt",
+      "sha256": "d86707c944b4802105c11438621847e50b0af8512ee8ff9dce19a290adc4542c"
+    },
+    {
+      "bytes": 346,
+      "label": "risk_yaml",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/rebu_risk_full70k.yaml",
+      "sha256": "237e2ac21ab0b7a5115bb0cd08c6722f22e2e4122756f3e96ea205e371f7b286"
+    },
+    {
+      "bytes": 6316827,
+      "label": "risk_train_list",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/rebu_risk_full70k_train.txt",
+      "sha256": "7a4c8f01a1ecc1ca2c4d6b4c6cd5a0afd341c2a091e8102e08995bd0351dfb92"
+    },
+    {
+      "bytes": 80808388,
+      "label": "standard_e20",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch20.pt",
+      "sha256": "dc1e3ef68e233a2fad4911955bbe178f0104cd9000dcbdc772dac8d0a58438b5"
+    },
+    {
+      "bytes": 83085211,
+      "label": "p2_e20",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+      "sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29"
+    },
+    {
+      "bytes": 41802609,
+      "label": "common40",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt",
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3"
+    },
+    {
+      "bytes": 41798705,
+      "label": "gate_uniform",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/training_v1/uniform/weights/last.pt",
+      "sha256": "45f397e81cf6aa3e8fbb08a8fef79b8e95975f85f5b360fa9f4bf2a4f6757210"
+    },
+    {
+      "bytes": 41798705,
+      "label": "gate_scalar",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/training_v1/scalar_risk/weights/last.pt",
+      "sha256": "3093b249d8052924d8324c826731a77b82ab98327a41ff68ab3a2ad615f74b9d"
+    },
+    {
+      "bytes": 41798705,
+      "label": "gate_typed",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/training_v1/typed_cafr/weights/last.pt",
+      "sha256": "217b6d453d399c345a7e1be5595783044f2555a65ae95f047d6a7278d105c4ee"
+    },
+    {
+      "bytes": 41798769,
+      "label": "gate_typed_v2",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_training_v1/typed_cafr/weights/last.pt",
+      "sha256": "eaa3dd7eee88f7d0c74cfbe45f6237c82ecb4eedacb9615a260ce351bc2da7dd"
+    },
+    {
+      "bytes": 41805169,
+      "label": "uniform_e100",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/uniform100_ema.pt",
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7"
+    },
+    {
+      "bytes": 41805169,
+      "label": "risk_e100",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/rebu_yolo100_ema.pt",
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a"
+    },
+    {
+      "bytes": 30631,
+      "label": "prediction_exporter",
+      "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/export_yolo11m_predictions.py",
+      "sha256": "974efcdb71dbbe4fff980cae27ebb7cf826a630bb9d5c2afd654ed3b36f23166"
+    },
+    {
+      "bytes": 37271,
+      "label": "canonical_evaluator_source",
+      "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_yolo_architecture_gate_v4_fixed.py",
+      "sha256": "fd48e9575a9ef8606e2c20c882ec2dff6552e10d19016f43da8dbfd78547345b"
+    },
+    {
+      "bytes": 14245,
+      "label": "corruption_source",
+      "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/controlled_corruptions.py",
+      "sha256": "cb451b3ab1c5ba134bd5251298293f38f645d279d30614c7dbba7ecac550273a"
+    },
+    {
+      "bytes": 32507,
+      "label": "corruption_benchmark_source",
+      "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_controlled_corruption_benchmark.py",
+      "sha256": "caaf850b01b785365185c847af7942144d29d49061cc457f3896ce417949ad84"
+    },
+    {
+      "bytes": 36259,
+      "label": "match_builder_source",
+      "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/build_train_detection_matches.py",
+      "sha256": "3a3b5aa6efd5c956b429769fcdf45f0def85ec174c8164e5f3c217d62e6337c2"
+    },
+    {
+      "bytes": 33195,
+      "label": "risk_builder_source",
+      "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/build_train_risk_table.py",
+      "sha256": "e2f8f029da6cb7316f7be9ae49d73f55b11fade9cac925127f5530bba83aa44c"
+    }
+  ],
+  "formal_model_node_count": 27,
+  "formal_model_nodes": [
+    {
+      "arm": "common",
+      "checkpoint_role": "released_reference_model",
+      "global_epoch": 40,
+      "key": "common40",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt",
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83002011,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 41,
+      "key": "uniform_e41",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch0.pt",
+      "sha256": "c7796cc7e0e0d9f03968e2fe33c40426723e089ec1c3b453dd5f9fbf2b11914e"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83002459,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 46,
+      "key": "uniform_e46",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch5.pt",
+      "sha256": "84e4572cadabf4717363d9fabab2e715c8733fe71f581188a04cfe50cca3712f"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83002843,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 51,
+      "key": "uniform_e51",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch10.pt",
+      "sha256": "948228b888eac4c0e92f348e28ef054cf2e7b6544076d299ea7ca44ebf714a30"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83003227,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 56,
+      "key": "uniform_e56",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch15.pt",
+      "sha256": "84aa86771d185c2c72fa277c609c1222d7a417a8197523c4a5ced2a6a91ebb1b"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83003611,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 61,
+      "key": "uniform_e61",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch20.pt",
+      "sha256": "0d89feceeff48acae4ef2d01f9ed9b75598ba5b57f7252e41dcfa673c2000e71"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83003995,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 66,
+      "key": "uniform_e66",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch25.pt",
+      "sha256": "45de3cb7d78221347941b03b2af5b05ed758a580732c369ee30578321989c416"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83004379,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 71,
+      "key": "uniform_e71",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch30.pt",
+      "sha256": "aff8681ca8bf72ceb43ff2d5d5dc07dc62aef93e6d6a2ec0f0b6e180db33a040"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83004827,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 76,
+      "key": "uniform_e76",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch35.pt",
+      "sha256": "421ec7084e4021189e7217c6b30eb093308ec04f7b80047e366db3e8f30479da"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83005211,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 81,
+      "key": "uniform_e81",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch40.pt",
+      "sha256": "dcbcd19063039372dd4087ca29a311cc256fd3d1f0be026ac03967eabd62f0b0"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83005595,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 86,
+      "key": "uniform_e86",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch45.pt",
+      "sha256": "69a9a07ad1dd8948376166f96d09bcd852b80aa5b748217343e264cf597d3116"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83005979,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 91,
+      "key": "uniform_e91",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch50.pt",
+      "sha256": "488e9f682857c5608f96305c5bea7fa900aa9bbd28357ff17564e01fae1d4f95"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 83006363,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 96,
+      "key": "uniform_e96",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch55.pt",
+      "sha256": "55a588a24c803448bb1b82bac50f7a542c3a8965aaf454133808cedf8d94ffce"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83002011,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 41,
+      "key": "rebu_risk_e41",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch0.pt",
+      "sha256": "e2e2f112a2afd192d5025a4260837ec911aad510106d3ed3d31d4e54198bcd15"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83002459,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 46,
+      "key": "rebu_risk_e46",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch5.pt",
+      "sha256": "e3320e3eac16911177f485416390b1a8cee2c11ce7ccddfa529a65e76f4d8716"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83002843,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 51,
+      "key": "rebu_risk_e51",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch10.pt",
+      "sha256": "bae318237b4e1849da492b84c38b503c752189504e07ea07ba99e7d701402421"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83003227,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 56,
+      "key": "rebu_risk_e56",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch15.pt",
+      "sha256": "879b179c219914a83775cacb7074f1d7bd9836971fae24592a6a16d6e87fe102"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83003611,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 61,
+      "key": "rebu_risk_e61",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch20.pt",
+      "sha256": "45d80fb25404c8665d3e5b2ccdb726391333df248b067c24b890a33f13044883"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83003995,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 66,
+      "key": "rebu_risk_e66",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch25.pt",
+      "sha256": "50db193e0dbf874231234ff86590e343381ccd86f0c5fe4758dfff821018c532"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83004379,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 71,
+      "key": "rebu_risk_e71",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch30.pt",
+      "sha256": "6e272abf3d823a07de7ac4890616430af2e794ca43096cb71cc063a55930a0a7"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83004827,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 76,
+      "key": "rebu_risk_e76",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch35.pt",
+      "sha256": "298957c95a33052b8b1cd0bde030268d49384385eb30f61db467c01b9aba9d30"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83005211,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 81,
+      "key": "rebu_risk_e81",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch40.pt",
+      "sha256": "c4c546d51c538f1a84062f8540e51f2e27f659f15261cd986dce16ab3afcccf2"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83005595,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 86,
+      "key": "rebu_risk_e86",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch45.pt",
+      "sha256": "5f5d0f946fbe67fd4b671b9364d0e86fad20807cd25a51bc1589c89cd1d171d7"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83005979,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 91,
+      "key": "rebu_risk_e91",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch50.pt",
+      "sha256": "6f80c4263ce6f22ad83e868997dae963eea8837252618436513a3cdd6f3907c1"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 83006363,
+      "checkpoint_role": "saved_trajectory_node",
+      "global_epoch": 96,
+      "key": "rebu_risk_e96",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch55.pt",
+      "sha256": "4247e393ef0854275442296c261a094a45cac5e016ca7d2d8856a49e116afcfe"
+    },
+    {
+      "arm": "uniform",
+      "bytes": 41805169,
+      "checkpoint_role": "fixed_terminal_model",
+      "global_epoch": 100,
+      "key": "uniform_e100",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/uniform100_ema.pt",
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7"
+    },
+    {
+      "arm": "rebu_risk",
+      "bytes": 41805169,
+      "checkpoint_role": "fixed_terminal_model",
+      "global_epoch": 100,
+      "key": "risk_e100",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/rebu_yolo100_ema.pt",
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a"
+    }
+  ],
+  "freeze_script": {
+    "bytes": 42159,
+    "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/freeze_final_testing_protocol_v1.py",
+    "sha256": "6e3e5bc41fcc0e37c2d0e34eb7b3137b12dbe6e09fb3f5b1f1c74e646830a4c3"
+  },
+  "status": "frozen",
+  "version": "final_testing_input_inventory_v1"
+}

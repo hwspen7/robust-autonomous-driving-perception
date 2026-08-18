@@ -1,0 +1,18 @@
+{
+  "files": {
+    "failure_evaluation.json": {
+      "bytes": 28513,
+      "sha256": "098aeef7c88059959429cdb34649816deb89d2dfec8fb883e53bc8bfc6d4a3a0"
+    },
+    "failure_membership.csv": {
+      "bytes": 1022675,
+      "sha256": "87ed7969e1690e45321fead670fe6332ce470230b3935dbfa0f633189aeb3a31"
+    },
+    "paired_failure_counts.npz": {
+      "bytes": 164964,
+      "sha256": "f66af09e266032606d0effbb4c6bf4a67aa081655c9a24a515e190278159ab98"
+    }
+  },
+  "status": "failure_evaluation_complete",
+  "version": "method_gate_failure_artifacts_v1"
+}

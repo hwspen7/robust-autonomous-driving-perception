@@ -1,0 +1,81 @@
+{
+  "p2": {
+    "batch": 8,
+    "checkpoint_sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd",
+    "class_names": {
+      "0": "pedestrian",
+      "1": "rider",
+      "2": "car",
+      "3": "truck",
+      "4": "bus",
+      "5": "train",
+      "6": "motorcycle",
+      "7": "bicycle",
+      "8": "traffic light",
+      "9": "traffic sign"
+    },
+    "fraction": 0.002,
+    "image_size": 960,
+    "last_results_row": {
+      "epoch": "1",
+      "lr/pg0": "0.01",
+      "lr/pg1": "0.01",
+      "lr/pg2": "0.01",
+      "metrics/mAP50(B)": "0.2575",
+      "metrics/mAP50-95(B)": "0.15069",
+      "metrics/precision(B)": "0.4457",
+      "metrics/recall(B)": "0.25693",
+      "time": "876.736",
+      "train/box_loss": "1.63412",
+      "train/cls_loss": "2.35008",
+      "train/dfl_loss": "1.26164",
+      "val/box_loss": "1.50446",
+      "val/cls_loss": "1.66087",
+      "val/dfl_loss": "1.09571"
+    },
+    "name": "p2_projected_batch8",
+    "peak_allocated_GiB": 15.17277193069458,
+    "peak_reserved_GiB": 16.28515625,
+    "save_dir": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/training_smoke_v1/p2_projected_batch8"
+  },
+  "standard": {
+    "batch": 8,
+    "checkpoint_sha256": "d5ffc1a674953a08e11a8d21e022781b1b23a19b730afc309290bd9fb5305b95",
+    "class_names": {
+      "0": "pedestrian",
+      "1": "rider",
+      "2": "car",
+      "3": "truck",
+      "4": "bus",
+      "5": "train",
+      "6": "motorcycle",
+      "7": "bicycle",
+      "8": "traffic light",
+      "9": "traffic sign"
+    },
+    "fraction": 0.002,
+    "image_size": 960,
+    "last_results_row": {
+      "epoch": "1",
+      "lr/pg0": "0.01",
+      "lr/pg1": "0.01",
+      "lr/pg2": "0.01",
+      "metrics/mAP50(B)": "0.23958",
+      "metrics/mAP50-95(B)": "0.1401",
+      "metrics/precision(B)": "0.45064",
+      "metrics/recall(B)": "0.23697",
+      "time": "958.651",
+      "train/box_loss": "1.65871",
+      "train/cls_loss": "2.29072",
+      "train/dfl_loss": "1.23284",
+      "val/box_loss": "1.52051",
+      "val/cls_loss": "1.5716",
+      "val/dfl_loss": "1.08797"
+    },
+    "name": "standard_batch8",
+    "peak_allocated_GiB": 8.489123821258545,
+    "peak_reserved_GiB": 10.134765625,
+    "save_dir": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/training_smoke_v1/standard_batch8"
+  },
+  "status": "passed"
+}

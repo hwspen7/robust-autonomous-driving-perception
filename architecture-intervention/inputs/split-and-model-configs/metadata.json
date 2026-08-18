@@ -1,0 +1,26 @@
+{
+  "architecture": {
+    "p2_config": "yolo11m_p2_gate.yaml",
+    "p2_parameters": 20028408,
+    "p2_strides": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "parameter_increase_fraction": -0.001610610348044328,
+    "standard_config": "yolo11m_standard_gate.yaml",
+    "standard_parameters": 20060718,
+    "standard_strides": [
+      8,
+      16,
+      32
+    ]
+  },
+  "builder_script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/prepare_yolo_architecture_gate.py",
+  "builder_script_sha256": "4028c69ede489522e12f512fb5d2854049a08682ee30d8e49094cdf86b2a6c29",
+  "core_images": 65000,
+  "core_objects": 1194459,
+  "dev_images": 5000,
+  "dev_objects": 92393
+}

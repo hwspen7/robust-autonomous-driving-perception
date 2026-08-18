@@ -1,0 +1,38 @@
+{
+  "version": "project-inventory-summary-requirements-first",
+  "status": "complete",
+  "created_utc": "2026-08-18T10:25:10.125059+00:00",
+  "active_inventoried_files": 1068,
+  "public_scope_files": 956,
+  "public_inventory_rows": 951,
+  "self_referential_inventory_files_excluded_from_rows": [
+    "project-management/inventories/git-public-inventory.tsv",
+    "project-management/inventories/navigation-inventory-checksums.sha256",
+    "project-management/inventories/project-directory-inventory.tsv",
+    "project-management/inventories/project-file-inventory.tsv",
+    "project-management/inventories/project-summary.json"
+  ],
+  "frozen_scripts": 68,
+  "project_owned_python_files": 77,
+  "active_local_artifacts": 114,
+  "active_local_artifact_bytes": 4395422354,
+  "additional_local_management_records": 3,
+  "scientific_manifests": 45,
+  "manifest_entries": 581,
+  "active_direct_manifest_entries": 398,
+  "active_shared_dependencies": 21,
+  "local_archive_dependencies": 162,
+  "unresolved_dependencies": 0,
+  "yolo11seg_visualizations": 100,
+  "root_requirements_profiles": [
+    "requirements.txt",
+    "requirements-dfine.txt"
+  ],
+  "docker_required": false,
+  "github_readiness": "READY_FOR_GITHUB_WITH_DECLARED_EXTERNAL_ASSETS",
+  "independent_end_to_end_reproduction_verified": false,
+  "root_markdown_files": [
+    "README.md"
+  ],
+  "manuscripts_preserved_locally": true
+}

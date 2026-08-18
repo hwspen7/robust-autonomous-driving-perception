@@ -1,0 +1,68 @@
+{
+  "artifact_manifest": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/object_risk_v1/artifact_manifest.json",
+  "artifact_manifest_sha256": "f70d77c963f114f1cf05feebf72a0cbe93de43bb1c23df3b5a524329f23031c1",
+  "artifacts": {
+    "image_risk_summary.csv": {
+      "bytes": 6840067,
+      "path": "image_risk_summary.csv",
+      "sha256": "4eaaf4552203fa6471ba5f9c3c3a6d39cb94047366ddffbd0055129468711b3a"
+    },
+    "metadata.json": {
+      "bytes": 16924,
+      "path": "metadata.json",
+      "sha256": "95589945570a9eca8ce23503aed11c3f840429e4cd9faea74bddbe4cfd220416"
+    },
+    "object_risk_table.csv": {
+      "bytes": 323955303,
+      "path": "object_risk_table.csv",
+      "sha256": "83e03b29ff5b796257fed1a3fb284fc22597e6e748315169e25fa481f9b1ba38"
+    },
+    "risk_summary.json": {
+      "bytes": 14103,
+      "path": "risk_summary.json",
+      "sha256": "47a6533bbabc0c83f6f817bea88fb2386fccdd9a642f465bce14ccd5fbdb59a4"
+    }
+  },
+  "audit": {
+    "core_dev_stability_checked": true,
+    "formula_recomputed_per_row": true,
+    "image_rows": 70000,
+    "manifest_verified": true,
+    "scale_monotonicity_checked": true,
+    "status": "PASS",
+    "unique_annotation_ids": 1286852,
+    "zero_gt_images": 137
+  },
+  "builder_script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/build_train_risk_table.py",
+  "builder_script_sha256": "e2f8f029da6cb7316f7be9ae49d73f55b11fade9cac925127f5530bba83aa44c",
+  "calibration_sha256": "f13868c935ea16091fd0bae592bb9817d77bd58d2f45597dc7d2add8e2fa44ae",
+  "created_utc": "2026-08-10T10:20:50.862356+00:00",
+  "dataset": "BDD100K",
+  "detection_consensus": {
+    "both_detected": 869056,
+    "dfine_only": 62545,
+    "neither_detected": 282305,
+    "yolo_only": 72946
+  },
+  "matches_manifest_sha256": "edadb3583e2e0efb7fed8ec687040a688ddc43360632df855e1e8b2f72a0d63d",
+  "method": "CAFR object-risk fusion v1",
+  "num_images": 70000,
+  "num_images_with_gt": 69863,
+  "num_objects": 1286852,
+  "num_zero_gt_images": 137,
+  "risk_definition_sha256": "664c2cd046586555e1ea85af46dd5bdfc9fa5f82e76c203165715c5a75f95bda",
+  "risk_root": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/object_risk_v1",
+  "risk_tier_counts": {
+    "critical": 128947,
+    "high": 193311,
+    "medium": 321476,
+    "standard": 643118
+  },
+  "split": "official_training",
+  "split_hashes": {
+    "split_metadata.json": "cfd4c2cc92dd0206d106431dc0c4a9b682b86b88e9ab5ce2862559a0add5fa89",
+    "train_core_image_ids.json": "9996d854b06ddefd12dde1949ecae30c6d08230eb10003e7ec1863a3386ee1a3",
+    "train_dev_image_ids.json": "961ddf514525223aa08599774c167ffcf81752551cdc6619fc6febb1184ada8c"
+  },
+  "status": "frozen"
+}

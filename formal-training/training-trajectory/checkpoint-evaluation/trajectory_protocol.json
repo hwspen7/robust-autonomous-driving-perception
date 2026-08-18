@@ -1,0 +1,250 @@
+{
+  "candidate_count": 27,
+  "candidates": [
+    {
+      "arm": "common",
+      "global_epoch": 40,
+      "key": "common_e40",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt",
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3",
+      "stored_epoch": -1
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 41,
+      "key": "uniform_e41",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch0.pt",
+      "sha256": "c7796cc7e0e0d9f03968e2fe33c40426723e089ec1c3b453dd5f9fbf2b11914e",
+      "stored_epoch": 0
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 41,
+      "key": "rebu_risk_e41",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch0.pt",
+      "sha256": "e2e2f112a2afd192d5025a4260837ec911aad510106d3ed3d31d4e54198bcd15",
+      "stored_epoch": 0
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 46,
+      "key": "uniform_e46",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch5.pt",
+      "sha256": "84e4572cadabf4717363d9fabab2e715c8733fe71f581188a04cfe50cca3712f",
+      "stored_epoch": 5
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 46,
+      "key": "rebu_risk_e46",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch5.pt",
+      "sha256": "e3320e3eac16911177f485416390b1a8cee2c11ce7ccddfa529a65e76f4d8716",
+      "stored_epoch": 5
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 51,
+      "key": "uniform_e51",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch10.pt",
+      "sha256": "948228b888eac4c0e92f348e28ef054cf2e7b6544076d299ea7ca44ebf714a30",
+      "stored_epoch": 10
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 51,
+      "key": "rebu_risk_e51",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch10.pt",
+      "sha256": "bae318237b4e1849da492b84c38b503c752189504e07ea07ba99e7d701402421",
+      "stored_epoch": 10
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 56,
+      "key": "uniform_e56",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch15.pt",
+      "sha256": "84aa86771d185c2c72fa277c609c1222d7a417a8197523c4a5ced2a6a91ebb1b",
+      "stored_epoch": 15
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 56,
+      "key": "rebu_risk_e56",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch15.pt",
+      "sha256": "879b179c219914a83775cacb7074f1d7bd9836971fae24592a6a16d6e87fe102",
+      "stored_epoch": 15
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 61,
+      "key": "uniform_e61",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch20.pt",
+      "sha256": "0d89feceeff48acae4ef2d01f9ed9b75598ba5b57f7252e41dcfa673c2000e71",
+      "stored_epoch": 20
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 61,
+      "key": "rebu_risk_e61",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch20.pt",
+      "sha256": "45d80fb25404c8665d3e5b2ccdb726391333df248b067c24b890a33f13044883",
+      "stored_epoch": 20
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 66,
+      "key": "uniform_e66",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch25.pt",
+      "sha256": "45de3cb7d78221347941b03b2af5b05ed758a580732c369ee30578321989c416",
+      "stored_epoch": 25
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 66,
+      "key": "rebu_risk_e66",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch25.pt",
+      "sha256": "50db193e0dbf874231234ff86590e343381ccd86f0c5fe4758dfff821018c532",
+      "stored_epoch": 25
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 71,
+      "key": "uniform_e71",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch30.pt",
+      "sha256": "aff8681ca8bf72ceb43ff2d5d5dc07dc62aef93e6d6a2ec0f0b6e180db33a040",
+      "stored_epoch": 30
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 71,
+      "key": "rebu_risk_e71",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch30.pt",
+      "sha256": "6e272abf3d823a07de7ac4890616430af2e794ca43096cb71cc063a55930a0a7",
+      "stored_epoch": 30
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 76,
+      "key": "uniform_e76",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch35.pt",
+      "sha256": "421ec7084e4021189e7217c6b30eb093308ec04f7b80047e366db3e8f30479da",
+      "stored_epoch": 35
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 76,
+      "key": "rebu_risk_e76",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch35.pt",
+      "sha256": "298957c95a33052b8b1cd0bde030268d49384385eb30f61db467c01b9aba9d30",
+      "stored_epoch": 35
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 81,
+      "key": "uniform_e81",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch40.pt",
+      "sha256": "dcbcd19063039372dd4087ca29a311cc256fd3d1f0be026ac03967eabd62f0b0",
+      "stored_epoch": 40
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 81,
+      "key": "rebu_risk_e81",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch40.pt",
+      "sha256": "c4c546d51c538f1a84062f8540e51f2e27f659f15261cd986dce16ab3afcccf2",
+      "stored_epoch": 40
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 86,
+      "key": "uniform_e86",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch45.pt",
+      "sha256": "69a9a07ad1dd8948376166f96d09bcd852b80aa5b748217343e264cf597d3116",
+      "stored_epoch": 45
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 86,
+      "key": "rebu_risk_e86",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch45.pt",
+      "sha256": "5f5d0f946fbe67fd4b671b9364d0e86fad20807cd25a51bc1589c89cd1d171d7",
+      "stored_epoch": 45
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 91,
+      "key": "uniform_e91",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch50.pt",
+      "sha256": "488e9f682857c5608f96305c5bea7fa900aa9bbd28357ff17564e01fae1d4f95",
+      "stored_epoch": 50
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 91,
+      "key": "rebu_risk_e91",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch50.pt",
+      "sha256": "6f80c4263ce6f22ad83e868997dae963eea8837252618436513a3cdd6f3907c1",
+      "stored_epoch": 50
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 96,
+      "key": "uniform_e96",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch55.pt",
+      "sha256": "55a588a24c803448bb1b82bac50f7a542c3a8965aaf454133808cedf8d94ffce",
+      "stored_epoch": 55
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 96,
+      "key": "rebu_risk_e96",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch55.pt",
+      "sha256": "4247e393ef0854275442296c261a094a45cac5e016ca7d2d8856a49e116afcfe",
+      "stored_epoch": 55
+    },
+    {
+      "arm": "uniform",
+      "global_epoch": 100,
+      "key": "uniform_e100",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/uniform100_ema.pt",
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7",
+      "stored_epoch": -1
+    },
+    {
+      "arm": "rebu_risk",
+      "global_epoch": 100,
+      "key": "rebu_risk_e100",
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/rebu_yolo100_ema.pt",
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a",
+      "stored_epoch": -1
+    }
+  ],
+  "evaluation": {
+    "batch": 1,
+    "coco_max_dets": [
+      1,
+      10,
+      100
+    ],
+    "confidence_floor": 0.001,
+    "export_max_det": 300,
+    "image_size": 960,
+    "nms_iou": 0.7,
+    "primary_metric": "AP",
+    "tie_break": "earliest epoch among checkpoints within 0.0005 of maximum AP",
+    "tie_tolerance": 0.0005
+  },
+  "exporter": {
+    "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/export_yolo11m_predictions.py",
+    "sha256": "974efcdb71dbbe4fff980cae27ebb7cf826a630bb9d5c2afd654ed3b36f23166"
+  },
+  "official_validation": {
+    "annotations": 185523,
+    "images": 10000,
+    "path": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+    "sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6"
+  },
+  "purpose": "Recover the best saved checkpoint and diagnose late-training degradation without retraining.",
+  "status": "frozen_before_evaluation",
+  "training_allowed": false,
+  "version": "formal_checkpoint_trajectory_protocol_v1"
+}

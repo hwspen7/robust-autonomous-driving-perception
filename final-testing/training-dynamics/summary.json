@@ -1,0 +1,109 @@
+{
+  "attribution_conclusion": {
+    "persistent_small_AP_advantage_established": false,
+    "risk_specific_terminal_penalty_present": true,
+    "shared_schedule_degradation_present": true
+  },
+  "common_anchor": {
+    "AP": 0.3505291808118723,
+    "AP50": 0.5970032639118119,
+    "AP75": 0.340741466873488,
+    "AP_large": 0.5775462844862114,
+    "AP_medium": 0.40092201542443984,
+    "AP_small": 0.16895120254493562,
+    "AR100": 0.48464542796884175,
+    "AR_small": 0.3208616357454456
+  },
+  "elapsed_minutes": 0.0007208744684855143,
+  "frozen_decline_records": {
+    "rebu_risk": {
+      "decline_threshold": 0.002,
+      "first_sustained_decline_epoch": 71,
+      "peak_AP": 0.3460503502978522,
+      "peak_epoch": 56
+    },
+    "uniform": {
+      "decline_threshold": 0.002,
+      "first_sustained_decline_epoch": 46,
+      "peak_AP": 0.3531013985281346,
+      "peak_epoch": 41
+    }
+  },
+  "interpretation": "Shared schedule effects and risk-specific residuals are descriptive decompositions. They do not constitute a fully randomized causal identification of optimization and data-intervention mechanisms.",
+  "learning_rate_restart_ratios": {
+    "lr/pg0": {
+      "risk_branch_restart_ratio": 8.675122983888459,
+      "uniform_branch_restart_ratio": 8.675122983888459
+    },
+    "lr/pg1": {
+      "risk_branch_restart_ratio": 8.675122983888459,
+      "uniform_branch_restart_ratio": 8.675122983888459
+    },
+    "lr/pg2": {
+      "risk_branch_restart_ratio": 8.774238888069478,
+      "uniform_branch_restart_ratio": 8.774238888069478
+    }
+  },
+  "long_horizon_persistence": {
+    "AP": {
+      "delta_normalized_AUC": -0.0015734032400198045,
+      "delta_trajectory_mean": -0.0020158639135421375,
+      "maximum_delta": 0.0018336428494740153,
+      "minimum_delta": -0.010826516578622214,
+      "positive_delta_checkpoint_fraction": 0.15384615384615385,
+      "terminal_delta": -0.003206772329254537
+    },
+    "AP75": {
+      "delta_normalized_AUC": -0.0029753275885284545,
+      "delta_trajectory_mean": -0.003350099043220427,
+      "maximum_delta": 3.1851664566984184e-06,
+      "minimum_delta": -0.011647165486203037,
+      "positive_delta_checkpoint_fraction": 0.07692307692307693,
+      "terminal_delta": -0.0037744985277613496
+    },
+    "AP_small": {
+      "delta_normalized_AUC": -0.0017634992797886336,
+      "delta_trajectory_mean": -0.0017230695430554682,
+      "maximum_delta": -0.0003870330616192186,
+      "minimum_delta": -0.0028330935179211036,
+      "positive_delta_checkpoint_fraction": 0.0,
+      "terminal_delta": -0.0020481215195122804
+    }
+  },
+  "matched_epochs": [
+    41,
+    46,
+    51,
+    56,
+    61,
+    66,
+    71,
+    76,
+    81,
+    86,
+    91,
+    96,
+    100
+  ],
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "status": "complete",
+  "terminal_epoch_100_attribution": {
+    "AP": {
+      "risk_specific_residual": -0.003206772329254537,
+      "shared_schedule_effect": -0.01654454084892204,
+      "total_risk_effect": -0.019751313178176577
+    },
+    "AP75": {
+      "risk_specific_residual": -0.0037744985277613496,
+      "shared_schedule_effect": -0.021595623965666833,
+      "total_risk_effect": -0.025370122493428182
+    },
+    "AP_small": {
+      "risk_specific_residual": -0.0020481215195122804,
+      "shared_schedule_effect": -0.006340581218765434,
+      "total_risk_effect": -0.008388702738277715
+    }
+  },
+  "trajectory_manifest_sha256": "922f27c7b573e500f449809591af7e7886449b62e9f662ba50609ac1db695485",
+  "version": "training_dynamics_attribution_v1"
+}

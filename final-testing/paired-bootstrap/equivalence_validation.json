@@ -1,0 +1,10 @@
+{
+  "absolute_tolerance": 5e-10,
+  "candidate_executor": "v2_batched_cuda",
+  "maximum_clean_error": 4.440892098500626e-16,
+  "maximum_failure_error": 1.1102230246251565e-16,
+  "models_checked": 11,
+  "reference_executor": "v1_scalar_numpy",
+  "replicates_checked": 2,
+  "status": "pass"
+}

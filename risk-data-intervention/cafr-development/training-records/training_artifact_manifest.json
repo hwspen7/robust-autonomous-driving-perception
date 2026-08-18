@@ -1,0 +1,18 @@
+{
+  "version": "cafr_v2_gate_training_v1",
+  "status": "training_complete_pending_evaluation",
+  "files": {
+    "training_summary.json": {
+      "bytes": 2228,
+      "sha256": "9937457f53657c102614a1c9ac1aa776155052e2903e8d80a78e46160d793af4"
+    },
+    "typed_cafr/weights/last.pt": {
+      "bytes": 41798769,
+      "sha256": "eaa3dd7eee88f7d0c74cfbe45f6237c82ecb4eedacb9615a260ce351bc2da7dd"
+    },
+    "typed_cafr/results.csv": {
+      "bytes": 1042,
+      "sha256": "9883ecee6336a7e73fbad8ff17f3e58460c2ddb99b4a2349cd7090a6b6411583"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-08-17T05:17:42.556737+00:00",
+  "new_inference": false,
+  "new_model_selection": false,
+  "new_training": false,
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "qualitative_figures": 8,
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/build_final_paper_bundle_v1.py",
+  "script_sha256": "e48ad70a2efe7c2f7a6b63cf484ad9c5a3dc7fd36494d5277c2a74654eafd1af",
+  "status": "complete",
+  "tables": 15,
+  "version": "final_paper_bundle_v1"
+}

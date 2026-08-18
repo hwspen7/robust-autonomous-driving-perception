@@ -1,0 +1,76 @@
+{
+  "canonical_manifest_sha256": "88d2bace7a2f69e26c34e7eed4e2814b12e8317980602968b407d1b94282338b",
+  "created_utc": "2026-08-16T08:32:21.207911+00:00",
+  "elapsed_minutes": 0.1332254409790039,
+  "matches_dir": "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/official_val_failure_matches_v1",
+  "matches_manifest_sha256": "a60485d5242bcf66b6b86be4ffe58bfe27ad32bb4fb6c30811fa6a917d4ee7ea",
+  "matches_metadata_sha256": "c2bfea46dc71d9b6a3aa234408d5232bfc42391f593226e82fbfabb7d9f07a29",
+  "matching": {
+    "localization_iou": 0.1,
+    "match_iou": 0.5,
+    "thresholds": {
+      "D-FINE-M": 0.4963708519935608,
+      "YOLO11m": 0.22527144849300385
+    }
+  },
+  "num_images": 10000,
+  "num_objects": 185523,
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "risk_method": {
+    "calibration_macro_f1": {
+      "D-FINE-M": 0.7012245282327485,
+      "YOLO11m": 0.6945657943717607
+    },
+    "class_prior_strength": 500.0,
+    "formula_source_sha256": "e2f8f029da6cb7316f7be9ae49d73f55b11fade9cac925127f5530bba83aa44c",
+    "method": "CAFR object-risk fusion v1",
+    "non_detection_quality_multiplier": 0.5,
+    "risk_tiers": {
+      "critical": "[0.90, 1.00]",
+      "high": "[0.75, 0.90)",
+      "medium": "[0.50, 0.75)",
+      "standard": "[0.00, 0.50)"
+    },
+    "teacher_reliability_weights": {
+      "D-FINE-M": 0.5023852915990142,
+      "YOLO11m": 0.49761470840098576
+    }
+  },
+  "source_split": "BDD100K official validation",
+  "status": "frozen",
+  "subset_counts": {
+    "dfine_supported_yolo_failure": {
+      "images": 5416,
+      "objects": 9000
+    },
+    "small_high_risk": {
+      "images": 8497,
+      "objects": 37331
+    },
+    "small_jointly_missed": {
+      "images": 8184,
+      "objects": 34698
+    },
+    "yolo_classification_failure": {
+      "images": 1441,
+      "objects": 1797
+    },
+    "yolo_localization_failure": {
+      "images": 5294,
+      "objects": 11255
+    },
+    "yolo_low_confidence": {
+      "images": 8262,
+      "objects": 26804
+    }
+  },
+  "subset_definitions": {
+    "dfine_supported_yolo_failure": "D-FINE-M detected == 1 and YOLO11m detected == 0",
+    "small_high_risk": "scale == small and frozen official-val risk_score >= 0.75",
+    "small_jointly_missed": "scale == small and YOLO11m detected == 0 and D-FINE-M detected == 0",
+    "yolo_classification_failure": "YOLO11m status == classification_error_candidate",
+    "yolo_localization_failure": "YOLO11m status == localization_error_candidate",
+    "yolo_low_confidence": "YOLO11m status == low_confidence_candidate"
+  },
+  "version": "official_val_failure_subsets_v1"
+}

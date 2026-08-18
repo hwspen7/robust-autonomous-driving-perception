@@ -1,0 +1,331 @@
+{
+  "advance_only_if": {
+    "all_rule_families_required": true,
+    "clean_guardrails_typed_minus_uniform": {
+      "delta_AP75_min": -0.003,
+      "delta_AP_large_min": -0.005,
+      "delta_AP_min": -0.002
+    },
+    "corruption_guardrail_typed_minus_uniform": {
+      "delta_mean_corruption_AP_small_min": -0.002
+    },
+    "failure_progress_typed_minus_uniform": {
+      "delta_AP_small_min": 0.002,
+      "delta_failure_macro_AR100_min": 0.005,
+      "delta_small_joint_recall50_min": 0.005
+    },
+    "typed_advantage_over_scalar": {
+      "clean_delta_AP_min": -0.002,
+      "rule": "delta_failure_macro_AR100 >= 0.002 OR (delta_small_joint_recall50 >= 0.003 AND delta_geometric_AR100 >= 0.0)"
+    }
+  },
+  "control_preservation": {
+    "common_original_views": 45500,
+    "object_centric_views": 19500,
+    "only_training_variable_changed": "crop geometry for three diagnosed failure groups",
+    "reason_quotas_not_changed": "Changing quotas would invalidate the existing class-scale-risk matched Scalar control and require another Scalar training run.",
+    "reuse_exact_v1_common_original_images": true,
+    "reuse_exact_v1_typed_target_selection": true,
+    "total_views": 65000,
+    "typed_quotas": {
+      "dfine_supported_yolo_failure": 3900,
+      "other_high_or_critical": 585,
+      "other_joint_not_detected": 975,
+      "small_high_or_critical": 975,
+      "small_joint_not_detected": 7800,
+      "yolo_classification_failure": 1365,
+      "yolo_geometric_failure": 1950,
+      "yolo_low_confidence": 1950
+    },
+    "typed_quotas_changed": false
+  },
+  "created_utc": "2026-08-12T09:27:03.247886+00:00",
+  "crop_policy_amendment": {
+    "new": {
+      "small_high_or_critical": [
+        128,
+        360,
+        7.0,
+        12.0
+      ],
+      "small_joint_not_detected": [
+        192,
+        560,
+        7.0,
+        14.0
+      ],
+      "yolo_low_confidence": [
+        288,
+        680,
+        10.0,
+        18.0
+      ]
+    },
+    "old": {
+      "small_high_or_critical": [
+        144,
+        400,
+        9.0,
+        16.0
+      ],
+      "small_joint_not_detected": [
+        144,
+        400,
+        9.0,
+        16.0
+      ],
+      "yolo_low_confidence": [
+        192,
+        560,
+        8.0,
+        14.0
+      ]
+    },
+    "unchanged_groups": [
+      "dfine_supported_yolo_failure",
+      "other_high_or_critical",
+      "other_joint_not_detected",
+      "yolo_classification_failure",
+      "yolo_geometric_failure"
+    ]
+  },
+  "dependencies": {
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/frozen_manifests/final_architecture_selection_v1.json": "b3a20fc148a508334268aa4d43bc251219244dffba134173dee3ac1648de29f0",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v2_clean/clean_artifact_manifest.json": "29dc8882d383c37c6e9eb5a8cf826b9d562a3c48e9d0ef8d5a23be5b78350f97",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v3_failures/artifact_manifest.json": "2e57f0e7cb31731362511ca8d29fa9fa52328336241aea696a322eee9f5c2457",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v4_corruptions/artifact_manifest.json": "4acd7c2bebb826dfcfe7f59ee2cc753644e63419c147dfc8ea1c84d278381ce8",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/frozen_manifests/method_gate_protocol_v1.json": "6be7ae25550360e38195bb785a064bd19cb9c4a65b4625b30b5698861cc1b00a",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/sampling_audit_v3/artifact_manifest.json": "7c96b15970798025e2482613c6fb0304d972e480a7166c5f2e8817b1e7ec93a9",
+    "/root/rivermind-data/autodrive/results/evaluation/method_gate/training_v1/training_artifact_manifest.json": "c40007992f0aa49e8062734201fcd2933d5ffb7c4ca6dca3e8866757c8e74e57"
+  },
+  "evaluation": {
+    "clean_metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "AP_small",
+      "AP_medium",
+      "AP_large"
+    ],
+    "coco_annotation": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/instances_train_dev_effective.json",
+    "confidence_floor": 0.001,
+    "core_failure_groups": [
+      "small_joint_not_detected",
+      "dfine_supported_yolo_failure",
+      "yolo_geometric_failure",
+      "yolo_low_confidence",
+      "yolo_classification_failure"
+    ],
+    "corruption_gate": {
+      "families": [
+        "blur",
+        "noise",
+        "low_light"
+      ],
+      "implementation": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/controlled_corruptions.py",
+      "implementation_sha256": "cb451b3ab1c5ba134bd5251298293f38f645d279d30614c7dbba7ecac550273a",
+      "metrics": [
+        "AP",
+        "AP_small"
+      ],
+      "severity": 2,
+      "split": "frozen_train_dev_5000"
+    },
+    "effective_gt_objects": 92392,
+    "failure_macro": "equal-weight mean AR100 over the five core failure groups",
+    "failure_metrics": [
+      "subset_AR100",
+      "subset_recall_IoU50_maxDet100"
+    ],
+    "images": 5000,
+    "max_detections": 300,
+    "nms_iou": 0.7,
+    "paired_bootstrap": {
+      "confidence_interval": 0.95,
+      "enabled": true,
+      "resamples": 1000,
+      "role": "reported diagnostic, not gate threshold",
+      "seed": 20260809
+    },
+    "split": "frozen_train_dev_5000"
+  },
+  "execution_policy": {
+    "comparators": "existing frozen Uniform and matched Scalar V1",
+    "further_v3_allowed": false,
+    "gate_epochs": 10,
+    "if_v2_fails": "Do not tune again on frozen train-dev; stop before formal long training and report the bounded result.",
+    "maximum_corrective_iterations": 1,
+    "scalar_retrained": false,
+    "train_arms": [
+      "typed_cafr_v2"
+    ],
+    "uniform_retrained": false
+  },
+  "initialization": {
+    "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+    "checkpoint_epoch_field": 19,
+    "checkpoint_sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+    "completed_pre_gate_epochs": 20,
+    "ema_exact_match_verified": true,
+    "observed_old_learning_rates": [
+      0.0005950000000000005,
+      0.0005950000000000005,
+      0.0005950000000000005
+    ],
+    "old_optimizer_present": true,
+    "old_optimizer_resumed": false,
+    "raw_model_present": false,
+    "reason_not_resumed": "Changing the original 20-epoch horizon would reinterpret the scheduler and risk a learning-rate jump.",
+    "source": "exact EMA weights"
+  },
+  "materialization": {
+    "aspect_ratio": "16:9",
+    "center_jitter_fraction": 0.08,
+    "excluded_annotation_id": 1005741,
+    "excluded_target_category_id": 6,
+    "expected_two_arm_GiB": 1.627,
+    "jpeg_quality": 90,
+    "materialize_scalar_and_typed_together": true,
+    "minimum_retained_box_pixels": 2.0,
+    "non_target_box_center_must_be_inside": true,
+    "non_target_box_minimum_visible_fraction": 0.5,
+    "reason": "Avoid train-evaluation corruption-operator leakage; all arms use identical ordinary YOLO augmentation.",
+    "root": "/dev/shm/rebu_yolo/method_gate_v1",
+    "scalar_crop_policy": {
+      "context_factor": [
+        7.0,
+        14.0
+      ],
+      "maximum_crop_height": 560,
+      "minimum_crop_height": 192
+    },
+    "targeted_synthetic_corruptions": false,
+    "typed_crop_policies": {
+      "dfine_supported_yolo_failure": [
+        192,
+        560,
+        7.0,
+        14.0
+      ],
+      "other_high_or_critical": [
+        192,
+        560,
+        7.0,
+        13.0
+      ],
+      "other_joint_not_detected": [
+        256,
+        640,
+        6.0,
+        12.0
+      ],
+      "small_high_or_critical": [
+        128,
+        360,
+        7.0,
+        12.0
+      ],
+      "small_joint_not_detected": [
+        192,
+        560,
+        7.0,
+        14.0
+      ],
+      "yolo_classification_failure": [
+        288,
+        680,
+        7.0,
+        12.0
+      ],
+      "yolo_geometric_failure": [
+        256,
+        640,
+        6.0,
+        12.0
+      ],
+      "yolo_low_confidence": [
+        288,
+        680,
+        10.0,
+        18.0
+      ]
+    }
+  },
+  "research_role": {
+    "formal_final_model": false,
+    "gate_checkpoint_initializes_formal_training": false,
+    "method": "CAFR-V2-context-balanced",
+    "primary_theme": "object-level failure diagnosis and targeted repair",
+    "purpose": "Single corrective gate after CAFR V1 missed only the frozen clean AP_small progress threshold."
+  },
+  "sampling": {
+    "common_base": "/root/rivermind-data/autodrive/results/evaluation/method_gate/sampling_audit_v3/common_base_image_ids.json",
+    "common_base_bytes": 402246,
+    "common_base_sha256": "bcfb6dec076fc5182dfddc6081574c911184779432f90f101e84a6f591876e78",
+    "typed_selection": "/root/rivermind-data/autodrive/results/evaluation/method_gate/sampling_audit_v3/typed_cafr_selection.csv",
+    "typed_selection_bytes": 3386635,
+    "typed_selection_sha256": "46f0f57efb081eefe5a7ef8e0798076a7068828e93ad9b9d0a12619a360e6ec2"
+  },
+  "status": "frozen_before_v2_materialization_and_training",
+  "training": {
+    "amp": true,
+    "box": 7.5,
+    "cache": false,
+    "close_mosaic": 0,
+    "cls": 0.5,
+    "copy_paste": 0.0,
+    "cos_lr": true,
+    "cutmix": 0.0,
+    "degrees": 0.0,
+    "deterministic": true,
+    "device": 0,
+    "dfl": 1.5,
+    "effective_exposure_epochs": 30,
+    "final_learning_rate": 0.0001,
+    "fliplr": 0.5,
+    "flipud": 0.0,
+    "gate_finetune_epochs": 10,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "image_size": 960,
+    "lr0": 0.0006,
+    "lrf": 0.16666666666666666,
+    "mixup": 0.0,
+    "momentum": 0.937,
+    "mosaic": 0.0,
+    "nominal_batch": 64,
+    "optimizer": "SGD",
+    "patience": 0,
+    "perspective": 0.0,
+    "physical_batch": 8,
+    "plots": false,
+    "resume_old_optimizer": false,
+    "save_period": 5,
+    "scale": 0.5,
+    "seed": 20260809,
+    "shear": 0.0,
+    "translate": 0.1,
+    "validation_during_training": false,
+    "warmup_bias_lr": 0.0,
+    "warmup_epochs": 0.0,
+    "warmup_momentum": 0.937,
+    "weight_decay": 0.0005,
+    "workers": 8
+  },
+  "v1_diagnosis": {
+    "evidence": {
+      "clean_delta_AP_small_typed_minus_uniform": 0.0010296750617704575,
+      "corruption_AP_small_typed_minus_uniform": 0.001346466611561098,
+      "failure_macro_AR100_typed_minus_scalar": 0.002822146604544107,
+      "failure_macro_AR100_typed_minus_uniform": 0.008503778608650592,
+      "low_confidence_AR100_typed_minus_scalar": -0.008037152768262723,
+      "small_joint_recall50_typed_minus_uniform": 0.02969714789767719
+    },
+    "failed_rule": "delta_AP_small >= 0.002",
+    "failure_and_corruption_direction_supported": true,
+    "gate_result": "FAIL"
+  },
+  "version": "cafr_v2_gate_protocol_v1"
+}

@@ -1,0 +1,118 @@
+{
+  "version": "architecture_borderline_adjudication_v5_1",
+  "status": "frozen_before_official_val_evaluation",
+  "created_at_utc": "2026-08-11T12:12:26.406946+00:00",
+  "purpose": "Resolve the V4 borderline P2 decision using an independent official 10k validation evaluation without additional training.",
+  "v4_result_preserved": {
+    "selected_architecture": "standard",
+    "all_p2_adoption_rules_passed": false,
+    "only_failed_rule": "delta_AP_large",
+    "observed_delta_AP_large": -0.005790843439121063,
+    "required_delta_AP_large_min": -0.005,
+    "boundary_excess": 0.000790843439121063,
+    "formal_manifest": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/final_artifact_manifest.json",
+    "formal_manifest_sha256": "5cac2261fae86e7f3918fc87c99fc752b59d7fc89bbffa694440cdfc0c143381"
+  },
+  "inputs": {
+    "official_val_annotation": {
+      "path": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+      "sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+      "images": 10000,
+      "annotations": 185523,
+      "categories": 10,
+      "category_mapping": {
+        "1": "pedestrian",
+        "2": "rider",
+        "3": "car",
+        "4": "truck",
+        "5": "bus",
+        "6": "train",
+        "7": "motorcycle",
+        "8": "bicycle",
+        "9": "traffic light",
+        "10": "traffic sign"
+      }
+    },
+    "standard_checkpoint": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch20.pt",
+      "sha256": "dc1e3ef68e233a2fad4911955bbe178f0104cd9000dcbdc772dac8d0a58438b5",
+      "epoch": 20
+    },
+    "p2_checkpoint": {
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+      "sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+      "epoch": 20
+    },
+    "prediction_exporter": {
+      "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/export_yolo11m_predictions.py",
+      "sha256": "974efcdb71dbbe4fff980cae27ebb7cf826a630bb9d5c2afd654ed3b36f23166"
+    }
+  },
+  "inference": {
+    "dataset_root": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final",
+    "split": "official_validation_10000",
+    "device": "0",
+    "image_size": 960,
+    "batch": 1,
+    "confidence_threshold": 0.001,
+    "nms_iou_threshold": 0.7,
+    "max_detections_exported_per_image": 300,
+    "limit": 0,
+    "save_visualizations": 0
+  },
+  "evaluation": {
+    "type": "COCO bbox",
+    "max_detections": [
+      1,
+      10,
+      100
+    ],
+    "metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "AP_small",
+      "AP_medium",
+      "AP_large",
+      "AR1",
+      "AR10",
+      "AR100"
+    ]
+  },
+  "p2_adoption_rules": {
+    "metric_deltas": "p2_minus_standard",
+    "delta_AP_min": -0.002,
+    "delta_AP75_min": -0.003,
+    "delta_AP_small_min": 0.01,
+    "delta_AP_medium_min": -0.003,
+    "delta_AP_large_min": -0.005,
+    "latency_increase_max": 0.3,
+    "frozen_latency_increase": 0.11336106078953367
+  },
+  "decision": {
+    "select_p2_only_if_all_original_rules_pass_on_official_val": true,
+    "otherwise_select_standard": true,
+    "no_additional_training": true,
+    "no_threshold_changes_after_evaluation": true,
+    "no_second_exception_or_extension": true
+  },
+  "supersedes": {
+    "version": "architecture_borderline_adjudication_v5",
+    "protocol_path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v5/borderline_adjudication_protocol_v5.json",
+    "protocol_sha256": "a6c82cddec2695b542a2f3bbb9d8801682674018e15f17b62d466072392597e2"
+  },
+  "technical_amendment": {
+    "reason": "The V5 protocol referenced the 0-9 contiguous D-FINE annotation, which the canonical YOLO exporter correctly rejected before inference. V5.1 replaces only the GT path with the established 1-10 canonical COCO annotation.",
+    "model_inference_completed_in_v5": false,
+    "thresholds_changed": false,
+    "decision_rules_changed": false,
+    "checkpoints_changed": false,
+    "inference_parameters_changed": false
+  },
+  "failed_v5_attempt": {
+    "log_path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5/official_val_export.log",
+    "log_sha256": "24079542b3ac401481b02b98d0cd25345797cee6c631061fb702c3832d9fe58e",
+    "log_bytes": 957,
+    "failure_stage": "GT category validation before inference"
+  }
+}

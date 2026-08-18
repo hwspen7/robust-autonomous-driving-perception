@@ -1,0 +1,53 @@
+{
+  "architecture": {
+    "p2_config": "yolo11m_p2_gate.yaml",
+    "p2_parameters": 20028408,
+    "p2_strides": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "parameter_increase_fraction": -0.001610610348044328,
+    "standard_config": "yolo11m_standard_gate.yaml",
+    "standard_parameters": 20060718,
+    "standard_strides": [
+      8,
+      16,
+      32
+    ]
+  },
+  "borderline_AP_small": [
+    0.006,
+    0.01
+  ],
+  "borderline_action": "Extend both architectures to 30 epochs under the same protocol.",
+  "dev_images": 5000,
+  "epochs": 20,
+  "formal_initialization": {
+    "historical_bdd_best_used": false,
+    "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/yolo11m.pt",
+    "sha256": "d5ffc1a674953a08e11a8d21e022781b1b23a19b730afc309290bd9fb5305b95"
+  },
+  "image_size": 960,
+  "inputs": {
+    "core_label_tree_sha256": "44da924e675b7d68ee42e01bf74f8fc743bde6c0de94d8f3646eefadca485ccc",
+    "core_split_sha256": "9996d854b06ddefd12dde1949ecae30c6d08230eb10003e7ec1863a3386ee1a3",
+    "dev_label_tree_sha256": "eb62eb7861cd63821fe8a7b263328255bef84365f23ef31f3927b83fa00fbdf6",
+    "dev_split_sha256": "961ddf514525223aa08599774c167ffcf81752551cdc6619fc6febb1184ada8c",
+    "train_coco": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+    "train_coco_sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2"
+  },
+  "pass_rules": {
+    "delta_AP75_min": -0.003,
+    "delta_AP_large_min": -0.005,
+    "delta_AP_medium_min": -0.003,
+    "delta_AP_min": -0.002,
+    "delta_AP_small_min": 0.01,
+    "inference_cost_increase_max": 0.3
+  },
+  "primary_metric": "COCO_AP_small",
+  "seed": 20260809,
+  "train_images": 65000,
+  "version": "architecture_gate_v1"
+}

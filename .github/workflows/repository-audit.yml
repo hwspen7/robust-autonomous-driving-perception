@@ -1,0 +1,97 @@
+name: repository-audit
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  static-audit:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Validate dependency profiles
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          main = Path("requirements.txt").read_text()
+          dfine = Path("requirements-dfine.txt").read_text()
+
+          for required in (
+              "torch==2.2.2+cu118",
+              "torchvision==0.17.2+cu118",
+              "ultralytics==8.4.115",
+          ):
+              assert required in main, required
+
+          for required in (
+              "torch==2.5.1+cu121",
+              "torchvision==0.20.1+cu121",
+              "transformers==5.14.1",
+          ):
+              assert required in dfine, required
+
+          assert main != dfine
+          print("PASS: separate pinned Main and D-FINE profiles are present")
+          PY
+
+      - name: Verify frozen source and runtime layout
+        run: |
+          python source-code/utilities/runtime-layout/prepare_runtime_layout.py \
+            --preflight-only \
+            --project-root "$PWD"
+
+      - name: Compile project-owned Python sources in memory
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          count = 0
+          for path in Path("source-code").rglob("*.py"):
+              if "third-party" in path.parts:
+                  continue
+              compile(path.read_bytes(), str(path), "exec")
+              count += 1
+
+          print(f"PASS: {count} project-owned Python files compile")
+          PY
+
+      - name: Validate artifact and archive metadata
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path("artifacts/manifest.json").read_text())
+          assert manifest["status"] == "complete"
+          assert manifest["artifact_count"] == 114
+          assert len(manifest["artifacts"]) == 114
+
+          checksum_lines = [
+              line for line in Path("artifacts/checksums.sha256")
+              .read_text()
+              .splitlines()
+              if line.strip()
+          ]
+          assert len(checksum_lines) == 114
+
+          dependency = json.loads(
+              Path("artifacts/archive-dependencies.json").read_text()
+          )
+          assert dependency["status"] == "complete"
+          assert dependency["dependency_count"] == 183
+          assert dependency["resolution_counts"] == {
+              "active-shared": 21,
+              "local-archive": 162,
+          }
+
+          print("PASS: artifact and archive metadata are valid")
+          PY

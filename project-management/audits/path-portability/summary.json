@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-08-18T07:46:48.238136+00:00",
+  "files_with_matches": 58,
+  "interpretation": "Historical Linux paths are preserved in frozen executors and recreated by the portable runtime layer.",
+  "matching_lines": 188,
+  "status": "complete",
+  "uncovered_matches": 0
+}

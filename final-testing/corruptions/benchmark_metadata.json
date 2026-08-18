@@ -1,0 +1,30 @@
+{
+  "configuration": {
+    "batch": 8,
+    "coco_max_det": 100,
+    "conditions": 75,
+    "confidence_floor": 0.001,
+    "corruption_prefetch_batches": 1,
+    "corruption_workers": 8,
+    "evaluation_workers": 2,
+    "image_size": 960,
+    "native_max_det": 300,
+    "nms_iou": 0.7,
+    "prediction_json_write_mode": "one_compact_payload_per_batch"
+  },
+  "created_utc": "2026-08-16T18:45:59.982690+00:00",
+  "derived_fast_exporter_sha256": "baeaafbe1e2a1520eb0fd18364603363c1369b8cd8021567f51275aa94682969",
+  "equivalence_record": "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/representative_corruptions_v1-work-693c39375cc1/executor_v2_equivalence.json",
+  "execution": {
+    "gpu_cpu_prefetch_overlap": true,
+    "gpu_inference_cocoeval_pipeline": true,
+    "new_training": false,
+    "parallel_cpu_corruption": true
+  },
+  "original_exporter_sha256": "ce8f84f3ac4e687cdf9127fa2a538e81606005b8329c763e6fe66df579a3f44e",
+  "parent_v1_script_sha256": "62b434c7781769d4382b19f134413df245758a2e2daced0e09134506542ed5c7",
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_representative_corruptions_v2.py",
+  "script_sha256": "37d52d0b35f9f98fc58d0b27469a9900738d027a9782f2e6eff2337737c59ef1",
+  "status": "complete",
+  "version": "final_representative_corruptions_executor_v2"
+}

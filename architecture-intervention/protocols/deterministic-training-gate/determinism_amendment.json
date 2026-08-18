@@ -1,0 +1,47 @@
+{
+  "aborted_v3_run": {
+    "aborted_log": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v3_controller.aborted-ram-cache-20260810_143703.log",
+    "aborted_log_sha256": "5c72be08f75c07928b98d08e104339874275a10d47a251f85577db576297b83c",
+    "aborted_output": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v3.aborted-ram-cache-20260810_143703",
+    "completed_training_epochs": 0,
+    "controller_state": {
+      "stage": "standard_epoch_10",
+      "status": "running"
+    },
+    "controller_state_sha256": "ba8e96ed793461548c42c308b43f96c38719d62dec9386e37524224cae8aca6e",
+    "epoch10_checkpoint_created": false,
+    "reason": "Ultralytics emitted a warning that cache='ram' may produce non-deterministic training results.",
+    "run_metadata_sha256": "974242d97313fef0c2101a7e648f48147189355abc3a06c458a84417afc44b3f"
+  },
+  "changed_fields": {
+    "training.cache": {
+      "from": "ram",
+      "to": false
+    }
+  },
+  "created_at": "2026-08-10T14:39:57.567012+00:00",
+  "disk_cache_rejected": "Available data-disk capacity is insufficient for a complete decoded 960px image cache.",
+  "parent_protocol": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/formal_gate_protocol_v3.json",
+  "parent_protocol_sha256": "1f19201fdd1d456b32a64135461fe61d6a7ce945ff5adbcbb4fa879bd7841b8f",
+  "rationale": "Disable Ultralytics image RAM caching so deterministic=True is not contradicted by the runtime cache warning. Linux page cache remains available without altering decoded training samples.",
+  "status": "frozen_before_training",
+  "unchanged": [
+    "dataset",
+    "65k_train_core",
+    "5k_train_dev",
+    "effective_dev_coco",
+    "architectures",
+    "initialization",
+    "image_size",
+    "physical_batch",
+    "nominal_batch",
+    "optimizer",
+    "learning_rate_schedule",
+    "augmentations",
+    "seed",
+    "10_to_20_state_machine",
+    "decision_thresholds",
+    "latency_evidence"
+  ],
+  "version": "architecture_gate_amendment_v4"
+}

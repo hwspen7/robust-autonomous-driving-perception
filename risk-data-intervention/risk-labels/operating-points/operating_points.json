@@ -1,0 +1,49 @@
+{
+  "gt": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+  "gt_sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2",
+  "match_iou": 0.5,
+  "min_class_gt_for_macro": 100,
+  "models": {
+    "D-FINE-M": {
+      "eligible_category_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "macro_f1": 0.7012245282327485,
+      "macro_precision": 0.7528622969633313,
+      "macro_recall": 0.6593964172583255,
+      "operating_threshold": 0.4963708519935608,
+      "prediction_sha256": "4f29e925bd9e3277311cf538843b5e37cd15aca381588cd2c51ac15da9d024a0"
+    },
+    "YOLO11m": {
+      "eligible_category_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "macro_f1": 0.6945657943717607,
+      "macro_precision": 0.7530899175115922,
+      "macro_recall": 0.6486357537673866,
+      "operating_threshold": 0.22527144849300385,
+      "prediction_sha256": "9842130c992f7bdb5c5b79fa3db7ef4d4f68a28d650f17f6f9db5040fb326e1b"
+    }
+  },
+  "num_dev_gt": 92393,
+  "num_dev_images": 5000,
+  "protocol": "independent detector operating-point calibration on frozen BDD100K train-dev",
+  "split": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/calibration_split/train_dev_image_ids.json",
+  "split_sha256": "961ddf514525223aa08599774c167ffcf81752551cdc6619fc6febb1184ada8c"
+}

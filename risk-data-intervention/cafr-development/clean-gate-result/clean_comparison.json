@@ -1,0 +1,81 @@
+{
+  "clean_gate_passed": false,
+  "clean_rule_checks": {
+    "clean_delta_AP_vs_scalar": true,
+    "delta_AP": true,
+    "delta_AP75": true,
+    "delta_AP_large": true,
+    "delta_AP_small": false
+  },
+  "comparisons": {
+    "typed_cafr_v2_minus_scalar_risk": {
+      "delta_AP": -0.0005830254090451459,
+      "delta_AP50": -0.0016786245471868133,
+      "delta_AP75": -0.0027579018569129365,
+      "delta_AP_large": -0.002959548616963903,
+      "delta_AP_medium": 0.00015156574294300507,
+      "delta_AP_small": 0.0007022037039930429,
+      "delta_AR1": -0.0011204981400675662,
+      "delta_AR10": -0.001307216014040602,
+      "delta_AR100": -0.0017229899702161378
+    },
+    "typed_cafr_v2_minus_typed_cafr": {
+      "delta_AP": -0.00011263512674813958,
+      "delta_AP50": 0.001644698957946722,
+      "delta_AP75": -0.0025956906800854163,
+      "delta_AP_large": -0.00595196356050931,
+      "delta_AP_medium": 0.0011983998216513192,
+      "delta_AP_small": 0.000666464080914142,
+      "delta_AR1": -0.00017343881642986614,
+      "delta_AR10": -0.0007695385680149824,
+      "delta_AR100": -0.0007570827835883809
+    },
+    "typed_cafr_v2_minus_uniform": {
+      "delta_AP": 0.0014693748282711971,
+      "delta_AP50": 0.004437432415326348,
+      "delta_AP75": 0.0005778725455783951,
+      "delta_AP_large": -0.003172395996164812,
+      "delta_AP_medium": 0.0018107762839801311,
+      "delta_AP_small": 0.0016961391426845995,
+      "delta_AR1": 0.0008362451162675089,
+      "delta_AR10": 0.003790823658781417,
+      "delta_AR100": 0.006435045753697077
+    }
+  },
+  "decision_allowed_from_clean_only": true,
+  "effective_gt_objects": 92392,
+  "images": 5000,
+  "metrics": {
+    "typed_cafr_v2": {
+      "AP": 0.34779448397423757,
+      "AP50": 0.5995451146737654,
+      "AP75": 0.33693298242349345,
+      "AP_large": 0.541388656368219,
+      "AP_medium": 0.3959089664883516,
+      "AP_small": 0.1708569670604844,
+      "AR1": 0.224527532041448,
+      "AR10": 0.4354652344395612,
+      "AR100": 0.4865324217350664,
+      "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_training_v1/typed_cafr/weights/last.pt",
+      "checkpoint_sha256": "eaa3dd7eee88f7d0c74cfbe45f6237c82ecb4eedacb9615a260ce351bc2da7dd",
+      "effective_dev_coco_sha256": "5e13ec651d0582032e5eacc1a46d885279fabe278463bd7c2be58b2429796faf",
+      "effective_gt_objects": 92392,
+      "elapsed_minutes": 3.7001932978630068,
+      "human_epoch": 10,
+      "images": 5000,
+      "images_with_predictions": 5000,
+      "metrics_path": "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v5_cafr_v2_clean/evaluations/typed_cafr_v2_epoch10/metrics.json",
+      "model_key": "typed_cafr_v2",
+      "prediction_file": "/root/rivermind-data/autodrive/results/evaluation/method_gate/evaluation_v5_cafr_v2_clean/evaluations/typed_cafr_v2_epoch10/predictions.json",
+      "prediction_sha256": "2c0f973b3865d05119e965247014f933eeaed1194a588c0f6e3df77d0946b844",
+      "predictions": 1182549,
+      "protocol_sha256": "a1bcf36cba543c82cec65067343f231b9593b799279a73f604fcf320ac781d6d",
+      "skipped_zero_area_predictions": 0
+    }
+  },
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/method_gate/frozen_manifests/cafr_v2_gate_v1/cafr_v2_gate_protocol.json",
+  "protocol_sha256": "a1bcf36cba543c82cec65067343f231b9593b799279a73f604fcf320ac781d6d",
+  "split": "frozen_train_dev_5000",
+  "status": "clean_evaluation_complete",
+  "version": "cafr_v2_clean_evaluation_v1"
+}

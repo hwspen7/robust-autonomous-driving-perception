@@ -1,0 +1,15 @@
+autodrive/results/detection/yolo11m_bdd100k_main/weights/best.pt
+autodrive/results/final/dfine_m_bdd100k_60epoch_final/checkpoints/dfine_m_bdd100k_best.pth
+autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt
+autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch20.pt
+autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt
+autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt
+autodrive/results/evaluation/method_gate/training_v1/uniform/weights/last.pt
+autodrive/results/evaluation/method_gate/training_v1/scalar_risk/weights/last.pt
+autodrive/results/evaluation/method_gate/training_v1/typed_cafr/weights/last.pt
+autodrive/results/evaluation/method_gate/cafr_v2_training_v1/typed_cafr/weights/last.pt
+autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch0.pt
+autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch15.pt
+autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch15.pt
+autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/last.pt
+autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/last.pt

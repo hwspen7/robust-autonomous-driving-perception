@@ -1,0 +1,89 @@
+{
+  "GID": 0,
+  "UID": 0,
+  "active_prefix": "/opt/conda",
+  "active_prefix_name": "base",
+  "av_data_dir": "/opt/conda/etc/conda",
+  "av_metadata_url_base": null,
+  "channels": [
+    "https://repo.anaconda.com/pkgs/main/linux-64",
+    "https://repo.anaconda.com/pkgs/main/noarch",
+    "https://repo.anaconda.com/pkgs/r/linux-64",
+    "https://repo.anaconda.com/pkgs/r/noarch"
+  ],
+  "conda_build_version": "24.3.0",
+  "conda_env_version": "23.9.0",
+  "conda_location": "/opt/conda/lib/python3.10/site-packages/conda",
+  "conda_prefix": "/opt/conda",
+  "conda_shlvl": 1,
+  "conda_version": "23.9.0",
+  "config_files": [],
+  "default_prefix": "/opt/conda",
+  "env_vars": {
+    "CIO_TEST": "<not set>",
+    "CONDA_DEFAULT_ENV": "base",
+    "CONDA_EXE": "/opt/conda/bin/conda",
+    "CONDA_NO_PLUGINS": "true",
+    "CONDA_PREFIX": "/opt/conda",
+    "CONDA_PROMPT_MODIFIER": "(base) ",
+    "CONDA_PYTHON_EXE": "/opt/conda/bin/python",
+    "CONDA_ROOT": "/opt/conda",
+    "CONDA_SHLVL": "1",
+    "CURL_CA_BUNDLE": "<not set>",
+    "LD_PRELOAD": "<not set>",
+    "PATH": "/opt/conda/bin:/opt/conda/condabin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/opt/conda/bin:/home/user/micromamba/bin:/usr/local/nvidia/bin:/venv/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "REQUESTS_CA_BUNDLE": "/etc/ssl/certs/ca-certificates.crt",
+    "SSL_CERT_FILE": "<not set>"
+  },
+  "envs": [
+    "/opt/conda",
+    "/opt/conda/envs/mmdet",
+    "/opt/conda/envs/rtdetr",
+    "/root/rivermind-data/autodrive/conda_envs/dfine"
+  ],
+  "envs_dirs": [
+    "/opt/conda/envs",
+    "/root/.conda/envs"
+  ],
+  "netrc_file": null,
+  "offline": false,
+  "pkgs_dirs": [
+    "/opt/conda/pkgs",
+    "/root/.conda/pkgs"
+  ],
+  "platform": "linux-64",
+  "python_version": "3.10.14.final.0",
+  "rc_path": "/root/.condarc",
+  "requests_version": "2.31.0",
+  "root_prefix": "/opt/conda",
+  "root_writable": true,
+  "site_dirs": [],
+  "sys.executable": "/opt/conda/bin/python",
+  "sys.prefix": "/opt/conda",
+  "sys.version": "3.10.14 (main, Mar 21 2024, 16:24:04) [GCC 11.2.0]",
+  "sys_rc_path": "/opt/conda/.condarc",
+  "user_agent": "conda/23.9.0 requests/2.31.0 CPython/3.10.14 Linux/5.15.0-60-generic ubuntu/22.04.3 glibc/2.35",
+  "user_rc_path": "/root/.condarc",
+  "virtual_pkgs": [
+    [
+      "__archspec",
+      "1",
+      "zen3"
+    ],
+    [
+      "__glibc",
+      "2.35",
+      "0"
+    ],
+    [
+      "__linux",
+      "5.15.0",
+      "0"
+    ],
+    [
+      "__unix",
+      "0",
+      "0"
+    ]
+  ]
+}

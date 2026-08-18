@@ -1,0 +1,178 @@
+{
+  "display_name": "P2-960-E20",
+  "executor_version": "parallel_corruption_v2",
+  "exporter_metadata": {
+    "annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+    "annotation_sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+    "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+    "checkpoint_sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+    "class_mapping": {
+      "0": {
+        "bdd_category_id": 1,
+        "bdd_name": "pedestrian",
+        "yolo_name": "pedestrian"
+      },
+      "1": {
+        "bdd_category_id": 2,
+        "bdd_name": "rider",
+        "yolo_name": "rider"
+      },
+      "2": {
+        "bdd_category_id": 3,
+        "bdd_name": "car",
+        "yolo_name": "car"
+      },
+      "3": {
+        "bdd_category_id": 4,
+        "bdd_name": "truck",
+        "yolo_name": "truck"
+      },
+      "4": {
+        "bdd_category_id": 5,
+        "bdd_name": "bus",
+        "yolo_name": "bus"
+      },
+      "5": {
+        "bdd_category_id": 6,
+        "bdd_name": "train",
+        "yolo_name": "train"
+      },
+      "6": {
+        "bdd_category_id": 7,
+        "bdd_name": "motorcycle",
+        "yolo_name": "motorcycle"
+      },
+      "7": {
+        "bdd_category_id": 8,
+        "bdd_name": "bicycle",
+        "yolo_name": "bicycle"
+      },
+      "8": {
+        "bdd_category_id": 9,
+        "bdd_name": "traffic light",
+        "yolo_name": "traffic light"
+      },
+      "9": {
+        "bdd_category_id": 10,
+        "bdd_name": "traffic sign",
+        "yolo_name": "traffic sign"
+      }
+    },
+    "controlled_corruption": {
+      "applied_before_model_preprocessing": true,
+      "corruption": "low_light",
+      "full_corrupted_images_saved": false,
+      "geometry_changed": false,
+      "global_seed": 20260809,
+      "gt_modified": false,
+      "module": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/_executor_v2/controlled_corruptions.py",
+      "module_sha256": "cb451b3ab1c5ba134bd5251298293f38f645d279d30614c7dbba7ecac550273a",
+      "parameters": {
+        "gain": 0.9,
+        "gamma": 1.25
+      },
+      "same_function_intended_for_all_models": true,
+      "seed_rule": "SHA256(GLOBAL_SEED|image_key|corruption|severity) first 8 bytes little-endian unsigned",
+      "severity": 1,
+      "variant": "low_light_s1"
+    },
+    "dataset": "BDD100K",
+    "elapsed_seconds": 196.491,
+    "evaluation_branch": "controlled_corruption",
+    "image_summary_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/p2_e20_low_light_s1/image_summary.json",
+    "images_per_second": 50.893,
+    "inference": {
+      "agnostic_nms": false,
+      "batch": 8,
+      "conf": 0.001,
+      "corruption_workers": 8,
+      "device": "0",
+      "imgsz": 960,
+      "max_det": 300,
+      "nms_iou": 0.7,
+      "parallel_corruption_preserves_submission_order": true,
+      "prediction_json_write_mode": "one_compact_payload_per_batch",
+      "prefetch_batches": 1,
+      "rect": true,
+      "source_type": "in_memory_PIL_RGB_batches",
+      "test_time_augmentation": false
+    },
+    "model": "YOLO11m",
+    "num_gt_annotations": 185523,
+    "num_gt_images": 10000,
+    "num_images_exported": 10000,
+    "num_images_with_predictions": 10000,
+    "num_predictions": 2385380,
+    "prediction_counts_by_category": {
+      "1": 205449,
+      "10": 421043,
+      "2": 5575,
+      "3": 1338953,
+      "4": 32240,
+      "5": 9463,
+      "6": 585,
+      "7": 4142,
+      "8": 22500,
+      "9": 345430
+    },
+    "prediction_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/p2_e20_low_light_s1/predictions.json",
+    "prediction_sha256": "99498edab07547bc4f5656eb173a857a494d8fd541b632e9ba7eb09954155ba1",
+    "software": {
+      "cuda_available": true,
+      "python_torch": "2.2.2",
+      "ultralytics": "8.4.115"
+    },
+    "split": "official_validation",
+    "task": "bbox_detection",
+    "zero_area_bbox_count": 0
+  },
+  "metric": {
+    "AP": 0.3346694037372099,
+    "AP50": 0.5768666573173614,
+    "AP50_absolute_drop": 0.001444207825587851,
+    "AP50_relative_drop": 0.002497286343100031,
+    "AP50_retention": 0.9975027136569,
+    "AP75": 0.3247409941599284,
+    "AP75_absolute_drop": 0.001347545248311599,
+    "AP75_relative_drop": 0.004132452035134442,
+    "AP75_retention": 0.9958675479648655,
+    "AP_absolute_drop": 0.0008039035743856449,
+    "AP_large": 0.5610811492492837,
+    "AP_large_absolute_drop": 0.002497818222112036,
+    "AP_large_relative_drop": 0.004432064300268289,
+    "AP_large_retention": 0.9955679356997317,
+    "AP_medium": 0.3887425976275801,
+    "AP_medium_absolute_drop": 0.001057183636502812,
+    "AP_medium_relative_drop": 0.002712119624783954,
+    "AP_medium_retention": 0.9972878803752161,
+    "AP_relative_drop": 0.0023963264941343314,
+    "AP_retention": 0.9976036735058657,
+    "AP_small": 0.15617459417566537,
+    "AP_small_absolute_drop": 0.0005776060615833856,
+    "AP_small_relative_drop": 0.003684835432671203,
+    "AP_small_retention": 0.9963151645673288,
+    "AR_1": 0.22493640953066685,
+    "AR_10": 0.42539657347423054,
+    "AR_100": 0.4746764976304959,
+    "AR_large": 0.6641231526886063,
+    "AR_medium": 0.5298881621432425,
+    "AR_small": 0.3005481956738368,
+    "completed_at_utc": "2026-08-16T15:51:33.241702+00:00",
+    "corruption": "low_light",
+    "evaluation_seconds": 221.486,
+    "inference_seconds": 202.06009316444397,
+    "model": "p2_e20",
+    "num_gt": 185523,
+    "num_images": 10000,
+    "num_predictions": 2385380,
+    "prediction_sha256": "99498edab07547bc4f5656eb173a857a494d8fd541b632e9ba7eb09954155ba1",
+    "severity": 1,
+    "variant": "low_light_s1"
+  },
+  "model": "p2_e20",
+  "saved_utc": "2026-08-16T15:51:48.789542+00:00",
+  "status": "complete",
+  "temporary_prediction_deleted": true,
+  "variant": "low_light_s1",
+  "version": "representative_corruption_condition_record_v2"
+}

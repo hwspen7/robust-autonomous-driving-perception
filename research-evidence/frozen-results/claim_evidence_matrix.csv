@@ -1,0 +1,7 @@
+claim_id,claim,point_estimate_support,uncertainty_support,evidence,permitted_language,limitation
+C1,P2 improves small-object detection in the evaluated setting.,True,True,"Canonical AP small, AR small, and paired image bootstrap.",Improves under the evaluated single-seed setting.,Official validation participated in architecture adjudication.
+C2,P2 retains a descriptive advantage under representative corruptions.,True,descriptive_only,Fifteen controlled corruption conditions per checkpoint.,Descriptive corruption advantage.,Synthetic corruptions; no strict deployment claim.
+C3,Risk cropping does not establish a persistent AP-small advantage.,True,True,"Full saved-checkpoint trajectory, AUC, terminal metrics, bootstrap.",No persistent advantage was established.,Not proof that every risk-based intervention fails.
+C4,Object-centric cropping changes target scale and surrounding context.,True,deterministic_dataset_audit,Nineteen-thousand-five-hundred target scale/context audit.,Quantified condition shift associated with non-transfer.,"Association, not strict causal identification."
+C5,Long-horizon decline has shared-schedule and risk-specific components.,True,descriptive_decomposition,Common40 anchor and matched E41-E100 trajectories.,Descriptive attribution only.,One fixed training seed.
+C6,P2 has measurable compute and memory cost.,True,repeated_runtime_measurement,Two-order RTX4090 FP16 runtime benchmark.,RTX4090 PyTorch FP16 evidence.,Not edge-device end-to-end latency.
