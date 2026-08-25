@@ -1,0 +1,450 @@
+{
+  "calibration_sha256": "f13868c935ea16091fd0bae592bb9817d77bd58d2f45597dc7d2add8e2fa44ae",
+  "calibration_thresholds": {
+    "D-FINE-M": 0.4963708519935608,
+    "YOLO11m": 0.22527144849300385
+  },
+  "class_prior_strength": 500.0,
+  "created_utc": "2026-08-10T10:16:56.699286+00:00",
+  "dataset": "BDD100K",
+  "elapsed_minutes": 1.0101876338322957,
+  "input_match_metadata": {
+    "calibration_file": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/operating_point_calibration/operating_points.json",
+    "calibration_sha256": "f13868c935ea16091fd0bae592bb9817d77bd58d2f45597dc7d2add8e2fa44ae",
+    "created_utc": "2026-08-10T09:51:43.243438+00:00",
+    "dataset": "BDD100K",
+    "diagnostic_statuses_are_candidates": true,
+    "elapsed_minutes": 6.14594046274821,
+    "gt_file": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+    "gt_sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2",
+    "localization_iou": 0.1,
+    "match_iou": 0.5,
+    "matching_method": "Per-image, per-class, score-descending greedy one-to-one matching using raw canonical xywh boxes.",
+    "models": {
+      "D-FINE-M": {
+        "elapsed_minutes": 3.7443079511324564,
+        "false_positive_type_counts": {
+          "background_candidate": 100797,
+          "classification_candidate": 22577,
+          "duplicate_candidate": 8037,
+          "localization_candidate": 95538,
+          "overlap_candidate": 7823
+        },
+        "localization_iou": 0.1,
+        "match_iou": 0.5,
+        "model": "D-FINE-M",
+        "num_false_positives": 234772,
+        "num_gt_objects": 1286852,
+        "num_matched_predictions": 931601,
+        "num_operating_predictions": 1166373,
+        "per_class_status": {
+          "1": {
+            "assignment_conflict_candidate": 550,
+            "classification_error_candidate": 108,
+            "detected": 55521,
+            "localization_error_candidate": 2216,
+            "low_confidence_candidate": 26798,
+            "missed": 6154
+          },
+          "10": {
+            "assignment_conflict_candidate": 115,
+            "classification_error_candidate": 73,
+            "detected": 167778,
+            "localization_error_candidate": 4393,
+            "low_confidence_candidate": 55772,
+            "missed": 11552
+          },
+          "2": {
+            "assignment_conflict_candidate": 13,
+            "classification_error_candidate": 51,
+            "detected": 2466,
+            "localization_error_candidate": 68,
+            "low_confidence_candidate": 1386,
+            "missed": 532
+          },
+          "3": {
+            "assignment_conflict_candidate": 3641,
+            "classification_error_candidate": 54,
+            "detected": 543237,
+            "localization_error_candidate": 22218,
+            "low_confidence_candidate": 125995,
+            "missed": 18056
+          },
+          "4": {
+            "assignment_conflict_candidate": 18,
+            "classification_error_candidate": 59,
+            "detected": 21003,
+            "localization_error_candidate": 110,
+            "low_confidence_candidate": 7996,
+            "missed": 785
+          },
+          "5": {
+            "assignment_conflict_candidate": 5,
+            "classification_error_candidate": 38,
+            "detected": 7943,
+            "localization_error_candidate": 31,
+            "low_confidence_candidate": 3257,
+            "missed": 398
+          },
+          "6": {
+            "classification_error_candidate": 30,
+            "detected": 23,
+            "low_confidence_candidate": 44,
+            "missed": 39
+          },
+          "7": {
+            "assignment_conflict_candidate": 22,
+            "classification_error_candidate": 26,
+            "detected": 1622,
+            "localization_error_candidate": 24,
+            "low_confidence_candidate": 990,
+            "missed": 318
+          },
+          "8": {
+            "assignment_conflict_candidate": 212,
+            "classification_error_candidate": 38,
+            "detected": 4308,
+            "localization_error_candidate": 140,
+            "low_confidence_candidate": 1956,
+            "missed": 556
+          },
+          "9": {
+            "assignment_conflict_candidate": 105,
+            "classification_error_candidate": 55,
+            "detected": 127700,
+            "localization_error_candidate": 13353,
+            "low_confidence_candidate": 35013,
+            "missed": 9888
+          }
+        },
+        "prediction_audit": {
+          "maximum_predictions_per_image": 300,
+          "maximum_score": 0.9771664142608643,
+          "minimum_predictions_per_image": 300,
+          "minimum_score": 0.0075484588742256165,
+          "negative_size_bbox": 9,
+          "num_images_with_predictions": 70000,
+          "out_of_bounds_bbox": 126314,
+          "prediction_count": 21000000,
+          "prediction_file": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/full_predictions/D-FINE-M/predictions.json",
+          "prediction_sha256": "4f29e925bd9e3277311cf538843b5e37cd15aca381588cd2c51ac15da9d024a0",
+          "zero_area_bbox": 0
+        },
+        "status_counts": {
+          "assignment_conflict_candidate": 4681,
+          "classification_error_candidate": 532,
+          "detected": 931601,
+          "localization_error_candidate": 42553,
+          "low_confidence_candidate": 259207,
+          "missed": 48278
+        },
+        "threshold": 0.4963708519935608
+      },
+      "YOLO11m": {
+        "elapsed_minutes": 2.2201765259106954,
+        "false_positive_type_counts": {
+          "background_candidate": 108020,
+          "classification_candidate": 17469,
+          "duplicate_candidate": 32763,
+          "localization_candidate": 129741,
+          "overlap_candidate": 7481
+        },
+        "localization_iou": 0.1,
+        "match_iou": 0.5,
+        "model": "YOLO11m",
+        "num_false_positives": 295474,
+        "num_gt_objects": 1286852,
+        "num_matched_predictions": 942002,
+        "num_operating_predictions": 1237476,
+        "per_class_status": {
+          "1": {
+            "assignment_conflict_candidate": 523,
+            "classification_error_candidate": 665,
+            "detected": 56760,
+            "localization_error_candidate": 4333,
+            "low_confidence_candidate": 19484,
+            "missed": 9582
+          },
+          "10": {
+            "assignment_conflict_candidate": 125,
+            "classification_error_candidate": 1438,
+            "detected": 166537,
+            "localization_error_candidate": 8434,
+            "low_confidence_candidate": 44680,
+            "missed": 18469
+          },
+          "2": {
+            "assignment_conflict_candidate": 11,
+            "classification_error_candidate": 447,
+            "detected": 2368,
+            "localization_error_candidate": 119,
+            "low_confidence_candidate": 408,
+            "missed": 1163
+          },
+          "3": {
+            "assignment_conflict_candidate": 3106,
+            "classification_error_candidate": 1830,
+            "detected": 555322,
+            "localization_error_candidate": 46243,
+            "low_confidence_candidate": 81368,
+            "missed": 25332
+          },
+          "4": {
+            "assignment_conflict_candidate": 15,
+            "classification_error_candidate": 3457,
+            "detected": 20100,
+            "localization_error_candidate": 208,
+            "low_confidence_candidate": 3572,
+            "missed": 2619
+          },
+          "5": {
+            "assignment_conflict_candidate": 3,
+            "classification_error_candidate": 1472,
+            "detected": 7568,
+            "localization_error_candidate": 63,
+            "low_confidence_candidate": 1017,
+            "missed": 1549
+          },
+          "6": {
+            "classification_error_candidate": 53,
+            "detected": 1,
+            "low_confidence_candidate": 27,
+            "missed": 55
+          },
+          "7": {
+            "assignment_conflict_candidate": 20,
+            "classification_error_candidate": 276,
+            "detected": 1466,
+            "localization_error_candidate": 52,
+            "low_confidence_candidate": 441,
+            "missed": 747
+          },
+          "8": {
+            "assignment_conflict_candidate": 220,
+            "classification_error_candidate": 143,
+            "detected": 4281,
+            "localization_error_candidate": 256,
+            "low_confidence_candidate": 1382,
+            "missed": 928
+          },
+          "9": {
+            "assignment_conflict_candidate": 105,
+            "classification_error_candidate": 922,
+            "detected": 127599,
+            "localization_error_candidate": 16997,
+            "low_confidence_candidate": 27082,
+            "missed": 13409
+          }
+        },
+        "prediction_audit": {
+          "maximum_predictions_per_image": 300,
+          "maximum_score": 0.954671323299408,
+          "minimum_predictions_per_image": 6,
+          "minimum_score": 0.0010000013280659914,
+          "negative_size_bbox": 0,
+          "num_images_with_predictions": 70000,
+          "out_of_bounds_bbox": 0,
+          "prediction_count": 9340367,
+          "prediction_file": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/full_predictions/YOLO11m/predictions.json",
+          "prediction_sha256": "9842130c992f7bdb5c5b79fa3db7ef4d4f68a28d650f17f6f9db5040fb326e1b",
+          "zero_area_bbox": 59
+        },
+        "status_counts": {
+          "assignment_conflict_candidate": 4128,
+          "classification_error_candidate": 10703,
+          "detected": 942002,
+          "localization_error_candidate": 76705,
+          "low_confidence_candidate": 179461,
+          "missed": 73853
+        },
+        "threshold": 0.22527144849300385
+      }
+    },
+    "num_gt_objects": 1286852,
+    "num_images": 70000,
+    "numpy": "1.26.4",
+    "platform": "Linux-5.15.0-60-generic-x86_64-with-glibc2.35",
+    "python": "3.10.14 (main, Mar 21 2024, 16:24:04) [GCC 11.2.0]",
+    "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/build_train_detection_matches.py",
+    "script_sha256": "3a3b5aa6efd5c956b429769fcdf45f0def85ec174c8164e5f3c217d62e6337c2",
+    "split": "official_training",
+    "thresholds": {
+      "D-FINE-M": 0.4963708519935608,
+      "YOLO11m": 0.22527144849300385
+    }
+  },
+  "matches_dir": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/full_train_matches",
+  "matches_manifest_sha256": "edadb3583e2e0efb7fed8ec687040a688ddc43360632df855e1e8b2f72a0d63d",
+  "matches_metadata_sha256": "7bb7125b6e3e5be984867d3a683d7d11865b2beeb9f1ea598fa992321cb320f2",
+  "method": "CAFR object-risk fusion v1",
+  "non_detection_quality_multiplier": 0.5,
+  "num_images": 70000,
+  "num_objects": 1286852,
+  "numpy": "1.26.4",
+  "platform": "Linux-5.15.0-60-generic-x86_64-with-glibc2.35",
+  "python": "3.10.14 (main, Mar 21 2024, 16:24:04) [GCC 11.2.0]",
+  "risk_definition": {
+    "class_reliability": "class_count / (class_count + 500)",
+    "confidence_support": "Piecewise-linear model-specific score transform with the frozen operating threshold mapped to 0.5.",
+    "consensus_risk": "Macro-F1 reliability-weighted mean of teacher risks.",
+    "joint_raw_risk": "1 - (1 - consensus_risk) * (1 - teacher_disagreement)",
+    "risk_score": "Empirical-Bayes blend of within-class and global joint-risk percentile ranks.",
+    "risk_tiers": {
+      "critical": "risk_score >= 0.90",
+      "high": "0.75 <= risk_score < 0.90",
+      "medium": "0.50 <= risk_score < 0.75",
+      "standard": "risk_score < 0.50"
+    },
+    "teacher_disagreement": "Absolute difference between the two teacher risks.",
+    "teacher_quality": "sqrt(confidence_support * same-class IoU); multiply by 0.5 when the object is not greedily detected.",
+    "teacher_risk": "1 - teacher_quality"
+  },
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/build_train_risk_table.py",
+  "script_sha256": "e2f8f029da6cb7316f7be9ae49d73f55b11fade9cac925127f5530bba83aa44c",
+  "split": "official_training",
+  "split_dir": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/calibration_split",
+  "split_hashes": {
+    "split_metadata.json": "cfd4c2cc92dd0206d106431dc0c4a9b682b86b88e9ab5ce2862559a0add5fa89",
+    "train_core_image_ids.json": "9996d854b06ddefd12dde1949ecae30c6d08230eb10003e7ec1863a3386ee1a3",
+    "train_dev_image_ids.json": "961ddf514525223aa08599774c167ffcf81752551cdc6619fc6febb1184ada8c"
+  },
+  "split_metadata": {
+    "all_class_gt": {
+      "10:traffic sign": 239683,
+      "1:pedestrian": 91347,
+      "2:rider": 4516,
+      "3:car": 713201,
+      "4:truck": 29971,
+      "5:bus": 11672,
+      "6:train": 136,
+      "7:motorcycle": 3002,
+      "8:bicycle": 7210,
+      "9:traffic light": 186114
+    },
+    "all_strata": {
+      "dawn/dusk | city street": 2950,
+      "dawn/dusk | gas stations": 3,
+      "dawn/dusk | highway": 1439,
+      "dawn/dusk | parking lot": 30,
+      "dawn/dusk | residential": 599,
+      "dawn/dusk | tunnel": 1,
+      "dawn/dusk | undefined": 5,
+      "daytime | city street": 21811,
+      "daytime | gas stations": 17,
+      "daytime | highway": 8905,
+      "daytime | parking lot": 228,
+      "daytime | residential": 5658,
+      "daytime | tunnel": 32,
+      "daytime | undefined": 77,
+      "night | city street": 18748,
+      "night | gas stations": 7,
+      "night | highway": 7025,
+      "night | parking lot": 94,
+      "night | residential": 1813,
+      "night | tunnel": 20,
+      "night | undefined": 264,
+      "undefined | city street": 7,
+      "undefined | highway": 10,
+      "undefined | parking lot": 25,
+      "undefined | residential": 4,
+      "undefined | tunnel": 76,
+      "undefined | undefined": 152
+    },
+    "core_class_gt": {
+      "10:traffic sign": 222267,
+      "1:pedestrian": 84509,
+      "2:rider": 4193,
+      "3:car": 662287,
+      "4:truck": 27822,
+      "5:bus": 10863,
+      "6:train": 119,
+      "7:motorcycle": 2806,
+      "8:bicycle": 6661,
+      "9:traffic light": 172932
+    },
+    "core_strata": {
+      "dawn/dusk | city street": 2739,
+      "dawn/dusk | gas stations": 3,
+      "dawn/dusk | highway": 1336,
+      "dawn/dusk | parking lot": 28,
+      "dawn/dusk | residential": 556,
+      "dawn/dusk | tunnel": 1,
+      "dawn/dusk | undefined": 5,
+      "daytime | city street": 20253,
+      "daytime | gas stations": 16,
+      "daytime | highway": 8269,
+      "daytime | parking lot": 212,
+      "daytime | residential": 5254,
+      "daytime | tunnel": 30,
+      "daytime | undefined": 71,
+      "night | city street": 17409,
+      "night | gas stations": 6,
+      "night | highway": 6523,
+      "night | parking lot": 87,
+      "night | residential": 1683,
+      "night | tunnel": 19,
+      "night | undefined": 245,
+      "undefined | city street": 7,
+      "undefined | highway": 9,
+      "undefined | parking lot": 23,
+      "undefined | residential": 4,
+      "undefined | tunnel": 71,
+      "undefined | undefined": 141
+    },
+    "dev_class_gt": {
+      "10:traffic sign": 17416,
+      "1:pedestrian": 6838,
+      "2:rider": 323,
+      "3:car": 50914,
+      "4:truck": 2149,
+      "5:bus": 809,
+      "6:train": 17,
+      "7:motorcycle": 196,
+      "8:bicycle": 549,
+      "9:traffic light": 13182
+    },
+    "dev_strata": {
+      "dawn/dusk | city street": 211,
+      "dawn/dusk | highway": 103,
+      "dawn/dusk | parking lot": 2,
+      "dawn/dusk | residential": 43,
+      "daytime | city street": 1558,
+      "daytime | gas stations": 1,
+      "daytime | highway": 636,
+      "daytime | parking lot": 16,
+      "daytime | residential": 404,
+      "daytime | tunnel": 2,
+      "daytime | undefined": 6,
+      "night | city street": 1339,
+      "night | gas stations": 1,
+      "night | highway": 502,
+      "night | parking lot": 7,
+      "night | residential": 130,
+      "night | tunnel": 1,
+      "night | undefined": 19,
+      "undefined | highway": 1,
+      "undefined | parking lot": 2,
+      "undefined | tunnel": 5,
+      "undefined | undefined": 11
+    },
+    "num_core_images": 65000,
+    "num_dev_images": 5000,
+    "num_total_images": 70000,
+    "protocol": "deterministic proportional stratification by timeofday x scene with SHA256 ranking",
+    "seed": 20260809,
+    "source_annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+    "source_annotation_sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2",
+    "stratification_keys": [
+      "timeofday",
+      "scene"
+    ]
+  },
+  "teacher_calibration_macro_f1": {
+    "D-FINE-M": 0.7012245282327485,
+    "YOLO11m": 0.6945657943717607
+  },
+  "teacher_reliability_weights": {
+    "D-FINE-M": 0.5023852915990142,
+    "YOLO11m": 0.49761470840098576
+  }
+}

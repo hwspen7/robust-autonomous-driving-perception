@@ -1,0 +1,7 @@
+# conda environments:
+#
+base                  *  /opt/conda
+mmdet                    /opt/conda/envs/mmdet
+rtdetr                   /opt/conda/envs/rtdetr
+                         /root/rivermind-data/autodrive/conda_envs/dfine
+

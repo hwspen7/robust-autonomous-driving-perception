@@ -1,0 +1,43 @@
+D-FINE-M BDD100K Detection Baseline
+====================================
+
+Model:
+D-FINE-M HGNetv2-B2
+
+Dataset:
+BDD100K Detection
+10 classes
+
+Training:
+Total epoch budget: 60
+Epoch range: 0-59
+Stage transition: stop_epoch = 40
+
+Canonical training record:
+60 epochs
+One record per epoch
+
+Best validation checkpoint:
+Epoch: 55
+AP:    0.3457
+AP50:  0.5976
+AP75:  0.3313
+APs:   0.1479
+APm:   0.4030
+APl:   0.6111
+
+Primary metric:
+COCO AP
+
+Final checkpoint:
+checkpoints/dfine_m_bdd100k_best.pth
+
+Canonical metrics:
+metrics/training_metrics.csv
+metrics/log_clean.jsonl
+metrics/best_metrics.json
+
+Training figures:
+plots/detection_metrics.png
+plots/object_scale_metrics.png
+plots/training_loss.png

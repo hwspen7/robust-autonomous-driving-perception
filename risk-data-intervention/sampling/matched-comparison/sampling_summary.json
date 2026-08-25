@@ -1,0 +1,233 @@
+{
+  "version": "cafr_sampling_audit_v3",
+  "status": "audit_not_frozen_protocol",
+  "created_utc": "2026-08-11T13:16:16.554093+00:00",
+  "seed": 20260809,
+  "script_sha256": "69b7dd6bbf01ea8c2c23c97c61e89b05a65001d11d30c1e928accda9fda9b7d0",
+  "input_hashes": {
+    "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/object_risk_v1/object_risk_table.csv": "83e03b29ff5b796257fed1a3fb284fc22597e6e748315169e25fa481f9b1ba38",
+    "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/frozen_manifests/object_risk_v1_freeze.json": "b5e1934ee9108e29548288e6f98cc611bb424c2f6d5b0ab99329b490699ed9d6",
+    "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/calibration_split/train_core_image_ids.json": "9996d854b06ddefd12dde1949ecae30c6d08230eb10003e7ec1863a3386ee1a3",
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/data_quality_v1/duplicate_annotation_exception.json": "62fa95492d68d2e790a20afc489747acf309f300afe425b816717c491196ec85"
+  },
+  "design": {
+    "train_core_images": 65000,
+    "uniform_original_views": 65000,
+    "common_original_views": 45500,
+    "object_centric_views_per_arm": 19500,
+    "views_per_arm": 65000,
+    "one_crop_target_per_source_image": true,
+    "scalar_matches_typed_target_classes": true,
+    "minimum_target_class_support": 500,
+    "excluded_target_categories": [
+      6
+    ],
+    "excluded_duplicate_annotation_id": 1005741,
+    "maximum_target_class_fraction": 0.35,
+    "typed_quotas": {
+      "small_joint_not_detected": 7800,
+      "dfine_supported_yolo_failure": 3900,
+      "yolo_geometric_failure": 1950,
+      "yolo_low_confidence": 1950,
+      "yolo_classification_failure": 1365,
+      "other_joint_not_detected": 975,
+      "small_high_or_critical": 975,
+      "other_high_or_critical": 585
+    },
+    "typed_selection_order": [
+      "yolo_geometric_failure",
+      "yolo_classification_failure",
+      "other_joint_not_detected",
+      "other_high_or_critical",
+      "dfine_supported_yolo_failure",
+      "yolo_low_confidence",
+      "small_high_or_critical",
+      "small_joint_not_detected"
+    ],
+    "typed_risk_weight_formula": "0.05 + 0.95 * risk_score^2",
+    "typed_sampling_priority": "-log(deterministic_uniform)/risk_weight",
+    "scalar_matching_strata": "target_category_id x scale x fixed_0.05_risk_bin",
+    "scalar_sampling_priority": "deterministic uniform selection inside matched strata",
+    "risk_bin_count": 20,
+    "maximum_matched_mean_risk_gap": 0.03
+  },
+  "core_class_counts": {
+    "1": 84509,
+    "2": 4193,
+    "3": 662287,
+    "4": 27822,
+    "5": 10863,
+    "6": 119,
+    "7": 2806,
+    "8": 6661,
+    "9": 172932,
+    "10": 222267
+  },
+  "typed": {
+    "count": 19500,
+    "unique_annotations": 19500,
+    "unique_source_images": 19500,
+    "target_classes": {
+      "1": 2102,
+      "2": 160,
+      "3": 6825,
+      "4": 1147,
+      "5": 481,
+      "7": 142,
+      "8": 209,
+      "9": 3666,
+      "10": 4768
+    },
+    "scales": {
+      "large": 830,
+      "medium": 7036,
+      "small": 11634
+    },
+    "risk_tiers": {
+      "critical": 7483,
+      "high": 9209,
+      "medium": 2808
+    },
+    "diagnostic_groups": {
+      "dfine_supported_yolo_failure": 3900,
+      "other_high_or_critical": 585,
+      "other_joint_not_detected": 975,
+      "small_high_or_critical": 975,
+      "small_joint_not_detected": 7800,
+      "yolo_classification_failure": 1365,
+      "yolo_geometric_failure": 1950,
+      "yolo_low_confidence": 1950
+    },
+    "yolo_status": {
+      "assignment_conflict_candidate": 527,
+      "classification_error_candidate": 1755,
+      "detected": 1560,
+      "localization_error_candidate": 3562,
+      "low_confidence_candidate": 8134,
+      "missed": 3962
+    },
+    "risk_score": {
+      "mean": 0.8562834671952358,
+      "p10": 0.7298813283000001,
+      "median": 0.86360916495,
+      "p90": 0.9781587541200001
+    }
+  },
+  "scalar": {
+    "count": 19500,
+    "unique_annotations": 19500,
+    "unique_source_images": 19500,
+    "target_classes": {
+      "1": 2102,
+      "2": 160,
+      "3": 6825,
+      "4": 1147,
+      "5": 481,
+      "7": 142,
+      "8": 209,
+      "9": 3666,
+      "10": 4768
+    },
+    "scales": {
+      "large": 830,
+      "medium": 7036,
+      "small": 11634
+    },
+    "risk_tiers": {
+      "critical": 7483,
+      "high": 9209,
+      "medium": 2808
+    },
+    "diagnostic_groups": {
+      "dfine_supported_yolo_failure": 2789,
+      "other_high_or_critical": 551,
+      "other_joint_not_detected": 931,
+      "small_high_or_critical": 837,
+      "small_joint_not_detected": 8623,
+      "standard_support": 1125,
+      "yolo_classification_failure": 797,
+      "yolo_geometric_failure": 564,
+      "yolo_low_confidence": 3283
+    },
+    "yolo_status": {
+      "assignment_conflict_candidate": 197,
+      "classification_error_candidate": 1322,
+      "detected": 2513,
+      "localization_error_candidate": 2418,
+      "low_confidence_candidate": 9096,
+      "missed": 3954
+    },
+    "risk_score": {
+      "mean": 0.8554164010930154,
+      "p10": 0.72458918097,
+      "median": 0.86356648805,
+      "p90": 0.97602710721
+    }
+  },
+  "target_class_counts_identical": true,
+  "target_scale_counts_identical": true,
+  "target_risk_bins_identical": true,
+  "typed_risk_bin_counts": {
+    "10": 16,
+    "11": 88,
+    "12": 269,
+    "13": 743,
+    "14": 1692,
+    "15": 3110,
+    "16": 2974,
+    "17": 3125,
+    "18": 3373,
+    "19": 4110
+  },
+  "scalar_risk_bin_counts": {
+    "10": 16,
+    "11": 88,
+    "12": 269,
+    "13": 743,
+    "14": 1692,
+    "15": 3110,
+    "16": 2974,
+    "17": 3125,
+    "18": 3373,
+    "19": 4110
+  },
+  "matched_mean_risk_gap": 0.0008670661022204262,
+  "cross_arm_overlap": {
+    "annotation_ids": 1756,
+    "source_image_ids": 8613,
+    "annotation_fraction": 0.09005128205128204,
+    "image_fraction": 0.4416923076923077
+  },
+  "typed_pool_counts": {
+    "yolo_geometric_failure": 5373,
+    "small_joint_not_detected": 217943,
+    "dfine_supported_yolo_failure": 57927,
+    "other_joint_not_detected": 5132,
+    "other_high_or_critical": 5189,
+    "yolo_low_confidence": 29264,
+    "small_high_or_critical": 24771,
+    "yolo_classification_failure": 4008
+  },
+  "typed_skip_counts": {
+    "yolo_geometric_failure:duplicate_image": 103,
+    "yolo_classification_failure:duplicate_image": 111,
+    "other_joint_not_detected:duplicate_image": 115,
+    "other_high_or_critical:duplicate_image": 65,
+    "dfine_supported_yolo_failure:duplicate_image": 592,
+    "yolo_low_confidence:duplicate_image": 537,
+    "small_high_or_critical:duplicate_image": 227,
+    "small_joint_not_detected:duplicate_image": 7363,
+    "small_joint_not_detected:class_cap": 6764
+  },
+  "scalar_skip_counts": {
+    "duplicate_source_image": 5815
+  },
+  "training_view_accounting": {
+    "uniform": 65000,
+    "scalar_risk": 65000,
+    "typed_cafr": 65000
+  },
+  "formal_training_rules_frozen": false,
+  "images_generated": 0,
+  "training_started": false
+}

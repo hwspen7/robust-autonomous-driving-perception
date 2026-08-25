@@ -1,0 +1,15 @@
+{
+  "controller_script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_yolo_architecture_gate_v4.py",
+  "controller_script_sha256": "79135bb1245ef26e23eaecfb80513f3916dde876ae12826ec9428da2efffcb41",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "nvidia_smi": "0, NVIDIA GeForce RTX 4090, 24564 MiB, 580.119.02",
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v4/formal_gate_protocol_v4.json",
+  "protocol_sha256": "7f003f25d4ddb5828933c9fbdb85441bf86fe20e2824495f369baca65765525a",
+  "python": "3.10.14",
+  "pytorch": "2.2.2",
+  "started_at": "2026-08-10T14:45:15.619118+00:00",
+  "status": "running",
+  "ultralytics": "8.4.115",
+  "v4_manifest_sha256": "809f1266bb7edca4575ae1e5009e8762a96529322a516e81399599311584d4d9",
+  "version": "formal_gate_run_v4"
+}

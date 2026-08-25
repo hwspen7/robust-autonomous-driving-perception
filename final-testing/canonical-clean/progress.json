@@ -1,0 +1,31 @@
+{
+  "completed_evaluations": [
+    "baseline_yolo",
+    "baseline_dfine",
+    "standard_e20",
+    "p2_e20",
+    "common40",
+    "gate_uniform",
+    "gate_scalar",
+    "gate_typed",
+    "gate_typed_v2",
+    "uniform_e56",
+    "risk_e56",
+    "uniform_e100",
+    "risk_e100"
+  ],
+  "completed_exports": [
+    "common40",
+    "gate_uniform",
+    "gate_scalar",
+    "gate_typed",
+    "gate_typed_v2",
+    "uniform_e56",
+    "risk_e56",
+    "uniform_e100",
+    "risk_e100"
+  ],
+  "status": "complete",
+  "updated_utc": "2026-08-16T08:21:09.585606+00:00",
+  "version": "final_canonical_clean_progress_v1"
+}

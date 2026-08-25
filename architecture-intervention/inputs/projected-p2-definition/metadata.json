@@ -1,0 +1,12 @@
+{
+  "builder_script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/prepare_yolo_p2_gate_v2.py",
+  "builder_script_sha256": "37b8c0c7ef84f12d67c77d152f4610be55531638c95ead26f724dc76acdd4f53",
+  "created_at_utc": "2026-08-10T11:45:11.358656+00:00",
+  "python_torch_version": "2.2.2",
+  "supersedes_p2_config": {
+    "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v1/yolo11m_p2_gate.yaml",
+    "reason": "The original P2 configuration reduced Detect classification-tower width and prevented full P3/P4/P5 classification-head transfer.",
+    "sha256": "29a859e1e6f7b88aa9739e6dd9981206e9bca942c82bfc226294ef76afcdd243"
+  },
+  "ultralytics_version": "8.4.115"
+}

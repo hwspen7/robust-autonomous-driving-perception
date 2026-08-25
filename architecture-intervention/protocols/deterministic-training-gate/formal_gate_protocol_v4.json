@@ -1,0 +1,208 @@
+{
+  "amendment": {
+    "reason": "deterministic_image_loading",
+    "record": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v4/determinism_amendment.json",
+    "record_sha256": "323977b86c1a731bcf2c7a92436b8db4b7593ec9c0c292f2477d2d31fd1e3900",
+    "single_changed_field": "training.cache"
+  },
+  "ancestry": {
+    "data_quality_exception_sha256": "62fa95492d68d2e790a20afc489747acf309f300afe425b816717c491196ec85",
+    "formal_gate_protocol_v3_sha256": "1f19201fdd1d456b32a64135461fe61d6a7ce945ff5adbcbb4fa879bd7841b8f",
+    "prepared_inputs_v1_manifest_sha256": "3d4ad6089b1e44d95fe05244bfb8c6527425c4847692b3e70c86fe2044e0e43e",
+    "prepared_inputs_v2_manifest_sha256": "b3e47e99c764342a2146a799d65b3939a0e54c471fefcf3880b3d89b8a5e050a",
+    "prepared_inputs_v3_manifest_sha256": "ba151a0e87d211a55ce50a990b2d7f88085f9032f2b7632cf7206b4d0da2a071"
+  },
+  "architectures": {
+    "p2_projected": {
+      "config": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_bdd10.yaml",
+      "config_sha256": "bd6bd6cde7f73f54d2e80fd4ad58b44a85d14cb14cb7fb450548b52f5d6ee0ef",
+      "gflops_increase_fraction": 0.3871859848104282,
+      "historical_bdd_best_used": false,
+      "initialization": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt",
+      "initialization_sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd",
+      "loaded_parameter_fraction": 0.9749652758658931,
+      "name": "YOLO11m-P2-Projected-960",
+      "parameter_increase_fraction": 0.02567755463072552,
+      "strides": [
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    "standard": {
+      "config": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v1/yolo11m_standard_gate.yaml",
+      "config_sha256": "774f9377818db6f2145b1c69967f366f6a00b81bfa7f84372997e9acd2c7e94c",
+      "historical_bdd_best_used": false,
+      "initialization": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/yolo11m.pt",
+      "initialization_sha256": "d5ffc1a674953a08e11a8d21e022781b1b23a19b730afc309290bd9fb5305b95",
+      "name": "YOLO11m-Standard-960",
+      "strides": [
+        8,
+        16,
+        32
+      ]
+    }
+  },
+  "data": {
+    "dataset_yaml": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/bdd100k_architecture_gate_v3.yaml",
+    "dataset_yaml_sha256": "208a57dacf467c4efab4d6d7d687fce63938d24bc4fc2012d551bb49100e808c",
+    "effective_dev_coco": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/instances_train_dev_effective.json",
+    "effective_dev_coco_sha256": "5e13ec651d0582032e5eacc1a46d885279fabe278463bd7c2be58b2429796faf",
+    "excluded_duplicate_annotation_id": 1005741,
+    "official_validation_used_for_gate": false,
+    "train_core_images": 65000,
+    "train_core_list": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v1/train_core.txt",
+    "train_core_list_sha256": "7a13091a343ee4f5a3ae20e60e4ab88728d307b29becb8dd26481edda7ea6751",
+    "train_core_objects": 1194459,
+    "train_dev_effective_objects": 92392,
+    "train_dev_images": 5000,
+    "train_dev_list": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v1/train_dev.txt",
+    "train_dev_list_sha256": "d4e1c82556eb6adb30fa2d29f6d86e838922d70ad701f7403058b49184c0fcf2",
+    "train_dev_raw_objects": 92393
+  },
+  "decision_rules": {
+    "absolute_final_AP_target_used_for_gate": false,
+    "frozen_latency_evidence": {
+      "batch": 1,
+      "image_size": 960,
+      "median_increase_fraction": 0.11336106078953367,
+      "p90_increase_fraction": 0.10668939473765038,
+      "passed": true,
+      "precision": "FP16",
+      "threshold": 0.3
+    },
+    "metric_deltas": "p2_minus_standard",
+    "official_validation_used_for_gate": false,
+    "p2_adoption_epoch_20": {
+      "delta_AP75_min": -0.003,
+      "delta_AP_large_min": -0.005,
+      "delta_AP_medium_min": -0.003,
+      "delta_AP_min": -0.002,
+      "delta_AP_small_min": 0.01,
+      "latency_increase_max": 0.3
+    },
+    "primary_metric": "AP_small",
+    "tie_or_failed_p2_rule": "select_standard"
+  },
+  "evaluation": {
+    "coco_annotation_file": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/instances_train_dev_effective.json",
+    "confidence_threshold": 0.001,
+    "evaluate_only_at_epochs": [
+      10,
+      20
+    ],
+    "iou_type": "bbox",
+    "max_detections_per_image": 300,
+    "metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "AP_small",
+      "AP_medium",
+      "AP_large"
+    ],
+    "nms_iou_threshold": 0.7,
+    "split": "frozen_train_dev_5000"
+  },
+  "failure_policy": {
+    "automatic_threshold_change": "forbidden",
+    "evaluation_invalid": "abort",
+    "input_hash_mismatch": "abort",
+    "manual_metric_override": "forbidden",
+    "p2_training_invalid": "abort_and_diagnose",
+    "standard_training_invalid": "abort"
+  },
+  "purpose": "Select one YOLO11m-960 architecture before Uniform and CAFR formal training.",
+  "source_state": {
+    "builder_script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/prepare_yolo_architecture_gate_v3.py",
+    "builder_script_sha256": "9e9d8c38cec5e204557545d5444833ff69e2fb8e061e63bbf956d903d6fda742",
+    "python": "3.10.14",
+    "ultralytics": "8.4.115",
+    "ultralytics_tasks_source": "/opt/conda/lib/python3.10/site-packages/ultralytics/nn/tasks.py",
+    "ultralytics_tasks_source_sha256": "fc411c3a4c89a765ff58fcd9f5cf1ebdadc25c9b4d544f0e3a798f082b21deb1"
+  },
+  "state_machine": {
+    "best_pt_resume_forbidden": true,
+    "cross_architecture_weight_transfer_forbidden": true,
+    "epoch_10": {
+      "early_reject_p2_if_all": {
+        "delta_AP_max": -0.005,
+        "delta_AP_small_max": 0.0
+      },
+      "otherwise": "Resume both architectures from their own epoch-10 last.pt to epoch 20.",
+      "p2_can_be_accepted": false
+    },
+    "epoch_20": {
+      "adopt_p2_only_if_all_final_rules_pass": true,
+      "extension_to_epoch_30_allowed": false,
+      "fallback_architecture": "standard"
+    },
+    "execution_order": [
+      "standard_epoch_10",
+      "standard_evaluation_10",
+      "p2_epoch_10",
+      "p2_evaluation_10",
+      "epoch_10_decision",
+      "conditional_resume_both_to_epoch_20",
+      "standard_evaluation_20",
+      "p2_evaluation_20",
+      "final_architecture_decision"
+    ],
+    "resume_checkpoint": "last.pt",
+    "resume_requirements": [
+      "model",
+      "optimizer",
+      "lr_scheduler",
+      "ema",
+      "epoch",
+      "training_arguments"
+    ]
+  },
+  "status": "frozen_before_training",
+  "training": {
+    "amp": true,
+    "augmentation": {
+      "copy_paste": 0.0,
+      "cutmix": 0.0,
+      "degrees": 0.0,
+      "fliplr": 0.5,
+      "flipud": 0.0,
+      "hsv_h": 0.015,
+      "hsv_s": 0.7,
+      "hsv_v": 0.4,
+      "mixup": 0.0,
+      "mosaic": 1.0,
+      "perspective": 0.0,
+      "scale": 0.5,
+      "shear": 0.0,
+      "translate": 0.1
+    },
+    "cache": false,
+    "cache_policy": "Ultralytics decoded-image caching disabled; operating-system file page cache permitted.",
+    "checkpoint_epochs": [
+      10,
+      20
+    ],
+    "close_mosaic": 10,
+    "cos_lr": false,
+    "deterministic": true,
+    "device": 0,
+    "image_size": 960,
+    "lr0": 0.01,
+    "lrf": 0.01,
+    "momentum": 0.937,
+    "nominal_batch": 64,
+    "optimizer": "SGD",
+    "physical_batch": 8,
+    "planned_schedule_epochs": 20,
+    "plots_during_training": false,
+    "save_period": 1,
+    "seed": 20260809,
+    "validation_during_training": false,
+    "warmup_epochs": 3.0,
+    "weight_decay": 0.0005,
+    "workers": 8
+  },
+  "version": "architecture_gate_protocol_v4"
+}

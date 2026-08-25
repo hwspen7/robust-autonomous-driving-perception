@@ -1,0 +1,44 @@
+{
+  "version": "formal_60_plus_60_complete_v2",
+  "status": "complete",
+  "created_utc": "2026-08-16T01:47:45.507063+00:00",
+  "protocol_sha256": "c40ad7567ebddd44d96390aa5e3c0340a19cbe6f84f83c944d0442ae69205a14",
+  "common_checkpoint_sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3",
+  "branches": {
+    "uniform": {
+      "stage": "uniform_e41_100",
+      "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/uniform100_ema.pt",
+      "checkpoint_sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7",
+      "terminal_ultralytics_metrics": {
+        "metrics/precision(B)": 0.63821,
+        "metrics/recall(B)": 0.56008,
+        "metrics/mAP50(B)": 0.59777,
+        "metrics/mAP50-95(B)": 0.34499,
+        "val/box_loss": 1.44587,
+        "val/cls_loss": 0.8206,
+        "val/dfl_loss": 1.15442
+      },
+      "manifest": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/artifact_manifest.json",
+      "manifest_sha256": "8983b62906b3add00abc8b8210f651a14b476959f792ea3f9d11211efff221bc"
+    },
+    "rebu_risk": {
+      "stage": "rebu_risk_e41_100",
+      "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/rebu_yolo100_ema.pt",
+      "checkpoint_sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a",
+      "terminal_ultralytics_metrics": {
+        "metrics/precision(B)": 0.64026,
+        "metrics/recall(B)": 0.55246,
+        "metrics/mAP50(B)": 0.58993,
+        "metrics/mAP50-95(B)": 0.3394,
+        "val/box_loss": 1.45073,
+        "val/cls_loss": 0.82525,
+        "val/dfl_loss": 1.15809
+      },
+      "manifest": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/artifact_manifest.json",
+      "manifest_sha256": "ddb04561482191319ac271c8c9d0d395fef27b7e81ab6c54d9bf003e0696e943"
+    }
+  },
+  "primary_checkpoint_rule": "Use fixed terminal checkpoints.",
+  "canonical_cocoeval_pending": true,
+  "next_stage": "Canonical clean, failure-subset and corruption evaluation."
+}

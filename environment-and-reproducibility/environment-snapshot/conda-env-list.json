@@ -1,0 +1,8 @@
+{
+  "envs": [
+    "/opt/conda",
+    "/opt/conda/envs/mmdet",
+    "/opt/conda/envs/rtdetr",
+    "/root/rivermind-data/autodrive/conda_envs/dfine"
+  ]
+}

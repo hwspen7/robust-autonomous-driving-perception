@@ -1,0 +1,21 @@
+arm,class_id,class_name,scheduled_target_exposures
+uniform,0,pedestrian,2102
+uniform,1,rider,160
+uniform,2,car,6825
+uniform,3,truck,1147
+uniform,4,bus,481
+uniform,5,train,0
+uniform,6,motorcycle,142
+uniform,7,bicycle,209
+uniform,8,traffic light,3666
+uniform,9,traffic sign,4768
+rebu_risk,0,pedestrian,3583
+rebu_risk,1,rider,269
+rebu_risk,2,car,11601
+rebu_risk,3,truck,1961
+rebu_risk,4,bus,818
+rebu_risk,5,train,0
+rebu_risk,6,motorcycle,241
+rebu_risk,7,bicycle,362
+rebu_risk,8,traffic light,6244
+rebu_risk,9,traffic sign,8112

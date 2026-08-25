@@ -1,0 +1,26 @@
+{
+  "artifacts": [
+    {
+      "bytes": 8660,
+      "path": "efficiency_summary.json",
+      "sha256": "473c1a1091d3385bb7d952d0d3f7746ae60dc06af2ef759608a09d6e9155799b"
+    },
+    {
+      "bytes": 468,
+      "path": "efficiency_table.csv",
+      "sha256": "ec4fc897eb47e225dd9f9bfda5ea549f3a880588514ef918bc5523b065ff7b6c"
+    },
+    {
+      "bytes": 4803,
+      "path": "latency_measurements.npz",
+      "sha256": "77d478bd304870831cc6779aaafc946e945bb2147e5f025221ad5698e5898be0"
+    },
+    {
+      "bytes": 2767,
+      "path": "metadata.json",
+      "sha256": "0cba5f7d858a19737236b8190805332469f49cc9804c606e8ce4c656d75f5b9f"
+    }
+  ],
+  "created_utc": "2026-08-17T04:20:52.255272+00:00",
+  "version": "final_efficiency_manifest_v1"
+}

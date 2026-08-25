@@ -1,0 +1,38 @@
+{
+  "version": "method_gate_training_v1",
+  "status": "training_complete_pending_evaluation",
+  "files": {
+    "controller_state.json": {
+      "bytes": 4747,
+      "sha256": "0a2284e2c4a226037a186070e234a3f4b39855d8a773b1a0501c34509a9834e1"
+    },
+    "training_summary.json": {
+      "bytes": 4927,
+      "sha256": "0a749120a4d4b7b76bef5d3de76265c504b9bf47c699ac4e3e2c4265e8d93175"
+    },
+    "uniform/weights/last.pt": {
+      "bytes": 41798705,
+      "sha256": "45f397e81cf6aa3e8fbb08a8fef79b8e95975f85f5b360fa9f4bf2a4f6757210"
+    },
+    "uniform/results.csv": {
+      "bytes": 1043,
+      "sha256": "fe36a14a2894663b29faa9d859839529249adedd9f124e3362db86a95f9b8767"
+    },
+    "scalar_risk/weights/last.pt": {
+      "bytes": 41798705,
+      "sha256": "3093b249d8052924d8324c826731a77b82ab98327a41ff68ab3a2ad615f74b9d"
+    },
+    "scalar_risk/results.csv": {
+      "bytes": 1043,
+      "sha256": "70a1642a7be0ceb3e6ec0cffbbe9cebe9511e9395a828d8d2287ca47ccee9f30"
+    },
+    "typed_cafr/weights/last.pt": {
+      "bytes": 41798705,
+      "sha256": "217b6d453d399c345a7e1be5595783044f2555a65ae95f047d6a7278d105c4ee"
+    },
+    "typed_cafr/results.csv": {
+      "bytes": 1043,
+      "sha256": "c0651442e086b604035e1cbad36a68dfeb729f8d2e152f3cce9f99ad6280144b"
+    }
+  }
+}

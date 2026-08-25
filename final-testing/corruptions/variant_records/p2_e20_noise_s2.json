@@ -1,0 +1,177 @@
+{
+  "display_name": "P2-960-E20",
+  "executor_version": "parallel_corruption_v2",
+  "exporter_metadata": {
+    "annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+    "annotation_sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+    "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+    "checkpoint_sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29",
+    "class_mapping": {
+      "0": {
+        "bdd_category_id": 1,
+        "bdd_name": "pedestrian",
+        "yolo_name": "pedestrian"
+      },
+      "1": {
+        "bdd_category_id": 2,
+        "bdd_name": "rider",
+        "yolo_name": "rider"
+      },
+      "2": {
+        "bdd_category_id": 3,
+        "bdd_name": "car",
+        "yolo_name": "car"
+      },
+      "3": {
+        "bdd_category_id": 4,
+        "bdd_name": "truck",
+        "yolo_name": "truck"
+      },
+      "4": {
+        "bdd_category_id": 5,
+        "bdd_name": "bus",
+        "yolo_name": "bus"
+      },
+      "5": {
+        "bdd_category_id": 6,
+        "bdd_name": "train",
+        "yolo_name": "train"
+      },
+      "6": {
+        "bdd_category_id": 7,
+        "bdd_name": "motorcycle",
+        "yolo_name": "motorcycle"
+      },
+      "7": {
+        "bdd_category_id": 8,
+        "bdd_name": "bicycle",
+        "yolo_name": "bicycle"
+      },
+      "8": {
+        "bdd_category_id": 9,
+        "bdd_name": "traffic light",
+        "yolo_name": "traffic light"
+      },
+      "9": {
+        "bdd_category_id": 10,
+        "bdd_name": "traffic sign",
+        "yolo_name": "traffic sign"
+      }
+    },
+    "controlled_corruption": {
+      "applied_before_model_preprocessing": true,
+      "corruption": "noise",
+      "full_corrupted_images_saved": false,
+      "geometry_changed": false,
+      "global_seed": 20260809,
+      "gt_modified": false,
+      "module": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/_executor_v2/controlled_corruptions.py",
+      "module_sha256": "cb451b3ab1c5ba134bd5251298293f38f645d279d30614c7dbba7ecac550273a",
+      "parameters": {
+        "std": 10.0
+      },
+      "same_function_intended_for_all_models": true,
+      "seed_rule": "SHA256(GLOBAL_SEED|image_key|corruption|severity) first 8 bytes little-endian unsigned",
+      "severity": 2,
+      "variant": "noise_s2"
+    },
+    "dataset": "BDD100K",
+    "elapsed_seconds": 201.464,
+    "evaluation_branch": "controlled_corruption",
+    "image_summary_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/p2_e20_noise_s2/image_summary.json",
+    "images_per_second": 49.637,
+    "inference": {
+      "agnostic_nms": false,
+      "batch": 8,
+      "conf": 0.001,
+      "corruption_workers": 8,
+      "device": "0",
+      "imgsz": 960,
+      "max_det": 300,
+      "nms_iou": 0.7,
+      "parallel_corruption_preserves_submission_order": true,
+      "prediction_json_write_mode": "one_compact_payload_per_batch",
+      "prefetch_batches": 1,
+      "rect": true,
+      "source_type": "in_memory_PIL_RGB_batches",
+      "test_time_augmentation": false
+    },
+    "model": "YOLO11m",
+    "num_gt_annotations": 185523,
+    "num_gt_images": 10000,
+    "num_images_exported": 10000,
+    "num_images_with_predictions": 10000,
+    "num_predictions": 2451380,
+    "prediction_counts_by_category": {
+      "1": 206957,
+      "10": 379526,
+      "2": 5035,
+      "3": 1512491,
+      "4": 31069,
+      "5": 7717,
+      "6": 323,
+      "7": 2717,
+      "8": 31962,
+      "9": 273583
+    },
+    "prediction_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/p2_e20_noise_s2/predictions.json",
+    "prediction_sha256": "e262dbdcbc478894d00cec174fd3a31a57387d8dc7e71bcc044350ee81879c15",
+    "software": {
+      "cuda_available": true,
+      "python_torch": "2.2.2",
+      "ultralytics": "8.4.115"
+    },
+    "split": "official_validation",
+    "task": "bbox_detection",
+    "zero_area_bbox_count": 0
+  },
+  "metric": {
+    "AP": 0.31340946171030915,
+    "AP50": 0.542659974235404,
+    "AP50_absolute_drop": 0.03565089090754525,
+    "AP50_relative_drop": 0.06164658673451158,
+    "AP50_retention": 0.9383534132654884,
+    "AP75": 0.30553785573032644,
+    "AP75_absolute_drop": 0.020550683677913573,
+    "AP75_relative_drop": 0.06302179069282025,
+    "AP75_retention": 0.9369782093071798,
+    "AP_absolute_drop": 0.02206384560128638,
+    "AP_large": 0.5235616103576696,
+    "AP_large_absolute_drop": 0.040017357113726115,
+    "AP_large_relative_drop": 0.07100576746728432,
+    "AP_large_retention": 0.9289942325327157,
+    "AP_medium": 0.35925141322604226,
+    "AP_medium_absolute_drop": 0.030548368038040674,
+    "AP_medium_relative_drop": 0.078369382196612,
+    "AP_medium_retention": 0.921630617803388,
+    "AP_relative_drop": 0.06576930301281157,
+    "AP_retention": 0.9342306969871884,
+    "AP_small": 0.14613461840694456,
+    "AP_small_absolute_drop": 0.010617581830304201,
+    "AP_small_relative_drop": 0.06773481848570036,
+    "AP_small_retention": 0.9322651815142996,
+    "AR_1": 0.20924540051723867,
+    "AR_10": 0.3985870492393127,
+    "AR_100": 0.448314228524124,
+    "AR_large": 0.6131472131055792,
+    "AR_medium": 0.499612314633595,
+    "AR_small": 0.28853099470861576,
+    "completed_at_utc": "2026-08-16T15:19:39.303117+00:00",
+    "corruption": "noise",
+    "evaluation_seconds": 219.106,
+    "inference_seconds": 212.53161764144897,
+    "model": "p2_e20",
+    "num_gt": 185523,
+    "num_images": 10000,
+    "num_predictions": 2451380,
+    "prediction_sha256": "e262dbdcbc478894d00cec174fd3a31a57387d8dc7e71bcc044350ee81879c15",
+    "severity": 2,
+    "variant": "noise_s2"
+  },
+  "model": "p2_e20",
+  "saved_utc": "2026-08-16T15:19:40.919459+00:00",
+  "status": "complete",
+  "temporary_prediction_deleted": true,
+  "variant": "noise_s2",
+  "version": "representative_corruption_condition_record_v2"
+}

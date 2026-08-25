@@ -1,0 +1,177 @@
+{
+  "display_name": "Standard-960-E20",
+  "executor_version": "parallel_corruption_v2",
+  "exporter_metadata": {
+    "annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+    "annotation_sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+    "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch20.pt",
+    "checkpoint_sha256": "dc1e3ef68e233a2fad4911955bbe178f0104cd9000dcbdc772dac8d0a58438b5",
+    "class_mapping": {
+      "0": {
+        "bdd_category_id": 1,
+        "bdd_name": "pedestrian",
+        "yolo_name": "pedestrian"
+      },
+      "1": {
+        "bdd_category_id": 2,
+        "bdd_name": "rider",
+        "yolo_name": "rider"
+      },
+      "2": {
+        "bdd_category_id": 3,
+        "bdd_name": "car",
+        "yolo_name": "car"
+      },
+      "3": {
+        "bdd_category_id": 4,
+        "bdd_name": "truck",
+        "yolo_name": "truck"
+      },
+      "4": {
+        "bdd_category_id": 5,
+        "bdd_name": "bus",
+        "yolo_name": "bus"
+      },
+      "5": {
+        "bdd_category_id": 6,
+        "bdd_name": "train",
+        "yolo_name": "train"
+      },
+      "6": {
+        "bdd_category_id": 7,
+        "bdd_name": "motorcycle",
+        "yolo_name": "motorcycle"
+      },
+      "7": {
+        "bdd_category_id": 8,
+        "bdd_name": "bicycle",
+        "yolo_name": "bicycle"
+      },
+      "8": {
+        "bdd_category_id": 9,
+        "bdd_name": "traffic light",
+        "yolo_name": "traffic light"
+      },
+      "9": {
+        "bdd_category_id": 10,
+        "bdd_name": "traffic sign",
+        "yolo_name": "traffic sign"
+      }
+    },
+    "controlled_corruption": {
+      "applied_before_model_preprocessing": true,
+      "corruption": "blur",
+      "full_corrupted_images_saved": false,
+      "geometry_changed": false,
+      "global_seed": 20260809,
+      "gt_modified": false,
+      "module": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/_executor_v2/controlled_corruptions.py",
+      "module_sha256": "cb451b3ab1c5ba134bd5251298293f38f645d279d30614c7dbba7ecac550273a",
+      "parameters": {
+        "radius": 2.0
+      },
+      "same_function_intended_for_all_models": true,
+      "seed_rule": "SHA256(GLOBAL_SEED|image_key|corruption|severity) first 8 bytes little-endian unsigned",
+      "severity": 2,
+      "variant": "blur_s2"
+    },
+    "dataset": "BDD100K",
+    "elapsed_seconds": 152.409,
+    "evaluation_branch": "controlled_corruption",
+    "image_summary_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/standard_e20_blur_s2/image_summary.json",
+    "images_per_second": 65.613,
+    "inference": {
+      "agnostic_nms": false,
+      "batch": 8,
+      "conf": 0.001,
+      "corruption_workers": 8,
+      "device": "0",
+      "imgsz": 960,
+      "max_det": 300,
+      "nms_iou": 0.7,
+      "parallel_corruption_preserves_submission_order": true,
+      "prediction_json_write_mode": "one_compact_payload_per_batch",
+      "prefetch_batches": 1,
+      "rect": true,
+      "source_type": "in_memory_PIL_RGB_batches",
+      "test_time_augmentation": false
+    },
+    "model": "YOLO11m",
+    "num_gt_annotations": 185523,
+    "num_gt_images": 10000,
+    "num_images_exported": 10000,
+    "num_images_with_predictions": 10000,
+    "num_predictions": 1522177,
+    "prediction_counts_by_category": {
+      "1": 156934,
+      "10": 272932,
+      "2": 3313,
+      "3": 842571,
+      "4": 23986,
+      "5": 8383,
+      "6": 341,
+      "7": 3235,
+      "8": 8791,
+      "9": 201691
+    },
+    "prediction_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/standard_e20_blur_s2/predictions.json",
+    "prediction_sha256": "c04f247a9cc53b73ed48aa6e084888ee8d32fc4c963dbd167a5829a2c5bceb1e",
+    "software": {
+      "cuda_available": true,
+      "python_torch": "2.2.2",
+      "ultralytics": "8.4.115"
+    },
+    "split": "official_validation",
+    "task": "bbox_detection",
+    "zero_area_bbox_count": 0
+  },
+  "metric": {
+    "AP": 0.26414311562645126,
+    "AP50": 0.4601492860934278,
+    "AP50_absolute_drop": 0.10731883423096494,
+    "AP50_relative_drop": 0.18911870180410523,
+    "AP50_retention": 0.8108812981958947,
+    "AP75": 0.2571051714249237,
+    "AP75_absolute_drop": 0.05838049432775755,
+    "AP75_relative_drop": 0.18504959389668052,
+    "AP75_retention": 0.8149504061033195,
+    "AP_absolute_drop": 0.06229704427304805,
+    "AP_large": 0.5447977197395952,
+    "AP_large_absolute_drop": 0.015778395445222304,
+    "AP_large_relative_drop": 0.028146749420496255,
+    "AP_large_retention": 0.9718532505795038,
+    "AP_medium": 0.3246270699539483,
+    "AP_medium_absolute_drop": 0.06085282137946885,
+    "AP_medium_relative_drop": 0.15786250527614365,
+    "AP_medium_retention": 0.8421374947238564,
+    "AP_relative_drop": 0.19083756205801197,
+    "AP_retention": 0.809162437941988,
+    "AP_small": 0.0829299130998382,
+    "AP_small_absolute_drop": 0.06201508478793234,
+    "AP_small_relative_drop": 0.4278525350419474,
+    "AP_small_retention": 0.5721474649580526,
+    "AR_1": 0.1802635861641879,
+    "AR_10": 0.33113189369248247,
+    "AR_100": 0.3610938197158022,
+    "AR_large": 0.6324477929991236,
+    "AR_medium": 0.45709631433850945,
+    "AR_small": 0.13825379946096464,
+    "completed_at_utc": "2026-08-16T14:17:47.389997+00:00",
+    "corruption": "blur",
+    "evaluation_seconds": 172.172,
+    "inference_seconds": 157.85621070861816,
+    "model": "standard_e20",
+    "num_gt": 185523,
+    "num_images": 10000,
+    "num_predictions": 1522177,
+    "prediction_sha256": "c04f247a9cc53b73ed48aa6e084888ee8d32fc4c963dbd167a5829a2c5bceb1e",
+    "severity": 2,
+    "variant": "blur_s2"
+  },
+  "model": "standard_e20",
+  "saved_utc": "2026-08-16T14:18:00.666668+00:00",
+  "status": "complete",
+  "temporary_prediction_deleted": true,
+  "variant": "blur_s2",
+  "version": "representative_corruption_condition_record_v2"
+}

@@ -1,0 +1,694 @@
+{
+  "artifact_count": 114,
+  "artifacts": [
+    {
+      "bytes": 83085211,
+      "path": "architecture-intervention/checkpoints/projected-p2-epoch-20.pt",
+      "role": "model-checkpoint",
+      "sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29"
+    },
+    {
+      "bytes": 41786963,
+      "path": "architecture-intervention/checkpoints/projected-p2-initialization.pt",
+      "role": "model-checkpoint",
+      "sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd"
+    },
+    {
+      "bytes": 80808388,
+      "path": "architecture-intervention/checkpoints/standard-epoch-20.pt",
+      "role": "model-checkpoint",
+      "sha256": "dc1e3ef68e233a2fad4911955bbe178f0104cd9000dcbdc772dac8d0a58438b5"
+    },
+    {
+      "bytes": 957,
+      "path": "architecture-intervention/logs/borderline_adjudication_v5/official_val_export.log",
+      "role": "execution-log",
+      "sha256": "24079542b3ac401481b02b98d0cd25345797cee6c631061fb702c3832d9fe58e"
+    },
+    {
+      "bytes": 6018,
+      "path": "architecture-intervention/logs/borderline_adjudication_v5_1/official_val_export.log",
+      "role": "execution-log",
+      "sha256": "95af5eeb8fca3ec7c3bb3803bc667f3120710da4b378e7ab41a88a668836a13e"
+    },
+    {
+      "bytes": 159135,
+      "path": "architecture-intervention/logs/formal_gate_v3_controller.aborted-ram-cache-20260810_143703.log",
+      "role": "execution-log",
+      "sha256": "5c72be08f75c07928b98d08e104339874275a10d47a251f85577db576297b83c"
+    },
+    {
+      "bytes": 49820071,
+      "path": "architecture-intervention/logs/formal_gate_v4_controller.log",
+      "role": "execution-log",
+      "sha256": "13de447654b0064074f11b0c921dca4d9295e03ee8982c4ebbfbe3c503438a2c"
+    },
+    {
+      "bytes": 6018,
+      "path": "architecture-intervention/results/official-validation-adjudication/official_val_export.log",
+      "role": "execution-log",
+      "sha256": "95af5eeb8fca3ec7c3bb3803bc667f3120710da4b378e7ab41a88a668836a13e"
+    },
+    {
+      "bytes": 3349599,
+      "path": "data-and-baselines/dataset/annotations/instances_test.json",
+      "role": "dataset-annotation",
+      "sha256": "22e68e685d9aa485e955d7ea0a6415ad1727a829f293c632c11c37e3273ff5d2"
+    },
+    {
+      "bytes": 269279870,
+      "path": "data-and-baselines/dataset/annotations/instances_train.json",
+      "role": "dataset-annotation",
+      "sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2"
+    },
+    {
+      "bytes": 300974703,
+      "path": "data-and-baselines/dataset/annotations/instances_train_contiguous.json",
+      "role": "dataset-annotation",
+      "sha256": "2bdda9448d2285abad06a11d6aebf3623d2890a31f9c23b4e4179f2e1774634d"
+    },
+    {
+      "bytes": 1078306,
+      "path": "data-and-baselines/dataset/annotations/instances_train_dfine_smoke.json",
+      "role": "dataset-annotation",
+      "sha256": "6f534fd069b215b18e1bf70dd51aff6fa00cdb9358f3161139d23a4942c35177"
+    },
+    {
+      "bytes": 38465357,
+      "path": "data-and-baselines/dataset/annotations/instances_val.json",
+      "role": "dataset-annotation",
+      "sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6"
+    },
+    {
+      "bytes": 43033071,
+      "path": "data-and-baselines/dataset/annotations/instances_val_contiguous.json",
+      "role": "dataset-annotation",
+      "sha256": "79628ab87fda482da7186d3c3c18f7b58a52bf83ed4e5c510b0d244743875742"
+    },
+    {
+      "bytes": 255161,
+      "path": "data-and-baselines/dataset/annotations/instances_val_dfine_smoke.json",
+      "role": "dataset-annotation",
+      "sha256": "665f3900dd7dedaceba1f47dc2cd9c71b6fe8a7520b131293097ce3fd679c92d"
+    },
+    {
+      "bytes": 313786196,
+      "path": "data-and-baselines/dfine-m/checkpoints/dfine_m_bdd100k_best.pth",
+      "role": "model-checkpoint",
+      "sha256": "bc3f0bd2937eefd56178d2a4fd2662dd566b57e6ade67cf5df9e3669cc3dc7d1"
+    },
+    {
+      "bytes": 78685826,
+      "path": "data-and-baselines/dfine-m/checkpoints/dfine_m_bdd100k_init.pth",
+      "role": "model-checkpoint",
+      "sha256": "ad04c35bbdd426c6074815646578394b75b75047f9f30bff65e57190150caf1b"
+    },
+    {
+      "bytes": 213513392,
+      "path": "data-and-baselines/yolo11-seg/predictions.json",
+      "role": "prediction-payload",
+      "sha256": "a1a85965554de29ec91073c49df560953eecfdb5d4c6261f6f9285c668808ad6"
+    },
+    {
+      "bytes": 40684120,
+      "path": "data-and-baselines/yolo11m/pretrained/yolo11m-coco.pt",
+      "role": "model-checkpoint",
+      "sha256": "d5ffc1a674953a08e11a8d21e022781b1b23a19b730afc309290bd9fb5305b95"
+    },
+    {
+      "bytes": 40511781,
+      "path": "data-and-baselines/yolo11m/weights/best.pt",
+      "role": "model-checkpoint",
+      "sha256": "9ed27957bee910180e0a28789e2f96bd62b98dd16463601e82e32e23d00d368e"
+    },
+    {
+      "bytes": 120830531,
+      "path": "data-and-baselines/yolo11m/weights/epoch0.pt",
+      "role": "model-checkpoint",
+      "sha256": "0a20bf7fd14925b102da0a77fc6ab1173056a9c50456b831215baec592930117"
+    },
+    {
+      "bytes": 120832259,
+      "path": "data-and-baselines/yolo11m/weights/epoch10.pt",
+      "role": "model-checkpoint",
+      "sha256": "ebec7f50601a4853a76e9960b983f5696aee08cae0c3d31ce67db25958ef1d66"
+    },
+    {
+      "bytes": 120833987,
+      "path": "data-and-baselines/yolo11m/weights/epoch20.pt",
+      "role": "model-checkpoint",
+      "sha256": "355000e576d3b4ee0b4f96f4df901cef17d4a7565bedfc18063163b4a4c936c3"
+    },
+    {
+      "bytes": 120835715,
+      "path": "data-and-baselines/yolo11m/weights/epoch30.pt",
+      "role": "model-checkpoint",
+      "sha256": "9cbc9b022c83273f1b6dfac12fc66e322e539ffe6139ce539564c855df3f4c46"
+    },
+    {
+      "bytes": 120837443,
+      "path": "data-and-baselines/yolo11m/weights/epoch40.pt",
+      "role": "model-checkpoint",
+      "sha256": "f6a49aab8dd56daff9b81e470d73c8c84cd87c31ec48ae0f51682c0eb2b5216f"
+    },
+    {
+      "bytes": 120839171,
+      "path": "data-and-baselines/yolo11m/weights/epoch50.pt",
+      "role": "model-checkpoint",
+      "sha256": "afd2b113d3378d92af8cfb193c85f70b894c3139fd2c8ca837584579b5eb6fdc"
+    },
+    {
+      "bytes": 40511781,
+      "path": "data-and-baselines/yolo11m/weights/last.pt",
+      "role": "model-checkpoint",
+      "sha256": "9ca3b3a6ee40693517397e9aefb75ce4d91f0136370a1e899eac4e34730e70dc"
+    },
+    {
+      "bytes": 43306519,
+      "path": "failure-diagnosis/detection-matches/D-FINE-M/object_matches.csv",
+      "role": "large-analysis-table",
+      "sha256": "8ea36ddf1acf71f26e53ff0292ff9072db2e70bdd3e28ab41531029b2a443a95"
+    },
+    {
+      "bytes": 42742785,
+      "path": "failure-diagnosis/detection-matches/YOLO11m/object_matches.csv",
+      "role": "large-analysis-table",
+      "sha256": "bdc3c4dad0d607a9d4111c47571a77679c5464d1e026c8f8429115f3f69107fc"
+    },
+    {
+      "bytes": 49320715,
+      "path": "failure-diagnosis/failure-taxonomy/failure_object_table.csv",
+      "role": "large-analysis-table",
+      "sha256": "d9a175a6ffbc9e58ef5718c2b7a304b088e5bb0248849468f374d35ebd68a94f"
+    },
+    {
+      "bytes": 459250300,
+      "path": "failure-diagnosis/predictions/dfine-m/predictions.json",
+      "role": "prediction-payload",
+      "sha256": "10b4159d0f52e412714ac9ae076ac574ebbb74321ddcebab03e2bdbad55e3ebd"
+    },
+    {
+      "bytes": 203847755,
+      "path": "failure-diagnosis/predictions/yolo11m/predictions.json",
+      "role": "prediction-payload",
+      "sha256": "14ff8491f7849077cb7ead3ce7d9e618d2f92ee04bef0a8c68efdb1b836a54b0"
+    },
+    {
+      "bytes": 403918,
+      "path": "failure-diagnosis/unified-evaluation/models/D-FINE-M/coco_eval_arrays.npz",
+      "role": "statistical-array",
+      "sha256": "ceaa303036affcaca8beb573f41bf3716cb55d776b5c14ff9efcebe273f152e7"
+    },
+    {
+      "bytes": 334082,
+      "path": "failure-diagnosis/unified-evaluation/models/YOLO11m/coco_eval_arrays.npz",
+      "role": "statistical-array",
+      "sha256": "306b0253c8b90ffdc309ef1b2ece92bc3d6e6545472d7a245dcc2e17042869e6"
+    },
+    {
+      "bytes": 4803,
+      "path": "final-testing/efficiency/latency_measurements.npz",
+      "role": "statistical-array",
+      "sha256": "77d478bd304870831cc6779aaafc946e945bb2147e5f025221ad5698e5898be0"
+    },
+    {
+      "bytes": 49320715,
+      "path": "final-testing/failure-subsets/failure_object_table.csv",
+      "role": "large-analysis-table",
+      "sha256": "d9a175a6ffbc9e58ef5718c2b7a304b088e5bb0248849468f374d35ebd68a94f"
+    },
+    {
+      "bytes": 52936,
+      "path": "final-testing/logs/canonical_clean_v1_controller.log",
+      "role": "execution-log",
+      "sha256": "94646dc54ca88a3bcee28efcb4474b22c343e141b038bd06e25122ea1e5ead61"
+    },
+    {
+      "bytes": 2951,
+      "path": "final-testing/logs/crop_scale_context_audit_v1.log",
+      "role": "execution-log",
+      "sha256": "e386c1eaf120951559e7018b34a867b0cff8d832f446ac652566fe813bb92264"
+    },
+    {
+      "bytes": 5278,
+      "path": "final-testing/logs/efficiency_evaluation_v1.log",
+      "role": "execution-log",
+      "sha256": "8438bf8434c21afa0d1fcff9d3bd3e31bd2d3f3633f06f5b242b00a8fe15d4bc"
+    },
+    {
+      "bytes": 4921,
+      "path": "final-testing/logs/exposure_audit_v1.log",
+      "role": "execution-log",
+      "sha256": "a08549a30ddd820d745f950c1df202fdfb02acfab4a3d96673294c072521e234"
+    },
+    {
+      "bytes": 13297,
+      "path": "final-testing/logs/paired_bootstrap_v1.log",
+      "role": "execution-log",
+      "sha256": "4d486ea72e8351063bb8a58c9c4ed243d946fdcf89649c6c1a6b7e6b61b91804"
+    },
+    {
+      "bytes": 4765,
+      "path": "final-testing/logs/paired_bootstrap_v2.log",
+      "role": "execution-log",
+      "sha256": "c51c292d6133807ae4384ba8bde0a57c0f88a6b902682f90bf0e1ada6d873218"
+    },
+    {
+      "bytes": 33633,
+      "path": "final-testing/logs/qualitative_cases_v1.log",
+      "role": "execution-log",
+      "sha256": "9e7c661fd02ca00039a1821919450ce224a6bd829aedd2560cbda470387f6a8e"
+    },
+    {
+      "bytes": 33640,
+      "path": "final-testing/logs/qualitative_cases_v1_fix.log",
+      "role": "execution-log",
+      "sha256": "95af59fb5c0625d089d387f9d92fddd22e1e85ba4910659722e5d62a1b5ab64c"
+    },
+    {
+      "bytes": 34354,
+      "path": "final-testing/logs/qualitative_cases_v1_schemafix.log",
+      "role": "execution-log",
+      "sha256": "c7aeac6f457ecf71d6b3eac0186596194c0c612129d0c12cdbc70915dd8c5646"
+    },
+    {
+      "bytes": 8008,
+      "path": "final-testing/logs/representative_corruptions_v1.log",
+      "role": "execution-log",
+      "sha256": "86e9e7c78baa019dd519d9f6272b9b8e57e1d083922a2169f411f26123caf354"
+    },
+    {
+      "bytes": 380569,
+      "path": "final-testing/logs/representative_corruptions_v2.log",
+      "role": "execution-log",
+      "sha256": "fded5d52433535cbdc05eb628bad7e8c6453c2eeabb537f943a751470ebc4de5"
+    },
+    {
+      "bytes": 6623,
+      "path": "final-testing/logs/threshold_sensitivity_v1.failed_cli.log",
+      "role": "execution-log",
+      "sha256": "20d18458fbab418795808611bc59fb4d4fc83c4f9c59779daae12c07c481dbac"
+    },
+    {
+      "bytes": 53889,
+      "path": "final-testing/logs/threshold_sensitivity_v1.log",
+      "role": "execution-log",
+      "sha256": "4b77ba23b56f1ad4326a76b00750d434d1f852692987ac52facb108be7b44d58"
+    },
+    {
+      "bytes": 1401097,
+      "path": "final-testing/paired-bootstrap/bootstrap_model_metrics.npz",
+      "role": "statistical-array",
+      "sha256": "308e2fc04314936e06658d49df242ede049a75c528e787b32c8e1d501c382032"
+    },
+    {
+      "bytes": 119540,
+      "path": "final-testing/paired-bootstrap/model_distributions/baseline_yolo.npz",
+      "role": "statistical-array",
+      "sha256": "82425f83d9930ac2056dfdb059594776ea5c97c065464074735f9e2281f3e2df"
+    },
+    {
+      "bytes": 119559,
+      "path": "final-testing/paired-bootstrap/model_distributions/common40.npz",
+      "role": "statistical-array",
+      "sha256": "e0a6e6ca91f1f86c174781bfb20b5eee3eca9795ca7dca6208a6d5d71a20255b"
+    },
+    {
+      "bytes": 148396,
+      "path": "final-testing/paired-bootstrap/model_distributions/gate_scalar.npz",
+      "role": "statistical-array",
+      "sha256": "7fa8828598822517badd7f57c58721a168c09ab2396ccd0a0c6901be6afc0320"
+    },
+    {
+      "bytes": 148501,
+      "path": "final-testing/paired-bootstrap/model_distributions/gate_typed.npz",
+      "role": "statistical-array",
+      "sha256": "8383af7e44ce43932b05901e38b9a63e44f25a10a3345c151d6a2c5cf5a910d4"
+    },
+    {
+      "bytes": 148654,
+      "path": "final-testing/paired-bootstrap/model_distributions/gate_uniform.npz",
+      "role": "statistical-array",
+      "sha256": "240e722c1fac13c3684c8d516d987e475fbb59218cf009eac3f4851b678543f2"
+    },
+    {
+      "bytes": 119325,
+      "path": "final-testing/paired-bootstrap/model_distributions/p2_e20.npz",
+      "role": "statistical-array",
+      "sha256": "791fe38ab4a2f0490ad9b43348e838517e3c197169d4ab46824980f65fd1fb48"
+    },
+    {
+      "bytes": 119359,
+      "path": "final-testing/paired-bootstrap/model_distributions/risk_e100.npz",
+      "role": "statistical-array",
+      "sha256": "33594678b48f36816cee8bb45b9c0bc6439d20b1cb837cd88c92094470cf5fdb"
+    },
+    {
+      "bytes": 119294,
+      "path": "final-testing/paired-bootstrap/model_distributions/risk_e56.npz",
+      "role": "statistical-array",
+      "sha256": "7184a7476554ed57141cdf1beef384449ab8dadfc751d7405b15a5efc5c2a109"
+    },
+    {
+      "bytes": 119598,
+      "path": "final-testing/paired-bootstrap/model_distributions/standard_e20.npz",
+      "role": "statistical-array",
+      "sha256": "137b1f2c83a3579ef6c0052267757ca8c31f7c47ed398308ffe2e2b1ff6dea13"
+    },
+    {
+      "bytes": 119275,
+      "path": "final-testing/paired-bootstrap/model_distributions/uniform_e100.npz",
+      "role": "statistical-array",
+      "sha256": "3d578710e85dd9499fb91d1445f9e22eec551f671db1cc296650e1eb7f746a36"
+    },
+    {
+      "bytes": 119470,
+      "path": "final-testing/paired-bootstrap/model_distributions/uniform_e56.npz",
+      "role": "statistical-array",
+      "sha256": "3f74e20b1e4a56598360bdbf8b9614d0379cd89de4f7d02b2f271e8d3c6c10a4"
+    },
+    {
+      "bytes": 40000128,
+      "path": "final-testing/paired-bootstrap/paired_image_weights.npy",
+      "role": "statistical-array",
+      "sha256": "db803349ac80aee1fc20ad9f0d79dabddd0e2130d69749529a51af79f84ea7dc"
+    },
+    {
+      "bytes": 41802609,
+      "path": "formal-training/checkpoints/common-epoch-40.pt",
+      "role": "model-checkpoint",
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3"
+    },
+    {
+      "bytes": 41805169,
+      "path": "formal-training/checkpoints/risk-epoch-100.pt",
+      "role": "model-checkpoint",
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a"
+    },
+    {
+      "bytes": 83003227,
+      "path": "formal-training/checkpoints/risk-epoch-56.pt",
+      "role": "model-checkpoint",
+      "sha256": "879b179c219914a83775cacb7074f1d7bd9836971fae24592a6a16d6e87fe102"
+    },
+    {
+      "bytes": 41805169,
+      "path": "formal-training/checkpoints/uniform-epoch-100.pt",
+      "role": "model-checkpoint",
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7"
+    },
+    {
+      "bytes": 83002011,
+      "path": "formal-training/checkpoints/uniform-epoch-41.pt",
+      "role": "model-checkpoint",
+      "sha256": "c7796cc7e0e0d9f03968e2fe33c40426723e089ec1c3b453dd5f9fbf2b11914e"
+    },
+    {
+      "bytes": 83003227,
+      "path": "formal-training/checkpoints/uniform-epoch-56.pt",
+      "role": "model-checkpoint",
+      "sha256": "84aa86771d185c2c72fa277c609c1222d7a417a8197523c4a5ced2a6a91ebb1b"
+    },
+    {
+      "bytes": 53590024,
+      "path": "formal-training/logs/common40_v1.log",
+      "role": "execution-log",
+      "sha256": "fbfc0a5f3d93cee8397ef477d3f3d969602459390f9ef2a005a18bbcc7f23bf7"
+    },
+    {
+      "bytes": 160399449,
+      "path": "formal-training/logs/formal_branches_v2.log",
+      "role": "execution-log",
+      "sha256": "741ba3792378bc845f57daf3e52a69fde43576db9680e526fe095ba5a406c70f"
+    },
+    {
+      "bytes": 147091,
+      "path": "formal-training/logs/trajectory_evaluation_v1.log",
+      "role": "execution-log",
+      "sha256": "8028f716c67662670142a22bc504812c6380ca3d74bec381ea524803f5a7009e"
+    },
+    {
+      "bytes": 41798705,
+      "path": "risk-data-intervention/method-gate/checkpoints/scalar-risk.pt",
+      "role": "model-checkpoint",
+      "sha256": "3093b249d8052924d8324c826731a77b82ab98327a41ff68ab3a2ad615f74b9d"
+    },
+    {
+      "bytes": 41798769,
+      "path": "risk-data-intervention/method-gate/checkpoints/typed-cafr-revision.pt",
+      "role": "model-checkpoint",
+      "sha256": "eaa3dd7eee88f7d0c74cfbe45f6237c82ecb4eedacb9615a260ce351bc2da7dd"
+    },
+    {
+      "bytes": 41798705,
+      "path": "risk-data-intervention/method-gate/checkpoints/typed-cafr.pt",
+      "role": "model-checkpoint",
+      "sha256": "217b6d453d399c345a7e1be5595783044f2555a65ae95f047d6a7278d105c4ee"
+    },
+    {
+      "bytes": 41798705,
+      "path": "risk-data-intervention/method-gate/checkpoints/uniform.pt",
+      "role": "model-checkpoint",
+      "sha256": "45f397e81cf6aa3e8fbb08a8fef79b8e95975f85f5b360fa9f4bf2a4f6757210"
+    },
+    {
+      "bytes": 925663,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/blur_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "bf419a2a6ca82237297df1dd12500c6c689a3630a160957c0eb386f8fc56c591"
+    },
+    {
+      "bytes": 3951,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/blur_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "b228ed96523d5183745fb2cf90d166dcd48af02d824297e4a752afeb5abef767"
+    },
+    {
+      "bytes": 750,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/blur_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "b5f9e66324a03cad62c0e767bd1846f972c826966492486ce4a5f88e2d7323c7"
+    },
+    {
+      "bytes": 950953,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/low_light_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "c8c6ae7cff80ffe998ffdf5fb395a3311318d72b6b97a86d8ed41d50865a1b72"
+    },
+    {
+      "bytes": 3990,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/low_light_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "97191646389b606a37a3eb7d792dc2ae60758855ddf876f2f86ae6cedf5c5e9a"
+    },
+    {
+      "bytes": 754,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/low_light_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "6b72bb7b3ea90cde51b3f4231909a6aac4f3c50a207a075c56d4c5198d7622c2"
+    },
+    {
+      "bytes": 930919,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/noise_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "b436038c2e0de70458202b07122ac3fc086c2a8b73feecd0c58d7db17f6a1eb1"
+    },
+    {
+      "bytes": 3954,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/noise_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "3141502284f0f644cc531a4415741d04b8244634da2b62286b5f0ee4a0191f74"
+    },
+    {
+      "bytes": 753,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/scalar_risk/noise_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "8670d837d561ef4d94e76f76342691bcf2d8793dd24745b94bd3d12156cd9a48"
+    },
+    {
+      "bytes": 925662,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/blur_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "9a4a687fe77600dc18ea5e2611ebc740128cf65ed06f7d192b6b898bc367fddd"
+    },
+    {
+      "bytes": 3947,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/blur_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "85366a25dfe03f2966b6605c65699dd40d0f95b925c20b33dbaf902c499e354a"
+    },
+    {
+      "bytes": 749,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/blur_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "18ca5821eb178dbc38f4b422a99329729755d0af614b70f057f951f586168eeb"
+    },
+    {
+      "bytes": 950937,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/low_light_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "9625608e58848ddc12366a180d42f28851fa2702d11f88fd974e55d4eee14bfe"
+    },
+    {
+      "bytes": 3986,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/low_light_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "aca13b0ffcb78ad7d5309491aa08a1c1d4584a3fa15a3aecb614e81640852acd"
+    },
+    {
+      "bytes": 755,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/low_light_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "74c0c834b65059c6f4868dd7e3bca625cc3cb5db4368988177456b7063a05cc2"
+    },
+    {
+      "bytes": 930903,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/noise_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "928a5d3c4cd1e4129526a5a67b5bd6f5a0c04c350eb363761bc2d92570829084"
+    },
+    {
+      "bytes": 3949,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/noise_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "0daa07ac86d2200035188a0e28097c00ea455b7a47c3e84b755d5c448e1e00bd"
+    },
+    {
+      "bytes": 747,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/typed_cafr/noise_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "bc6d30e6b9fe3d18ec6cf64b118ef8f98a4aba440abb6ca6837e38bf023461df"
+    },
+    {
+      "bytes": 925582,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/blur_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "8650751a828203288b98ae3c56fad1ccda0d3baf96b84b5e0b5909132535b854"
+    },
+    {
+      "bytes": 3933,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/blur_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "0a2bc113c3a645bcb306be9a23e15a0444ce58aab5026111a9c495c47e2759c5"
+    },
+    {
+      "bytes": 747,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/blur_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "e7561239ce9d7eef56a8c4f76d8d65a58e775a56614da1b2468a1fae99e05aae"
+    },
+    {
+      "bytes": 950898,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/low_light_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "401c38e948e582c0a707111015609777ba6b5739f770161ab31d71d71297d462"
+    },
+    {
+      "bytes": 3974,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/low_light_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "17c0eeeb4905c3cb87f16d304a892a4613c113ac8baf1cea7006fe4cc4323a8d"
+    },
+    {
+      "bytes": 749,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/low_light_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "e133715834184153d064867f6d3f5d9ba2a5f3e06510500b8ec7242efb969549"
+    },
+    {
+      "bytes": 930853,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/noise_s2/image_summary.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "ae44f79bdfcd4be0bd56bb34c012db3a9f2152b781537a7ad0c54c3256e5d862"
+    },
+    {
+      "bytes": 3937,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/noise_s2/metadata.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "cc505405676b8ab1be0d9518a6cd7d649cf9953f7d783c614039c52a35e5079f"
+    },
+    {
+      "bytes": 746,
+      "path": "risk-data-intervention/results/corruption-evaluation/runs/uniform/noise_s2/metrics.json",
+      "role": "ignored-generated-artifact",
+      "sha256": "226a729aa5e9bbb0a9d73f766fc4db85716cddbdcee747824ea6f9cc026cb8bd"
+    },
+    {
+      "bytes": 164964,
+      "path": "risk-data-intervention/results/failure-evaluation/paired_failure_counts.npz",
+      "role": "statistical-array",
+      "sha256": "f66af09e266032606d0effbb4c6bf4a67aa081655c9a24a515e190278159ab98"
+    },
+    {
+      "bytes": 3472,
+      "path": "risk-data-intervention/results/logs/cafr_v2_materialization_v1.log",
+      "role": "execution-log",
+      "sha256": "067b35eeb4b6287df2df32de2ca9b5c2a3eb734e9bab6d57f7e5387a5dd20e19"
+    },
+    {
+      "bytes": 12537512,
+      "path": "risk-data-intervention/results/logs/cafr_v2_training_v1_controller.log",
+      "role": "execution-log",
+      "sha256": "df2a56f1897495b423fc136edefa5881363248391555ab4a26ae38528503d1c0"
+    },
+    {
+      "bytes": 7584,
+      "path": "risk-data-intervention/results/logs/evaluation_v1_clean_export.log",
+      "role": "execution-log",
+      "sha256": "3e41465e87173fddefba6774685f5dab29b32568b301709ffe11ff91fd6e14a4"
+    },
+    {
+      "bytes": 10909,
+      "path": "risk-data-intervention/results/logs/evaluation_v2_clean.log",
+      "role": "execution-log",
+      "sha256": "77eb14592063777abc4945da99c9b971a6578f1d4316061ae621f372521d296a"
+    },
+    {
+      "bytes": 8596,
+      "path": "risk-data-intervention/results/logs/evaluation_v3_failures.log",
+      "role": "execution-log",
+      "sha256": "d2ab022b97018b4852d9afc6ad7c0983d96ff97fcc672d25a9f3d2ea55bad356"
+    },
+    {
+      "bytes": 46853,
+      "path": "risk-data-intervention/results/logs/evaluation_v4_corruptions.log",
+      "role": "execution-log",
+      "sha256": "f691ec7c54fd74676f90f36bbfc02787606476c022469efef34d62139f78586a"
+    },
+    {
+      "bytes": 9085,
+      "path": "risk-data-intervention/results/logs/evaluation_v5_cafr_v2_clean.log",
+      "role": "execution-log",
+      "sha256": "c286b3eb71cf0e88a06a0b031b7f9fedb28e30e7416b0348441c8a6a42e6d669"
+    },
+    {
+      "bytes": 40679,
+      "path": "risk-data-intervention/results/logs/loader_smoke_v1.log",
+      "role": "execution-log",
+      "sha256": "35bd26ea4fd5332ce545fc6afe692496ad318c4e02a275d4e99d0c00d42ad981"
+    },
+    {
+      "bytes": 3450,
+      "path": "risk-data-intervention/results/logs/materialization_v1.log",
+      "role": "execution-log",
+      "sha256": "5a48b9381ef3f97cec91960902a766efe76f97476d67c928472c22b3f16749a6"
+    },
+    {
+      "bytes": 37636664,
+      "path": "risk-data-intervention/results/logs/training_v1_controller.log",
+      "role": "execution-log",
+      "sha256": "d9ed7a5da796b713c29861ec9f1f44a45c1e5df327e526e280b4a0ba1a58ec9c"
+    },
+    {
+      "bytes": 323955303,
+      "path": "risk-data-intervention/risk-labels/object-risk-table/object_risk_table.csv",
+      "role": "large-analysis-table",
+      "sha256": "83e03b29ff5b796257fed1a3fb284fc22597e6e748315169e25fa481f9b1ba38"
+    }
+  ],
+  "created_utc": "2026-08-18T08:25:13.142736+00:00",
+  "repository_policy": "Artifacts listed here are excluded from Git and retained locally or distributed separately.",
+  "status": "complete",
+  "total_bytes": 4395422354,
+  "version": "local-large-artifact-manifest"
+}

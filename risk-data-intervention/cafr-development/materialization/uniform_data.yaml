@@ -1,0 +1,15 @@
+path: /root/rivermind-data/autodrive/datasets/datasets/bdd100k_final
+train: /root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_materialization_v1/uniform_train.txt
+val: /root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v1/train_dev.txt
+
+names:
+  0: pedestrian
+  1: rider
+  2: car
+  3: truck
+  4: bus
+  5: train
+  6: motorcycle
+  7: bicycle
+  8: traffic light
+  9: traffic sign

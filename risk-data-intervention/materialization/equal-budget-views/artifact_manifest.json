@@ -1,0 +1,39 @@
+{
+  "version": "method_gate_materialization_v1",
+  "status": "complete",
+  "files": {
+    "crop_materialization_manifest.csv": {
+      "bytes": 14225875,
+      "sha256": "507e4f321ab3200a5e9658e217862ecc5e3d1b63603d0ba5081c7679cd1808d3"
+    },
+    "scalar_risk_data.yaml": {
+      "bytes": 426,
+      "sha256": "c0dcfc7696fc1eadbfa8d80761fb90e4b06c20925e76d3ce28d16bf31caa6843"
+    },
+    "scalar_risk_train.txt": {
+      "bytes": 5826810,
+      "sha256": "b72a596285dcc30c0c6a2abd8b14950cdaa67b78eb4052a7f3c45c81ff62e7bd"
+    },
+    "summary.json": {
+      "bytes": 1320,
+      "sha256": "5a7277842994664dd9531104126f8e5bdc367daad20675225ad590eaf8382a14"
+    },
+    "typed_cafr_data.yaml": {
+      "bytes": 425,
+      "sha256": "682d6d225db6ddae1f01fc698e9b02590fe28f4cc2089ae39fa3a593a0af85b2"
+    },
+    "typed_cafr_train.txt": {
+      "bytes": 5807074,
+      "sha256": "bcffc439d8586f7aebf9de0bc4cdad304b2bcd0d19ad9ebbaefbdbb200aff713"
+    },
+    "uniform_data.yaml": {
+      "bytes": 422,
+      "sha256": "8f5da4df5727d09695b5bf4a0ed466968be4be8000773be91cd035077c7a0b80"
+    },
+    "uniform_train.txt": {
+      "bytes": 6370000,
+      "sha256": "6b8b65086fb86cb8fe64599f73dc80c4c5cb697175cdd065ab0478da8e49fad8"
+    }
+  },
+  "ephemeral_crop_set_sha256": "d3b852347e08315e66b0d822c8bc9807edd9fad9857f8c4e5efb6fedcebcf2dd"
+}

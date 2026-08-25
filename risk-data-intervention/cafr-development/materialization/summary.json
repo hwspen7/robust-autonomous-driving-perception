@@ -1,0 +1,32 @@
+{
+  "version": "cafr_v2_materialization_v1",
+  "status": "complete",
+  "created_utc": "2026-08-12T09:31:33.133830+00:00",
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/method_gate/frozen_manifests/cafr_v2_gate_v1/cafr_v2_gate_protocol.json",
+  "protocol_sha256": "a1bcf36cba543c82cec65067343f231b9593b799279a73f604fcf320ac781d6d",
+  "train_coco": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+  "train_coco_sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2",
+  "views": {
+    "uniform": 65000,
+    "scalar_risk": 65000,
+    "typed_cafr": 65000,
+    "common_original": 45500,
+    "scalar_crops": 19500,
+    "typed_crops": 19500
+  },
+  "crop_payload": {
+    "files": 78000,
+    "bytes": 1637120367,
+    "GiB": 1.524687155149877,
+    "rolling_sha256": "6574769ec61c47f7005ef331ca84c8e94d7b3fa8bb1985d0ed8cae5dad92913b"
+  },
+  "geometry": {
+    "target_short_side_min": 1.331484049930652,
+    "target_short_side_median": 36.10619469026549,
+    "target_short_side_max": 552.289156626506,
+    "objects_per_view_mean": 13.77874358974359
+  },
+  "shm_output": "/dev/shm/rebu_yolo/cafr_v2_gate_v1",
+  "persistent_output": "/root/rivermind-data/autodrive/results/evaluation/method_gate/cafr_v2_materialization_v1",
+  "training_started": false
+}

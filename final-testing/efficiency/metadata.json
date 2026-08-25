@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-08-17T04:20:52.155829+00:00",
+  "gpu_after": "NVIDIA GeForce RTX 4090, 580.119.02, 24564, 28, P2, 2745, 124.22",
+  "gpu_before": "NVIDIA GeForce RTX 4090, 580.119.02, 24564, 26, P5, 2715, 47.41",
+  "input_records": {
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt": {
+      "bytes": 83085211,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/p2_projected/weights/resume_epoch20.pt",
+      "sha256": "642a6b4009f085649b6da3f1647821d3e760e6724b019e08d022080c8050bc29"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch20.pt": {
+      "bytes": 80808388,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch20.pt",
+      "sha256": "dc1e3ef68e233a2fad4911955bbe178f0104cd9000dcbdc772dac8d0a58438b5"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/training_smoke_v1/smoke_summary.json": {
+      "bytes": 2362,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/training_smoke_v1/smoke_summary.json",
+      "sha256": "471ebe97a112b5eacf4b949b644c1717b9978996e52bcde186d2afe696e50b7d"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/frozen_protocol/final_testing_protocol_v1.json": {
+      "bytes": 13677,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/frozen_protocol/final_testing_protocol_v1.json",
+      "sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe"
+    },
+    "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/representative_corruptions_v1/artifact_manifest.json": {
+      "bytes": 14080,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/representative_corruptions_v1/artifact_manifest.json",
+      "sha256": "b2be2be57d06b103317ef7c80934d010c9171cd2d21ca8536e44cf21a25b85b3"
+    }
+  },
+  "new_dataset_inference_performed": false,
+  "new_training_performed": false,
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/frozen_protocol/final_testing_protocol_v1.json",
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_efficiency_v1.py",
+  "script_sha256": "7e29c2efacc0b2ca3ab69721e4e3d4c994312a5432771420e345519b4286019e",
+  "seed": 20260816,
+  "status": "complete",
+  "torch_version": "2.2.2",
+  "ultralytics_version": "8.4.115",
+  "version": "final_efficiency_metadata_v1"
+}

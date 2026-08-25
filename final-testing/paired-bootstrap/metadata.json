@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-08-16T13:05:03Z",
+  "cuda_device": "NVIDIA GeForce RTX 4090",
+  "gpu_batch_size": 32,
+  "method": "The frozen image-cluster bootstrap multiplicity weights and complete COCO precision-recall re-accumulation are evaluated with numerically verified batched CUDA operations.",
+  "new_gpu_inference": false,
+  "new_training": false,
+  "numpy_version": "1.26.4",
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_paired_bootstrap_v2.py",
+  "script_sha256": "25cf9213f221cfa6bcba9b30b7dc66494d4b630ffccefe8ac0a29b8ca2321389",
+  "status": "complete",
+  "torch_version": "2.2.2",
+  "v1_reference_script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_paired_bootstrap_v1.py",
+  "v1_reference_sha256": "9ff688359408b0d4a41424d75d05e74643e1b7076e70199c01bfe71cfc6a5008",
+  "version": "paired_bootstrap_executor_v2"
+}

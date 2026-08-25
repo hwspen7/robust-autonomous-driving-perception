@@ -1,0 +1,22 @@
+{
+  "files": {
+    "clean_comparison.json": {
+      "bytes": 3497,
+      "sha256": "498775e11c2cb22420e91f087bd0db197ad8a18795f16f79b77c9d4e5d63af5d"
+    },
+    "evaluations/typed_cafr_v2_epoch10/artifact_manifest.json": {
+      "bytes": 337,
+      "sha256": "1b868b3591de81f0968fb7d17bae296f8e6b33ba00654056d457e0edd1ce8dce"
+    },
+    "evaluations/typed_cafr_v2_epoch10/metrics.json": {
+      "bytes": 1100,
+      "sha256": "94b00cb66837f0d3f33efd3381039a92b9500dacd327049c633655e023c7003d"
+    },
+    "evaluations/typed_cafr_v2_epoch10/predictions.json": {
+      "bytes": 150751773,
+      "sha256": "2c0f973b3865d05119e965247014f933eeaed1194a588c0f6e3df77d0946b844"
+    }
+  },
+  "status": "clean_evaluation_complete",
+  "version": "cafr_v2_clean_artifacts_v1"
+}

@@ -1,0 +1,39 @@
+{
+  "version": "cafr_v2_materialization_v1",
+  "status": "complete",
+  "files": {
+    "crop_materialization_manifest.csv": {
+      "bytes": 14257973,
+      "sha256": "d9c0729191b54477452919807919472cc1d8fa9cf3d4a5e16a17f0ee9262d6f0"
+    },
+    "scalar_risk_data.yaml": {
+      "bytes": 434,
+      "sha256": "8e354ac6f4ff7c29ee545c2faeb47e521ee4464c99a58cbff86cad8e1b007a3c"
+    },
+    "scalar_risk_train.txt": {
+      "bytes": 5846310,
+      "sha256": "6fd97e5150baa25009b3415aefd3383cc8a3b5a7db1aa445c0227aa84c1776a2"
+    },
+    "summary.json": {
+      "bytes": 1336,
+      "sha256": "8065a2daaabb24e076809a5a3982271af81b4fd8bc8f13bdaa88e06629e6e204"
+    },
+    "typed_cafr_data.yaml": {
+      "bytes": 433,
+      "sha256": "29877464a3b882934702beec6d4f66e98eb12e65d9f7a1947b12fea81e12131f"
+    },
+    "typed_cafr_train.txt": {
+      "bytes": 5826574,
+      "sha256": "260856e95b45cb3bdbad076e72c9a0e5feb51fcf998867d4e16aee3c54a245c5"
+    },
+    "uniform_data.yaml": {
+      "bytes": 430,
+      "sha256": "2a6978fdca28783e6e999b470fe80e4976f32cc53ab40a7ed35cc20031ecedd1"
+    },
+    "uniform_train.txt": {
+      "bytes": 6370000,
+      "sha256": "6b8b65086fb86cb8fe64599f73dc80c4c5cb697175cdd065ab0478da8e49fad8"
+    }
+  },
+  "ephemeral_crop_set_sha256": "6574769ec61c47f7005ef331ca84c8e94d7b3fa8bb1985d0ed8cae5dad92913b"
+}

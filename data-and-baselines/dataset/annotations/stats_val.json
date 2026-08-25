@@ -1,0 +1,24 @@
+{
+  "split": "val",
+  "formats": [
+    "coco",
+    "yolo"
+  ],
+  "images": 10000,
+  "detection_objects": 185523,
+  "empty_images": 0,
+  "invalid_boxes": 3,
+  "skipped_non_detection_objects": 93808,
+  "class_counts": {
+    "pedestrian": 13262,
+    "rider": 649,
+    "car": 102506,
+    "truck": 4245,
+    "bus": 1597,
+    "train": 15,
+    "motorcycle": 452,
+    "bicycle": 1007,
+    "traffic light": 26884,
+    "traffic sign": 34906
+  }
+}

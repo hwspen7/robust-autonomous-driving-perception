@@ -1,0 +1,12 @@
+Filesystem                                                        Type          Size  Used Avail Use% Mounted on
+overlay                                                           overlay        30G   13G   17G  43% /
+tmpfs                                                             tmpfs          64M     0   64M   0% /dev
+/dev/mapper/lvmdata-pvc--f543f163--9f70--4bc2--883b--c378a80e1bb8 ext4           30G   13G   17G  43% /.rootfs
+/dev/mapper/ubuntu--vg-ubuntu--lv                                 ext4          1.9T  1.3T  560G  69% /data/tini
+/dev/mapper/lvmdata-pvc--66022857--1729--4468--82a2--9a85c59e83d2 ext4           49G   43G  6.6G  87% /root/rivermind-data
+tmpfs                                                             tmpfs         2.0G     0  2.0G   0% /dev/shm
+JuiceFS:jfs-userfile                                              fuse.juicefs  200G  6.2G  194G   4% /root/rivermind-fs
+tmpfs                                                             tmpfs          16G   12K   16G   1% /run/secrets/kubernetes.io/serviceaccount
+tmpfs                                                             tmpfs         504G     0  504G   0% /proc/acpi
+tmpfs                                                             tmpfs         504G     0  504G   0% /proc/scsi
+tmpfs                                                             tmpfs         504G     0  504G   0% /sys/firmware

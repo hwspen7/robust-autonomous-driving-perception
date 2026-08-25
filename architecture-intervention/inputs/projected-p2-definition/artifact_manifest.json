@@ -1,0 +1,29 @@
+{
+  "files": {
+    "gate_protocol_v2.json": {
+      "bytes": 3615,
+      "sha256": "143dcc8b2bcc74a9a111957717493b57f8865bfeab0cd242cef4fff5e2d0c4c5"
+    },
+    "metadata.json": {
+      "bytes": 740,
+      "sha256": "299d6511043e227b7a8c1d1c83123cc8258b40ed7d37b1ade13631b4fc4dcd70"
+    },
+    "weight_mapping.json": {
+      "bytes": 145117,
+      "sha256": "750ccfd2359aecebc09caacd9a55b7d05b83039630943d2f6a841b4bf88bec55"
+    },
+    "yolo11m_p2_projected_bdd10.yaml": {
+      "bytes": 1524,
+      "sha256": "bd6bd6cde7f73f54d2e80fd4ad58b44a85d14cb14cb7fb450548b52f5d6ee0ef"
+    },
+    "yolo11m_p2_projected_coco80.yaml": {
+      "bytes": 1524,
+      "sha256": "bf732fa8f9fd62bdecae2332236aaac021b68d7eeee99cc5741466ea77bc6e20"
+    },
+    "yolo11m_p2_projected_coco_init.pt": {
+      "bytes": 41786963,
+      "sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd"
+    }
+  },
+  "version": "prepared_inputs_v2"
+}

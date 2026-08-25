@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-08-12T15:11:46.849728+00:00",
+  "formal_initialization": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt",
+  "formal_initialization_sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd",
+  "further_typed_tuning_allowed": false,
+  "gate_checkpoint_used_as_formal_initialization": false,
+  "official_validation_used_for_method_selection": false,
+  "primary_theme": "object-level failure diagnosis and targeted repair",
+  "selected_development_arm": "scalar_risk",
+  "selected_method": "Rebu-YOLO-Risk",
+  "selection_evidence": {
+    "scalar_minus_uniform_clean_AP": 0.002052400237316343,
+    "scalar_minus_uniform_clean_AP75": 0.0033357744024913316,
+    "scalar_minus_uniform_corruption_AP_small": -4.92999177148512e-07,
+    "scalar_minus_uniform_failure_macro_AR100": 0.005681632004106485,
+    "scalar_minus_uniform_small_joint_recall50": 0.033343134372243455,
+    "typed_v1_gate_result": "FAIL",
+    "typed_v2_clean_gate_passed": false
+  },
+  "selection_timing": "post_typed_gate_fallback",
+  "status": "frozen",
+  "typed_cafr_v1_passed": false,
+  "typed_cafr_v2_passed": false,
+  "version": "formal_method_selection_v1"
+}

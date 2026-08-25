@@ -1,0 +1,7 @@
+subset,num_objects,num_images,mean_risk
+small_jointly_missed,34698,8184,0.866297721862793
+dfine_supported_yolo_failure,9000,5416,0.7589197158813477
+yolo_low_confidence,26804,8262,0.8260468244552612
+yolo_localization_failure,11255,5294,0.8260193467140198
+yolo_classification_failure,1797,1441,0.8969479203224182
+small_high_risk,37331,8497,0.872713029384613

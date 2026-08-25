@@ -1,0 +1,19 @@
+{
+  "cases_per_family": 4,
+  "created_utc": "2026-08-17T05:04:20.469936+00:00",
+  "elapsed_minutes": 3.4595247745513915,
+  "families": 8,
+  "manual_selection": false,
+  "new_inference": "Only Standard-E20 and P2-E20 on the frozen 512-image blur_s2/noise_s2 probe.",
+  "new_training": false,
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/final_analysis_v1/qualitative_protocol_v1/qualitative_protocol_v1.json",
+  "protocol_manifest_sha256": "fc95a64af63ab6daaa7c49b63dd203bddcd9babb09658d6c946d7f944fd79529",
+  "protocol_sha256": "037fbd5e35b27ff9d62e7c41716834a6ee45a70465d41200d66b40c6cdc52b88",
+  "ram_crops_required": false,
+  "script": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_final_qualitative_cases_v1.py",
+  "script_sha256": "7fcc6785854737d673dc635f3aa7bfaa97b148064dd73a4b28247d3534a4ed30",
+  "seed": 20260816,
+  "status": "complete",
+  "total_cases": 32,
+  "version": "final_qualitative_cases_v1"
+}

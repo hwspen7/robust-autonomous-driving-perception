@@ -1,0 +1,82 @@
+{
+  "version": "object_view_smoke_v1",
+  "status": "technical_smoke_not_formal_protocol",
+  "created_utc": "2026-08-11T12:59:29.141265+00:00",
+  "seed": 20260809,
+  "script_sha256": "34f4b3944c18a61a3a5de59fd1e18888e510571912268e8b1452013d69339329",
+  "inputs": {
+    "train_coco": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json",
+    "train_coco_sha256": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2",
+    "risk_table": "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/object_risk_v1/object_risk_table.csv",
+    "risk_table_sha256": "83e03b29ff5b796257fed1a3fb284fc22597e6e748315169e25fa481f9b1ba38",
+    "risk_freeze_sha256": "b5e1934ee9108e29548288e6f98cc611bb424c2f6d5b0ab99329b490699ed9d6",
+    "duplicate_exception_sha256": "62fa95492d68d2e790a20afc489747acf309f300afe425b816717c491196ec85",
+    "excluded_annotation_id": 1005741
+  },
+  "smoke": {
+    "views": 200,
+    "quotas": {
+      "small_joint_not_detected": 80,
+      "dfine_supported_yolo_failure": 40,
+      "yolo_low_confidence": 20,
+      "small_high_or_critical": 20,
+      "yolo_geometric_failure": 16,
+      "yolo_classification_failure": 10,
+      "other_joint_not_detected": 10,
+      "other_high_or_critical": 4
+    },
+    "group_counts": {
+      "small_joint_not_detected": 80,
+      "dfine_supported_yolo_failure": 40,
+      "yolo_low_confidence": 20,
+      "small_high_or_critical": 20,
+      "yolo_geometric_failure": 16,
+      "yolo_classification_failure": 10,
+      "other_joint_not_detected": 10,
+      "other_high_or_critical": 4
+    },
+    "payload_bytes": 8144434,
+    "payload_MiB": 7.76713752746582,
+    "average_payload_KiB": 39.767744140625,
+    "ephemeral_set_sha256": "c620a82bc2889ec912a930b075222721e18e8b31e1a56fc60b0de92f8d4bfe16"
+  },
+  "geometry": {
+    "target_projected_short_side_at_960": {
+      "minimum": 7.5,
+      "p10": 21.482559348106264,
+      "median": 37.47340425531915,
+      "p90": 59.16169951578804,
+      "maximum": 139.75186104218363,
+      "below_8px": 1,
+      "below_16px": 6
+    },
+    "objects_per_view": {
+      "minimum": 1,
+      "median": 14.0,
+      "maximum": 60,
+      "mean": 15.04
+    },
+    "label_class_counts_0_to_9": {
+      "0": 310,
+      "1": 18,
+      "2": 1573,
+      "3": 63,
+      "4": 30,
+      "5": 0,
+      "6": 10,
+      "7": 21,
+      "8": 489,
+      "9": 494
+    }
+  },
+  "capacity_estimate": {
+    "formal_slots_per_arm": 19500,
+    "estimated_one_arm_GiB_with_10pct_margin": 0.8135014646686615,
+    "estimated_two_arms_GiB_with_10pct_margin": 1.627002929337323,
+    "execution_plan": "materialize and train one arm at a time",
+    "current_shm_free_GiB": 23.999919891357422
+  },
+  "ephemeral_output": "/dev/shm/rebu_yolo/object_view_smoke_v1",
+  "persistent_output": "/root/rivermind-data/autodrive/results/evaluation/method_gate/object_view_smoke_v1",
+  "formal_training_rules_frozen": false
+}

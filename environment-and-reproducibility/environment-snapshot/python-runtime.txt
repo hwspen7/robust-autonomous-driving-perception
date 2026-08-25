@@ -1,0 +1,5 @@
+executable=/opt/conda/bin/python
+version=3.10.14 (main, Mar 21 2024, 16:24:04) [GCC 11.2.0]
+prefix=/opt/conda
+base_prefix=/opt/conda
+platform=Linux-5.15.0-60-generic-x86_64-with-glibc2.35

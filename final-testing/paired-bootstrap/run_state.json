@@ -1,0 +1,11 @@
+{
+  "expected_images": 10000,
+  "gpu_batch_size": 32,
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "replicates": 2000,
+  "seed": 20260816,
+  "v1_script_sha256": "9ff688359408b0d4a41424d75d05e74643e1b7076e70199c01bfe71cfc6a5008",
+  "v2_script_sha256": "25cf9213f221cfa6bcba9b30b7dc66494d4b630ffccefe8ac0a29b8ca2321389",
+  "version": "paired_bootstrap_executor_v2",
+  "weights_sha256": "cda9b094f3c9784900da79dcb4bf743372189084e4816bca75d2631058108212"
+}

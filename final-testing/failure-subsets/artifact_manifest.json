@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-08-16T08:32:21.207911+00:00",
+  "files": {
+    "failure_object_table.csv": {
+      "bytes": 49320715,
+      "sha256": "d9a175a6ffbc9e58ef5718c2b7a304b088e5bb0248849468f374d35ebd68a94f"
+    },
+    "metadata.json": {
+      "bytes": 2642,
+      "sha256": "0e47b59a6188995619fcd4c364c388d663bb0a6cd95490d41d22cbafaba18fe2"
+    },
+    "subset_overlap.csv": {
+      "bytes": 2627,
+      "sha256": "a5f82539501012699207432a79b98cda8857c0a8789fa4e07392e42738dbf135"
+    },
+    "subset_summary.csv": {
+      "bytes": 363,
+      "sha256": "82141bc48014211a165d3a689e00cc1b1ddfcfc04d542daced8785823cd06d4d"
+    },
+    "subsets/dfine_supported_yolo_failure.json": {
+      "bytes": 157938,
+      "sha256": "a48f514aa5626e8011bd264287003e2727fa00c391231b5df872b49ed54013c9"
+    },
+    "subsets/small_high_risk.json": {
+      "bytes": 511311,
+      "sha256": "424a5ad09d1d227c451463d58425d77ddcee02cef93510f27a8c582c77f8e18b"
+    },
+    "subsets/small_jointly_missed.json": {
+      "bytes": 478175,
+      "sha256": "7c27e4543108d021077e7f4a767fe3ce286c53a698c90ba005a0c9ee1684c4e8"
+    },
+    "subsets/yolo_classification_failure.json": {
+      "bytes": 36407,
+      "sha256": "fcc5838a1d71c5e2ec1b5753567558647956f93e39b770eea846e03016a29440"
+    },
+    "subsets/yolo_localization_failure.json": {
+      "bytes": 182398,
+      "sha256": "0f435a73f28c90654b988c15ee4af5acbd4250477ad529ba4cad48c5c259fc48"
+    },
+    "subsets/yolo_low_confidence.json": {
+      "bytes": 388959,
+      "sha256": "7969dca263bb126832e063212082672af6292570e1445cce9de63c16d07712bb"
+    }
+  },
+  "protocol_sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe",
+  "status": "frozen",
+  "version": "official_val_failure_subsets_artifact_manifest_v1"
+}

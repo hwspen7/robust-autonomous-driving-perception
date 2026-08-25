@@ -1,0 +1,30 @@
+{
+  "artifacts": [
+    {
+      "bytes": 14296,
+      "path": "matched_epoch_attribution.csv",
+      "sha256": "331e9ff4dba7d73aedf452ff07bdf2bd37ff088d07cb568ce40bc70a95bfe0c7"
+    },
+    {
+      "bytes": 667,
+      "path": "metadata.json",
+      "sha256": "92c9e3884f441898d1c3713c116e434dc2161b66fc17f9ad4e9931be014a5463"
+    },
+    {
+      "bytes": 5989,
+      "path": "optimization_schedule_audit.json",
+      "sha256": "550ae93507ebf50ef77650080a66ad81ff629d77a05cf88c4c1c618247061dd0"
+    },
+    {
+      "bytes": 3558,
+      "path": "summary.json",
+      "sha256": "dc0aacaf78a78e7bf9da4f944baa63becbaa44c481d6e6ea871023d8b381e21b"
+    },
+    {
+      "bytes": 2224,
+      "path": "trajectory_aggregate.csv",
+      "sha256": "546af37cd934a7b7a8829600314c7da66d4630d79f4e328ddf027504f8d7c7ac"
+    }
+  ],
+  "created_utc": "2026-08-16T10:17:19Z"
+}

@@ -1,0 +1,30 @@
+{
+  "applied_at": "2026-08-10T22:40:42.436563+00:00",
+  "architecture_rules_changed": false,
+  "evaluation_input_transport_change": {
+    "after": "source=str(dev_list)",
+    "before": "source=image_paths",
+    "purpose": "Stream the frozen 5k TXT list at batch=1"
+  },
+  "evaluation_metrics_changed": false,
+  "failed_staging_archive": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/evaluations/standard_epoch10.failed_oom_v1",
+  "failed_staging_original": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/evaluations/standard_epoch10.incomplete-1553",
+  "failed_staging_was_empty": true,
+  "failure_occurred_before_first_evaluation_result": true,
+  "failure_stage": "standard_evaluation_10",
+  "failure_type": "ultralytics_source_list_giant_warmup_batch_oom",
+  "fixed_controller": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_yolo_architecture_gate_v4_fixed.py",
+  "fixed_controller_sha256": "fd48e9575a9ef8606e2c20c882ec2dff6552e10d19016f43da8dbfd78547345b",
+  "original_controller": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/run_yolo_architecture_gate_v4.py",
+  "original_controller_sha256": "79135bb1245ef26e23eaecfb80513f3916dde876ae12826ec9428da2efffcb41",
+  "protocol_changed": false,
+  "recovery_controller": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/resume_yolo_architecture_gate_v4_after_eval_oom.py",
+  "recovery_controller_sha256": "8693edd6c514ebf9293e061b4411b8f9339a113c62fff94946cc58cca9891444",
+  "resume_stage": "standard_evaluation_10",
+  "standard_epoch10_checkpoint": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/formal_gate_v4/standard/weights/resume_epoch10.pt",
+  "standard_epoch10_checkpoint_sha256": "7dfc9291bf5a866cf4d8cc83f0f4dc7dcf9838ec72bf276937f9041f78e8a106",
+  "status": "applied",
+  "training_arguments_changed": false,
+  "training_repeated": false,
+  "version": "formal_gate_v4_standard_eval_oom_recovery_v1"
+}

@@ -1,0 +1,3 @@
+/opt/conda
+/opt/conda/envs/mmdet
+/opt/conda/envs/rtdetr

@@ -1,0 +1,20 @@
+{
+  "batch": 8,
+  "corruption_workers": 8,
+  "created_utc": "2026-08-16T14:12:16.126975+00:00",
+  "fast_exporter_sha256": "baeaafbe1e2a1520eb0fd18364603363c1369b8cd8021567f51275aa94682969",
+  "image_summary_exact_match": true,
+  "new_64_image_seconds": 10.504376649856567,
+  "old_64_image_seconds": 13.962396383285522,
+  "original_exporter_sha256": "ce8f84f3ac4e687cdf9127fa2a538e81606005b8329c763e6fe66df579a3f44e",
+  "pixel_equivalence_cases": 120,
+  "prediction_equivalence": {
+    "maximum_bbox_difference": 0.0,
+    "maximum_score_difference": 0.0,
+    "new_prediction_sha256": "a902c4a6ec94db9624b5c2b9551bf7c8dcd369259ed0dd916be1b96b4716c1df",
+    "old_prediction_sha256": "a902c4a6ec94db9624b5c2b9551bf7c8dcd369259ed0dd916be1b96b4716c1df",
+    "predictions": 9940
+  },
+  "status": "pass",
+  "version": "corruption_executor_v2_equivalence"
+}

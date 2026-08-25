@@ -1,0 +1,179 @@
+{
+  "display_name": "P2-960-Common40",
+  "executor_version": "parallel_corruption_v2",
+  "exporter_metadata": {
+    "annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+    "annotation_sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+    "checkpoint": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt",
+    "checkpoint_sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3",
+    "class_mapping": {
+      "0": {
+        "bdd_category_id": 1,
+        "bdd_name": "pedestrian",
+        "yolo_name": "pedestrian"
+      },
+      "1": {
+        "bdd_category_id": 2,
+        "bdd_name": "rider",
+        "yolo_name": "rider"
+      },
+      "2": {
+        "bdd_category_id": 3,
+        "bdd_name": "car",
+        "yolo_name": "car"
+      },
+      "3": {
+        "bdd_category_id": 4,
+        "bdd_name": "truck",
+        "yolo_name": "truck"
+      },
+      "4": {
+        "bdd_category_id": 5,
+        "bdd_name": "bus",
+        "yolo_name": "bus"
+      },
+      "5": {
+        "bdd_category_id": 6,
+        "bdd_name": "train",
+        "yolo_name": "train"
+      },
+      "6": {
+        "bdd_category_id": 7,
+        "bdd_name": "motorcycle",
+        "yolo_name": "motorcycle"
+      },
+      "7": {
+        "bdd_category_id": 8,
+        "bdd_name": "bicycle",
+        "yolo_name": "bicycle"
+      },
+      "8": {
+        "bdd_category_id": 9,
+        "bdd_name": "traffic light",
+        "yolo_name": "traffic light"
+      },
+      "9": {
+        "bdd_category_id": 10,
+        "bdd_name": "traffic sign",
+        "yolo_name": "traffic sign"
+      }
+    },
+    "controlled_corruption": {
+      "applied_before_model_preprocessing": true,
+      "corruption": "fog",
+      "full_corrupted_images_saved": false,
+      "geometry_changed": false,
+      "global_seed": 20260809,
+      "gt_modified": false,
+      "module": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/_executor_v2/controlled_corruptions.py",
+      "module_sha256": "cb451b3ab1c5ba134bd5251298293f38f645d279d30614c7dbba7ecac550273a",
+      "parameters": {
+        "atmospheric_light": 245.0,
+        "transmission": 0.82,
+        "variation": 0.04
+      },
+      "same_function_intended_for_all_models": true,
+      "seed_rule": "SHA256(GLOBAL_SEED|image_key|corruption|severity) first 8 bytes little-endian unsigned",
+      "severity": 1,
+      "variant": "fog_s1"
+    },
+    "dataset": "BDD100K",
+    "elapsed_seconds": 209.907,
+    "evaluation_branch": "controlled_corruption",
+    "image_summary_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/common40_fog_s1/image_summary.json",
+    "images_per_second": 47.64,
+    "inference": {
+      "agnostic_nms": false,
+      "batch": 8,
+      "conf": 0.001,
+      "corruption_workers": 8,
+      "device": "0",
+      "imgsz": 960,
+      "max_det": 300,
+      "nms_iou": 0.7,
+      "parallel_corruption_preserves_submission_order": true,
+      "prediction_json_write_mode": "one_compact_payload_per_batch",
+      "prefetch_batches": 1,
+      "rect": true,
+      "source_type": "in_memory_PIL_RGB_batches",
+      "test_time_augmentation": false
+    },
+    "model": "YOLO11m",
+    "num_gt_annotations": 185523,
+    "num_gt_images": 10000,
+    "num_images_exported": 10000,
+    "num_images_with_predictions": 10000,
+    "num_predictions": 2115069,
+    "prediction_counts_by_category": {
+      "1": 190803,
+      "10": 356555,
+      "2": 5928,
+      "3": 1205457,
+      "4": 29225,
+      "5": 7742,
+      "6": 132,
+      "7": 3273,
+      "8": 23555,
+      "9": 292399
+    },
+    "prediction_file": "/dev/shm/rebu_yolo/final_representative_corruptions_v1/common40_fog_s1/predictions.json",
+    "prediction_sha256": "12a36bd783373f8a7aed47f8b3f6feac1dd64e4768daa895d11c9052f9983325",
+    "software": {
+      "cuda_available": true,
+      "python_torch": "2.2.2",
+      "ultralytics": "8.4.115"
+    },
+    "split": "official_validation",
+    "task": "bbox_detection",
+    "zero_area_bbox_count": 0
+  },
+  "metric": {
+    "AP": 0.34491905219769436,
+    "AP50": 0.5900023497752102,
+    "AP50_absolute_drop": 0.007000914136601755,
+    "AP50_relative_drop": 0.011726760237002516,
+    "AP50_retention": 0.9882732397629975,
+    "AP75": 0.33443650302170086,
+    "AP75_absolute_drop": 0.006304963851787138,
+    "AP75_relative_drop": 0.01850365882861,
+    "AP75_retention": 0.98149634117139,
+    "AP_absolute_drop": 0.005610128614177923,
+    "AP_large": 0.5712293823167702,
+    "AP_large_absolute_drop": 0.006316902169441141,
+    "AP_large_relative_drop": 0.010937482136277087,
+    "AP_large_retention": 0.9890625178637229,
+    "AP_medium": 0.39790061470842664,
+    "AP_medium_absolute_drop": 0.0030214007160132006,
+    "AP_medium_relative_drop": 0.007536130718126233,
+    "AP_medium_retention": 0.9924638692818738,
+    "AP_relative_drop": 0.01600474060728444,
+    "AP_retention": 0.9839952593927156,
+    "AP_small": 0.16527868984368238,
+    "AP_small_absolute_drop": 0.003672512701253239,
+    "AP_small_relative_drop": 0.021737120813191416,
+    "AP_small_retention": 0.9782628791868085,
+    "AR_1": 0.22353703553954835,
+    "AR_10": 0.43112475182532284,
+    "AR_100": 0.47982468447713167,
+    "AR_large": 0.6679824022761575,
+    "AR_medium": 0.5303515286447221,
+    "AR_small": 0.31739603027140384,
+    "completed_at_utc": "2026-08-16T16:22:52.270692+00:00",
+    "corruption": "fog",
+    "evaluation_seconds": 209.875,
+    "inference_seconds": 215.4740128517151,
+    "model": "common40",
+    "num_gt": 185523,
+    "num_images": 10000,
+    "num_predictions": 2115069,
+    "prediction_sha256": "12a36bd783373f8a7aed47f8b3f6feac1dd64e4768daa895d11c9052f9983325",
+    "severity": 1,
+    "variant": "fog_s1"
+  },
+  "model": "common40",
+  "saved_utc": "2026-08-16T16:23:03.925611+00:00",
+  "status": "complete",
+  "temporary_prediction_deleted": true,
+  "variant": "fog_s1",
+  "version": "representative_corruption_condition_record_v2"
+}

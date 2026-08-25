@@ -1,0 +1,54 @@
+{
+  "model": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/checkpoints/yolo11m-seg.pt",
+  "task": "instance_segmentation_diagnostic",
+  "dataset": "BDD100K",
+  "dataset_root": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final",
+  "annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+  "num_images": 10000,
+  "num_predictions": 179880,
+  "imgsz": 640,
+  "batch": 16,
+  "confidence_threshold": 0.05,
+  "iou_threshold": 0.7,
+  "device": "0",
+  "mapped_bdd_categories": {
+    "0": {
+      "bdd_category_id": 1,
+      "bdd_class_name": "pedestrian"
+    },
+    "1": {
+      "bdd_category_id": 8,
+      "bdd_class_name": "bicycle"
+    },
+    "2": {
+      "bdd_category_id": 3,
+      "bdd_class_name": "car"
+    },
+    "3": {
+      "bdd_category_id": 7,
+      "bdd_class_name": "motorcycle"
+    },
+    "5": {
+      "bdd_category_id": 5,
+      "bdd_class_name": "bus"
+    },
+    "6": {
+      "bdd_category_id": 6,
+      "bdd_class_name": "train"
+    },
+    "7": {
+      "bdd_category_id": 4,
+      "bdd_class_name": "truck"
+    },
+    "9": {
+      "bdd_category_id": 9,
+      "bdd_class_name": "traffic light"
+    }
+  },
+  "unmapped_bdd_categories": {
+    "2": "rider",
+    "10": "traffic sign"
+  },
+  "elapsed_seconds": 161.29,
+  "images_per_second": 62.0
+}

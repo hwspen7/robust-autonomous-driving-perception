@@ -1,0 +1,10 @@
+{
+  "version": "terminal_window_artifacts_v1",
+  "status": "frozen",
+  "files": {
+    "terminal_window_protocol.json": {
+      "bytes": 5081,
+      "sha256": "b1caa2b76799d1184372a66c1d475ead2838e60389c29ff529cdfb859e63ef82"
+    }
+  }
+}

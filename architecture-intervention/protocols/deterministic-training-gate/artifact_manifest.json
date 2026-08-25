@@ -1,0 +1,19 @@
+{
+  "files": {
+    "determinism_amendment.json": {
+      "bytes": 2056,
+      "sha256": "323977b86c1a731bcf2c7a92436b8db4b7593ec9c0c292f2477d2d31fd1e3900"
+    },
+    "formal_gate_protocol_v4.json": {
+      "bytes": 7882,
+      "sha256": "7f003f25d4ddb5828933c9fbdb85441bf86fe20e2824495f369baca65765525a"
+    }
+  },
+  "parent_v3_manifest_sha256": "ba151a0e87d211a55ce50a990b2d7f88085f9032f2b7632cf7206b4d0da2a071",
+  "referenced_v3_artifacts": {
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/bdd100k_architecture_gate_v3.yaml": "208a57dacf467c4efab4d6d7d687fce63938d24bc4fc2012d551bb49100e808c",
+    "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v3/instances_train_dev_effective.json": "5e13ec651d0582032e5eacc1a46d885279fabe278463bd7c2be58b2429796faf"
+  },
+  "status": "frozen",
+  "version": "prepared_inputs_v4"
+}

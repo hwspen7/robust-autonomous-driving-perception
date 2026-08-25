@@ -1,0 +1,22 @@
+{
+  "model": "standard_epoch20",
+  "images": 10000,
+  "predictions": 1745354,
+  "minimum_predictions_per_image": 15,
+  "maximum_predictions_per_image": 300,
+  "AP": 0.3264401598994993,
+  "AP50": 0.5674681203243928,
+  "AP75": 0.3154856657526812,
+  "AP_small": 0.14494499788777054,
+  "AP_medium": 0.38547989133341715,
+  "AP_large": 0.5605761151848175,
+  "AR1": 0.22187821418115847,
+  "AR10": 0.41034532214781405,
+  "AR100": 0.44638227013830795,
+  "AR_small": 0.24337903793209453,
+  "AR_medium": 0.5164863057526593,
+  "AR_large": 0.6651545253724115,
+  "prediction_path": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/borderline_adjudication_v5_1/predictions/standard_epoch20/predictions.json",
+  "prediction_sha256": "422bf84b636d422c46a186c2ef8a6f7e585b94cd82c8ef97bc799f345067352b",
+  "elapsed_minutes": 3.2224661707878113
+}

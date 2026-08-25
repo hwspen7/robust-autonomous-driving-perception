@@ -1,0 +1,51 @@
+{
+  "application": {
+    "architecture_gate": "Ultralytics removes the exact duplicate from its effective label cache; both candidates use the same 92392-object dev view.",
+    "cafr_training": "Exclude annotation_id 1005741 when deriving CAFR training weights from frozen object_risk_v1.",
+    "official_final_evaluation": "Unaffected because official BDD100K validation is a separate split.",
+    "uniform_training": "The exact duplicate is represented once in the effective training view."
+  },
+  "duplicate": {
+    "annotation_ids": [
+      1005729,
+      1005741
+    ],
+    "area": 84.0,
+    "bbox_xywh": [
+      536.0,
+      339.0,
+      12.0,
+      7.0
+    ],
+    "canonical_annotation_id": 1005729,
+    "category_id": 3,
+    "class_id": 2,
+    "class_name": "car",
+    "excluded_annotation_id": 1005741,
+    "selection_rule": "retain_lowest_annotation_id",
+    "yolo_row": "2 0.42343750 0.47569444 0.00937500 0.00972222"
+  },
+  "image": {
+    "file_name": "images/train/8b94691f-0b47c5c3.jpg",
+    "image_id": 54748,
+    "split": "train_dev"
+  },
+  "object_accounting": {
+    "full_train_effective_training": 1286851,
+    "full_train_raw_coco": 1286852,
+    "train_core_raw_and_effective": 1194459,
+    "train_dev_effective_ultralytics": 92392,
+    "train_dev_raw_coco": 92393
+  },
+  "policy": "preserve_source_and_deduplicate_training_view",
+  "schema_version": 1,
+  "source_dataset_modified": false,
+  "source_hashes": {
+    "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train.json": "a8e9c188e58a328901af6e3a93b747d517da354e2dab3292ff26d7c0fbd32cd2",
+    "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/labels/train/8b94691f-0b47c5c3.txt": "f52ae7bd08b809012e43b84ca03b95dc2e381288362d12dc8c37383a40fc725e",
+    "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/yolo/labels/train/8b94691f-0b47c5c3.txt": "f52ae7bd08b809012e43b84ca03b95dc2e381288362d12dc8c37383a40fc725e",
+    "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/calibration_split/train_core_image_ids.json": "9996d854b06ddefd12dde1949ecae30c6d08230eb10003e7ec1863a3386ee1a3",
+    "/root/rivermind-data/autodrive/results/evaluation/train_risk_labels/calibration_split/train_dev_image_ids.json": "961ddf514525223aa08599774c167ffcf81752551cdc6619fc6febb1184ada8c"
+  },
+  "status": "frozen"
+}

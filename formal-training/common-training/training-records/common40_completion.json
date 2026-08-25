@@ -1,0 +1,24 @@
+{
+  "version": "rebu_yolo_common40_v1",
+  "status": "complete",
+  "completed_utc": "2026-08-13T12:03:16.515497+00:00",
+  "stage": "common_uniform_e1_40",
+  "human_epochs": 40,
+  "training_views_per_epoch": 70000,
+  "official_validation_used": false,
+  "initialization": "/root/rivermind-data/autodrive/results/evaluation/architecture_gate/prepared_inputs_v2/yolo11m_p2_projected_coco_init.pt",
+  "initialization_sha256": "eef43a83adb99ee9b3d9e75c25d3454488b28ad5f86ac67fcf850351c3e848dd",
+  "protocol": "/root/rivermind-data/autodrive/results/evaluation/formal_training/prepared_inputs_v1/formal_training_protocol.json",
+  "protocol_sha256": "c40ad7567ebddd44d96390aa5e3c0340a19cbe6f84f83c944d0442ae69205a14",
+  "last_checkpoint": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/last.pt",
+  "last_checkpoint_sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3",
+  "common40_ema": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt",
+  "common40_ema_sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3",
+  "next_stages": [
+    "uniform_e41_100",
+    "rebu_risk_e41_100"
+  ],
+  "branch_optimizer_rule": "Both branches start from this exact EMA with fresh identical SGD optimizers.",
+  "best_checkpoint": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/best.pt",
+  "best_checkpoint_sha256": "1316af68abe0a1cae0cf63932cf6fc733a211b8f262c6eecc0896358291b31fe"
+}

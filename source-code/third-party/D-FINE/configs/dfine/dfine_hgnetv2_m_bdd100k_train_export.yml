@@ -1,0 +1,23 @@
+__include__: ['./dfine_hgnetv2_m_bdd100k.yml']
+
+# Export-only configuration.
+# The exporter still uses solver.val_dataloader, but this loader is
+# deliberately redirected to the contiguous BDD100K train split.
+val_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: /root/rivermind-data/autodrive/datasets/datasets/bdd100k_final
+    ann_file: /root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_train_contiguous.json
+    return_masks: False
+    transforms:
+      type: Compose
+      ops:
+        - {type: Resize, size: [640, 640]}
+        - {type: ConvertPILImage, dtype: 'float32', scale: True}
+  shuffle: False
+  total_batch_size: 16
+  num_workers: 4
+  drop_last: False
+  collate_fn:
+    type: BatchImageCollateFunction

@@ -1,0 +1,81 @@
+__include__: [
+  '../dataset/bdd100k_detection.yml',
+  '../runtime.yml',
+  './include/dataloader.yml',
+  './include/optimizer.yml',
+  './include/dfine_hgnetv2.yml',
+]
+
+# Official baseline output directory for D-FINE-M on BDD100K.
+output_dir: /root/rivermind-data/autodrive/results/detection/dfine_m_bdd100k_main
+
+DFINE:
+  backbone: HGNetv2
+
+HGNetv2:
+  name: 'B2'
+  return_idx: [1, 2, 3]
+  freeze_at: -1
+  freeze_norm: False
+  use_lab: True
+
+DFINETransformer:
+  num_layers: 4
+  eval_idx: -1
+
+HybridEncoder:
+  in_channels: [384, 768, 1536]
+  hidden_dim: 256
+  depth_mult: 0.67
+
+# The official 'M' configuration assumes a total batch size of 32;
+# On an RTX 4090 the stable batch size is 24 while batch 32 OOMs; scale the learning rate linearly by 24/32 = 0.75.
+optimizer:
+  type: AdamW
+  params:
+    -
+      params: '^(?=.*backbone)(?!.*norm|bn).*$'
+      lr: 0.0000125
+    -
+      params: '^(?=.*backbone)(?=.*norm|bn).*$'
+      lr: 0.0000125
+      weight_decay: 0.
+    -
+      params: '^(?=.*(?:encoder|decoder))(?=.*(?:norm|bn|bias)).*$'
+      weight_decay: 0.
+  lr: 0.000125
+  betas: [0.9, 0.999]
+  weight_decay: 0.000125
+
+# Adjust EMA and warmup proportionally when reducing batch from 32 to 24;
+# This scales schedule parameters to account for update frequency changes and does not alter the model architecture.
+ema:
+  type: ModelEMA
+  decay: 0.99995
+  warmups: 2000
+  start: 0
+
+lr_warmup_scheduler:
+  type: LinearWarmup
+  warmup_duration: 1000
+# This project fine-tunes COCO-pretrained weights on BDD100K
+# and does not use the official 132-epoch COCO-from-scratch schedule.
+# Stage 1 trains for 40 epochs; at epoch 40 load best_stg1 and run 10 epochs of Stage 2 refinement.
+epochs: 50
+
+train_dataloader:
+  total_batch_size: 16
+  num_workers: 4
+  dataset:
+    transforms:
+      policy:
+        epoch: 40
+  collate_fn:
+    stop_epoch: 40
+    ema_restart_decay: 0.99995
+    base_size_repeat: 6
+
+# Validation does not backpropagate; the configuration with batch 16 has passed full smoke tests to prioritize stable final evaluation.
+val_dataloader:
+  total_batch_size: 16
+  num_workers: 4

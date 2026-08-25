@@ -1,0 +1,273 @@
+{
+  "version": "semantic-path-migration",
+  "status": "complete",
+  "created_utc": "2026-08-18T10:23:17.777304+00:00",
+  "policy": {
+    "active_source_names": "descriptive and version-free",
+    "historical_names": "preserved only as provenance and external runtime aliases",
+    "frozen_source_bytes_modified": false,
+    "scientific_manifests_modified": false
+  },
+  "evidence_directory": {
+    "from": "paper-evidence",
+    "to": "research-evidence",
+    "files": 29
+  },
+  "script_renames": [
+    {
+      "historical_active_path": "source-code/analysis/intervention-semantics/run_final_crop_scale_context_audit_v1.py",
+      "semantic_active_path": "source-code/analysis/intervention-semantics/audit_crop_scale_context_shift.py",
+      "sha256": "2b38c8e44e2a410175fa037490dd57143f4e52a1044ecc9b4a880b7bfba6a9de",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/analysis/intervention-semantics/run_final_exposure_audit_v1.py",
+      "semantic_active_path": "source-code/analysis/intervention-semantics/audit_training_data_exposure.py",
+      "sha256": "3fa693d02dfc293a4d3f49f8c34903c023be0f9d51c849c4ad12587b0c94b6dd",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/data-validation/build_final_paper_bundle_v1.py",
+      "semantic_active_path": "source-code/data-preparation/data-validation/build_final_research_evidence_bundle.py",
+      "sha256": "e48ad70a2efe7c2f7a6b63cf484ad9c5a3dc7fd36494d5277c2a74654eafd1af",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/data-validation/prepare_cafr_sampling_audit_v2.py",
+      "semantic_active_path": "source-code/data-preparation/data-validation/prepare_unmatched_scalar_risk_sampling.py",
+      "sha256": "e6cb0cd5cdcc693d49acb0ac6f19d650439efa0f13e38fd6bd524863130df2b4",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/data-validation/prepare_cafr_sampling_audit_v3.py",
+      "semantic_active_path": "source-code/data-preparation/data-validation/prepare_matched_failure_sampling.py",
+      "sha256": "69b7dd6bbf01ea8c2c23c97c61e89b05a65001d11d30c1e928accda9fda9b7d0",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/data-validation/prepare_rebu_formal_training_v1.py",
+      "semantic_active_path": "source-code/data-preparation/data-validation/prepare_formal_training_inputs.py",
+      "sha256": "9cedc03b38c989064a0936b82bcce59294877792ba1d02e9ecec0411a4e5d051",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/protocol-freezing/freeze_cafr_v2_gate.py",
+      "semantic_active_path": "source-code/data-preparation/protocol-freezing/freeze_context_balanced_cafr_gate.py",
+      "sha256": "f6131da78309a8aaac8f278576c97cb124c0451cb4dd19a5b2c3023190a7b987",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/protocol-freezing/freeze_final_testing_protocol_v1.py",
+      "semantic_active_path": "source-code/data-preparation/protocol-freezing/freeze_final_testing_protocol.py",
+      "sha256": "6e3e5bc41fcc0e37c2d0e34eb7b3137b12dbe6e09fb3f5b1f1c74e646830a4c3",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/protocol-freezing/freeze_official_val_failure_subsets_v1.py",
+      "semantic_active_path": "source-code/data-preparation/protocol-freezing/freeze_official_validation_failure_subsets.py",
+      "sha256": "d83a3f6f1f40790027ff02e9ca0197422bc10dfea0940d141eedf2470f538825",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/protocol-freezing/prepare_yolo_architecture_gate_v3.py",
+      "semantic_active_path": "source-code/data-preparation/protocol-freezing/prepare_effective_development_architecture_gate.py",
+      "sha256": "9e9d8c38cec5e204557545d5444833ff69e2fb8e061e63bbf956d903d6fda742",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/protocol-freezing/prepare_yolo_architecture_gate_v4.py",
+      "semantic_active_path": "source-code/data-preparation/protocol-freezing/freeze_deterministic_architecture_gate.py",
+      "sha256": "9404a8e96c8547e8b27b4aa20b627623876bbe5e943875b60b10806d78881bca",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/protocol-freezing/prepare_yolo_p2_gate_v2.py",
+      "semantic_active_path": "source-code/data-preparation/protocol-freezing/prepare_projected_p2_architecture_gate.py",
+      "sha256": "37b8c0c7ef84f12d67c77d152f4610be55531638c95ead26f724dc76acdd4f53",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/view-materialization/materialize_cafr_v2_views.py",
+      "semantic_active_path": "source-code/data-preparation/view-materialization/materialize_context_balanced_cafr_views.py",
+      "sha256": "f1f0fca09dcae21edf288518e8a4fd29bce5f75ae9c02b9a82241560155bb91a",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/data-preparation/view-materialization/prepare_cafr_v2_cache_isolation.py",
+      "semantic_active_path": "source-code/data-preparation/view-materialization/prepare_context_balanced_cafr_cache_isolation.py",
+      "sha256": "5a160e10d23e0442e18a24aac85d45e0ab05f51da78228f538feb272d00899fe",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/canonical-clean/evaluate_cafr_v2_clean.py",
+      "semantic_active_path": "source-code/evaluation/canonical-clean/evaluate_context_balanced_cafr_clean.py",
+      "sha256": "ce7dfcd1473430cb3b2672cc80d77dc8c6b589592d963848af370cc138eef28a",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/canonical-clean/evaluate_formal_checkpoint_trajectory_v1.py",
+      "semantic_active_path": "source-code/evaluation/canonical-clean/evaluate_formal_checkpoint_trajectory.py",
+      "sha256": "7f0d4c0dfba32b458a762dfaffa594d3667bc1593f3ac88afac99fe9616e80d0",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/canonical-clean/evaluate_method_gate_clean_v1.py",
+      "semantic_active_path": "source-code/evaluation/canonical-clean/evaluate_method_gate_clean.py",
+      "sha256": "8268e12d5989a8486a9b01dbd7d799bc009a8568b41207ec807a4922ce5d1c91",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/canonical-clean/evaluate_method_gate_failures_v1.py",
+      "semantic_active_path": "source-code/evaluation/canonical-clean/evaluate_method_gate_failures.py",
+      "sha256": "f1ecf76b825ae5aa12d5b7ec94095b7130c7c570450b95a46d6e7557a695567c",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/canonical-clean/run_final_canonical_clean_v1.py",
+      "semantic_active_path": "source-code/evaluation/canonical-clean/evaluate_final_canonical_clean.py",
+      "sha256": "bd9e4299b2cee2df651039b1dc72d1daefe96dfbcc0925f16930f1399c7008ae",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/corruption-evaluation/run_final_representative_corruptions_v1.py",
+      "semantic_active_path": "source-code/evaluation/corruption-evaluation/evaluate_representative_corruptions_reference.py",
+      "sha256": "62b434c7781769d4382b19f134413df245758a2e2daced0e09134506542ed5c7",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/corruption-evaluation/run_final_representative_corruptions_v2.py",
+      "semantic_active_path": "source-code/evaluation/corruption-evaluation/evaluate_representative_corruptions_parallel.py",
+      "sha256": "37d52d0b35f9f98fc58d0b27469a9900738d027a9782f2e6eff2337737c59ef1",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/efficiency-evaluation/run_final_efficiency_v1.py",
+      "semantic_active_path": "source-code/evaluation/efficiency-evaluation/evaluate_final_efficiency.py",
+      "sha256": "7e29c2efacc0b2ca3ab69721e4e3d4c994312a5432771420e345519b4286019e",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/failure-evaluation/run_final_threshold_sensitivity_v1.py",
+      "semantic_active_path": "source-code/evaluation/failure-evaluation/evaluate_threshold_sensitivity.py",
+      "sha256": "3963f68be0578265a7c098b3bafc5cf93969e9de102e49edf8863e08f5f40c32",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/qualitative-evaluation/run_final_qualitative_cases_v1.py",
+      "semantic_active_path": "source-code/evaluation/qualitative-evaluation/build_qualitative_case_sheets.py",
+      "sha256": "7fcc6785854737d673dc635f3aa7bfaa97b148064dd73a4b28247d3534a4ed30",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/statistical-evaluation/run_final_paired_bootstrap_v1.py",
+      "semantic_active_path": "source-code/evaluation/statistical-evaluation/run_paired_bootstrap_cpu_reference.py",
+      "sha256": "9ff688359408b0d4a41424d75d05e74643e1b7076e70199c01bfe71cfc6a5008",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/evaluation/statistical-evaluation/run_final_paired_bootstrap_v2.py",
+      "semantic_active_path": "source-code/evaluation/statistical-evaluation/run_paired_bootstrap_cuda.py",
+      "sha256": "25cf9213f221cfa6bcba9b30b7dc66494d4b630ffccefe8ac0a29b8ca2321389",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/architecture-gate/run_yolo_architecture_gate_v3.py",
+      "semantic_active_path": "source-code/training/architecture-gate/run_architecture_gate_preliminary.py",
+      "sha256": "2b85eefdf33205e45a4fad20df4186f20c28a83356d4b8e434d3399edc91121b",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/architecture-gate/run_yolo_architecture_gate_v4.py",
+      "semantic_active_path": "source-code/training/architecture-gate/run_architecture_gate_original_exporter.py",
+      "sha256": "79135bb1245ef26e23eaecfb80513f3916dde876ae12826ec9428da2efffcb41",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/architecture-gate/run_yolo_architecture_gate_v4_fixed.py",
+      "semantic_active_path": "source-code/training/architecture-gate/run_architecture_gate_streaming.py",
+      "sha256": "fd48e9575a9ef8606e2c20c882ec2dff6552e10d19016f43da8dbfd78547345b",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/formal-training/run_rebu_formal_branches_v2.py",
+      "semantic_active_path": "source-code/training/formal-training/train_formal_uniform_and_risk_branches.py",
+      "sha256": "06efbbcb622b0c118f6a60fe0b7c0095c2ae1be7623e0d39d36abc71363fc2e7",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/method-gate/run_cafr_v2_gate_training.py",
+      "semantic_active_path": "source-code/training/method-gate/train_context_balanced_cafr_gate.py",
+      "sha256": "7aa1781901786b03cea0bbefebbfc36344a228328b1bca5b8ed750381e437335",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/method-gate/run_method_gate_corruption_v1.py",
+      "semantic_active_path": "source-code/training/method-gate/evaluate_method_gate_corruptions.py",
+      "sha256": "4d7d7fb29c24715be6df045ca53b3354ac2b0666de5bec45042767b805fa3970",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/method-gate/run_method_gate_training_v1.py",
+      "semantic_active_path": "source-code/training/method-gate/train_method_gate_arms.py",
+      "sha256": "a88ac883b2ba7c86f8c1271b533769bdd9558f8031a91ebf1017b240b203dccd",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/training/training-controls/run_final_training_dynamics_attribution_v1.py",
+      "semantic_active_path": "source-code/training/training-controls/analyze_training_dynamics_attribution.py",
+      "sha256": "e25da492c869a695600fddb0f5cd90a02c91c7da6638cf09b8fef3aa2f6cc69f",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/utilities/shared-tools/resume_yolo_architecture_gate_v4_after_eval_oom.py",
+      "semantic_active_path": "source-code/utilities/shared-tools/resume_architecture_gate_after_evaluation_oom.py",
+      "sha256": "8693edd6c514ebf9293e061b4411b8f9339a113c62fff94946cc58cca9891444",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    },
+    {
+      "historical_active_path": "source-code/utilities/shared-tools/run_rebu_common40_v1.py",
+      "semantic_active_path": "source-code/utilities/shared-tools/train_common_uniform_stage.py",
+      "sha256": "d8d24bbd09cd10d635915d496feb100cfa0a95b4120d45f37b91396a043ad31b",
+      "content_modified": false,
+      "historical_runtime_alias_retained": true
+    }
+  ],
+  "script_rename_count": 36,
+  "metadata_backup": "~/.Trash/semantic-path-migration-metadata-20260818-182317",
+  "metadata_backup_is_local_only": true
+}

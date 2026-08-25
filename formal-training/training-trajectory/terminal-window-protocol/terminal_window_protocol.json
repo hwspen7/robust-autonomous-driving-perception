@@ -1,0 +1,138 @@
+{
+  "version": "terminal_window_protocol_v1",
+  "status": "frozen_before_candidate_inference",
+  "created_utc": "2026-08-16T02:45:04.818535+00:00",
+  "purpose": "Diagnose terminal overfitting without extending or retraining either branch.",
+  "original_predeclared_targets": [
+    80,
+    90,
+    100
+  ],
+  "mechanical_checkpoint_mapping": {
+    "80": {
+      "mapped_global_epoch": 81,
+      "reason": "Ultralytics save_period uses zero-based stored epochs; E81 is the nearest saved checkpoint."
+    },
+    "90": {
+      "mapped_global_epoch": 91,
+      "reason": "Ultralytics save_period uses zero-based stored epochs; E91 is the nearest saved checkpoint."
+    },
+    "100": {
+      "mapped_global_epoch": 100,
+      "reason": "Fixed terminal checkpoint."
+    }
+  },
+  "candidate_epochs": [
+    81,
+    91,
+    100
+  ],
+  "branches": [
+    "uniform",
+    "rebu_risk"
+  ],
+  "common40_reference": true,
+  "primary_paper_endpoint": {
+    "global_epoch": 100,
+    "checkpoint_rule": "fixed terminal EMA"
+  },
+  "secondary_checkpoint_rule": {
+    "metric": "canonical_COCO_AP",
+    "candidate_epochs": [
+      81,
+      91,
+      100
+    ],
+    "selection": "Highest canonical AP independently within each branch.",
+    "tie_rule": "If AP differs by less than 0.001, prefer the checkpoint with higher failure_macro_AR100."
+  },
+  "overfitting_definition": {
+    "minimum_terminal_AP_drop": 0.003,
+    "additional_evidence": [
+      "AP75 decrease",
+      "AP_small decrease",
+      "validation-loss deterioration"
+    ]
+  },
+  "restrictions": {
+    "no_additional_training": true,
+    "no_extension_beyond_e100": true,
+    "no_extra_primary_candidates": true,
+    "same_candidates_for_both_branches": true,
+    "additional_checkpoints_must_be_labeled_exploratory": true
+  },
+  "evaluation": {
+    "dataset": "BDD100K official validation",
+    "images": 10000,
+    "annotation": "/root/rivermind-data/autodrive/datasets/datasets/bdd100k_final/coco/annotations/instances_val.json",
+    "annotation_sha256": "7be8a02e147743123a4a62b2c92ed2e4a5712d261c8868223e6325bad6e346d6",
+    "image_size": 960,
+    "confidence_floor": 0.001,
+    "nms_iou": 0.7,
+    "max_predictions_before_cocoeval": 300,
+    "cocoeval_max_dets": [
+      1,
+      10,
+      100
+    ]
+  },
+  "formal_training_manifest": {
+    "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/formal_branches_manifest.json",
+    "sha256": "64dd9fdfc15db3fae8881a63f86254899187f6f6570b6bfa89129799bb589cd0"
+  },
+  "exporter": {
+    "path": "/root/rivermind-data/autodrive/code/robust-autonomous-driving-perception/scripts/export_yolo11m_predictions.py",
+    "sha256": "974efcdb71dbbe4fff980cae27ebb7cf826a630bb9d5c2afd654ed3b36f23166"
+  },
+  "checkpoints": {
+    "common40_reference": {
+      "sha256": "c05ed70a608d026fef6178f40a4dee62e96323731700b42e426c311dd78b27f3",
+      "global_epoch": 40,
+      "selection_candidate": false,
+      "stored_epoch": -1,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v1/common_uniform_e1_40/weights/common40_ema.pt"
+    },
+    "uniform_e81": {
+      "sha256": "dcbcd19063039372dd4087ca29a311cc256fd3d1f0be026ac03967eabd62f0b0",
+      "global_epoch": 81,
+      "selection_candidate": true,
+      "stored_epoch": 40,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch40.pt"
+    },
+    "uniform_e91": {
+      "sha256": "488e9f682857c5608f96305c5bea7fa900aa9bbd28357ff17564e01fae1d4f95",
+      "global_epoch": 91,
+      "selection_candidate": true,
+      "stored_epoch": 50,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/epoch50.pt"
+    },
+    "uniform_e100": {
+      "sha256": "2af91824191b0d48d40e35856abafd388776815aaf0a629ace4e734a9be01cf7",
+      "global_epoch": 100,
+      "selection_candidate": true,
+      "stored_epoch": -1,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/uniform_e41_100/weights/uniform100_ema.pt"
+    },
+    "rebu_e81": {
+      "sha256": "c4c546d51c538f1a84062f8540e51f2e27f659f15261cd986dce16ab3afcccf2",
+      "global_epoch": 81,
+      "selection_candidate": true,
+      "stored_epoch": 40,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch40.pt"
+    },
+    "rebu_e91": {
+      "sha256": "6f80c4263ce6f22ad83e868997dae963eea8837252618436513a3cdd6f3907c1",
+      "global_epoch": 91,
+      "selection_candidate": true,
+      "stored_epoch": 50,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/epoch50.pt"
+    },
+    "rebu_e100": {
+      "sha256": "d85a864b7f84d0f408a68697cf9f4cbbfb73a9b821bb8ca392ba49c2956c447a",
+      "global_epoch": 100,
+      "selection_candidate": true,
+      "stored_epoch": -1,
+      "path": "/root/rivermind-data/autodrive/results/evaluation/formal_training/training_v2/rebu_risk_e41_100/weights/rebu_yolo100_ema.pt"
+    }
+  }
+}

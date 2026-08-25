@@ -1,0 +1,37 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1104,
+      "path": "class_summary.csv",
+      "sha256": "cb36f8f69c9d1cb234242169f4b2c08c5edc0884570d59e11d7c9a542816af9c"
+    },
+    {
+      "bytes": 1517,
+      "path": "diagnostic_group_summary.csv",
+      "sha256": "78f47d4c49c81161175fc9bc8f867b94b568904163783969aee401ef15b6309e"
+    },
+    {
+      "bytes": 700,
+      "path": "metadata.json",
+      "sha256": "3f473ec7bc8df788ec5cdd59b7c531ce7216af56fa002672f82c68ae8827a693"
+    },
+    {
+      "bytes": 8288723,
+      "path": "per_target_scale_context.csv",
+      "sha256": "978236943ca7df846b502f5de8e413e1d268188b5f6ff414ba6b56ad8193b7ff"
+    },
+    {
+      "bytes": 1574,
+      "path": "scale_transition_matrix.csv",
+      "sha256": "aa8cdfa48199f86e2eec345d5e99beaa59b48f81c9ed776462c10fe5884708e3"
+    },
+    {
+      "bytes": 4402,
+      "path": "summary.json",
+      "sha256": "72b1f54f6ca35683c381362ef9199a3eabb3b8fc53c8242a0bcd1917c263a2a8"
+    }
+  ],
+  "created_utc": "2026-08-16T13:34:26Z",
+  "status": "complete",
+  "version": "final_crop_scale_context_audit_v1"
+}
