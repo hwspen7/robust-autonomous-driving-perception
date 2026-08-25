@@ -1,10 +1,10 @@
 {
   "version": "project-inventory-summary-requirements-first",
   "status": "complete",
-  "created_utc": "2026-08-18T10:25:10.125059+00:00",
-  "active_inventoried_files": 1066,
-  "public_scope_files": 954,
-  "public_inventory_rows": 949,
+  "created_utc": "2026-08-25T19:36:52.285811+00:00",
+  "active_inventoried_files": 1067,
+  "public_scope_files": 955,
+  "public_inventory_rows": 950,
   "self_referential_inventory_files_excluded_from_rows": [
     "project-management/inventories/git-public-inventory.tsv",
     "project-management/inventories/navigation-inventory-checksums.sha256",
@@ -31,6 +31,8 @@
   "docker_required": false,
   "github_readiness": "READY_FOR_GITHUB_WITH_DECLARED_EXTERNAL_ASSETS",
   "independent_end_to_end_reproduction_verified": false,
-  "root_markdown_files": [],
+  "root_markdown_files": [
+    "README.md"
+  ],
   "manuscripts_preserved_locally": true
 }

@@ -8,8 +8,8 @@
   "direct_entry_count": 398,
   "dependency_count": 183,
   "resolution_counts": {
-    "active-shared": 21,
-    "local-archive": 162
+    "active-shared": 20,
+    "local-archive": 163
   },
   "interpretation": {
     "active-shared": "The frozen logical entry reuses an exact byte-identical active project artifact.",
@@ -355,8 +355,8 @@
     {
       "manifest": "final-testing/frozen-protocol/artifact-manifest.json",
       "logical_path": "final_testing_protocol_v1.json",
-      "resolution": "active-shared",
-      "physical_path": "final-testing/frozen-protocol/final-testing-protocol.json",
+      "resolution": "local-archive",
+      "physical_path": "local-archive/data-disk/autodrive/results/evaluation/final_analysis_v1/frozen_protocol/final_testing_protocol_v1.json",
       "bytes": 13677,
       "sha256": "693c39375cc1eefc4f3ff9f957a8355fb947552a19dfef228cae6cfc21e3dcfe"
     },

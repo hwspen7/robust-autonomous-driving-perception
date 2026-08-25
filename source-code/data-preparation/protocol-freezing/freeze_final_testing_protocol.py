@@ -581,14 +581,10 @@ def build_protocol(
         "status": "frozen_before_final_testing",
         "created_utc": created_utc,
         "study": {
-            "english_title": (
+            "title": (
                 "Diagnose Before Repair: Matching Architectural "
                 "and Data Interventions to Object-Level Failures "
-                "in Autonomous Driving Detection"
-            ),
-            "chinese_title": (
-                "Diagnose Before Repair: "
-                "Object-Level Failure Diagnosis and Architecture-Data Intervention Matching"
+                "in Autonomous-Driving Detection"
             ),
             "central_claim": (
                 "Correct identification of object-level failures "

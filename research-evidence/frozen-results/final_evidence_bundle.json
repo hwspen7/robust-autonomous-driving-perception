@@ -183,6 +183,6 @@
     "/root/rivermind-data/autodrive/results/evaluation/formal_training/trajectory_evaluation_v1/artifact_manifest.json": "922f27c7b573e500f449809591af7e7886449b62e9f662ba50609ac1db695485"
   },
   "status": "complete",
-  "title": "Diagnose Before Repair: Aligning Interventions with Object-Level Failure Conditions in Autonomous Driving Detection",
+  "title": "Diagnose Before Repair: Matching Architectural and Data Interventions to Object-Level Failures in Autonomous-Driving Detection",
   "version": "final_paper_evidence_bundle_v1"
 }

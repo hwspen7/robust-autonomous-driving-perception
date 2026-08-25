@@ -67,8 +67,12 @@ jobs:
       - name: Validate artifact and archive metadata
         run: |
           python - <<'PY'
+          import csv
+          import hashlib
           import json
           from pathlib import Path
+
+          assert Path("README.md").is_file()
 
           manifest = json.loads(Path("artifacts/manifest.json").read_text())
           assert manifest["status"] == "complete"
@@ -89,9 +93,94 @@ jobs:
           assert dependency["status"] == "complete"
           assert dependency["dependency_count"] == 183
           assert dependency["resolution_counts"] == {
-              "active-shared": 21,
-              "local-archive": 162,
+              "active-shared": 20,
+              "local-archive": 163,
           }
+          dependency_records = {
+              (record["manifest"], record["logical_path"]): record
+              for record in dependency["dependencies"]
+          }
+          assert len(dependency_records) == 183
 
-          print("PASS: artifact and archive metadata are valid")
+          resolved = list(csv.DictReader(
+              Path(
+                  "project-management/audits/manifest-resolution/"
+                  "resolved-artifacts.tsv"
+              ).open(newline=""),
+              delimiter="\t",
+          ))
+          assert len(resolved) == 581
+
+          active_direct = [
+              record for record in resolved
+              if record["resolution"] == "active-direct"
+          ]
+          assert len(active_direct) == 398
+
+          declared_external = {
+              record["path"]: record
+              for record in manifest["artifacts"]
+          }
+          verified_present = 0
+          verified_external = 0
+
+          for record in active_direct:
+              path = Path(record["physical_path"])
+              if path.is_file():
+                  assert path.stat().st_size == int(record["bytes"]), path
+                  actual = hashlib.sha256(path.read_bytes()).hexdigest()
+                  assert actual == record["sha256"], path
+                  verified_present += 1
+                  continue
+
+              external = declared_external.get(record["physical_path"])
+              assert external is not None, path
+              assert external["bytes"] == int(record["bytes"]), path
+              assert external["sha256"] == record["sha256"], path
+              verified_external += 1
+
+          assert verified_present == 351
+          assert verified_external == 47
+
+          verified_shared = 0
+          for record in resolved:
+              if record["resolution"] == "active-direct":
+                  continue
+
+              key = (record["manifest"], record["logical_path"])
+              declared = dependency_records.get(key)
+              assert declared is not None, key
+              for field in (
+                  "resolution",
+                  "physical_path",
+                  "sha256",
+              ):
+                  assert declared[field] == record[field], (key, field)
+              assert declared["bytes"] == int(record["bytes"]), key
+
+              if record["resolution"] == "active-shared":
+                  path = Path(record["physical_path"])
+                  if path.is_file():
+                      assert path.stat().st_size == int(record["bytes"]), path
+                      actual = hashlib.sha256(path.read_bytes()).hexdigest()
+                      assert actual == record["sha256"], path
+                  else:
+                      external = declared_external.get(
+                          record["physical_path"]
+                      )
+                      assert external is not None, path
+                      assert external["bytes"] == int(record["bytes"]), path
+                      assert external["sha256"] == record["sha256"], path
+                  verified_shared += 1
+
+          assert verified_shared == 20
+
+          print(
+              "PASS: 351 bundled and 47 declared-external scientific "
+              "manifest entries are valid"
+          )
+          print(
+              "PASS: 20 shared artifacts and all 183 archive "
+              "dependency declarations are valid"
+          )
           PY

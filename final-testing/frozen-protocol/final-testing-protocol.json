@@ -397,7 +397,7 @@
   "status": "frozen_before_final_testing",
   "study": {
     "central_claim": "Correct identification of object-level failures does not automatically imply generalized failure repair. Intervention effectiveness must be tested for failure alignment, condition preservation, clean generalization, corruption robustness, and long-horizon persistence.",
-    "english_title": "Diagnose Before Repair: Aligning Interventions with Object-Level Failure Conditions in Autonomous Driving Detection"
+    "title": "Diagnose Before Repair: Matching Architectural and Data Interventions to Object-Level Failures in Autonomous-Driving Detection"
   },
   "threshold_sensitivity": {
     "central_threshold": "maximum_macro_f1",

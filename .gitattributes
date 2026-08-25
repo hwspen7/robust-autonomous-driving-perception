@@ -6,8 +6,10 @@
 *.json text eol=lf
 *.yaml text eol=lf
 *.yml text eol=lf
-*.csv text eol=lf
-*.tsv text eol=lf
+# Scientific tables are checksum-addressed artifacts. Preserve their exact
+# bytes instead of normalizing line endings during checkout or commit.
+*.csv -text
+*.tsv -text
 
 *.png binary
 *.jpg binary

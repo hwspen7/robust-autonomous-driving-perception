@@ -1,9 +1,10 @@
 relative_path	bytes
-.gitattributes	281
-.github/workflows/repository-audit.yml	2783
+.gitattributes	415
+.github/workflows/repository-audit.yml	6157
 .gitignore	3406
 CITATION.cff	306
 LICENSE	1068
+README.md	4897
 architecture-intervention/inputs/data-quality-exception/duplicate_annotation_exception.json	2358
 architecture-intervention/inputs/effective-development-split/artifact_manifest.json	538
 architecture-intervention/inputs/effective-development-split/bdd100k_architecture_gate_v3.yaml	425
@@ -61,7 +62,7 @@ architecture-intervention/results/training-smoke/smoke_summary.json	2362
 architecture-intervention/results/training-smoke/standard_batch8/args.yaml	1989
 architecture-intervention/results/training-smoke/standard_batch8/results.csv	295
 artifacts/README.md	374
-artifacts/archive-dependencies.json	86088
+artifacts/archive-dependencies.json	86148
 artifacts/checksums.sha256	15192
 artifacts/manifest.json	27617
 configs/datasets/yolo/bdd100k.yaml	247
@@ -460,7 +461,7 @@ final-testing/failure-subsets/subsets/yolo_classification_failure.json	36407
 final-testing/failure-subsets/subsets/yolo_localization_failure.json	182398
 final-testing/failure-subsets/subsets/yolo_low_confidence.json	388959
 final-testing/frozen-protocol/artifact-manifest.json	449
-final-testing/frozen-protocol/final-testing-protocol.json	13542
+final-testing/frozen-protocol/final-testing-protocol.json	13545
 final-testing/frozen-protocol/input-inventory.json	25233
 final-testing/paired-bootstrap/artifact_manifest.json	3206
 final-testing/paired-bootstrap/equivalence_validation.json	290
@@ -568,7 +569,7 @@ formal-training/uniform-branch/training-records/args.yaml	2019
 formal-training/uniform-branch/training-records/artifact_manifest.json	974
 formal-training/uniform-branch/training-records/branch_completion.json	2057
 formal-training/uniform-branch/training-records/results.csv	5234
-project-management/audits/manifest-resolution/resolved-artifacts.tsv	159390
+project-management/audits/manifest-resolution/resolved-artifacts.tsv	159450
 project-management/audits/manifest-resolution/summary.json	393
 project-management/audits/path-portability/machine-specific-paths.tsv	29839
 project-management/audits/path-portability/summary.json	284
@@ -595,7 +596,7 @@ research-evidence/figures/risk_short_term_recovery.png	635104
 research-evidence/frozen-results/FINAL_RESULTS.md	7257
 research-evidence/frozen-results/artifact-manifest.json	5905
 research-evidence/frozen-results/claim_evidence_matrix.csv	1500
-research-evidence/frozen-results/final_evidence_bundle.json	9135
+research-evidence/frozen-results/final_evidence_bundle.json	9146
 research-evidence/frozen-results/metadata.json	548
 research-evidence/frozen-results/qualitative_figure_registry.csv	1836
 research-evidence/frozen-results/tables/table_01_canonical_clean.csv	2435
@@ -725,7 +726,7 @@ source-code/analysis/diagnostic-analysis/analyze_failure_interactions.py	6745
 source-code/analysis/failure-taxonomy/finalize_failure_taxonomy.py	25622
 source-code/analysis/intervention-semantics/audit_crop_scale_context_shift.py	39939
 source-code/analysis/intervention-semantics/audit_training_data_exposure.py	34360
-source-code/data-preparation/data-acquisition/download_bdd100k.py	2019
+source-code/data-preparation/data-acquisition/download_bdd100k.py	1995
 source-code/data-preparation/data-acquisition/upload_bdd.py	249
 source-code/data-preparation/data-validation/analyze_bdd100k.py	11997
 source-code/data-preparation/data-validation/build_condition_subsets.py	22611
@@ -744,7 +745,7 @@ source-code/data-preparation/detection-matching/build_train_detection_matches.py
 source-code/data-preparation/protocol-freezing/freeze_cafr_sampling_protocol.py	12885
 source-code/data-preparation/protocol-freezing/freeze_context_balanced_cafr_gate.py	15346
 source-code/data-preparation/protocol-freezing/freeze_deterministic_architecture_gate.py	12058
-source-code/data-preparation/protocol-freezing/freeze_final_testing_protocol.py	42158
+source-code/data-preparation/protocol-freezing/freeze_final_testing_protocol.py	41969
 source-code/data-preparation/protocol-freezing/freeze_method_gate_protocol.py	15282
 source-code/data-preparation/protocol-freezing/freeze_official_validation_failure_subsets.py	37678
 source-code/data-preparation/protocol-freezing/prepare_effective_development_architecture_gate.py	17635
@@ -917,10 +918,10 @@ source-code/third-party/D-FINE/tools/deployment/export_onnx.py	2891
 source-code/third-party/D-FINE/tools/deployment/export_yolo_w_nms.py	1958
 source-code/third-party/D-FINE/tools/inference/cppExample/onnx/CMakeLists.txt	647
 source-code/third-party/D-FINE/tools/inference/cppExample/onnx/onnxExample.cpp	13357
-source-code/third-party/D-FINE/tools/inference/cppExample/openvino/CMakeLists.txt	573
-source-code/third-party/D-FINE/tools/inference/cppExample/openvino/openvinoExample.cpp	1800
+source-code/third-party/D-FINE/tools/inference/cppExample/openvino/CMakeLists.txt	542
+source-code/third-party/D-FINE/tools/inference/cppExample/openvino/openvinoExample.cpp	1758
 source-code/third-party/D-FINE/tools/inference/cppExample/trt/CMakeLists.txt	796
-source-code/third-party/D-FINE/tools/inference/cppExample/trt/trtExample.cpp	14338
+source-code/third-party/D-FINE/tools/inference/cppExample/trt/trtExample.cpp	13992
 source-code/third-party/D-FINE/tools/inference/onnx_inf.py	4500
 source-code/third-party/D-FINE/tools/inference/openvino_inf.py	3872
 source-code/third-party/D-FINE/tools/inference/requirements.txt	30

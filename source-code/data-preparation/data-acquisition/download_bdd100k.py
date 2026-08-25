@@ -1,28 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import argparse
 from pathlib import Path
 
-
-
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -47,7 +26,6 @@ def parse_args() -> argparse.Namespace:
     )
     return parser.parse_args()
 
-
 def looks_downloaded(
     output_dir: Path,
 ) -> bool:
@@ -61,7 +39,6 @@ def looks_downloaded(
         and (candidate / "train" / "img").exists()
         for candidate in candidates
     )
-
 
 def main() -> None:
     args = parse_args()
@@ -95,7 +72,6 @@ def main() -> None:
 
     print("\nBDD100K download finished.")
     print("Location:", output_dir)
-
 
 if __name__ == "__main__":
     main()
