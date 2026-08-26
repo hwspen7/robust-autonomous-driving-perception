@@ -207,7 +207,7 @@ data-and-baselines/yolo11m/validation-diagnostics/val_batch1_pred.jpg	373832
 data-and-baselines/yolo11m/validation-diagnostics/val_batch2_labels.jpg	357507
 data-and-baselines/yolo11m/validation-diagnostics/val_batch2_pred.jpg	361829
 environment-and-reproducibility/dependency-snapshots/source-project/requirements-data-conversion.txt	59
-environment-and-reproducibility/dependency-snapshots/source-project/requirements-dataset-ninja.txt	76
+environment-and-reproducibility/dependency-snapshots/source-project/requirements-dataset-ninja.txt	21
 environment-and-reproducibility/dependency-snapshots/source-project/requirements-ultralytics.txt	113
 environment-and-reproducibility/dependency-snapshots/source-project/requirements.txt	248
 environment-and-reproducibility/environment-snapshot/SHA256SUMS	8185
@@ -317,6 +317,13 @@ failure-diagnosis/unified-evaluation/models/YOLO11m/per_class_metrics.csv	1257
 failure-diagnosis/unified-evaluation/models/YOLO11m/summary.json	4755
 failure-diagnosis/unified-evaluation/per_class_metrics.csv	2444
 failure-diagnosis/unified-evaluation/summary.json	10932
+figure-generation-code/provenance/original-source-checksums.sha256	425
+figure-generation-code/provenance/release-source-checksums.sha256	425
+figure-generation-code/requirements.txt	42
+figure-generation-code/scripts/build_figure_gallery.py	4908
+figure-generation-code/scripts/create_additional_report_figures.py	18072
+figure-generation-code/scripts/generate_complete_visual_evidence.py	35645
+figure-generation-code/scripts/generate_publication_figures.py	66464
 final-testing/canonical-clean/artifact_manifest.json	11029
 final-testing/canonical-clean/canonical_clean_metrics.csv	4696
 final-testing/canonical-clean/canonical_clean_per_class_metrics.csv	16954

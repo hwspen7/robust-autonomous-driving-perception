@@ -9,8 +9,9 @@ architecture-intervention	64	330759659	56	8
 artifacts	4	129331	4	0
 configs	3	5960	3	0
 data-and-baselines	157	2134486324	138	19
-environment-and-reproducibility	81	326689	81	0
+environment-and-reproducibility	81	326634	81	0
 failure-diagnosis	37	812498453	30	7
+figure-generation-code	7	125981	7	0
 final-testing	224	126001854	196	28
 formal-training	65	601927902	56	9
 project-management	17	13074289	14	3

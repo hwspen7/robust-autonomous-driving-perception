@@ -1,10 +1,10 @@
 {
   "version": "project-inventory-summary-requirements-first",
   "status": "complete",
-  "created_utc": "2026-08-25T20:44:55.323845+00:00",
-  "active_inventoried_files": 1103,
-  "public_scope_files": 991,
-  "public_inventory_rows": 986,
+  "created_utc": "2026-08-26T14:35:01.067817+00:00",
+  "active_inventoried_files": 1110,
+  "public_scope_files": 998,
+  "public_inventory_rows": 993,
   "self_referential_inventory_files_excluded_from_rows": [
     "project-management/inventories/git-public-inventory.tsv",
     "project-management/inventories/navigation-inventory-checksums.sha256",
